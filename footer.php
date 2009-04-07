@@ -1,47 +1,44 @@
-<div id="footer">
-	<div id="footercontent">
-		<div id="articles">
-			<h3>Latest Blog Articles</h3>
-			<ul>
+<div id="footer" class="mainmenu">
+		<div class="logo">
+			<p><a href="http://essenmitsosse.de?preview=1&amp;template=essenmitsossefinal&amp;stylesheet=essenmitsossefinal" title="Homepage of essenmitsosse">&clubs; essenmitsosse</a></p>
+		</div>
+		<ul>
+			<li><a href="http://essenmitsosse.de/category/blog?preview=1&amp;template=essenmitsossefinal&amp;stylesheet=essenmitsossefinal" title="The articles I've written, about design, illustration, typography and all that stuff">Blog</a></li>
+			<li><a href="http://essenmitsosse.de/category/work?preview=1&amp;template=essenmitsossefinal&amp;stylesheet=essenmitsossefinal" title="A collection of my work">Work</a></li>
+			<li><a href="http://essenmitsosse.de/about?preview=1&amp;template=essenmitsossefinal&amp;stylesheet=essenmitsossefinal" title="What is this all about?">About</a></li>
+			<li><a href="http://essenmitsosse.de/about?preview=1&amp;template=essenmitsossefinal&amp;stylesheet=essenmitsossefinal#contact" title="Get in contact with Marcus Bl&auml;ttermann">Contact</a></li>
+			<li><a href="http://essenmitsosse.de/about?preview=1&amp;template=essenmitsossefinal&amp;stylesheet=essenmitsossefinal" title="essenmitsosse RSS Feed" rel="alternate">RSS-Feed</a></li>
+		</ul>
+		
 <?php
-global $post;
-$myposts = get_posts('numberposts=3&category=-77');
-foreach($myposts as $post) : ?>
-<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-<?php the_excerpt(); ?></li>
-<?php endforeach; ?>
-			</ul>
-			<a href="http://essenmitsosse.de/category/blog" class="alt" title="Read older Articles I've written"><span>See all Articles</span></a>
-		</div>
-		<div id="portfolio">
-			<h3>Last Entrys in my Portfolio</h3>
-<?php $my_query = new WP_Query('category_name=portfolio&showposts=2'); while ($my_query->have_posts()) : $my_query->the_post(); $do_not_duplicate = $post->ID;
-?>
-			<div>
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="Read the article &#8220;<?php the_title_attribute(); ?>&#8221;" class="headerlink">
-					<?php the_excerpt(); ?>
-					<p class="title"><?php the_title(); ?></p>
-				</a>
-			</div>
-<?php endwhile;?>
-			<a href="http://essenmitsosse.de/category/portfolio" class="alt" title="Have a look at the Portfolio of Marcus Bl&auml;ttermann"><span>See the whole Portfolio</span></a>
-		</div>
-		<div id="twitter">
-			<h3>Twitter</h3>
-			<div id="tweets">
-				<ul id="twitter_update_list"></ul>
-				<a href="http://twitter.com/essenmitsosse" id="twitter-link" title="Follow me on Twitter"><span>follow me on Twitter</span></a>
-			</div>
-			<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script><script type="text/javascript" src="http://twitter.com/statuses/user_timeline/essenmitsosse.json?callback=twitterCallback2&amp;count=3"></script>
-		</div>
-	</div>
-	<div id="theend" class="logo">
-		<a href="http://essenmitsosse.de" title="essenmitsosse.de &clubs; blog & portfolio of me">
-		<span class="clubs">&clubs;</span>
-		<span class="essenmitsosse">essenmitsosse</span>
-		<span class="subtitle">Blog & Portfolio of me</span></a>
-	</div>
-	<hr />
+
+// Prefix - some text you want displayed before your latest tweet.
+// (HTML is OK, but be sure to escape quotes with backslashes: for example href=\"link.html\")
+$prefix = "<h2>My last Tweet</h2>";
+
+// Suffix - some text you want display after your latest tweet. (Same rules as the prefix.)
+$suffix = "";
+
+$feed = "http://search.twitter.com/search.atom?q=from:" . "essenmitsosse" . "&rpp=1";
+
+function parse_feed($feed) {
+    $stepOne = explode("<content type=\"html\">", $feed);
+    $stepTwo = explode("</content>", $stepOne[1]);
+    $tweet = $stepTwo[0];
+    $tweet = str_replace("&lt;", "<", $tweet);
+    $tweet = str_replace("&gt;", ">", $tweet);
+    return $tweet;
+}
+
+$twitterFeed = file_get_contents($feed);
+echo '<p class="twitter">', parse_feed($twitterFeed), "</p>";
+?> 
+
+<p class="twitterlink"><a href="http://twitter.com/essenmitsosse">Follow me on Twitter</a></p>
+		
+</div>
+
+<hr/>
 </div>
 <?php wp_footer(); ?>
 </body>

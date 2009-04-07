@@ -1,13 +1,12 @@
 <div id="comments">
-	<h2 class="heading">What others have said
-	<span>about <?php the_title(); ?></span></h2>
+	<h2>There <?php comments_number('is no comment', 'one response', 'are % comments' );?> <span>about <?php the_title(); ?></span></h2>
 
 	<ol>
 
 <?php foreach ($comments as $comment) : ?>
 		
 		<li id="comment-<?php comment_ID() ?>">
-			<?php echo get_avatar( $comment, 125); ?>
+			<?php echo get_avatar( $comment, 140); ?>
 			<div class="commentinfo">
 				<p class="author"><?php comment_author_link() ?></p>
 				<p class="commenttime"><?php comment_date() ?><br/><?php comment_time() ?></p>
@@ -22,8 +21,6 @@
 		
 	</ol>
 	
-	
-
 	<h2>What's your opinion?</h2>
 	
 	<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
@@ -43,8 +40,8 @@
 		<input name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="3" type="url"/>
 	</p>
 	
-	
 	<p>
+		<label for="url"><span>Your Comment</span></label>
 		<textarea name="comment" id="comment" cols="100" rows="10" tabindex="4"></textarea>
 	</p>
 	
@@ -55,4 +52,4 @@
 	<?php do_action('comment_form', $post->ID); ?>
 	
 	</form>
-</div>		
+</div>
