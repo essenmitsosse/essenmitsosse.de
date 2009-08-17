@@ -3,7 +3,7 @@
 	<p class="logo"><a href="http://essenmitsosse.de/" title="Homepage" id="essenmitsosse">
 		<span class="club">&clubs;</span>essenmitsosse <em>presents</em>
 	</a></p>
-	<h1 class="nomargin"><em>This is the category</em><?php single_cat_title(); ?></h1>
+	<h1 class="nomargin">my articles</h1>
 	<div class="content color">
 		<ul class="articlelist">
 <?php while (have_posts()) : the_post(); $title = get_post_custom_values("title"); 
