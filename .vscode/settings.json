@@ -3,5 +3,9 @@
 	"editor.minimap.maxColumn": 80,
 	"eslint.format.enable": true,
 	"typescript.preferences.importModuleSpecifier": "non-relative",
-	"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"css.customData": [".vscode/cssCustom.json"],
+	"editor.quickSuggestions": {
+		"strings": true
+	}
 }
