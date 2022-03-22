@@ -3,8 +3,14 @@ module.exports = {
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
 	],
+	darkMode: "media",
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["Graphik", "sans-serif"],
+				serif: ["Merriweather", "serif"],
+			},
+		},
 	},
 	plugins: [],
 };
