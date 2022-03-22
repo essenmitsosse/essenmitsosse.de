@@ -3,9 +3,5 @@
 	"editor.minimap.maxColumn": 80,
 	"eslint.format.enable": true,
 	"typescript.preferences.importModuleSpecifier": "non-relative",
-
-	// We only use Prettier for code formatting, which is also less invasive
-	// then eslint. If you want to auto-fix eslint errors, use the eslint
-	// plugin ("ESLint: Fix all auto-fixable Problems" in the actions menu)
 	"editor.defaultFormatter": "esbenp.prettier-vscode"
 }
