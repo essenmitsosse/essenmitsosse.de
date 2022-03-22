@@ -2,7 +2,10 @@
   "name": "essenmitsosse-behemoth",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier . --write --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "prettier": "^2.8.4"
   },
   "author": "Marcus Blättermann <marcus@essenmitsosse.de>",
   "bugs": {
