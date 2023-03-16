@@ -7,6 +7,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: { formats: ['image/webp'] },
 }
 
 module.exports = nextConfig
