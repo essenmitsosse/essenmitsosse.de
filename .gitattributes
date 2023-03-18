@@ -1,0 +1,5 @@
+blog/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+blog/**/*.png filter=lfs diff=lfs merge=lfs -text
+blog/**/*.gif filter=lfs diff=lfs merge=lfs -text
+article/**/*.png filter=lfs diff=lfs merge=lfs -text
+portfolioupload/**/* filter=lfs diff=lfs merge=lfs -text
