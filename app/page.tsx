@@ -86,9 +86,6 @@ export default function Home() {
                   Burg Giebichenstein University of Art & Design
                 </a>
                 . I work as a freelancer for illustration, print- & webdesign.
-                If you like my work you can
-                <script type="text/javascript">mail2()</script>
-                <noscript>hire me</noscript>.
               </p>
               <p>
                 You should get my{' '}
