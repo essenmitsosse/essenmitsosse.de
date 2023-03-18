@@ -24,7 +24,6 @@ export default function Home() {
           name="keywords"
           content="freelancer, illustrator, designer, design, layout, typography, wacom, photoshop"
         />
-        <meta name="date" content="2012-04-17" />
         <meta name="author" content="Marcus Bl&auml;ttermann" />
       </head>
 
