@@ -34,35 +34,6 @@ export default function Home() {
         <meta name="date" content="2012-04-17" />
         <meta name="author" content="Marcus Bl&auml;ttermann" />
 
-        <script type="text/javascript">
-          function mail() {
-            var name = 'marcus'
-            var domain = 'essenmitsosse.de'
-            document.write(
-              '<a href="mailto:' +
-                name +
-                '@' +
-                domain +
-                '">' +
-                name +
-                '@' +
-                domain +
-                '</a>'
-            )
-          }
-          function mail2() {
-            var name = 'marcus'
-            var domain = 'essenmitsosse.de'
-            document.write(
-              '<a className="important" href="mailto:' +
-                name +
-                '@' +
-                domain +
-                '">hire me</a>'
-            )
-          }
-        </script>
-
         <meta name="generator" content="WordPress 4.8.21" />
       </head>
 
@@ -102,8 +73,9 @@ export default function Home() {
                   <tr>
                     <th>Mail</th>
                     <td>
-                      <script type="text/javascript">mail()</script>
-                      <noscript>marcus -at- essenmitsosse -dot- de</noscript>
+                      <a href="mailto:marcus@essenmitsosse.de">
+                        marcus@essenmitsosse.de
+                      </a>
                     </td>
                   </tr>
                   <tr>
