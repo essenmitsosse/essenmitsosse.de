@@ -33,8 +33,6 @@ export default function Home() {
         />
         <meta name="date" content="2012-04-17" />
         <meta name="author" content="Marcus Bl&auml;ttermann" />
-
-        <meta name="generator" content="WordPress 4.8.21" />
       </head>
 
       <body className="homepage">
