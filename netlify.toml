@@ -1,3 +1,7 @@
+[build]
+  command = "echo 'Nothing to build here'"
+  publish = ""
+
 [[redirects]]
   from = "/pixel"
   to = "https://pixel.essenmitsosse.de"
