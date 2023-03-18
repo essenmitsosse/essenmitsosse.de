@@ -1,11 +1,14 @@
 [build]
-  command = "echo 'Nothing to build here'"
-  publish = "website"
+  command = "next build"
+  publish = ".next"
 
 [[redirects]]
   from = "/pixel"
   to = "https://pixel.essenmitsosse.de"
   status = 301
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
