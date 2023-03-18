@@ -33,7 +33,6 @@ export default function Home() {
         />
         <meta name="date" content="2012-04-17" />
         <meta name="author" content="Marcus Bl&auml;ttermann" />
-        <meta name="designer" content="Marcus Bl&auml;ttermann" />
 
         <script type="text/javascript">
           function mail() {
