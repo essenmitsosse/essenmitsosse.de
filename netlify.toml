@@ -1,6 +1,6 @@
 [build]
   command = "echo 'Nothing to build here'"
-  publish = ""
+  publish = "website"
 
 [[redirects]]
   from = "/pixel"
