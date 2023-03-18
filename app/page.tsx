@@ -402,11 +402,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <script
-          type="text/javascript"
-          src="blog/wp-includes/js/wp-embed.min4918.js?ver=4.8.21"
-        ></script>
       </body>
     </Fragment>
   )
