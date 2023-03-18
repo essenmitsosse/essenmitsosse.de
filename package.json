@@ -25,5 +25,14 @@
   },
   "engines": {
     "node": "18"
+  },
+  "author": "Marcus Blättermann <marcus@essenmitsosse.de>",
+  "bugs": {
+    "url": "https://github.com/essenmitsosse/essenmitsosse.de/issues"
+  },
+  "homepage": "essenmitsosse.de",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essenmitsosse/essenmitsosse.de.git"
   }
 }
