@@ -56,7 +56,7 @@ export default function Home() {
             var name = 'marcus'
             var domain = 'essenmitsosse.de'
             document.write(
-              '<a class="important" href="mailto:' +
+              '<a className="important" href="mailto:' +
                 name +
                 '@' +
                 domain +
@@ -68,18 +68,18 @@ export default function Home() {
         <meta name="generator" content="WordPress 4.8.21" />
       </head>
 
-      <body class="homepage">
-        <ul id="navigation" class="black"></ul>
+      <body className="homepage">
+        <ul id="navigation" className="black"></ul>
 
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" title="Homepage" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
 
-        <div class="allwrapper">
-          <div id="introduction" class="homepresentation">
-            <div class="wrapper">
+        <div className="allwrapper">
+          <div id="introduction" className="homepresentation">
+            <div className="wrapper">
               <h1>About</h1>
               <p>
                 My name ist Marcus Blättermann. I’m majoring in Communication
@@ -146,14 +146,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="articles" class="homepresentation">
-            <div class="wrapper color">
+          <div id="articles" className="homepresentation">
+            <div className="wrapper color">
               <h1>Articles</h1>
               <ul>
                 <li>
                   <h3>
                     <a href="what-designers-can-learn-from-evolution">
-                      <span class="date">2009-09-10</span>
+                      <span className="date">2009-09-10</span>
                       <em>What designers can learn from</em> Evolution
                     </a>
                   </h3>
@@ -161,7 +161,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="wacom-intuos4-review">
-                      <span class="date">2009-08-24</span>
+                      <span className="date">2009-08-24</span>
                       Wacom Intuos4 <em>Review</em>
                     </a>
                   </h3>
@@ -169,7 +169,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="the-designs-of-star-wars">
-                      <span class="date">2008-09-24</span>
+                      <span className="date">2008-09-24</span>
                       The Designs Of Star Wars
                       <em>10 reasons why they are awesome</em>
                     </a>
@@ -178,7 +178,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="digital-painters">
-                      <span class="date">2008-05-15</span>
+                      <span className="date">2008-05-15</span>
                       35 Digital Painters <em>you shouldn’t miss</em>
                     </a>
                   </h3>
@@ -186,7 +186,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="photoshop-brush-engine">
-                      <span class="date">2008-05-03</span>
+                      <span className="date">2008-05-03</span>
                       <em>An Introduction to the</em> Photoshop Brush Engine
                     </a>
                   </h3>
@@ -194,7 +194,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="how-to-set-up-color-management">
-                      <span class="date">2008-04-10</span>
+                      <span className="date">2008-04-10</span>
                       <em>How to set up</em> Color Management
                     </a>
                   </h3>
@@ -202,7 +202,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="likeness-in-portrait">
-                      <span class="date">2008-04-08</span>
+                      <span className="date">2008-04-08</span>
                       <em>How to achieve</em> Likeness In A Portrait
                     </a>
                   </h3>
@@ -210,7 +210,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="applications-for-digital-painting">
-                      <span class="date">2008-03-30</span>
+                      <span className="date">2008-03-30</span>
                       <em>11 applications for</em> Digital Painting
                     </a>
                   </h3>
@@ -218,7 +218,7 @@ export default function Home() {
                 <li>
                   <h3>
                     <a href="graphics-tablet">
-                      <span class="date">2008-03-28</span>
+                      <span className="date">2008-03-28</span>
                       <em>An introduction to the </em>Graphics Tablet
                     </a>
                   </h3>
@@ -227,25 +227,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="portfolio" class="homepresentation black">
-            <div class="wrapper">
+          <div id="portfolio" className="homepresentation black">
+            <div className="wrapper">
               <h1>Portfolio</h1>
               <ul>
-                <li class="commentPortfolio">
+                <li className="commentPortfolio">
                   I am sorry that this portfolio is quite out of date. New stuff
                   will be coming soon. For now you can find my portfolio on{' '}
                   <a
                     href="https://www.behance.net/essenmitsosse"
-                    style="display: inline; border-bottom: none"
-                    >Behance</a
-                  >.
+                    style={{ display: 'inline', borderBottom: 'none' }}
+                  >
+                    Behance
+                  </a>
+                  .
                 </li>
                 <li>
                   <a
                     href="jack-of-all-trades"
-                    style="
-                      background-image: url(blog/wp-content/uploads/jackofalltrades/jack-of-all-trades.png);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/jackofalltrades/jack-of-all-trades.png)',
+                    }}
                   >
                     <span>Jack of all Trades</span>
                   </a>
@@ -253,9 +256,10 @@ export default function Home() {
                 <li>
                   <a
                     href="the-human-brain"
-                    style="
-                      background-image: url(blog/wp-content/uploads/humanbrain/humanbrain.png);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/humanbrain/humanbrain.png)',
+                    }}
                   >
                     <span>The Human Brain</span>
                   </a>
@@ -263,9 +267,10 @@ export default function Home() {
                 <li>
                   <a
                     href="kino-120a"
-                    style="
-                      background-image: url(blog/wp-content/uploads/kino120a/kino120a.png);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/kino120a/kino120a.png)',
+                    }}
                   >
                     <span>kino.120a</span>
                   </a>
@@ -273,9 +278,10 @@ export default function Home() {
                 <li>
                   <a
                     href="creature-combat"
-                    style="
-                      background-image: url(blog/wp-content/uploads/creaturecombat/creaturecombat.png);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/creaturecombat/creaturecombat.png)',
+                    }}
                   >
                     <span>Creature Combat IV</span>
                   </a>
@@ -283,9 +289,10 @@ export default function Home() {
                 <li>
                   <a
                     href="faust"
-                    style="
-                      background-image: url(blog/wp-content/uploads/faust/faust.png);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/faust/faust.png)',
+                    }}
                   >
                     <span>Faust</span>
                   </a>
@@ -293,9 +300,10 @@ export default function Home() {
                 <li>
                   <a
                     href="blockator"
-                    style="
-                      background-image: url(portfolioupload/blockator/blockator-preview.gif);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(portfolioupload/blockator/blockator-preview.gif)',
+                    }}
                   >
                     <span>Blockator</span>
                   </a>
@@ -303,9 +311,10 @@ export default function Home() {
                 <li>
                   <a
                     href="essenmitsosse-redesign"
-                    style="
-                      background-image: url(blog/wp-content/uploads/essenmitsosse/website-preview.png);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/essenmitsosse/website-preview.png)',
+                    }}
                   >
                     <span>essenmitsosse Redesign</span>
                   </a>
@@ -313,9 +322,10 @@ export default function Home() {
                 <li>
                   <a
                     href="portrait-class"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/portrait-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/portrait-preview.jpg)',
+                    }}
                   >
                     <span>Portrait Class</span>
                   </a>
@@ -323,9 +333,10 @@ export default function Home() {
                 <li>
                   <a
                     href="sonic-the-real-hedgehog"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/sonic-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/sonic-preview.jpg)',
+                    }}
                   >
                     <span>Sonic The Real Hedgehog</span>
                   </a>
@@ -333,9 +344,10 @@ export default function Home() {
                 <li>
                   <a
                     href="realistically-painted-bowser"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/bowser-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/bowser-preview.jpg)',
+                    }}
                   >
                     <span>Realistically Painted Bowser</span>
                   </a>
@@ -343,9 +355,10 @@ export default function Home() {
                 <li>
                   <a
                     href="digital-life-drawing"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/akt-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/akt-preview.jpg)',
+                    }}
                   >
                     <span>Digital Life Drawing</span>
                   </a>
@@ -353,9 +366,10 @@ export default function Home() {
                 <li>
                   <a
                     href="linen-tunic"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/linentunic-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/linentunic-preview.jpg)',
+                    }}
                   >
                     <span>Linen Tunic</span>
                   </a>
@@ -363,9 +377,10 @@ export default function Home() {
                 <li>
                   <a
                     href="aztecs"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/aztheken-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/aztheken-preview.jpg)',
+                    }}
                   >
                     <span>Aztecs</span>
                   </a>
@@ -373,9 +388,10 @@ export default function Home() {
                 <li>
                   <a
                     href="the-anglerfish"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/anglerfish-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/anglerfish-preview.jpg)',
+                    }}
                   >
                     <span>The Anglerfish</span>
                   </a>
@@ -383,9 +399,10 @@ export default function Home() {
                 <li>
                   <a
                     href="sparta-fanart"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/sparta-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/sparta-preview.jpg)',
+                    }}
                   >
                     <span>Sparta!</span>
                   </a>
@@ -393,9 +410,10 @@ export default function Home() {
                 <li>
                   <a
                     href="blondheadredhead"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/blondhead-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/blondhead-preview.jpg)',
+                    }}
                   >
                     <span>Blondehead &#038; Redhead</span>
                   </a>
@@ -403,9 +421,10 @@ export default function Home() {
                 <li>
                   <a
                     href="older-paintings"
-                    style="
-                      background-image: url(blog/wp-content/uploads/portfoliothumb/gondel-preview.jpg);
-                    "
+                    style={{
+                      backgroundImage:
+                        'url(blog/wp-content/uploads/portfoliothumb/gondel-preview.jpg)',
+                    }}
                   >
                     <span>Older Paintings</span>
                   </a>
