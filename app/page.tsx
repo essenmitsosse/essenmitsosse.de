@@ -1,32 +1,19 @@
+import { Metadata } from 'next'
 import { Fragment } from 'react'
+
+export const metadata: Metadata = {
+  title: '♣ essenmitsosse',
+  description: 'The work and thoughts of an illustrator, print- & webdesigner.',
+  publisher: 'index, follow',
+  keywords:
+    'freelancer, illustrator, designer, design, layout, typography, wacom, photoshop',
+  authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
+  icons: 'favicon.png',
+}
 
 export default function Home() {
   return (
     <Fragment>
-      <head>
-        <link
-          rel="stylesheet"
-          href="blog/wp-content/themes/essenmitsosse-behemoth/style.css"
-          type="text/css"
-          media="screen"
-        />
-        <link rel="shortcut icon" type="image/png" href="favicon.png" />
-        <link rel="icon" type="image/png" href="favicon.png" />
-
-        <title>&clubs; essenmitsosse</title>
-
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="description"
-          content="The work and thoughts of an illustrator, print- & webdesigner."
-        />
-        <meta
-          name="keywords"
-          content="freelancer, illustrator, designer, design, layout, typography, wacom, photoshop"
-        />
-        <meta name="author" content="Marcus Bl&auml;ttermann" />
-      </head>
-
       <body className="homepage">
         <ul id="navigation" className="black"></ul>
 
