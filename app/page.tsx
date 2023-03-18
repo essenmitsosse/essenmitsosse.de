@@ -22,7 +22,6 @@ export default function Home() {
 
         <title>&clubs; essenmitsosse</title>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
