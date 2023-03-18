@@ -85,6 +85,15 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+
+        <a href="/image" className={styles.card}>
+          <h2 className={inter.className}>
+            Image Test <span>-&gt;</span>
+          </h2>
+          <p className={inter.className}>
+            This is only here for testing purposes
+          </p>
+        </a>
       </div>
     </main>
   )
