@@ -12,7 +12,6 @@ export default function Home() {
         />
         <link rel="shortcut icon" type="image/png" href="favicon.png" />
         <link rel="icon" type="image/png" href="favicon.png" />
-        <link rel="index" title="essenmitsosse" href="index.html" />
 
         <title>&clubs; essenmitsosse</title>
 
