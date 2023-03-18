@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import forrest from '../public/images/16.12.17.forrest-nr.-3.png'
-import livingRoom from '../public/images/preview-wohnzimmer.jpg'
-import styles from '@/styles/Image.module.css'
+import forrest from '../../public/images/16.12.17.forrest-nr.-3.png'
+import livingRoom from '../../public/images/preview-wohnzimmer.jpg'
+import styles from './page.module.css'
 
 export default function ImagePage() {
   return (
