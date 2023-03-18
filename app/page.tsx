@@ -101,45 +101,47 @@ export default function Home() {
 
               <h1>Contact</h1>
               <table>
-                <tr>
-                  <th>Mail</th>
-                  <td>
-                    <script type="text/javascript">mail()</script>
-                    <noscript>marcus -at- essenmitsosse -dot- de</noscript>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Facebook</th>
-                  <td>
-                    <a href="http://www.facebook.com/essenmitsosse">
-                      /essenmitsosse
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Twitter</th>
-                  <td>
-                    <a href="http://twitter.com/essenmitsosse">
-                      @essenmitsosse
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Youtube</th>
-                  <td>
-                    <a href="https://www.youtube.com/user/essenmitsosse">
-                      /user/essenmitsosse
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Instagram</th>
-                  <td>
-                    <a href="http://instagram.com/essenmitsosse">
-                      @essenmitsosse
-                    </a>
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>Mail</th>
+                    <td>
+                      <script type="text/javascript">mail()</script>
+                      <noscript>marcus -at- essenmitsosse -dot- de</noscript>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Facebook</th>
+                    <td>
+                      <a href="http://www.facebook.com/essenmitsosse">
+                        /essenmitsosse
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Twitter</th>
+                    <td>
+                      <a href="http://twitter.com/essenmitsosse">
+                        @essenmitsosse
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Youtube</th>
+                    <td>
+                      <a href="https://www.youtube.com/user/essenmitsosse">
+                        /user/essenmitsosse
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Instagram</th>
+                    <td>
+                      <a href="http://instagram.com/essenmitsosse">
+                        @essenmitsosse
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
