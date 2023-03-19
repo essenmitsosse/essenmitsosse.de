@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import coverFaust from '../../../../website/blog/wp-content/uploads/faust/cover.png'
+
 export const metadata: Metadata = {
   title: 'Faust ♣ essenmitsosse',
   description: 'Announcement for my new comic Faust.',
@@ -45,7 +47,7 @@ export default function Page() {
       <div className="content white">
         <div className="eightwide">
           <img
-            src="blog/wp-content/uploads/faust/cover.png"
+            src={coverFaust.src}
             alt="cover of my comic Faust"
             title="Faust"
             width="620"

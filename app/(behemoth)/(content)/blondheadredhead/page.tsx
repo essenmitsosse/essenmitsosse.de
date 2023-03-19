@@ -1,5 +1,8 @@
 import { Metadata } from 'next'
 
+import imageBlondhead from '../../../../website/blog/wp-content/uploads/portfolio/blondhead.jpg'
+import imageRedhead from '../../../../website/blog/wp-content/uploads/portfolio/redhead.jpg'
+
 export const metadata: Metadata = {
   title: 'Blondehead &#038; Redhead ♣ essenmitsosse',
   description: 'Paintings of a blonde girl and a redhead.',
@@ -46,7 +49,7 @@ export default function Page() {
       <div className="content white">
         <div className="sixwide">
           <img
-            src="blog/wp-content/uploads/portfolio/blondhead.jpg"
+            src={imageBlondhead.src}
             alt="painting of a blonde girl with patterned clothing"
             title="A blonde girl"
             width="460"
@@ -55,7 +58,7 @@ export default function Page() {
         </div>
         <div className="sixwide">
           <img
-            src="blog/wp-content/uploads/portfolio/redhead.jpg"
+            src={imageRedhead.src}
             alt="A redhead nip slip"
             title="A redhead girl"
             width="460"

@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import imageBlockator from '../../../../website/portfolioupload/blockator/blockator.gif'
+
 export const metadata: Metadata = {
   title: 'Blockator ♣ essenmitsosse',
   description:
@@ -46,7 +48,7 @@ export default function Page() {
       <div className="content white">
         <div style={{ marginTop: '-80px' }}>
           <img
-            src="portfolioupload/blockator/blockator.gif"
+            src={imageBlockator.src}
             alt="Blockator is an isometric 3-d Pixelfont, that is generated with Flash."
             width="940"
             height="1495"

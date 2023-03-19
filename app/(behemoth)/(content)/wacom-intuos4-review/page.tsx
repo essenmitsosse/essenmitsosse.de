@@ -1,6 +1,11 @@
 import { Metadata } from 'next'
 import headerIntuos4 from '../../../../website/blog/wp-content/uploads/intuos4/intuos4.png'
 
+import imageMainphoto from '../../../../website/blog/wp-content/uploads/intuos4/mainphoto.jpg'
+import imageTouchingring from '../../../../website/blog/wp-content/uploads/intuos4/touchingring.jpg'
+import imagePentips from '../../../../website/blog/wp-content/uploads/intuos4/pentips.png'
+import imageRadialmenu from '../../../../website/blog/wp-content/uploads/intuos4/radialmenu.png'
+
 export const metadata: Metadata = {
   title: 'Wacom Intuos4 Review ♣ essenmitsosse',
   description:
@@ -83,7 +88,7 @@ export default function Page() {
         <h3>New Design</h3>
         <div className="alignright">
           <img
-            src="blog/wp-content/uploads/intuos4/mainphoto.jpg"
+            src={imageMainphoto.src}
             title="Wacom Intuos4 L"
             alt="Wacom Intuos4 L"
             width="460"
@@ -115,7 +120,7 @@ export default function Page() {
         <h3>Touching Ring</h3>
         <div className="alignright">
           <img
-            src="blog/wp-content/uploads/intuos4/touchingring.jpg"
+            src={imageTouchingring.src}
             title="Wacom Intuos4 Touching Ring"
             alt="Wacom Intuos4 Touching Ring"
             width="460"
@@ -161,7 +166,7 @@ export default function Page() {
         </h3>
         <div className="alignright">
           <img
-            src="blog/wp-content/uploads/intuos4/pentips.png"
+            src={imagePentips.src}
             title="Wacom Intuos4 Pen Holder"
             alt="Wacom Intuos4 Pen Holder"
             width="460"
@@ -198,7 +203,7 @@ export default function Page() {
         <h3>Radial Menu</h3>
         <div className="alignright">
           <img
-            src="blog/wp-content/uploads/intuos4/radialmenu.png"
+            src={imageRadialmenu.src}
             title="Wacom Intuos4 Radial Menu"
             alt="Wacom Intuos4 Radial Menu"
             width="460"

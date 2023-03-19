@@ -1,5 +1,12 @@
 import { Metadata } from 'next'
 
+import imagePortrait12 from '../../../../website/blog/wp-content/uploads/portraitclass/portrait12.jpg'
+import imagePortrait8 from '../../../../website/blog/wp-content/uploads/portraitclass/portrait8.jpg'
+import imagePortrait9 from '../../../../website/blog/wp-content/uploads/portraitclass/portrait9.jpg'
+import imagePortrait11 from '../../../../website/blog/wp-content/uploads/portraitclass/portrait11.jpg'
+import imagePortrait3 from '../../../../website/blog/wp-content/uploads/portraitclass/portrait3.jpg'
+import imagePortrait13 from '../../../../website/blog/wp-content/uploads/portraitclass/portrait13.jpg'
+
 export const metadata: Metadata = {
   title: 'Portrait Class ♣ essenmitsosse',
   description:
@@ -47,7 +54,7 @@ export default function Page() {
       <div className="content white">
         <div className="sixwide">
           <img
-            src="blog/wp-content/uploads/portraitclass/portrait12.jpg"
+            src={imagePortrait12.src}
             alt="Caricature of a guy in a chair"
             title="Photoshop painting from portrait class – male caricature"
             width="460"
@@ -55,7 +62,7 @@ export default function Page() {
             className="marginbottom"
           />
           <img
-            src="blog/wp-content/uploads/portraitclass/portrait8.jpg"
+            src={imagePortrait8.src}
             alt="sausage-like girl with a crown caricature"
             title="Photoshop painting from portrait class – female caricature"
             width="460"
@@ -63,7 +70,7 @@ export default function Page() {
             className="marginbottom"
           />
           <img
-            src="blog/wp-content/uploads/portraitclass/portrait9.jpg"
+            src={imagePortrait9.src}
             alt="square girl caricature"
             title="Photoshop painting from portrait class – female caricature"
             width="460"
@@ -82,7 +89,7 @@ export default function Page() {
           </p>
           <div>
             <img
-              src="blog/wp-content/uploads/portraitclass/portrait11.jpg"
+              src={imagePortrait11.src}
               alt="caricature of a fat man reading a book"
               title="Photoshop painting from portrait class – male caricature"
               width="460"
@@ -90,7 +97,7 @@ export default function Page() {
               className="marginbottom"
             />
             <img
-              src="blog/wp-content/uploads/portraitclass/portrait3.jpg"
+              src={imagePortrait3.src}
               alt="painting of a girl"
               title="Photoshop painting from portrait class – female"
               width="460"
@@ -98,7 +105,7 @@ export default function Page() {
               className="marginbottom"
             />
             <img
-              src="blog/wp-content/uploads/portraitclass/portrait13.jpg"
+              src={imagePortrait13.src}
               alt="two abstract cartoon square girls"
               title="Photoshop painting from portrait class – female caricature"
               width="460"

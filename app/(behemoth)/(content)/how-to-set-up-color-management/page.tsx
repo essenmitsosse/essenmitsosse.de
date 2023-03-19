@@ -1,6 +1,9 @@
 import { Metadata } from 'next'
 import headerColorManagement from '../../../../website/blog/wp-content/uploads/colormanagement/colormanagement-header.png'
 
+import imageSettings from '../../../../website/blog/wp-content/uploads/2008/04/settings.jpg'
+import imageSaveforwebsettings from '../../../../website/blog/wp-content/uploads/2008/04/saveforwebsettings.jpg'
+
 export const metadata: Metadata = {
   title: 'How to set up Color Management ♣ essenmitsosse',
   description:
@@ -240,7 +243,7 @@ export default function Page() {
         </div>
         <div className="sixwide center">
           <img
-            src="blog/wp-content/uploads/2008/04/settings.jpg"
+            src={imageSettings.src}
             alt="CS Settings"
             title="CS Settings"
             width="300"
@@ -292,7 +295,7 @@ export default function Page() {
         </div>
         <div className="sixwide center">
           <img
-            src="blog/wp-content/uploads/2008/04/saveforwebsettings.jpg"
+            src={imageSaveforwebsettings.src}
             alt="Save for Web Settings"
             title="Save for Web Settings"
             width="300"

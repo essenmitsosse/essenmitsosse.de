@@ -1,5 +1,13 @@
 import { Metadata } from 'next'
 
+import imageDragonavenue from '../../../../website/blog/wp-content/uploads/portfolio/dragonavenue.jpg'
+import imageSaltlake from '../../../../website/blog/wp-content/uploads/portfolio/saltlake.jpg'
+import imageGondel from '../../../../website/blog/wp-content/uploads/portfolio/gondel.jpg'
+import imageBaldface from '../../../../website/blog/wp-content/uploads/portfolio/baldface.jpg'
+import imageAirface from '../../../../website/blog/wp-content/uploads/portfolio/airface.jpg'
+import imageTurtleline from '../../../../website/blog/wp-content/uploads/portfolio/turtleline.jpg'
+import imageTurtle from '../../../../website/blog/wp-content/uploads/portfolio/turtle.jpg'
+
 export const metadata: Metadata = {
   title: 'Older Paintings ♣ essenmitsosse',
   description: 'Some older paintings by Marcus Blättermann.',
@@ -42,7 +50,7 @@ export default function Page() {
           <h3>Dragon Avenue</h3>
           <p>
             <img
-              src="blog/wp-content/uploads/portfolio/dragonavenue.jpg"
+              src={imageDragonavenue.src}
               alt="Tiger-Dragon wrecking havoc in the streets because somebody has stolen his egg"
               title="Dragon Avenue"
               width="620"
@@ -53,7 +61,7 @@ export default function Page() {
           <h3>Salt Lake</h3>
           <p>
             <img
-              src="blog/wp-content/uploads/portfolio/saltlake.jpg"
+              src={imageSaltlake.src}
               alt="Tyrannosaurus hunts his prey on a salt lake"
               title="Salt Lake"
               width="620"
@@ -64,7 +72,7 @@ export default function Page() {
           <h3>Gondola</h3>
           <p>
             <img
-              src="blog/wp-content/uploads/portfolio/gondel.jpg"
+              src={imageGondel.src}
               alt="sceleton in a gondola floating through colorful clouds"
               title="Gondola"
               width="620"
@@ -77,7 +85,7 @@ export default function Page() {
           <h3>Baldface</h3>
           <p>
             <img
-              src="blog/wp-content/uploads/portfolio/baldface.jpg"
+              src={imageBaldface.src}
               alt="A bald strange looking man"
               title="Baldface"
               width="300"
@@ -88,7 +96,7 @@ export default function Page() {
           <h3>Airface</h3>
           <p>
             <img
-              src="blog/wp-content/uploads/portfolio/airface.jpg"
+              src={imageAirface.src}
               alt="A guy with a red nose floating through the air"
               title="Airface"
               width="300"
@@ -99,7 +107,7 @@ export default function Page() {
           <h3>Turtle</h3>
           <div>
             <img
-              src="blog/wp-content/uploads/portfolio/turtleline.jpg"
+              src={imageTurtleline.src}
               alt="A linedrawing of a turtle"
               title="Turtle"
               width="300"
@@ -107,7 +115,7 @@ export default function Page() {
               className="marginbottom"
             />
             <img
-              src="blog/wp-content/uploads/portfolio/turtle.jpg"
+              src={imageTurtle.src}
               alt="Colored version of the turtle"
               title="Turtle"
               width="300"

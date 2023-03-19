@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import imageAztecs from '../../../../website/blog/wp-content/uploads/portfolio/aztecs.jpg'
+
 export const metadata: Metadata = {
   title: 'Aztecs ♣ essenmitsosse',
   description:
@@ -47,7 +49,7 @@ export default function Page() {
       <div className="content white">
         <div className="fullwidth">
           <img
-            src="blog/wp-content/uploads/portfolio/aztecs.jpg"
+            src={imageAztecs.src}
             alt="An Actecs slaughtering a Spanish Conquistador"
             title="An Actecs slaughtering a Spanish Conquiztador"
             width="780"

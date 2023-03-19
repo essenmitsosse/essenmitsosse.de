@@ -1,6 +1,30 @@
 import { Metadata } from 'next'
 import headerVader from '../../../../website/blog/wp-content/uploads/starwars/vader-intro.png'
 
+import imageAtat from '../../../../website/blog/wp-content/uploads/starwars/atat.jpg'
+import imageMilleniumfalcon from '../../../../website/blog/wp-content/uploads/starwars/milleniumfalcon.jpg'
+import imageSandcrawler from '../../../../website/blog/wp-content/uploads/starwars/sandcrawler.jpg'
+import imageStardestroyer from '../../../../website/blog/wp-content/uploads/starwars/stardestroyer.jpg'
+import imageDeathstar from '../../../../website/blog/wp-content/uploads/starwars/deathstar.jpg'
+import imageTiefighter from '../../../../website/blog/wp-content/uploads/starwars/tiefighter.jpg'
+import imageBobafett from '../../../../website/blog/wp-content/uploads/starwars/bobafett.jpg'
+import imageMoncalamari from '../../../../website/blog/wp-content/uploads/starwars/moncalamari.jpg'
+import imageCloudcity from '../../../../website/blog/wp-content/uploads/starwars/cloudcity.jpg'
+import imageImperialforces from '../../../../website/blog/wp-content/uploads/starwars/imperialforces.jpg'
+import imageTies from '../../../../website/blog/wp-content/uploads/starwars/ties.jpg'
+import imageBlockaderunner from '../../../../website/blog/wp-content/uploads/starwars/blockaderunner.jpg'
+import imageR2d2 from '../../../../website/blog/wp-content/uploads/starwars/r2d2.jpg'
+import imageJabbathehut from '../../../../website/blog/wp-content/uploads/starwars/jabbathehut.jpg'
+import imageSlave1 from '../../../../website/blog/wp-content/uploads/starwars/slave1.jpg'
+import imageSssbridge from '../../../../website/blog/wp-content/uploads/starwars/sssbridge.jpg'
+import imageTuskenraider from '../../../../website/blog/wp-content/uploads/starwars/tuskenraider.jpg'
+import imageNebulon from '../../../../website/blog/wp-content/uploads/starwars/nebulon.jpg'
+import imageChewie from '../../../../website/blog/wp-content/uploads/starwars/chewie.jpg'
+import imageMauser from '../../../../website/blog/wp-content/uploads/starwars/mauser.jpg'
+import imageVader from '../../../../website/blog/wp-content/uploads/starwars/vader.jpg'
+import imageShapes from '../../../../website/blog/wp-content/uploads/starwars/shapes.gif'
+import imageLightsaber from '../../../../website/blog/wp-content/uploads/starwars/lightsaber.png'
+
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
   description:
@@ -87,12 +111,7 @@ export default function ApplicationsForDigitalPainting() {
         </p>
         <div className="fourwide">
           <div>
-            <img
-              src="blog/wp-content/uploads/starwars/atat.jpg"
-              title="AT-AT"
-              width="300"
-              height="261"
-            />
+            <img src={imageAtat.src} title="AT-AT" width="300" height="261" />
           </div>
           <h3>AT-AT</h3>
           <p>
@@ -122,7 +141,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/milleniumfalcon.jpg"
+              src={imageMilleniumfalcon.src}
               title="Millenium Falcon"
               width="300"
               height="261"
@@ -148,7 +167,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/sandcrawler.jpg"
+              src={imageSandcrawler.src}
               title="Sandcrawler"
               width="300"
               height="261"
@@ -185,7 +204,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/stardestroyer.jpg"
+              src={imageStardestroyer.src}
               title="Imperial Star Destroyer"
               width="300"
               height="300"
@@ -208,7 +227,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/deathstar.jpg"
+              src={imageDeathstar.src}
               title="Death Star"
               width="300"
               height="300"
@@ -231,7 +250,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/tiefighter.jpg"
+              src={imageTiefighter.src}
               title="TIE-Fighter"
               width="300"
               height="300"
@@ -268,7 +287,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/bobafett.jpg"
+              src={imageBobafett.src}
               title="Boba Fett"
               width="300"
               height="300"
@@ -291,7 +310,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/moncalamari.jpg"
+              src={imageMoncalamari.src}
               title="Mon Calamari Space Cruiser – Home 1"
               width="300"
               height="300"
@@ -313,7 +332,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/cloudcity.jpg"
+              src={imageCloudcity.src}
               title="Cloud City"
               width="300"
               height="300"
@@ -352,7 +371,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="sixwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/imperialforces.jpg"
+              src={imageImperialforces.src}
               title="Stromtrooper, Scout Trooper, AT-AT Pilot, TIE-Pilot"
               width="460"
               height="136"
@@ -385,7 +404,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="sixwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/ties.jpg"
+              src={imageTies.src}
               title="TIE-Bomber, Vader's TIE-Advanced x1, TIE-Interceptor, TIE-Fighter"
               width="460"
               height="136"
@@ -436,7 +455,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/blockaderunner.jpg"
+              src={imageBlockaderunner.src}
               title="Rebell Blockade Runner"
               width="300"
               height="300"
@@ -459,12 +478,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="fourwide">
           <div>
-            <img
-              src="blog/wp-content/uploads/starwars/r2d2.jpg"
-              title="R2-D2"
-              width="300"
-              height="300"
-            />
+            <img src={imageR2d2.src} title="R2-D2" width="300" height="300" />
           </div>
           <h3>R2-D2</h3>
           <p>
@@ -486,7 +500,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/jabbathehut.jpg"
+              src={imageJabbathehut.src}
               title="Jabba The Hutt"
               width="300"
               height="300"
@@ -526,7 +540,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/slave1.jpg"
+              src={imageSlave1.src}
               title="Slave 1"
               width="300"
               height="190"
@@ -553,7 +567,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/sssbridge.jpg"
+              src={imageSssbridge.src}
               title="Bridge of a Super Star Destroyer"
               width="300"
               height="190"
@@ -577,7 +591,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="fourwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/tuskenraider.jpg"
+              src={imageTuskenraider.src}
               title="Tusken Raider"
               width="300"
               height="190"
@@ -624,7 +638,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="sixwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/nebulon.jpg"
+              src={imageNebulon.src}
               title="Nebulon B Frigate"
               width="460"
               height="300"
@@ -645,7 +659,7 @@ export default function ApplicationsForDigitalPainting() {
         <div className="sixwide">
           <div>
             <img
-              src="blog/wp-content/uploads/starwars/chewie.jpg"
+              src={imageChewie.src}
               title="Chewbacca"
               width="460"
               height="300"
@@ -681,7 +695,7 @@ export default function ApplicationsForDigitalPainting() {
           </p>
           <div className="center">
             <img
-              src="blog/wp-content/uploads/starwars/mauser.jpg"
+              src={imageMauser.src}
               title="Mauser C-96 and Han Solo&#039;s DL-44 Heavy Blaster"
               width="300"
               height="357"
@@ -868,7 +882,7 @@ export default function ApplicationsForDigitalPainting() {
         <h3>Darth Vader</h3>
         <div className="sixwide">
           <img
-            src="blog/wp-content/uploads/starwars/vader.jpg"
+            src={imageVader.src}
             title="Darth Vader"
             width="460"
             height="354"
@@ -949,7 +963,7 @@ export default function ApplicationsForDigitalPainting() {
         </p>
         <div className="fullwidth">
           <img
-            src="blog/wp-content/uploads/starwars/shapes.gif"
+            src={imageShapes.src}
             title="Boba Fett, Chewbacca, Darth Vader, C3-P0, Jabba the Hut, Yoda, R2-D2, TIE-Fighter, TIE-Interceptor, AT-AT, AT-ST, A-Wing, X-Wing, TIE-Bomber, Speederbike, B-Wing, Y-Wing, Millenium Falcon, Landspeeder, Lambda Shuttle, Slave 1, Star Destroyer, Blockade Runner, Nebulon B Frigate"
             width="940"
           />
@@ -959,7 +973,7 @@ export default function ApplicationsForDigitalPainting() {
         </h2>
         <div className="center sixwide">
           <img
-            src="blog/wp-content/uploads/starwars/lightsaber.png"
+            src={imageLightsaber.src}
             title="Luke&#039;s Lightsaber"
             width="300"
             height="370"

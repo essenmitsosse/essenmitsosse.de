@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import redesignWebsite from '../../../../website/blog/wp-content/uploads/essenmitsosse/website.png'
+
 export const metadata: Metadata = {
   title: 'essenmitsosse Redesign ♣ essenmitsosse',
   description: 'Redesign of the homepage of Marcus Blättermann.',
@@ -44,11 +46,7 @@ export default function Page() {
 
       <div className="content white">
         <div>
-          <img
-            src="blog/wp-content/uploads/essenmitsosse/website.png"
-            width="940"
-            height="391"
-          />
+          <img src={redesignWebsite.src} width="940" height="391" />
         </div>
         <p>
           After several redesign attempts over the last few years I finally

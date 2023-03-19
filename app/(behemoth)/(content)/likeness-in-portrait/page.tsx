@@ -1,6 +1,10 @@
 import { Metadata } from 'next'
 import headerPortrait from '../../../../website/blog/wp-content/uploads/likeness/portrait-header.png'
 
+import imageWhoisthis from '../../../../website/blog/wp-content/uploads/2008/04/whoisthis.jpg'
+import imageWhoisthis2 from '../../../../website/blog/wp-content/uploads/2008/04/whoisthis2.jpg'
+import imageWhoisthis3 from '../../../../website/blog/wp-content/uploads/2008/04/whoisthis3.jpg'
+
 export const metadata: Metadata = {
   title: 'How to achieve Likeness In A Portrait ♣ essenmitsosse',
   description:
@@ -99,7 +103,7 @@ export default function Page() {
         </div>
         <div className="sixwide center">
           <img
-            src="blog/wp-content/uploads/2008/04/whoisthis.jpg"
+            src={imageWhoisthis.src}
             alt="Who is this?"
             title="Who is this?"
             width="300"
@@ -163,14 +167,14 @@ export default function Page() {
         </div>
         <div className="sixwide center">
           <img
-            src="blog/wp-content/uploads/2008/04/whoisthis2.jpg"
+            src={imageWhoisthis2.src}
             alt="Who is this?"
             title="Who is this?"
             width="300"
           />
           <br />
           <img
-            src="blog/wp-content/uploads/2008/04/whoisthis3.jpg"
+            src={imageWhoisthis3.src}
             alt="Who is this?"
             title="Who is this?"
             width="300"

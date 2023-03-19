@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import imageBowser from '../../../../website/blog/wp-content/uploads/bowser/bowser.jpg'
+
 export const metadata: Metadata = {
   title: 'Realistically Painted Bowser ♣ essenmitsosse',
   description:
@@ -47,7 +49,7 @@ export default function Page() {
       <div className="content white">
         <div>
           <img
-            src="blog/wp-content/uploads/bowser/bowser.jpg"
+            src={imageBowser.src}
             alt="Realistically Painted Bowser"
             title="Realistically Painted Bowser"
             width="940"

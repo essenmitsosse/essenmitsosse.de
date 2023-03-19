@@ -1,6 +1,18 @@
 import { Metadata } from 'next'
 import headerDigitalPainting from '../../../../website/blog/wp-content/uploads/digitalpainting/digitalpainting-header.png'
 
+import imagePhotoshop from '../../../../website/blog/wp-content/uploads/2008/04/photoshop.jpg'
+import imagePaintshoppro from '../../../../website/blog/wp-content/uploads/2008/04/paintshoppro.jpg'
+import imagePainter from '../../../../website/blog/wp-content/uploads/2008/04/painter.jpg'
+import imageSketchbookpro from '../../../../website/blog/wp-content/uploads/2008/04/sketchbookpro.jpg'
+import imageOpencanvas from '../../../../website/blog/wp-content/uploads/2008/04/opencanvas.jpg'
+import imageArtrage from '../../../../website/blog/wp-content/uploads/2008/04/artrage.jpg'
+import imageGimp from '../../../../website/blog/wp-content/uploads/2008/04/gimp.jpg'
+import imageArtweaver from '../../../../website/blog/wp-content/uploads/2008/04/artweaver.jpg'
+import imageDeeppaint from '../../../../website/blog/wp-content/uploads/2008/04/deeppaint.jpg'
+import imageDogwaffle from '../../../../website/blog/wp-content/uploads/2008/04/dogwaffle.jpg'
+import imagePaint from '../../../../website/blog/wp-content/uploads/2008/04/paint.jpg'
+
 export const metadata: Metadata = {
   title: '11 applications for Digital Painting ♣ essenmitsosse',
   description:
@@ -105,18 +117,12 @@ export default function Page() {
           <div>
             <a href="http://www.adobe.com/products/photoshop/">
               <img
-                src="blog/wp-content/uploads/2008/04/photoshop.jpg"
+                src={imagePhotoshop.src}
                 alt="Adobe Photoshop"
                 title="Adobe Photoshop"
                 width="350"
                 height="211"
                 className="alignnone size-full wp-image-41"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/photoshop.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/photoshop-150x90.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/photoshop-300x180.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -158,18 +164,12 @@ export default function Page() {
           <div>
             <a href="http://www.corel.com/servlet/Satellite/us/en/Product/1184951547051">
               <img
-                src="blog/wp-content/uploads/2008/04/paintshoppro.jpg"
+                src={imagePaintshoppro.src}
                 alt="Corel Paint Shop Pro"
                 title="Corel Paint Shop Pro"
                 width="350"
                 height="169"
                 className="alignnone size-full wp-image-40"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/paintshoppro.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/paintshoppro-150x72.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/paintshoppro-300x144.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -221,18 +221,12 @@ export default function Page() {
           <div>
             <a href="http://www.corel.com/servlet/Satellite/de/de/Product/1166553885783">
               <img
-                src="blog/wp-content/uploads/2008/04/painter.jpg"
+                src={imagePainter.src}
                 alt="Corel Painter"
                 title="Corel Painter"
                 width="350"
                 height="220"
                 className="alignnone size-full wp-image-39"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/painter.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/painter-150x94.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/painter-300x188.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -269,18 +263,12 @@ export default function Page() {
           <div>
             <a href="http://usa.autodesk.com/adsk/servlet/index?id=6848332&amp;siteID=123112">
               <img
-                src="blog/wp-content/uploads/2008/04/sketchbookpro.jpg"
+                src={imageSketchbookpro.src}
                 alt="Alias SketchBook Pro"
                 title="Alias SketchBook Pro"
                 width="350"
                 height="144"
                 className="alignnone size-full wp-image-42"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/sketchbookpro.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/sketchbookpro-150x61.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/sketchbookpro-300x123.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -328,18 +316,12 @@ export default function Page() {
           <div>
             <a href="http://www.portalgraphics.net/en/">
               <img
-                src="blog/wp-content/uploads/2008/04/opencanvas.jpg"
+                src={imageOpencanvas.src}
                 alt="OpenCanvas"
                 title="OpenCanvas"
                 width="350"
                 height="195"
                 className="alignnone size-full wp-image-37"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/opencanvas.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/opencanvas-150x83.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/opencanvas-300x167.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -378,18 +360,12 @@ export default function Page() {
           <div>
             <a href="http://www.ambientdesign.com/artrage.html">
               <img
-                src="blog/wp-content/uploads/2008/04/artrage.jpg"
+                src={imageArtrage.src}
                 alt="Artrage"
                 title="Artrage"
                 width="350"
                 height="215"
                 className="alignnone size-full wp-image-32"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/artrage.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/artrage-150x92.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/artrage-300x184.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -426,18 +402,12 @@ export default function Page() {
           <div>
             <a href="hhttp://www.gimp.org/">
               <img
-                src="blog/wp-content/uploads/2008/04/gimp.jpg"
+                src={imageGimp.src}
                 alt="GIMP"
                 title="GIMP"
                 width="350"
                 height="175"
                 className="alignnone size-full wp-image-36"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/gimp.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/gimp-150x75.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/gimp-300x150.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -470,18 +440,12 @@ export default function Page() {
           <div>
             <a href="http://www.artweaver.de/">
               <img
-                src="blog/wp-content/uploads/2008/04/artweaver.jpg"
+                src={imageArtweaver.src}
                 alt="Artweaver"
                 title="Artweaver"
                 width="350"
                 height="151"
                 className="alignnone size-full wp-image-33"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/artweaver.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/artweaver-150x64.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/artweaver-300x129.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -513,18 +477,12 @@ export default function Page() {
           <div>
             <a href="http://download.chip.eu/en/Deep-Paint-2.0_132831.html">
               <img
-                src="blog/wp-content/uploads/2008/04/deeppaint.jpg"
+                src={imageDeeppaint.src}
                 alt="Deeppaint"
                 title="Deeppaint"
                 width="350"
                 height="202"
                 className="alignnone size-full wp-image-34"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/deeppaint.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/deeppaint-150x86.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/deeppaint-300x173.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -553,18 +511,12 @@ export default function Page() {
           <div>
             <a href="http://www.thebest3d.com/dogwaffle/free">
               <img
-                src="blog/wp-content/uploads/2008/04/dogwaffle.jpg"
+                src={imageDogwaffle.src}
                 alt="Dogwaffle"
                 title="Dogwaffle"
                 width="350"
                 height="211"
                 className="alignnone size-full wp-image-35"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/dogwaffle.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/dogwaffle-150x90.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/dogwaffle-300x180.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>
@@ -598,18 +550,12 @@ export default function Page() {
           <div>
             <a href="ttp://www.getpaint.net/">
               <img
-                src="blog/wp-content/uploads/2008/04/paint.jpg"
+                src={imagePaint.src}
                 alt=""
                 title="Paint.NET"
                 width="350"
                 height="211"
                 className="alignnone size-full wp-image-38"
-                srcset="
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/paint.jpg         350w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/paint-150x90.jpg  150w,
-                https://essenmitsosse.de/blog/wp-content/uploads/2008/04/paint-300x180.jpg 300w
-              "
-                sizes="(max-width: 350px) 100vw, 350px"
               />
             </a>
           </div>

@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import imageLinentunic from '../../../../website/blog/wp-content/uploads/portfolio/linentunic.jpg'
+
 export const metadata: Metadata = {
   title: 'Linen Tunic ♣ essenmitsosse',
   description:
@@ -46,7 +48,7 @@ export default function Page() {
       <div className="content white">
         <div className="eightwide">
           <img
-            src="blog/wp-content/uploads/portfolio/linentunic.jpg"
+            src={imageLinentunic.src}
             alt="Man in linen tunic with a sword is cursed by a wraith in the snow"
             title="Linen Tunic"
             width="620"

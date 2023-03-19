@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import imageSparta from '../../../../website/blog/wp-content/uploads/portfolio/sparta.jpg'
+
 export const metadata: Metadata = {
   title: 'Sparta! ♣ essenmitsosse',
   description: 'Image of a Spartan who slaughters a Persian warrior.',
@@ -46,7 +48,7 @@ export default function Page() {
       <div className="content white">
         <div className="fullwidth">
           <img
-            src="blog/wp-content/uploads/portfolio/sparta.jpg"
+            src={imageSparta.src}
             alt="A Spartan who is going to cut the head of an Persian"
             title="A Spartan killing a Persian with his sword"
             width="940"

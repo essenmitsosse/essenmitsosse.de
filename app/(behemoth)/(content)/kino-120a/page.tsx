@@ -1,5 +1,24 @@
 import { Metadata } from 'next'
 
+import imageTheDayTheEarthStoodStill from '../../../../website/blog/wp-content/uploads/kino120a/the-day-the-earth-stood-still.png'
+import imageAnderwelten from '../../../../website/blog/wp-content/uploads/kino120a/anderwelten.png'
+import imageUnderdogs from '../../../../website/blog/wp-content/uploads/kino120a/underdogs.png'
+import imageImNotThere1 from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-1.png'
+import imageImNotThere2 from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-2.png'
+import imageImNotThereMarcusCarlFranklin from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-marcus-carl-franklin.png'
+import imageImNotThereChristianBale from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-christian-bale.png'
+import imageImNotThereCateBlanchett from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-cate-blanchett.png'
+import imageImNotThere3 from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-3.png'
+import imageImNotThereHeathLedger from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-heath-ledger.png'
+import imageImNotThereBenWhishaw from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-ben-whishaw.png'
+import imageImNotThereRichardGere from '../../../../website/blog/wp-content/uploads/kino120a/im-not-there-richard-gere.png'
+import imageBerlincalling from '../../../../website/blog/wp-content/uploads/kino120a/berlincalling.png'
+import imageMetropolis from '../../../../website/blog/wp-content/uploads/kino120a/metropolis.png'
+import imageAllegroNonTroppo1 from '../../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-1.png'
+import imageAllegroNonTroppo3 from '../../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-3.png'
+import imageAllegroNonTroppo2 from '../../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-2.png'
+import imageAllegroNonTroppo4 from '../../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-4.png'
+
 export const metadata: Metadata = {
   title: 'kino.120a ♣ essenmitsosse',
   description: 'Poster series for student cinema kino.120a.',
@@ -52,7 +71,7 @@ export default function Page() {
           <p>
             <img
               title="The day the earth stood still"
-              src="blog/wp-content/uploads/kino120a/the-day-the-earth-stood-still.png"
+              src={imageTheDayTheEarthStoodStill.src}
               alt="The day the earth stood still poster"
               width="300"
               height="424"
@@ -63,7 +82,7 @@ export default function Page() {
           <p>
             <img
               title="Anderwelten — semester program"
-              src="blog/wp-content/uploads/kino120a/anderwelten.png"
+              src={imageAnderwelten.src}
               alt="Anderwelten poster"
               width="300"
               height="900"
@@ -74,7 +93,7 @@ export default function Page() {
           <p>
             <img
               title="Underdogs — semester program"
-              src="blog/wp-content/uploads/kino120a/underdogs.png"
+              src={imageUnderdogs.src}
               alt="Underdogs poster"
               width="300"
               height="900"
@@ -86,7 +105,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Bob Dylan"
-              src="blog/wp-content/uploads/kino120a/im-not-there-1.png"
+              src={imageImNotThere1.src}
               alt="I&rsquo;m not there — Bob Dylan —poster"
               width="300"
               height="300"
@@ -97,7 +116,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there"
-              src="blog/wp-content/uploads/kino120a/im-not-there-2.png"
+              src={imageImNotThere2.src}
               alt="I&rsquo;m not there - poster"
               width="300"
               height="300"
@@ -108,7 +127,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Marcus Carl Franklin"
-              src="blog/wp-content/uploads/kino120a/im-not-there-marcus-carl-franklin.png"
+              src={imageImNotThereMarcusCarlFranklin.src}
               alt="I&rsquo;m not there — Marcus Carl Franklin"
               width="300"
               height="300"
@@ -119,7 +138,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Christian Bale"
-              src="blog/wp-content/uploads/kino120a/im-not-there-christian-bale.png"
+              src={imageImNotThereChristianBale.src}
               alt="I&rsquo;m not there — Christian Bale"
               width="300"
               height="300"
@@ -130,7 +149,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Cate Blanchett"
-              src="blog/wp-content/uploads/kino120a/im-not-there-cate-blanchett.png"
+              src={imageImNotThereCateBlanchett.src}
               alt="I&rsquo;m not there — Cate Blanchett"
               width="300"
               height="300"
@@ -141,7 +160,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there"
-              src="blog/wp-content/uploads/kino120a/im-not-there-3.png"
+              src={imageImNotThere3.src}
               alt="I&rsquo;m not there"
               width="300"
               height="300"
@@ -152,7 +171,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Heath Ledger"
-              src="blog/wp-content/uploads/kino120a/im-not-there-heath-ledger.png"
+              src={imageImNotThereHeathLedger.src}
               alt="I&rsquo;m not there — Heath Ledger"
               width="300"
               height="300"
@@ -163,7 +182,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Bin Whishaw"
-              src="blog/wp-content/uploads/kino120a/im-not-there-ben-whishaw.png"
+              src={imageImNotThereBenWhishaw.src}
               alt="I&rsquo;m not there — Bin Whishaw"
               width="300"
               height="300"
@@ -174,7 +193,7 @@ export default function Page() {
           <p>
             <img
               title="I&rsquo;m not there — Richard Gere"
-              src="blog/wp-content/uploads/kino120a/im-not-there-richard-gere.png"
+              src={imageImNotThereRichardGere.src}
               alt="I&rsquo;m not there — Richard Gere"
               width="300"
               height="300"
@@ -185,7 +204,7 @@ export default function Page() {
           <p>
             <img
               title="Berlin Calling"
-              src="blog/wp-content/uploads/kino120a/berlincalling.png"
+              src={imageBerlincalling.src}
               alt="Berlin Calling poster"
               width="940"
               height="300"
@@ -196,7 +215,7 @@ export default function Page() {
           <p>
             <img
               title="Metropolis"
-              src="blog/wp-content/uploads/kino120a/metropolis.png"
+              src={imageMetropolis.src}
               alt="Metropolis poster"
               width="300"
               height="1200"
@@ -207,7 +226,7 @@ export default function Page() {
           <p>
             <img
               title="Allegro non Troppo"
-              src="blog/wp-content/uploads/kino120a/allegro-non-troppo-1.png"
+              src={imageAllegroNonTroppo1.src}
               alt="Allegro non Troppo poster"
               width="300"
               height="300"
@@ -217,7 +236,7 @@ export default function Page() {
           <p>
             <img
               title="Allegro non Troppo"
-              src="blog/wp-content/uploads/kino120a/allegro-non-troppo-3.png"
+              src={imageAllegroNonTroppo3.src}
               alt="Allegro non Troppo poster"
               width="300"
               height="300"
@@ -228,7 +247,7 @@ export default function Page() {
           <p>
             <img
               title="Allegro non Troppo"
-              src="blog/wp-content/uploads/kino120a/allegro-non-troppo-2.png"
+              src={imageAllegroNonTroppo2.src}
               alt="Allegro non Troppo poster"
               width="300"
               height="300"
@@ -238,7 +257,7 @@ export default function Page() {
           <p>
             <img
               title="Allegro non Troppo"
-              src="blog/wp-content/uploads/kino120a/allegro-non-troppo-4.png"
+              src={imageAllegroNonTroppo4.src}
               alt="Allegro non Troppo poster"
               width="300"
               height="300"

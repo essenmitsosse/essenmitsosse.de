@@ -1,6 +1,26 @@
 import { Metadata } from 'next'
 import headerBrushEngine from '../../../../website/blog/wp-content/uploads/photoshop/brushengine-header.png'
 
+import imageBrushbutton from '../../../../website/blog/wp-content/uploads/photoshop/brushbutton.png'
+import imageJitter from '../../../../website/blog/wp-content/uploads/photoshop/jitter.png'
+import imageBrushTipShape from '../../../../website/blog/wp-content/uploads/2008/05/brush-tip-shape.gif'
+import imageSize from '../../../../website/blog/wp-content/uploads/2008/05/size.gif'
+import imageAngle from '../../../../website/blog/wp-content/uploads/2008/05/angle.gif'
+import imageRoundness from '../../../../website/blog/wp-content/uploads/2008/05/roundness.gif'
+import imageScattering from '../../../../website/blog/wp-content/uploads/2008/05/scattering.gif'
+import imageTexture from '../../../../website/blog/wp-content/uploads/2008/05/texture.gif'
+import imageDualBrush from '../../../../website/blog/wp-content/uploads/2008/05/dual-brush.gif'
+import imageForegroundBackgroundjitter from '../../../../website/blog/wp-content/uploads/2008/05/foreground-backgroundjitter.jpg'
+import imageHuejitter from '../../../../website/blog/wp-content/uploads/2008/05/huejitter.jpg'
+import imageSaturationjitter from '../../../../website/blog/wp-content/uploads/2008/05/saturationjitter.jpg'
+import imageBrightnessjitter from '../../../../website/blog/wp-content/uploads/2008/05/brightnessjitter.jpg'
+import imageOpacity from '../../../../website/blog/wp-content/uploads/2008/05/opacity.jpg'
+import imageFlow from '../../../../website/blog/wp-content/uploads/2008/05/flow.jpg'
+import imageNoise from '../../../../website/blog/wp-content/uploads/2008/05/noise.jpg'
+import imageWetedges from '../../../../website/blog/wp-content/uploads/2008/05/wetedges.jpg'
+import imageAirbrush from '../../../../website/blog/wp-content/uploads/2008/05/airbrush.jpg'
+import imageSmoothing from '../../../../website/blog/wp-content/uploads/2008/05/smoothing.jpg'
+
 export const metadata: Metadata = {
   title: 'An Introduction to the Photoshop Brush Engine ♣ essenmitsosse',
   description:
@@ -84,7 +104,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="sixwide many center">
           <img
-            src="blog/wp-content/uploads/photoshop/brushbutton.png"
+            src={imageBrushbutton.src}
             alt=""
             title="How to open the brushes palette"
             width="300"
@@ -200,7 +220,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="sixwide many center">
           <img
-            src="blog/wp-content/uploads/photoshop/jitter.png"
+            src={imageJitter.src}
             alt=""
             title="Jitter"
             width="300"
@@ -274,18 +294,12 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="sixwide many center">
           <img
-            src="blog/wp-content/uploads/2008/05/brush-tip-shape.gif"
+            src={imageBrushTipShape.src}
             alt=""
             title="Brush Tip Shape"
             width="350"
             height="405"
             className="alignnone size-full wp-image-104"
-            srcset="
-            https://essenmitsosse.de/blog/wp-content/uploads/2008/05/brush-tip-shape.gif         350w,
-            https://essenmitsosse.de/blog/wp-content/uploads/2008/05/brush-tip-shape-129x150.gif 129w,
-            https://essenmitsosse.de/blog/wp-content/uploads/2008/05/brush-tip-shape-259x300.gif 259w
-          "
-            sizes="(max-width: 350px) 100vw, 350px"
           />
         </div>
         <h2>Shape Dynamics</h2>
@@ -301,7 +315,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many">
               <img
-                src="blog/wp-content/uploads/2008/05/size.gif"
+                src={imageSize.src}
                 alt=""
                 title="size"
                 width="450"
@@ -319,7 +333,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/angle.gif"
+                src={imageAngle.src}
                 alt=""
                 title="angle"
                 width="450"
@@ -338,7 +352,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/roundness.gif"
+                src={imageRoundness.src}
                 alt=""
                 title="roundness"
                 width="450"
@@ -370,7 +384,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="sixwide many center">
           <img
-            src="blog/wp-content/uploads/2008/05/scattering.gif"
+            src={imageScattering.src}
             alt=""
             title="scattering"
             width="450"
@@ -419,7 +433,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="sixwide many center">
           <img
-            src="blog/wp-content/uploads/2008/05/texture.gif"
+            src={imageTexture.src}
             alt=""
             title="texture"
             width="450"
@@ -452,7 +466,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <div className="sixwide many center">
           <img
-            src="blog/wp-content/uploads/2008/05/dual-brush.gif"
+            src={imageDualBrush.src}
             alt=""
             title="dualbrush"
             width="450"
@@ -476,7 +490,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/foreground-backgroundjitter.jpg"
+                src={imageForegroundBackgroundjitter.src}
                 alt=""
                 title="foreground-backgroundjitter"
                 width="450"
@@ -496,7 +510,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/huejitter.jpg"
+                src={imageHuejitter.src}
                 alt=""
                 title="huejitter"
                 width="450"
@@ -505,7 +519,7 @@ export default function ApplicationsForDigitalPainting() {
               />
               <br />
               <img
-                src="blog/wp-content/uploads/2008/05/saturationjitter.jpg"
+                src={imageSaturationjitter.src}
                 alt=""
                 title="saturationjitter"
                 width="450"
@@ -514,7 +528,7 @@ export default function ApplicationsForDigitalPainting() {
               />
               <br />
               <img
-                src="blog/wp-content/uploads/2008/05/brightnessjitter.jpg"
+                src={imageBrightnessjitter.src}
                 alt=""
                 title="rightnessjitter"
                 width="450"
@@ -550,7 +564,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/opacity.jpg"
+                src={imageOpacity.src}
                 alt=""
                 title="opacity"
                 width="450"
@@ -573,7 +587,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/flow.jpg"
+                src={imageFlow.src}
                 alt=""
                 title="flow"
                 width="450"
@@ -595,7 +609,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/noise.jpg"
+                src={imageNoise.src}
                 alt=""
                 title="noise"
                 width="450"
@@ -615,7 +629,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/wetedges.jpg"
+                src={imageWetedges.src}
                 alt=""
                 title="wet edges"
                 width="450"
@@ -635,7 +649,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/airbrush.jpg"
+                src={imageAirbrush.src}
                 alt=""
                 title="airbrush"
                 width="450"
@@ -655,7 +669,7 @@ export default function ApplicationsForDigitalPainting() {
             </div>
             <div className="sixwide many center">
               <img
-                src="blog/wp-content/uploads/2008/05/smoothing.jpg"
+                src={imageSmoothing.src}
                 alt=""
                 title="smoothing"
                 width="450"

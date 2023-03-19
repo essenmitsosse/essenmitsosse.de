@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import imageAnglerfish from '../../../../website/blog/wp-content/uploads/portfolio/anglerfish.jpg'
+
 export const metadata: Metadata = {
   title: 'The Anglerfish ♣ essenmitsosse',
   description: '',
@@ -46,7 +48,7 @@ export default function Page() {
       <div className="content white">
         <div className="eightwide">
           <img
-            src="blog/wp-content/uploads/portfolio/anglerfish.jpg"
+            src={imageAnglerfish.src}
             alt="old man in boat trys to safe a drowning person which turns out to be an anglerfish"
             title="The Anglerfish"
             width="620"

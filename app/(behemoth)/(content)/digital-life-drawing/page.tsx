@@ -1,5 +1,13 @@
 import { Metadata } from 'next'
 
+import imageAkt12 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt12.jpg'
+import imageAkt10 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt10.jpg'
+import imageAkt2 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt2.jpg'
+import imageAkt4 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt4.jpg'
+import imageAkt11 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt11.jpg'
+import imageAkt13 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt13.jpg'
+import imageAkt14 from '../../../../website/blog/wp-content/uploads/figuredrawing/akt14.jpg'
+
 export const metadata: Metadata = {
   title: 'Digital Life Drawing ♣ essenmitsosse',
   description:
@@ -87,7 +95,7 @@ export default function Page() {
         </div>
         <div className="sixwide">
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt12.jpg"
+            src={imageAkt12.src}
             alt="nude guy from the back"
             title="digital nude male figure drawing"
             width="460"
@@ -97,7 +105,7 @@ export default function Page() {
         <hr />
         <div className="sixwide many">
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt10.jpg"
+            src={imageAkt10.src}
             alt="nacked boy squat"
             title="nude boy figure drawing sitting"
             width="460"
@@ -105,7 +113,7 @@ export default function Page() {
             className="marginbottom"
           />
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt2.jpg"
+            src={imageAkt2.src}
             alt="nude girl standing with crossed arms"
             title="nude female figure drawing standing"
             width="460"
@@ -113,7 +121,7 @@ export default function Page() {
             className="marginbottom"
           />
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt4.jpg"
+            src={imageAkt4.src}
             alt="black&#038;white head of a nude girl"
             title="nude girl figure drawing head black&#038;white"
             width="460"
@@ -123,7 +131,7 @@ export default function Page() {
         </div>
         <div className="sixwide many">
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt11.jpg"
+            src={imageAkt11.src}
             alt="nude boy sitting"
             title="nude boy figure drawing sitting"
             width="460"
@@ -131,7 +139,7 @@ export default function Page() {
             className="marginbottom"
           />
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt13.jpg"
+            src={imageAkt13.src}
             alt="nude old woman holding a ball"
             title="old nude woman figure drawing torso"
             width="460"
@@ -139,7 +147,7 @@ export default function Page() {
             className="marginbottom"
           />
           <img
-            src="blog/wp-content/uploads/figuredrawing/akt14.jpg"
+            src={imageAkt14.src}
             alt="detail of arm of nude old woman"
             title="old nude woman figure drawing closeup"
             width="460"

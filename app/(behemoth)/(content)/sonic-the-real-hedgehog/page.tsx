@@ -1,5 +1,8 @@
 import { Metadata } from 'next'
 
+import imageSonic from '../../../../website/blog/wp-content/uploads/sonic/sonic.jpg'
+import imageSonicpixel from '../../../../website/blog/wp-content/uploads/sonic/sonicpixel.png'
+
 export const metadata: Metadata = {
   title: 'Sonic The Real Hedgehog ♣ essenmitsosse',
   description: 'How would Sonic look like if he would exist in reality?',
@@ -46,7 +49,7 @@ export default function Page() {
       <div className="content white">
         <div>
           <img
-            src="blog/wp-content/uploads/sonic/sonic.jpg"
+            src={imageSonic.src}
             alt="Sonic the real Hedgehog with massive thighs"
             title="Sonic The Real Hedgehog"
             width="940"
@@ -117,7 +120,7 @@ export default function Page() {
         </div>
         <div className="sixwide center">
           <img
-            src="blog/wp-content/uploads/sonic/sonicpixel.png"
+            src={imageSonicpixel.src}
             alt="How a realistically sonic would look like in pixel"
             title="Sonic The Real Hedgehog Pixel"
             width="460"

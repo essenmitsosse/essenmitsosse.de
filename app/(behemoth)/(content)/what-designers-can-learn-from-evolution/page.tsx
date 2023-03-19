@@ -1,6 +1,15 @@
 import { Metadata } from 'next'
 import headerEvolution from '../../../../website/article/evolution/evolution.png'
 
+import imageBasic from '../../../../website/article/evolution/basic.png'
+import imageQuality from '../../../../website/article/evolution/quality.png'
+import imageDisadvantage from '../../../../website/article/evolution/disadvantage.png'
+import imageUsability from '../../../../website/article/evolution/usability.png'
+import imageEconomics from '../../../../website/article/evolution/economics.png'
+import imageConvergence from '../../../../website/article/evolution/convergence.png'
+import imageFlexibility from '../../../../website/article/evolution/flexibility.png'
+import imagePerfection from '../../../../website/article/evolution/perfection.png'
+
 export const metadata: Metadata = {
   title: 'What designers can learn from Evolution ♣ essenmitsosse',
   description:
@@ -65,7 +74,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/basic.png"
+            src={imageBasic.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -100,7 +109,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/quality.png"
+            src={imageQuality.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -152,7 +161,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/disadvantage.png"
+            src={imageDisadvantage.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -191,7 +200,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/usability.png"
+            src={imageUsability.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -229,7 +238,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/economics.png"
+            src={imageEconomics.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -264,7 +273,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/convergence.png"
+            src={imageConvergence.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -305,7 +314,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/flexibility.png"
+            src={imageFlexibility.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
@@ -341,7 +350,7 @@ export default function Page() {
           <img
             width="940"
             height="170"
-            src="article/evolution/perfection.png"
+            src={imagePerfection.src}
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
