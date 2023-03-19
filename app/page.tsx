@@ -34,7 +34,7 @@ export default function Home() {
       <ul id="navigation" className="black"></ul>
 
       <p className="logo">
-        <a href="index.html" title="Homepage" id="essenmitsosse">
+        <a href="/" title="Homepage" id="essenmitsosse">
           <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
         </a>
       </p>

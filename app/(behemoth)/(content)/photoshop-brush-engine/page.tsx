@@ -14,7 +14,7 @@ export default function ApplicationsForDigitalPainting() {
     <body className="single article">
       <ul id="navigation" className="black">
         <li className="home">
-          <a href="index.html" rel="index">
+          <a href="/" rel="index">
             Home
           </a>
         </li>
@@ -45,7 +45,7 @@ export default function ApplicationsForDigitalPainting() {
         style={{ backgroundImage: `url(${headerBrushEngine.src})` }}
       >
         <p className="logo">
-          <a href="index.html" id="essenmitsosse">
+          <a href="/" id="essenmitsosse" rel="index">
             <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
@@ -691,7 +691,7 @@ export default function ApplicationsForDigitalPainting() {
           <p>
             Don’t forget to follow me on
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
-            also check out my <a href="index.html">Portfolio</a>.
+            also check out my <a href="/">Portfolio</a>.
           </p>
         </div>
       </div>
