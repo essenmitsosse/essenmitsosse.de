@@ -1,94 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="blog/wp-content/themes/essenmitsosse-behemoth/style.css"
-      type="text/css"
-      media="screen"
-    />
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+import { Metadata } from 'next'
 
-    <title>The Anglerfish &clubs; essenmitsosse</title>
+export const metadata: Metadata = {
+  title: 'The Anglerfish ♣ essenmitsosse',
+  description: '',
+  keywords:
+    'anglerfish, cg-challenge, contest, digital painting, images, marcus blättermann, painting, photoshop',
+}
 
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="" />
-    <meta
-      name="keywords"
-      content="anglerfish, cg-challenge, contest, digital painting, images, marcus blättermann, painting, photoshop"
-    />
-    <meta name="date" content="2008-03-30" />
-    <meta name="author" content="Marcus Bl&auml;ttermann" />
+export default function Page() {
+  return (
+    <body class="single black portfolio">
+      <ul id="navigation" class="black">
+        <li class="home">
+          <a href="index.html" rel="index">
+            Home
+          </a>
+        </li>
+        <li class="articlenavigation">
+          <ul>
+            <li class="newer">
+              <a href="aztecs" rel="next">
+                <span class="arrow">&#9668;</span>
+                <span class="title">Aztecs</span>
+              </a>
+            </li>
+            <li class="older">
+              <a href="sparta-fanart" rel="prev">
+                <span class="arrow">&#9658;</span>
+                <span class="title">Sparta!</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-    <link rel="prev" title="Sparta!" href="sparta-fanart" />
-    <link rel="next" title="Aztecs" href="aztecs" />
-    <link rel="canonical" href="index.html" />
-  </head>
-
-  <body class="single black portfolio">
-    <ul id="navigation" class="black">
-      <li class="home"><a href="index.html" rel="index">Home</a></li>
-      <li class="articlenavigation">
-        <ul>
-          <li class="newer">
-            <a href="aztecs" rel="next"
-              ><span class="arrow">&#9668;</span>
-              <span class="title">Aztecs</span></a
-            >
-          </li>
-          <li class="older">
-            <a href="sparta-fanart" rel="prev"
-              ><span class="arrow">&#9658;</span>
-              <span class="title">Sparta!</span></a
-            >
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-    <div class="intro" style="background-image: url()">
-      <p class="logo">
-        <a href="index.html" id="essenmitsosse"
-          ><span class="club">&clubs;</span>essenmitsosse <em>presents</em></a
-        >
-      </p>
-      <h1>The Anglerfish</h1>
-    </div>
-
-    <div class="content white">
-      <div class="eightwide">
-        <img
-          src="blog/wp-content/uploads/portfolio/anglerfish.jpg"
-          alt="old man in boat trys to safe a drowning person which turns out to be an anglerfish"
-          title="The Anglerfish"
-          width="620"
-          height="1640"
-        />
-      </div>
-      <div class="fourwide">
-        This one was done for the
-        <a href="http://features.cgsociety.org/challenge/strange_behavior/"
-          >cg-Challenge “Strange Behaviour”</a
-        >.
-      </div>
-      <hr />
-      <div class="sixwide">
-        <h3><em>A little bit</em> about me</h3>
-        <p>
-          My name ist Marcus Blättermann. <br />I’m majoring in communication
-          design and work as a freelancer for illustration, print- & webdesign.
+      <div class="intro" style="background-image: url()">
+        <p class="logo">
+          <a href="index.html" id="essenmitsosse">
+            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+          </a>
         </p>
+        <h1>The Anglerfish</h1>
       </div>
 
-      <div class="sixwide">
-        <h3><em>What you should </em>do next</h3>
-        <p>
-          Don’t forget to follow me on
-          <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
-          also check out my <a href="index.html">Portfolio</a>.
-        </p>
+      <div class="content white">
+        <div class="eightwide">
+          <img
+            src="blog/wp-content/uploads/portfolio/anglerfish.jpg"
+            alt="old man in boat trys to safe a drowning person which turns out to be an anglerfish"
+            title="The Anglerfish"
+            width="620"
+            height="1640"
+          />
+        </div>
+        <div class="fourwide">
+          This one was done for the
+          <a href="http://features.cgsociety.org/challenge/strange_behavior/">
+            cg-Challenge “Strange Behaviour”
+          </a>
+          .
+        </div>
+        <hr />
+        <div class="sixwide">
+          <h3>
+            <em>A little bit</em> about me
+          </h3>
+          <p>
+            My name ist Marcus Blättermann. <br />
+            I’m majoring in communication design and work as a freelancer for
+            illustration, print- & webdesign.
+          </p>
+        </div>
+
+        <div class="sixwide">
+          <h3>
+            <em>What you should </em>do next
+          </h3>
+          <p>
+            Don’t forget to follow me on
+            <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
+            also check out my <a href="index.html">Portfolio</a>.
+          </p>
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  )
+}

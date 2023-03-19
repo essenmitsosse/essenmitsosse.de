@@ -1,114 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="blog/wp-content/themes/essenmitsosse-behemoth/style.css"
-      type="text/css"
-      media="screen"
-    />
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+import { Metadata } from 'next'
 
-    <title>Blockator &clubs; essenmitsosse</title>
+export const metadata: Metadata = {
+  title: 'Blockator ♣ essenmitsosse',
+  description:
+    'Blockator is an isometric 3-d Pixelfont, that is generated with Flash.',
+  keywords: 'font, marcus blättermann, pixel, student, Typography',
+}
 
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Blockator is an isometric 3-d Pixelfont, that is generated with Flash."
-    />
-    <meta
-      name="keywords"
-      content="font, marcus blättermann, pixel, student, Typography"
-    />
-    <meta name="date" content="2009-08-18" />
-    <meta name="author" content="Marcus Bl&auml;ttermann" />
+export default function Page() {
+  return (
+    <body class="single black portfolio">
+      <ul id="navigation" class="black">
+        <li class="home">
+          <a href="index.html" rel="index">
+            Home
+          </a>
+        </li>
+        <li class="articlenavigation">
+          <ul>
+            <li class="newer">
+              <a href="faust" rel="next">
+                <span class="arrow">&#9668;</span>
+                <span class="title">Faust</span>
+              </a>
+            </li>
+            <li class="older">
+              <a href="essenmitsosse-redesign" rel="prev">
+                <span class="arrow">&#9658;</span>
+                <span class="title">essenmitsosse Redesign</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-    <link
-      rel="prev"
-      title="essenmitsosse Redesign"
-      href="essenmitsosse-redesign"
-    />
-    <link rel="next" title="Wacom Intuos4 Review" href="wacom-intuos4-review" />
-    <link rel="canonical" href="index.html" />
-  </head>
-
-  <body class="single black portfolio">
-    <ul id="navigation" class="black">
-      <li class="home"><a href="index.html" rel="index">Home</a></li>
-      <li class="articlenavigation">
-        <ul>
-          <li class="newer">
-            <a href="faust" rel="next"
-              ><span class="arrow">&#9668;</span>
-              <span class="title">Faust</span></a
-            >
-          </li>
-          <li class="older">
-            <a href="essenmitsosse-redesign" rel="prev"
-              ><span class="arrow">&#9658;</span>
-              <span class="title">essenmitsosse Redesign</span></a
-            >
-          </li>
-        </ul>
-      </li>
-    </ul>
-
-    <div class="intro" style="background-image: url()">
-      <p class="logo">
-        <a href="index.html" id="essenmitsosse"
-          ><span class="club">&clubs;</span>essenmitsosse <em>presents</em></a
-        >
-      </p>
-      <h1>Blockator</h1>
-    </div>
-
-    <div class="content white">
-      <div style="margin-top: -80px">
-        <img
-          src="portfolioupload/blockator/blockator.gif"
-          alt="Blockator is an isometric 3-d Pixelfont, that is generated with Flash."
-          width="940"
-          height="1495"
-        />
+      <div class="intro" style="background-image: url()">
+        <p class="logo">
+          <a href="index.html" id="essenmitsosse">
+            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+          </a>
+        </p>
+        <h1>Blockator</h1>
       </div>
-      <div>
-        <object
-          width="940"
-          height="600"
-          data="portfolioupload/blockator/blockatorgenerator.swf"
-        >
-          <param
-            name="movie"
-            value="portfolioupload/blockator/blockatorgenerator.swf"
+
+      <div class="content white">
+        <div style="margin-top: -80px">
+          <img
+            src="portfolioupload/blockator/blockator.gif"
+            alt="Blockator is an isometric 3-d Pixelfont, that is generated with Flash."
+            width="940"
+            height="1495"
           />
-          <param name="allowscriptaccess" value="always" />
-          <embed
-            src="portfolioupload/blockator/blockatorgenerator.swf"
-            type="application/x-shockwave-flash"
-            allowscriptaccess="always"
+        </div>
+        <div>
+          <object
             width="940"
             height="600"
-          />
-        </object>
-      </div>
-      <hr />
-      <div class="sixwide">
-        <h3><em>A little bit</em> about me</h3>
-        <p>
-          My name ist Marcus Blättermann. <br />I’m majoring in communication
-          design and work as a freelancer for illustration, print- & webdesign.
-        </p>
-      </div>
+            data="portfolioupload/blockator/blockatorgenerator.swf"
+          >
+            <param
+              name="movie"
+              value="portfolioupload/blockator/blockatorgenerator.swf"
+            />
+            <param name="allowscriptaccess" value="always" />
+            <embed
+              src="portfolioupload/blockator/blockatorgenerator.swf"
+              type="application/x-shockwave-flash"
+              allowscriptaccess="always"
+              width="940"
+              height="600"
+            />
+          </object>
+        </div>
+        <hr />
+        <div class="sixwide">
+          <h3>
+            <em>A little bit</em> about me
+          </h3>
+          <p>
+            My name ist Marcus Blättermann. <br />
+            I’m majoring in communication design and work as a freelancer for
+            illustration, print- & webdesign.
+          </p>
+        </div>
 
-      <div class="sixwide">
-        <h3><em>What you should </em>do next</h3>
-        <p>
-          Don’t forget to follow me on
-          <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
-          also check out my <a href="index.html">Portfolio</a>.
-        </p>
+        <div class="sixwide">
+          <h3>
+            <em>What you should </em>do next
+          </h3>
+          <p>
+            Don’t forget to follow me on
+            <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
+            also check out my <a href="index.html">Portfolio</a>.
+          </p>
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  )
+}
