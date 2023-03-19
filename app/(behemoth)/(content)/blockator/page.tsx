@@ -52,26 +52,6 @@ export default function Page() {
             height="1495"
           />
         </div>
-        <div>
-          <object
-            width="940"
-            height="600"
-            data="portfolioupload/blockator/blockatorgenerator.swf"
-          >
-            <param
-              name="movie"
-              value="portfolioupload/blockator/blockatorgenerator.swf"
-            />
-            <param name="allowscriptaccess" value="always" />
-            <embed
-              src="portfolioupload/blockator/blockatorgenerator.swf"
-              type="application/x-shockwave-flash"
-              allowscriptaccess="always"
-              width="940"
-              height="600"
-            />
-          </object>
-        </div>
         <hr />
         <div className="sixwide">
           <h3>
