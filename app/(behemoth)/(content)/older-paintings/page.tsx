@@ -28,7 +28,7 @@ export default function Page() {
         </li>
       </ul>
 
-      <div class="intro" style="background-image: url()">
+      <div class="intro">
         <p class="logo">
           <a href="index.html" id="essenmitsosse">
             <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
