@@ -54,11 +54,7 @@ export default function Home() {
                 . I work as a freelancer for illustration, print- & webdesign.
               </p>
               <p>
-                You should get my{' '}
-                <a href="https://feeds.feedburner.com/essenmitsosse">
-                  RSS-Feed
-                </a>{' '}
-                and follow me on{' '}
+                You should follow me on{' '}
                 <a href="http://twitter.com/essenmitsosse">Twitter</a>.
               </p>
 
