@@ -10,42 +10,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="realistically-painted-bowser" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Realistically Painted Bowser</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Realistically Painted Bowser</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="linen-tunic" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Linen Tunic</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Linen Tunic</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Digital Life Drawing</h1>
       </div>
 
-      <div class="content white">
-        <div class="sixwide">
+      <div className="content white">
+        <div className="sixwide">
           <p>
             The last times I went to the nude figure drawing class I took my
             Laptop with me to try doing it digitally.
@@ -85,7 +85,7 @@ export default function Page() {
             without any handicaps from the medium itself in such a fast way.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <img
             src="blog/wp-content/uploads/figuredrawing/akt12.jpg"
             alt="nude guy from the back"
@@ -95,14 +95,14 @@ export default function Page() {
           />
         </div>
         <hr />
-        <div class="sixwide many">
+        <div className="sixwide many">
           <img
             src="blog/wp-content/uploads/figuredrawing/akt10.jpg"
             alt="nacked boy squat"
             title="nude boy figure drawing sitting"
             width="460"
             height="576"
-            class="marginbottom"
+            className="marginbottom"
           />
           <img
             src="blog/wp-content/uploads/figuredrawing/akt2.jpg"
@@ -110,7 +110,7 @@ export default function Page() {
             title="nude female figure drawing standing"
             width="460"
             height="552"
-            class="marginbottom"
+            className="marginbottom"
           />
           <img
             src="blog/wp-content/uploads/figuredrawing/akt4.jpg"
@@ -118,17 +118,17 @@ export default function Page() {
             title="nude girl figure drawing head black&#038;white"
             width="460"
             height="357"
-            class="marginbottom"
+            className="marginbottom"
           />
         </div>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <img
             src="blog/wp-content/uploads/figuredrawing/akt11.jpg"
             alt="nude boy sitting"
             title="nude boy figure drawing sitting"
             width="460"
             height="576"
-            class="marginbottom"
+            className="marginbottom"
           />
           <img
             src="blog/wp-content/uploads/figuredrawing/akt13.jpg"
@@ -136,7 +136,7 @@ export default function Page() {
             title="old nude woman figure drawing torso"
             width="460"
             height="460"
-            class="marginbottom"
+            className="marginbottom"
           />
           <img
             src="blog/wp-content/uploads/figuredrawing/akt14.jpg"
@@ -144,11 +144,11 @@ export default function Page() {
             title="old nude woman figure drawing closeup"
             width="460"
             height="460"
-            class="marginbottom"
+            className="marginbottom"
           />
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -159,7 +159,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

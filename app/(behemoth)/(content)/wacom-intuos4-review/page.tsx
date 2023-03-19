@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerIntuos4 from '../../../../website/blog/wp-content/uploads/intuos4/intuos4.png'
 
 export const metadata: Metadata = {
   title: 'Wacom Intuos4 Review ♣ essenmitsosse',
@@ -10,27 +11,27 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="what-designers-can-learn-from-evolution" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   <em>What designers can learn from</em> Evolution
                 </span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="the-designs-of-star-wars" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   The Designs Of Star Wars
                   <em>10 reasons why they are awesome</em>
                 </span>
@@ -41,12 +42,12 @@ export default function Page() {
       </ul>
 
       <div
-        class="intro color"
-        style="background-image: url(blog/wp-content/uploads/intuos4/intuos4.png)"
+        className="intro color"
+        style={{ backgroundImage: `url(${headerIntuos4.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -54,8 +55,8 @@ export default function Page() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2009-08-24</p>
         </div>
         <p>
@@ -80,7 +81,7 @@ export default function Page() {
         <h2>Improvements</h2>
         <hr />
         <h3>New Design</h3>
-        <div class="alignright">
+        <div className="alignright">
           <img
             src="blog/wp-content/uploads/intuos4/mainphoto.jpg"
             title="Wacom Intuos4 L"
@@ -112,7 +113,7 @@ export default function Page() {
           probably become useless after some time.
         </p>
         <h3>Touching Ring</h3>
-        <div class="alignright">
+        <div className="alignright">
           <img
             src="blog/wp-content/uploads/intuos4/touchingring.jpg"
             title="Wacom Intuos4 Touching Ring"
@@ -158,14 +159,14 @@ export default function Page() {
           New rubber pen nibs <br />
           &#038; improved pen nib holder
         </h3>
-        <div class="alignright">
+        <div className="alignright">
           <img
             src="blog/wp-content/uploads/intuos4/pentips.png"
             title="Wacom Intuos4 Pen Holder"
             alt="Wacom Intuos4 Pen Holder"
             width="460"
             height="255"
-            style="margin-top: -100px"
+            style={{ marginTop: '-100px' }}
           />
         </div>
         <p>
@@ -195,14 +196,14 @@ export default function Page() {
           precision.
         </p>
         <h3>Radial Menu</h3>
-        <div class="alignright">
+        <div className="alignright">
           <img
             src="blog/wp-content/uploads/intuos4/radialmenu.png"
             title="Wacom Intuos4 Radial Menu"
             alt="Wacom Intuos4 Radial Menu"
             width="460"
             height="300"
-            style="margin-top: -100px; margin-bottom: -80px"
+            style={{ marginTop: '-100px', marginBottom: '-80px' }}
           />
         </div>
         <p>
@@ -214,9 +215,9 @@ export default function Page() {
         <h2>Comparison of Intuos3 &#038; Intuos4</h2>
         <table>
           <colgroup>
-            <col style="width: 160px" />
-            <col style="width: 380px" />
-            <col style="width: 380px" />
+            <col style={{ width: '160px' }} />
+            <col style={{ width: '380px' }} />
+            <col style={{ width: '380px' }} />
           </colgroup>
           <thead>
             <tr>
@@ -377,7 +378,7 @@ export default function Page() {
           </tr>
         </table>
         <h2>Overview</h2>
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>+ Pros</h3>
           <ul>
             <li>
@@ -419,7 +420,7 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>&#8211; Cons</h3>
           <ul>
             <li>
@@ -480,7 +481,7 @@ export default function Page() {
           ) my suffice for you.
         </p>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -491,7 +492,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

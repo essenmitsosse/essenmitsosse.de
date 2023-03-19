@@ -9,42 +9,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="the-anglerfish" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">The Anglerfish</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">The Anglerfish</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="blondheadredhead" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Blondehead &#038; Redhead</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Blondehead &#038; Redhead</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Sparta!</h1>
       </div>
 
-      <div class="content white">
-        <div class="fullwidth">
+      <div className="content white">
+        <div className="fullwidth">
           <img
             src="blog/wp-content/uploads/portfolio/sparta.jpg"
             alt="A Spartan who is going to cut the head of an Persian"
@@ -54,7 +54,7 @@ export default function Page() {
           />
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -65,7 +65,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

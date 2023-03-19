@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerGraphicsTablet from '../../../../website/blog/wp-content/uploads/graphicstablet/graphicstablet-header.png'
 
 export const metadata: Metadata = {
   title: 'An introduction to the Graphics Tablet ♣ essenmitsosse',
@@ -9,19 +10,19 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="applications-for-digital-painting" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   <em>11 applications for</em> Digital Painting
                 </span>
               </a>
@@ -31,14 +32,12 @@ export default function Page() {
       </ul>
 
       <div
-        class="intro color"
-        style="
-        background-image: url(blog/wp-content/uploads/graphicstablet/graphicstablet-header.png);
-      "
+        className="intro color"
+        style={{ backgroundImage: `url(${headerGraphicsTablet.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -46,8 +45,8 @@ export default function Page() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2008-03-28</p>
         </div>
         <p>
@@ -59,7 +58,7 @@ export default function Page() {
         <h2>
           Why should I use <em>one of these things?</em>
         </h2>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Some people may think, that a mouse suffices to use a graphic
             software. If the point is just to do some photo manipulating this
@@ -81,7 +80,7 @@ export default function Page() {
             can&#8217;t work.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <blockquote>
             <p>
               A graphics tablet (or digitizing tablet, graphics pad, drawing
@@ -194,7 +193,7 @@ export default function Page() {
           chance.
         </p>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -205,7 +204,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerEvolution from '../../../../website/article/evolution/evolution.png'
 
 export const metadata: Metadata = {
   title: 'What designers can learn from Evolution ♣ essenmitsosse',
@@ -10,19 +11,19 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="older">
+            <li className="older">
               <a href="wacom-intuos4-review" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   Wacom Intuos4 <em>Review</em>
                 </span>
               </a>
@@ -32,12 +33,12 @@ export default function Page() {
       </ul>
 
       <div
-        class="intro color"
-        style="background-image: url(article/evolution/evolution.png)"
+        className="intro color"
+        style={{ backgroundImage: `url(${headerEvolution.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -45,8 +46,8 @@ export default function Page() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2009-09-10</p>
         </div>
         <p>
@@ -68,7 +69,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Evolution is based upon two basic principles: Heredity and
@@ -80,7 +81,7 @@ export default function Page() {
             recombination can lead to new and advantageous combinations.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             Ideas are the genes of design. Every design is based upon ideas or
@@ -102,7 +103,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Evolution won’t breed something that sucks. If something is really
@@ -121,7 +122,7 @@ export default function Page() {
             as a whole.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             What natural selection is to evolution, supply and demand is to
@@ -152,7 +153,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Some animals show traits, that seem to be disadvantageous in the
@@ -168,7 +169,7 @@ export default function Page() {
             on this ability.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             In design something really similar occurs. Several objects just
@@ -190,7 +191,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Eyes are a fine invention. You can see the world around you with
@@ -204,7 +205,7 @@ export default function Page() {
             less elaborated.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             Usability shouldn’t be misunderstood as something like a nice
@@ -227,7 +228,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Ever wondered why there’s no super-strong animal that can crush an
@@ -241,7 +242,7 @@ export default function Page() {
             because you’re out of elephants.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             It’s no secret, how important it’s to have a look at the costs of
@@ -261,7 +262,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Creatures that live in water are quit uncreative. Nearly everybody
@@ -279,7 +280,7 @@ export default function Page() {
             fill in different ecological niches.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             Sometimes different people come up with the same idea. This is often
@@ -302,7 +303,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             Nothing can last forever. No matter how good creatures have adapted
@@ -315,7 +316,7 @@ export default function Page() {
             it.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             Designers have a great advantage over evolution: sometimes they
@@ -337,7 +338,7 @@ export default function Page() {
             alt="A diagram showing a basic principle of evolution"
           />
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Evolution</h4>
           <p>
             There’s no such thing as perfection. Evolution has no goal and
@@ -351,7 +352,7 @@ export default function Page() {
             comparison.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <h4>Design</h4>
           <p>
             Throughout history a lot of people thought they have found the
@@ -377,7 +378,7 @@ export default function Page() {
           nowhere. Knowing your bounds is important if you want to push them.
         </p>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -388,7 +389,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

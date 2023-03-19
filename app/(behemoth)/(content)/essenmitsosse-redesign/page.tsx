@@ -8,41 +8,41 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="blockator" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Blockator</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Blockator</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="portrait-class" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Portrait Class</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Portrait Class</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>essenmitsosse Redesign</h1>
       </div>
 
-      <div class="content white">
+      <div className="content white">
         <div>
           <img
             src="blog/wp-content/uploads/essenmitsosse/website.png"
@@ -64,7 +64,7 @@ export default function Page() {
           this website.
         </p>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -75,7 +75,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

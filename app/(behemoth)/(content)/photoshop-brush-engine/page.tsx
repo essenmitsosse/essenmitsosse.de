@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerBrushEngine from '../../../../website/blog/wp-content/uploads/photoshop/brushengine-header.png'
 
 export const metadata: Metadata = {
   title: 'An Introduction to the Photoshop Brush Engine ♣ essenmitsosse',
@@ -10,27 +11,27 @@ export const metadata: Metadata = {
 
 export default function ApplicationsForDigitalPainting() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="digital-painters" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   35 Digital Painters <em>you shouldn’t miss</em>
                 </span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="how-to-set-up-color-management" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   <em>How to set up</em> Color Management
                 </span>
               </a>
@@ -40,14 +41,12 @@ export default function ApplicationsForDigitalPainting() {
       </ul>
 
       <div
-        class="intro color"
-        style="
-        background-image: url(blog/wp-content/uploads/photoshop/brushengine-header.png);
-      "
+        className="intro color"
+        style={{ backgroundImage: `url(${headerBrushEngine.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -55,8 +54,8 @@ export default function ApplicationsForDigitalPainting() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2008-05-03</p>
         </div>
         <p>
@@ -69,7 +68,7 @@ export default function ApplicationsForDigitalPainting() {
           to your brushwork.
         </p>
         <h2>How to get started</h2>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <p>
             Open a new blank file where you will be able to test your new brush.
           </p>
@@ -83,7 +82,7 @@ export default function ApplicationsForDigitalPainting() {
             and edit your brushes.
           </p>
         </div>
-        <div class="sixwide many center">
+        <div className="sixwide many center">
           <img
             src="blog/wp-content/uploads/photoshop/brushbutton.png"
             alt=""
@@ -114,7 +113,7 @@ export default function ApplicationsForDigitalPainting() {
           these marks are drawn on the canvas.
         </p>
         <h2>Jitters</h2>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <p>
             Some of the modifications you do with a brush are based on so called
             jitters. jitters can work in 2 different ways.
@@ -199,7 +198,7 @@ export default function ApplicationsForDigitalPainting() {
             </li>
           </ul>
         </div>
-        <div class="sixwide many center">
+        <div className="sixwide many center">
           <img
             src="blog/wp-content/uploads/photoshop/jitter.png"
             alt=""
@@ -215,7 +214,7 @@ export default function ApplicationsForDigitalPainting() {
           scratch you should just select a simple round brush.
         </p>
         <h2>Brush Tip Shape</h2>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <p>
             This is were you really start to set up your own brush. In the top
             of this menu you can choose the basic shape of your brush. This can
@@ -273,14 +272,14 @@ export default function ApplicationsForDigitalPainting() {
             </li>
           </ul>
         </div>
-        <div class="sixwide many center">
+        <div className="sixwide many center">
           <img
             src="blog/wp-content/uploads/2008/05/brush-tip-shape.gif"
             alt=""
             title="Brush Tip Shape"
             width="350"
             height="405"
-            class="alignnone size-full wp-image-104"
+            className="alignnone size-full wp-image-104"
             srcset="
             https://essenmitsosse.de/blog/wp-content/uploads/2008/05/brush-tip-shape.gif         350w,
             https://essenmitsosse.de/blog/wp-content/uploads/2008/05/brush-tip-shape-129x150.gif 129w,
@@ -290,9 +289,9 @@ export default function ApplicationsForDigitalPainting() {
           />
         </div>
         <h2>Shape Dynamics</h2>
-        <ul class="fullwidth">
+        <ul className="fullwidth">
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 <strong>The size jitter</strong> (left: pen presure, right:
                 random) is one of the most common Jitters, especially when used
@@ -300,57 +299,57 @@ export default function ApplicationsForDigitalPainting() {
                 in a stroke.
               </p>
             </div>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <img
                 src="blog/wp-content/uploads/2008/05/size.gif"
                 alt=""
                 title="size"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 <strong>The angle jitter</strong> (left: pen presure, right:
                 random) allows you to determine the angle of the brush marks.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/angle.gif"
                 alt=""
                 title="angle"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-105"
+                className="alignnone size-full wp-image-105"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 <strong>The roundness jitter</strong> (left: pen presure, right:
                 random) works the same way as the <em>roundness</em> from the
                 brush tip <em>shape menu</em>, just that it lets you vary it.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/roundness.gif"
                 alt=""
                 title="roundness"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-109"
+                className="alignnone size-full wp-image-109"
               />
             </div>
           </li>
         </ul>
         <h2>Scattering</h2>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <p>
             With Scatter the position of you brush tip is randomized around its
             original position. If Both Axis is enabled every single brush mark
@@ -369,18 +368,18 @@ export default function ApplicationsForDigitalPainting() {
             marks of one interval would be drawn over each other.
           </p>
         </div>
-        <div class="sixwide many center">
+        <div className="sixwide many center">
           <img
             src="blog/wp-content/uploads/2008/05/scattering.gif"
             alt=""
             title="scattering"
             width="450"
             height="80"
-            class="alignnone size-full wp-image-107"
+            className="alignnone size-full wp-image-107"
           />
         </div>
         <h2>Texture</h2>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <p>
             The texture menu gives you the possibility to add more structure to
             you brush, by laying a texture over your brush.
@@ -418,18 +417,18 @@ export default function ApplicationsForDigitalPainting() {
             </li>
           </ul>
         </div>
-        <div class="sixwide many center">
+        <div className="sixwide many center">
           <img
             src="blog/wp-content/uploads/2008/05/texture.gif"
             alt=""
             title="texture"
             width="450"
             height="80"
-            class="alignnone size-full wp-image-107"
+            className="alignnone size-full wp-image-107"
           />
         </div>
         <h2>Dual Brush</h2>
-        <div class="sixwide many">
+        <div className="sixwide many">
           <p>
             This is the most complex option, but also offers you the most
             interesting effects.
@@ -451,20 +450,20 @@ export default function ApplicationsForDigitalPainting() {
             combinations.
           </p>
         </div>
-        <div class="sixwide many center">
+        <div className="sixwide many center">
           <img
             src="blog/wp-content/uploads/2008/05/dual-brush.gif"
             alt=""
             title="dualbrush"
             width="450"
             height="80"
-            class="alignnone size-full wp-image-107"
+            className="alignnone size-full wp-image-107"
           />
         </div>
         <h2>Color Dynamics</h2>
-        <ul class="fullwidth">
+        <ul className="fullwidth">
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 With the <strong>Foreground/Background Jitter</strong> you can
                 switch between your foreground and your background color. If
@@ -475,19 +474,19 @@ export default function ApplicationsForDigitalPainting() {
                 on what colors you choose for the fore- and background.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/foreground-backgroundjitter.jpg"
                 alt=""
                 title="foreground-backgroundjitter"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 Similar effects can be created with the <strong>Hue</strong>,
                 <strong>Saturation</strong> and
@@ -495,14 +494,14 @@ export default function ApplicationsForDigitalPainting() {
                 the values, giving you a more diversification in your color.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/huejitter.jpg"
                 alt=""
                 title="huejitter"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
               <br />
               <img
@@ -511,7 +510,7 @@ export default function ApplicationsForDigitalPainting() {
                 title="saturationjitter"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
               <br />
               <img
@@ -520,7 +519,7 @@ export default function ApplicationsForDigitalPainting() {
                 title="rightnessjitter"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
@@ -536,9 +535,9 @@ export default function ApplicationsForDigitalPainting() {
           </li>
         </ul>
         <h2>Other Dynamics</h2>
-        <ul class="fullwidth">
+        <ul className="fullwidth">
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 The <strong>Opacity Jitter</strong> is probably the most used of
                 all these options. It just determines the opacity of your Brush.
@@ -549,19 +548,19 @@ export default function ApplicationsForDigitalPainting() {
                 tool this becomes Exposure.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/opacity.jpg"
                 alt=""
                 title="opacity"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 <strong>Flow Jitter</strong> works a bit different than opacity.
                 While opacity influences the covering power of the whole brush
@@ -572,41 +571,41 @@ export default function ApplicationsForDigitalPainting() {
                 for some time.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/flow.jpg"
                 alt=""
                 title="flow"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
         </ul>
         <h2>Other Brush Options</h2>
-        <ul class="fullwidth">
+        <ul className="fullwidth">
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 If you activate <strong>Noise</strong> there will be something
                 like a noise filter laid over your brushstrokes. This makes only
                 sense for brush tips with grayscales.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/noise.jpg"
                 alt=""
                 title="noise"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 <strong>Wet Edges</strong> makes the inner parts of your brush a
                 bit more opaque and the edges darker. Because you can&#8217;t
@@ -614,19 +613,19 @@ export default function ApplicationsForDigitalPainting() {
                 nice effects.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/wetedges.jpg"
                 alt=""
                 title="wet edges"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 The <strong>Airbrush</strong> gives you the possibility to draw
                 new brush marks even when you are not moving your brush and just
@@ -634,19 +633,19 @@ export default function ApplicationsForDigitalPainting() {
                 be combined with it.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/airbrush.jpg"
                 alt=""
                 title="airbrush"
                 width="450"
                 height="80"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
           <li>
-            <div class="sixwide many">
+            <div className="sixwide many">
               <p>
                 If you have the problem that your brushe strokes are too angular
                 when you drawn a curve to fast you should activate
@@ -654,14 +653,14 @@ export default function ApplicationsForDigitalPainting() {
                 also decrease your performance a bit.
               </p>
             </div>
-            <div class="sixwide many center">
+            <div className="sixwide many center">
               <img
                 src="blog/wp-content/uploads/2008/05/smoothing.jpg"
                 alt=""
                 title="smoothing"
                 width="450"
                 height="117"
-                class="alignnone size-full wp-image-107"
+                className="alignnone size-full wp-image-107"
               />
             </div>
           </li>
@@ -674,7 +673,7 @@ export default function ApplicationsForDigitalPainting() {
           </li>
         </ul>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -685,7 +684,7 @@ export default function ApplicationsForDigitalPainting() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

@@ -9,42 +9,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="sparta-fanart" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Sparta!</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Sparta!</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="older-paintings" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Older Paintings</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Older Paintings</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Blondehead &#038; Redhead</h1>
       </div>
 
-      <div class="content white">
-        <div class="sixwide">
+      <div className="content white">
+        <div className="sixwide">
           <img
             src="blog/wp-content/uploads/portfolio/blondhead.jpg"
             alt="painting of a blonde girl with patterned clothing"
@@ -53,7 +53,7 @@ export default function Page() {
             height="662"
           />
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <img
             src="blog/wp-content/uploads/portfolio/redhead.jpg"
             alt="A redhead nip slip"
@@ -63,7 +63,7 @@ export default function Page() {
           />
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -74,7 +74,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

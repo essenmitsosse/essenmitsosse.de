@@ -9,42 +9,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="the-human-brain" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">The Human Brain</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">The Human Brain</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="creature-combat" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Creature Combat IV</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Creature Combat IV</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>kino.120a</h1>
       </div>
 
-      <div class="content white">
-        <div class="fourwide">
+      <div className="content white">
+        <div className="fourwide">
           <div>
             These poster series was done for our student cinema
             <a href="http://kino120a.de/">kino.120a</a> at Burg Giebichenstein.
@@ -59,7 +59,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="Anderwelten — semester program"
@@ -70,7 +70,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="Underdogs — semester program"
@@ -82,7 +82,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Bob Dylan"
@@ -93,7 +93,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there"
@@ -104,7 +104,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Marcus Carl Franklin"
@@ -115,7 +115,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Christian Bale"
@@ -126,7 +126,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Cate Blanchett"
@@ -137,7 +137,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there"
@@ -148,7 +148,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Heath Ledger"
@@ -159,7 +159,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Bin Whishaw"
@@ -170,7 +170,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="I’m not there — Richard Gere"
@@ -181,7 +181,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fullwidth">
+        <div className="fullwidth">
           <p>
             <img
               title="Berlin Calling"
@@ -192,7 +192,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="Metropolis"
@@ -203,7 +203,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="Allegro non Troppo"
@@ -224,7 +224,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             <img
               title="Allegro non Troppo"
@@ -245,7 +245,7 @@ export default function Page() {
             />
           </p>
         </div>
-        <div class="eightwide">
+        <div className="eightwide">
           <div>
             <iframe
               width="620"
@@ -258,7 +258,7 @@ export default function Page() {
           </div>
         </div>
         <hr />
-        <div class="fourwide">
+        <div className="fourwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -271,7 +271,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="fourwide">
+        <div className="fourwide">
           <h3>
             <em>What you should </em>do next
           </h3>
@@ -286,7 +286,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="fourwide">
+        <div className="fourwide">
           <h3>
             <em>If you didn&#8217;t like this one</em>You will hate these
           </h3>

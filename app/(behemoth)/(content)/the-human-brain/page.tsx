@@ -10,41 +10,41 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="jack-of-all-trades" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Jack of all Trades</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Jack of all Trades</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="kino-120a" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">kino.120a</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">kino.120a</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>The Human Brain</h1>
       </div>
 
-      <div class="content white">
+      <div className="content white">
         <p>
           <iframe
             width="940"
@@ -55,7 +55,7 @@ export default function Page() {
             allowfullscreen
           ></iframe>
         </p>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             Animated movie created during an exchange semester at Staffordshire
             University. The part about how the brain not works is inspired by
@@ -78,7 +78,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -89,7 +89,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

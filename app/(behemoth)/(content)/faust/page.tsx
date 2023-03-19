@@ -8,42 +8,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="creature-combat" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Creature Combat IV</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Creature Combat IV</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="blockator" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Blockator</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Blockator</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Faust</h1>
       </div>
 
-      <div class="content white">
-        <div class="eightwide">
+      <div className="content white">
+        <div className="eightwide">
           <img
             src="blog/wp-content/uploads/faust/cover.png"
             alt="cover of my comic Faust"
@@ -52,7 +52,7 @@ export default function Page() {
             height="919"
           />
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             My new comic project will premiere at the
             <a href="http://www.comic-salon.de/">Comic Salon Erlangen</a>, at
@@ -65,7 +65,7 @@ export default function Page() {
           <p>More infos soon …</p>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -76,7 +76,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

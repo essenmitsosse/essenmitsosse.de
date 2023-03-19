@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerPortrait from '../../../../website/blog/wp-content/uploads/likeness/portrait-header.png'
 
 export const metadata: Metadata = {
   title: 'How to achieve Likeness In A Portrait ♣ essenmitsosse',
@@ -10,27 +11,27 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="how-to-set-up-color-management" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   <em>How to set up</em> Color Management
                 </span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="applications-for-digital-painting" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   <em>11 applications for</em> Digital Painting
                 </span>
               </a>
@@ -40,14 +41,12 @@ export default function Page() {
       </ul>
 
       <div
-        class="intro color"
-        style="
-        background-image: url(blog/wp-content/uploads/likeness/portrait-header.png);
-      "
+        className="intro color"
+        style={{ backgroundImage: `url(${headerPortrait.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -55,8 +54,8 @@ export default function Page() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2008-04-08</p>
         </div>
         <p>
@@ -69,7 +68,7 @@ export default function Page() {
         <h2>
           <em>It&#8217;s not about </em>the proportion
         </h2>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Just look at the picture to the right. Can you recognize this
             person? I drew exactly over a photo of him, so the proportion should
@@ -98,7 +97,7 @@ export default function Page() {
             the face are not that important for the recognition value of a face.
           </p>
         </div>
-        <div class="sixwide center">
+        <div className="sixwide center">
           <img
             src="blog/wp-content/uploads/2008/04/whoisthis.jpg"
             alt="Who is this?"
@@ -109,7 +108,7 @@ export default function Page() {
         <h2>
           Creating Likeness <em>in a Portrait</em>
         </h2>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Now take a look at this picture. This time it should be quite easy
             to identify the person.
@@ -162,7 +161,7 @@ export default function Page() {
             drawing just don&#8217;t make sense to our brain.
           </p>
         </div>
-        <div class="sixwide center">
+        <div className="sixwide center">
           <img
             src="blog/wp-content/uploads/2008/04/whoisthis2.jpg"
             alt="Who is this?"
@@ -245,7 +244,7 @@ export default function Page() {
           increase the likeness of them.
         </p>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -256,7 +255,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

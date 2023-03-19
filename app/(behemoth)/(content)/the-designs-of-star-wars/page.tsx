@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerVader from '../../../../website/blog/wp-content/uploads/starwars/vader-intro.png'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -10,27 +11,27 @@ export const metadata: Metadata = {
 
 export default function ApplicationsForDigitalPainting() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="wacom-intuos4-review" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   Wacom Intuos4 <em>Review</em>
                 </span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="digital-painters" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   35 Digital Painters <em>you shouldn’t miss</em>
                 </span>
               </a>
@@ -40,14 +41,12 @@ export default function ApplicationsForDigitalPainting() {
       </ul>
 
       <div
-        class="intro color"
-        style="
-        background-image: url(blog/wp-content/uploads/starwars/vader-intro.png);
-      "
+        className="intro color"
+        style={{ backgroundImage: `url(${headerVader.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -55,8 +54,8 @@ export default function ApplicationsForDigitalPainting() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2008-09-24</p>
         </div>
         <p>
@@ -85,7 +84,7 @@ export default function ApplicationsForDigitalPainting() {
           some merchandising products, which often alter the proportion, for
           example to let action figures fit in them.
         </p>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/atat.jpg"
@@ -119,7 +118,7 @@ export default function ApplicationsForDigitalPainting() {
             .
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/milleniumfalcon.jpg"
@@ -145,7 +144,7 @@ export default function ApplicationsForDigitalPainting() {
             suspense is completely destroyed.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/sandcrawler.jpg"
@@ -182,7 +181,7 @@ export default function ApplicationsForDigitalPainting() {
           This makes sure that the look doesn&#8217;t have to rely on detail but
           works also from a great distance.
         </p>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/stardestroyer.jpg"
@@ -205,7 +204,7 @@ export default function ApplicationsForDigitalPainting() {
             looking like a simple form upon which details are affixed.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/deathstar.jpg"
@@ -228,7 +227,7 @@ export default function ApplicationsForDigitalPainting() {
             huge.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/tiefighter.jpg"
@@ -265,7 +264,7 @@ export default function ApplicationsForDigitalPainting() {
           it. The darkest black will be achieved with white besides. Contrasts
           are also a great way to avoid something look boring.
         </p>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/bobafett.jpg"
@@ -288,7 +287,7 @@ export default function ApplicationsForDigitalPainting() {
             together on all his adventures.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/moncalamari.jpg"
@@ -310,7 +309,7 @@ export default function ApplicationsForDigitalPainting() {
             is contrasted by the bridges and towers sticking out of it.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/cloudcity.jpg"
@@ -349,7 +348,7 @@ export default function ApplicationsForDigitalPainting() {
           crafts and uniforms look much less organized and more like they were
           stuffed together from different sources.
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/imperialforces.jpg"
@@ -382,7 +381,7 @@ export default function ApplicationsForDigitalPainting() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/ties.jpg"
@@ -433,7 +432,7 @@ export default function ApplicationsForDigitalPainting() {
           Plus if something fantastic looks like it would actually work, it
           becomes even more fantastic.
         </p>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/blockaderunner.jpg"
@@ -457,7 +456,7 @@ export default function ApplicationsForDigitalPainting() {
             thus makes it so believable.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/r2d2.jpg"
@@ -483,7 +482,7 @@ export default function ApplicationsForDigitalPainting() {
             there for its own sake.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/jabbathehut.jpg"
@@ -523,7 +522,7 @@ export default function ApplicationsForDigitalPainting() {
           look, that George Lucas called a “used universe”, heavily supports the
           believability of the Star Wars universe.
         </p>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/slave1.jpg"
@@ -550,7 +549,7 @@ export default function ApplicationsForDigitalPainting() {
             revolution and it adds enormously to the believability of Star Wars.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/sssbridge.jpg"
@@ -574,7 +573,7 @@ export default function ApplicationsForDigitalPainting() {
             even has to get its hands dirty when blowing up an entire planet.
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/tuskenraider.jpg"
@@ -608,7 +607,7 @@ export default function ApplicationsForDigitalPainting() {
           to do it. I already told you 6 of them and how they where used in Star
           Wars to produce great designs. So here&#8217;s another rule:
         </p>
-        <p class="singleline">Screw the rules!</p>
+        <p className="singleline">Screw the rules!</p>
         <p>
           There is nothing more boring than a standard design that has been used
           several times before, so do something unexpected. Sometime it&#8217;s
@@ -621,14 +620,14 @@ export default function ApplicationsForDigitalPainting() {
           after). Even small design choices can be approached in an usual way,
           making things more interesting.
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/nebulon.jpg"
               title="Nebulon B Frigate"
               width="460"
               height="300"
-              class="alignnone size-full wp-image-503"
+              className="alignnone size-full wp-image-503"
             />
           </div>
           <h3>Nebulon-B escort frigate</h3>
@@ -642,7 +641,7 @@ export default function ApplicationsForDigitalPainting() {
             ship.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <div>
             <img
               src="blog/wp-content/uploads/starwars/chewie.jpg"
@@ -672,14 +671,14 @@ export default function ApplicationsForDigitalPainting() {
           creating a certain look or feeling.
         </p>
         <h3>Blasters</h3>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Did you found the weapons of Star Wars somehow familiar? Like
             you&#8217;ve seen them before? That&#8217;s not by accident. All
             small arms in Star Wars are based upon existing weapons from the
             real world.
           </p>
-          <div class="center">
+          <div className="center">
             <img
               src="blog/wp-content/uploads/starwars/mauser.jpg"
               title="Mauser C-96 and Han Solo&#039;s DL-44 Heavy Blaster"
@@ -713,7 +712,7 @@ export default function ApplicationsForDigitalPainting() {
             credibility.
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Here is a list of other weapons used in Star Wars that are based on
             actual weapons:
@@ -866,7 +865,7 @@ export default function ApplicationsForDigitalPainting() {
         </div>
         <hr />
         <h3>Darth Vader</h3>
-        <div class="sixwide">
+        <div className="sixwide">
           <img
             src="blog/wp-content/uploads/starwars/vader.jpg"
             title="Darth Vader"
@@ -874,7 +873,7 @@ export default function ApplicationsForDigitalPainting() {
             height="354"
           />
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             I think nobody out there who hasn&#8217;t lived under a rock for the
             last 30 years has never seen Darth Vader. He&#8217;s a symbol for
@@ -947,7 +946,7 @@ export default function ApplicationsForDigitalPainting() {
           Star Wars and try if you can recognize them. Notice especially how
           good some objects are identifiable from different angles.
         </p>
-        <div class="fullwidth">
+        <div className="fullwidth">
           <img
             src="blog/wp-content/uploads/starwars/shapes.gif"
             title="Boba Fett, Chewbacca, Darth Vader, C3-P0, Jabba the Hut, Yoda, R2-D2, TIE-Fighter, TIE-Interceptor, AT-AT, AT-ST, A-Wing, X-Wing, TIE-Bomber, Speederbike, B-Wing, Y-Wing, Millenium Falcon, Landspeeder, Lambda Shuttle, Slave 1, Star Destroyer, Blockade Runner, Nebulon B Frigate"
@@ -957,13 +956,13 @@ export default function ApplicationsForDigitalPainting() {
         <h2>
           <em>Reason &#8470;1</em> Lightsabers
         </h2>
-        <div class="center sixwide">
+        <div className="center sixwide">
           <img
             src="blog/wp-content/uploads/starwars/lightsaber.png"
             title="Luke&#039;s Lightsaber"
             width="300"
             height="370"
-            style="margin-top: -140px"
+            style={{ marginTop: '-140px' }}
           />
         </div>
         <p>
@@ -971,7 +970,7 @@ export default function ApplicationsForDigitalPainting() {
           it&#8217;s true.
         </p>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -982,7 +981,7 @@ export default function ApplicationsForDigitalPainting() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

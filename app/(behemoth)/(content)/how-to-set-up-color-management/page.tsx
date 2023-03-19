@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerColorManagement from '../../../../website/blog/wp-content/uploads/colormanagement/colormanagement-header.png'
 
 export const metadata: Metadata = {
   title: 'How to set up Color Management ♣ essenmitsosse',
@@ -10,27 +11,27 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="photoshop-brush-engine" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   <em>An Introduction to the</em> Photoshop Brush Engine
                 </span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="likeness-in-portrait" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   <em>How to achieve</em> Likeness In A Portrait
                 </span>
               </a>
@@ -40,14 +41,12 @@ export default function Page() {
       </ul>
 
       <div
-        class="intro color"
-        style="
-        background-image: url(blog/wp-content/uploads/colormanagement/colormanagement-header.png);
-      "
+        className="intro color"
+        style={{ backgroundImage: `url(${headerColorManagement.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -55,8 +54,8 @@ export default function Page() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2008-04-10</p>
         </div>
         <p>
@@ -70,12 +69,12 @@ export default function Page() {
         <h2>
           <em>First things first</em> calibrate your devices
         </h2>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             To make sure your monitor displays all colors as correctly as
             possible, you have to calibrate them and create a color profile.
           </p>
-          <h3 class="dontclear">Color management systems</h3>
+          <h3 className="dontclear">Color management systems</h3>
           <p>
             A <abbr title="Color management system">CMS</abbr> is the best way
             to calibrate and profile your display. They will give you the best
@@ -94,7 +93,7 @@ export default function Page() {
             </a>
             .
           </p>
-          <h3 class="dontclear">On a Mac</h3>
+          <h3 className="dontclear">On a Mac</h3>
           <p>
             Mac OS X has a good programm to calibrate your monitor without any
             expensive measuring device (but not that accurate).
@@ -108,7 +107,7 @@ export default function Page() {
             .
           </p>
           <p>The program itself is self-explanatory.</p>
-          <h3 class="dontclear">Testing images</h3>
+          <h3 className="dontclear">Testing images</h3>
           <p>
             While it is hard to test your
             <a href="http://en.wikipedia.org/wiki/Color_temperature">
@@ -128,7 +127,7 @@ export default function Page() {
             Remember, that this won&#8217;t produce a profile for your monitor!
           </p>
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <blockquote>
             <p>
               In order to describe the behavior of the various output devices,
@@ -188,7 +187,7 @@ export default function Page() {
         <h2>
           <em>How to setup</em> Creative Suite
         </h2>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Start Photoshop or any other CS application. Go to
             <strong>Edit &gt; Color Settings…</strong>.
@@ -237,7 +236,7 @@ export default function Page() {
             applications will work with the same setting.
           </p>
         </div>
-        <div class="sixwide center">
+        <div className="sixwide center">
           <img
             src="blog/wp-content/uploads/2008/04/settings.jpg"
             alt="CS Settings"
@@ -248,8 +247,8 @@ export default function Page() {
         <h2>
           <em>The</em> “Save for Web”-Problem
         </h2>
-        <div class="sixwide">
-          <p class="firstline">
+        <div className="sixwide">
+          <p className="firstline">
             Many people have the problem, that their colors change when they use
             the option “Save for Web”.
           </p>
@@ -289,7 +288,7 @@ export default function Page() {
             sure your pictures will also look great in print.
           </p>
         </div>
-        <div class="sixwide center">
+        <div className="sixwide center">
           <img
             src="blog/wp-content/uploads/2008/04/saveforwebsettings.jpg"
             alt="Save for Web Settings"
@@ -298,7 +297,7 @@ export default function Page() {
           />
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -309,7 +308,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

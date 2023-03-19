@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import headerDigitalPainter from '../../../../website/blog/wp-content/uploads/digitalpainters/digitalpainter-header.png'
 
 export const metadata: Metadata = {
   title: '35 Digital Painters you shouldn’t miss ♣ essenmitsosse',
@@ -10,28 +11,28 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single article">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single article">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="the-designs-of-star-wars" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">
+                <span className="arrow">&#9668;</span>
+                <span className="title">
                   The Designs Of Star Wars
                   <em>10 reasons why they are awesome</em>
                 </span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="photoshop-brush-engine" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">
+                <span className="arrow">&#9658;</span>
+                <span className="title">
                   <em>An Introduction to the</em> Photoshop Brush Engine
                 </span>
               </a>
@@ -41,14 +42,12 @@ export default function Page() {
       </ul>
 
       <div
-        class="intro color"
-        style="
-        background-image: url(blog/wp-content/uploads/digitalpainters/digitalpainter-header.png);
-      "
+        className="intro color"
+        style={{ backgroundImage: `url(${headerDigitalPainter.src})` }}
       >
-        <p class="logo">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>
@@ -56,8 +55,8 @@ export default function Page() {
         </h1>
       </div>
 
-      <div class="content white">
-        <div class="date">
+      <div className="content white">
+        <div className="date">
           <p>2008-05-15</p>
         </div>
         <p>
@@ -67,7 +66,7 @@ export default function Page() {
           Illustrators or Concept Artist. Here are 35 Websites that will show
           you whats possible with a graphics tablet.
         </p>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.sonsofthestorm.com/">
               <img
@@ -84,7 +83,7 @@ export default function Page() {
             working for Blizzard.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.sparth.com/">
               <img
@@ -98,7 +97,7 @@ export default function Page() {
           </p>
           <p>Concept Designer born in France, living in Texas.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.jasonchanart.com/">
               <img
@@ -113,7 +112,7 @@ export default function Page() {
           <p>American Concept Artist and Illustrator.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.supalette.com/">
               <img
@@ -127,7 +126,7 @@ export default function Page() {
           </p>
           <p>Digital Concept Artist and Illustrator.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.nivbed.com/">
               <img
@@ -141,7 +140,7 @@ export default function Page() {
           </p>
           <p>Digital Painter</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.ryanchurch.com/">
               <img
@@ -159,7 +158,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://sixmorevodka.blogspot.com/">
               <img
@@ -173,7 +172,7 @@ export default function Page() {
           </p>
           <p>German Illustrator currently working for Marvel.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.barontieri.com/">
               <img
@@ -190,7 +189,7 @@ export default function Page() {
             III.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.draude.com/">
               <img
@@ -205,7 +204,7 @@ export default function Page() {
           <p>German Student and Illustrator.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.dusso.com/">
               <img
@@ -219,7 +218,7 @@ export default function Page() {
           </p>
           <p>Digital Matte Painter and Illustrator.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.dominiceise.de/">
               <img
@@ -233,7 +232,7 @@ export default function Page() {
           </p>
           <p>German Student and Illustrator.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.jonfoster.com/">
               <img
@@ -248,7 +247,7 @@ export default function Page() {
           <p>Classic Illustrator who works mainly digital.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.hpx1.com/">
               <img
@@ -262,7 +261,7 @@ export default function Page() {
           </p>
           <p>French Concept Designer</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.ghull.com/news/news_main.php">
               <img
@@ -279,7 +278,7 @@ export default function Page() {
             Movies.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.iamfrancis.com/">
               <img
@@ -296,7 +295,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.itchstudios.com/psg/">
               <img
@@ -313,7 +312,7 @@ export default function Page() {
             videogame fanart.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.androidjones.com/">
               <img
@@ -327,7 +326,7 @@ export default function Page() {
           </p>
           <p>American Digital Concept Artist.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://artpad.org/">
               <img
@@ -342,7 +341,7 @@ export default function Page() {
           <p>American Digital Painter.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.ikplay.com/">
               <img
@@ -356,7 +355,7 @@ export default function Page() {
           </p>
           <p>American Digital Illustrator with a vintage style.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.nic-klein.com/">
               <img
@@ -370,7 +369,7 @@ export default function Page() {
           </p>
           <p>German Illustrator working among other things for Marvel.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.vancekovacs.com/">
               <img
@@ -385,7 +384,7 @@ export default function Page() {
           <p>Digital Painter.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.vyle-art.com/">
               <img
@@ -399,7 +398,7 @@ export default function Page() {
           </p>
           <p>Concept Artist.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.digitaldecoy.de/">
               <img
@@ -413,7 +412,7 @@ export default function Page() {
           </p>
           <p>German Digital Illustrator and Concept Artist.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.mercilessdesign.com/">
               <img
@@ -428,7 +427,7 @@ export default function Page() {
           <p>Digital Concept Artist and Illustrator.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.goodbrush.com/">
               <img
@@ -445,7 +444,7 @@ export default function Page() {
             this one.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.anry.ru/">
               <img
@@ -459,7 +458,7 @@ export default function Page() {
           </p>
           <p>Russian Digital Illustrator.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.drawthrough.com/">
               <img
@@ -474,7 +473,7 @@ export default function Page() {
           <p>American Concept Artist and Digital Painter.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.dandossantos.com/home.html">
               <img
@@ -491,7 +490,7 @@ export default function Page() {
             Cards and Books.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.mattiassnygg.com/">
               <img
@@ -505,7 +504,7 @@ export default function Page() {
           </p>
           <p>Swedish Concept Artist who is currently working for Starbreeze.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.androidblues.com/">
               <img
@@ -523,7 +522,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.aaronstgoddard.com/">
               <img
@@ -537,7 +536,7 @@ export default function Page() {
           </p>
           <p>Digital Concept Artist and Designer.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.redbeardead.com/">
               <img
@@ -551,7 +550,7 @@ export default function Page() {
           </p>
           <p>American Digital Illustrator and Painter.</p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.justinsweet.com/">
               <img
@@ -566,7 +565,7 @@ export default function Page() {
           <p>Digital Illustrator and Painter.</p>
         </div>
         <hr />
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.torstenwolber.de/">
               <img
@@ -583,7 +582,7 @@ export default function Page() {
             Acrylics.
           </p>
         </div>
-        <div class="fourwide many">
+        <div className="fourwide many">
           <p>
             <a href="http://www.fengzhudesign.com/">
               <img
@@ -601,7 +600,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -612,7 +611,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

@@ -9,42 +9,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="digital-life-drawing" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Digital Life Drawing</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Digital Life Drawing</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="aztecs" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Aztecs</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Aztecs</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Linen Tunic</h1>
       </div>
 
-      <div class="content white">
-        <div class="eightwide">
+      <div className="content white">
+        <div className="eightwide">
           <img
             src="blog/wp-content/uploads/portfolio/linentunic.jpg"
             alt="Man in linen tunic with a sword is cursed by a wraith in the snow"
@@ -53,7 +53,7 @@ export default function Page() {
             height="957"
           />
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <p>
             Done for the
             <a href="http://gurneyjourney.blogspot.com/2008/04/art-by-committee-looming-up.html">
@@ -83,7 +83,7 @@ export default function Page() {
         </div>
 
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -94,7 +94,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

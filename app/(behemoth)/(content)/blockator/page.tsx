@@ -9,42 +9,42 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="faust" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Faust</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Faust</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="essenmitsosse-redesign" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">essenmitsosse Redesign</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">essenmitsosse Redesign</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Blockator</h1>
       </div>
 
-      <div class="content white">
-        <div style="margin-top: -80px">
+      <div className="content white">
+        <div style={{ marginTop: '-80px' }}>
           <img
             src="portfolioupload/blockator/blockator.gif"
             alt="Blockator is an isometric 3-d Pixelfont, that is generated with Flash."
@@ -73,7 +73,7 @@ export default function Page() {
           </object>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -84,7 +84,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

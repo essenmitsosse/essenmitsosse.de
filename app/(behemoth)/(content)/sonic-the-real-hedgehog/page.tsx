@@ -9,41 +9,41 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="portrait-class" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Portrait Class</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Portrait Class</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="realistically-painted-bowser" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Realistically Painted Bowser</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Realistically Painted Bowser</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Sonic The Real Hedgehog</h1>
       </div>
 
-      <div class="content white">
+      <div className="content white">
         <div>
           <img
             src="blog/wp-content/uploads/sonic/sonic.jpg"
@@ -53,8 +53,8 @@ export default function Page() {
             height="570"
           />
         </div>
-        <div class="sixwide">
-          <p class="firstline">
+        <div className="sixwide">
+          <p className="firstline">
             After the great success of my
             <a href="realistically-painted-bowser/indexff99.html?preview=1&amp;template=essenmitsosse-dreadnought&amp;stylesheet=essenmitsosse-dreadnought">
               Realistically Painted Bowser
@@ -115,7 +115,7 @@ export default function Page() {
             instead of the typical Photoshop look.
           </p>
         </div>
-        <div class="sixwide center">
+        <div className="sixwide center">
           <img
             src="blog/wp-content/uploads/sonic/sonicpixel.png"
             alt="How a realistically sonic would look like in pixel"
@@ -125,7 +125,7 @@ export default function Page() {
           />
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -136,7 +136,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

@@ -9,36 +9,36 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="blondheadredhead" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Blondehead &#038; Redhead</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Blondehead &#038; Redhead</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Older Paintings</h1>
       </div>
 
-      <div class="content white">
-        <div class="eightwide">
+      <div className="content white">
+        <div className="eightwide">
           <h3>Dragon Avenue</h3>
           <p>
             <img
@@ -47,7 +47,7 @@ export default function Page() {
               title="Dragon Avenue"
               width="620"
               height="463"
-              class="marginbottom"
+              className="marginbottom"
             />
           </p>
           <h3>Salt Lake</h3>
@@ -58,7 +58,7 @@ export default function Page() {
               title="Salt Lake"
               width="620"
               height="429"
-              class="marginbottom"
+              className="marginbottom"
             />
           </p>
           <h3>Gondola</h3>
@@ -69,11 +69,11 @@ export default function Page() {
               title="Gondola"
               width="620"
               height="351"
-              class="marginbottom"
+              className="marginbottom"
             />
           </p>
         </div>
-        <div class="fourwide">
+        <div className="fourwide">
           <h3>Baldface</h3>
           <p>
             <img
@@ -82,7 +82,7 @@ export default function Page() {
               title="Baldface"
               width="300"
               height="300"
-              class="marginbottom"
+              className="marginbottom"
             />
           </p>
           <h3>Airface</h3>
@@ -93,7 +93,7 @@ export default function Page() {
               title="Airface"
               width="300"
               height="300"
-              class="marginbottom"
+              className="marginbottom"
             />
           </p>
           <h3>Turtle</h3>
@@ -104,7 +104,7 @@ export default function Page() {
               title="Turtle"
               width="300"
               height="196"
-              class="marginbottom"
+              className="marginbottom"
             />
             <img
               src="blog/wp-content/uploads/portfolio/turtle.jpg"
@@ -112,12 +112,12 @@ export default function Page() {
               title="Turtle"
               width="300"
               height="196"
-              class="marginbottom"
+              className="marginbottom"
             />
           </div>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -128,7 +128,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

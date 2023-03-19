@@ -10,41 +10,41 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="sonic-the-real-hedgehog" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">Sonic The Real Hedgehog</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">Sonic The Real Hedgehog</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="digital-life-drawing" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Digital Life Drawing</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Digital Life Drawing</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Realistically Painted Bowser</h1>
       </div>
 
-      <div class="content white">
+      <div className="content white">
         <div>
           <img
             src="blog/wp-content/uploads/bowser/bowser.jpg"
@@ -54,7 +54,7 @@ export default function Page() {
             height="627"
           />
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             Some weeks ago Pixeloo did his great untoonings of
             <a href="http://pixeloo.blogspot.com/2008/03/super-real-mario-world.html">
@@ -92,7 +92,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -103,7 +103,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

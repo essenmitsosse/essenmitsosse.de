@@ -10,49 +10,49 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="newer">
+            <li className="newer">
               <a href="essenmitsosse-redesign" rel="next">
-                <span class="arrow">&#9668;</span>
-                <span class="title">essenmitsosse Redesign</span>
+                <span className="arrow">&#9668;</span>
+                <span className="title">essenmitsosse Redesign</span>
               </a>
             </li>
-            <li class="older">
+            <li className="older">
               <a href="sonic-the-real-hedgehog" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">Sonic The Real Hedgehog</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">Sonic The Real Hedgehog</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Portrait Class</h1>
       </div>
 
-      <div class="content white">
-        <div class="sixwide">
+      <div className="content white">
+        <div className="sixwide">
           <img
             src="blog/wp-content/uploads/portraitclass/portrait12.jpg"
             alt="Caricature of a guy in a chair"
             title="Photoshop painting from portrait class – male caricature"
             width="460"
             height="575"
-            class="marginbottom"
+            className="marginbottom"
           />
           <img
             src="blog/wp-content/uploads/portraitclass/portrait8.jpg"
@@ -60,7 +60,7 @@ export default function Page() {
             title="Photoshop painting from portrait class – female caricature"
             width="460"
             height="588"
-            class="marginbottom"
+            className="marginbottom"
           />
           <img
             src="blog/wp-content/uploads/portraitclass/portrait9.jpg"
@@ -68,10 +68,10 @@ export default function Page() {
             title="Photoshop painting from portrait class – female caricature"
             width="460"
             height="460"
-            class="marginbottom"
+            className="marginbottom"
           />
         </div>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             These paintings where done during the portrait class in my
             scholastics. They are all live drawings, no photo references. And
@@ -87,7 +87,7 @@ export default function Page() {
               title="Photoshop painting from portrait class – male caricature"
               width="460"
               height="575"
-              class="marginbottom"
+              className="marginbottom"
             />
             <img
               src="blog/wp-content/uploads/portraitclass/portrait3.jpg"
@@ -95,7 +95,7 @@ export default function Page() {
               title="Photoshop painting from portrait class – female"
               width="460"
               height="497"
-              class="marginbottom"
+              className="marginbottom"
             />
             <img
               src="blog/wp-content/uploads/portraitclass/portrait13.jpg"
@@ -103,12 +103,12 @@ export default function Page() {
               title="Photoshop painting from portrait class – female caricature"
               width="460"
               height="271"
-              class="marginbottom"
+              className="marginbottom"
             />
           </div>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -119,7 +119,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>

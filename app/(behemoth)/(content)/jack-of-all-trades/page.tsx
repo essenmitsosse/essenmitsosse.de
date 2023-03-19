@@ -8,35 +8,35 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <body class="single black portfolio">
-      <ul id="navigation" class="black">
-        <li class="home">
+    <body className="single black portfolio">
+      <ul id="navigation" className="black">
+        <li className="home">
           <a href="index.html" rel="index">
             Home
           </a>
         </li>
-        <li class="articlenavigation">
+        <li className="articlenavigation">
           <ul>
-            <li class="older">
+            <li className="older">
               <a href="the-human-brain" rel="prev">
-                <span class="arrow">&#9658;</span>
-                <span class="title">The Human Brain</span>
+                <span className="arrow">&#9658;</span>
+                <span className="title">The Human Brain</span>
               </a>
             </li>
           </ul>
         </li>
       </ul>
 
-      <div class="intro">
-        <p class="logo">
+      <div className="intro">
+        <p className="logo">
           <a href="index.html" id="essenmitsosse">
-            <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
         <h1>Jack of all Trades</h1>
       </div>
 
-      <div class="content white">
+      <div className="content white">
         <p>
           <iframe
             width="940"
@@ -47,7 +47,7 @@ export default function Page() {
             allowfullscreen
           ></iframe>
         </p>
-        <div class="sixwide">
+        <div className="sixwide">
           <p>
             With Nele, a fellow student of mine, I did an experiment: We wanted
             to see how creativity works, how you can force yourself to get
@@ -61,7 +61,7 @@ export default function Page() {
           </p>
         </div>
         <hr />
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>A little bit</em> about me
           </h3>
@@ -72,7 +72,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div class="sixwide">
+        <div className="sixwide">
           <h3>
             <em>What you should </em>do next
           </h3>
