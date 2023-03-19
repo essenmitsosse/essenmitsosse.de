@@ -226,156 +226,158 @@ export default function Page() {
               <th scope="col">Intuos4</th>
             </tr>
           </thead>
-          <tr>
-            <th scope="row">
-              available sizes <br />
-              <em>(active area)</em>
-            </th>
-            <td>
-              <a href="http://www.amazon.com/gp/product/B0003009BC/essencompucan-20">
-                4×5&#8243; (A6)
-              </a>
-              ,
-              <a href="http://www.amazon.com/gp/product/B000I62PEU/essencompucan-20">
-                4×6&#8243; (A6 Wide)
-              </a>
-              , <br />
-              <a href="http://www.amazon.com/gp/product/B00030097G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00030097G">
-                6×8&#8243; (A5)
-              </a>
-              ,
-              <a href="http://www.amazon.com/gp/product/B000BVB2FK?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000BVB2FK">
-                6×11&#8243; (A5 Wide)
-              </a>
-              , <br />
-              <a href="http://www.amazon.com/gp/product/B0003009AI?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0003009AI">
-                9×12&#8243; (A4)
-              </a>
-              ,
-              <a href="http://www.amazon.com/gp/product/B000E6EIJY?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000E6EIJY">
-                12×12&#8243; (A4 Oversize)
-              </a>
-              , <br />
-              <a href="http://www.amazon.com/gp/product/B000E6IJ6C?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000E6IJ6C">
-                12×19&#8243; (A3)
-              </a>
-            </td>
-            <td>
-              <a href="http://www.amazon.com/gp/product/B001TUYTZM?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001TUYTZM">
-                3.9×6.2&#8243; (Small)
-              </a>
-              , <br />
-              <a href="http://www.amazon.com/gp/product/B001TUYTZW?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001TUYTZW">
-                5.5×8.8&#8243; (Medium)
-              </a>
-              , <br />
-              <a href="http://www.amazon.com/gp/product/B001TUYU06/essencompucan-20">
-                8×12.8&#8243; (Large)
-              </a>
-              , <br />
-              <a href="http://www.amazon.com/gp/product/B001TUYU0G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001TUYU0G">
-                12×18.2&#8243; (Extra Large)
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Buttons</th>
-            <td>
-              8 <br />
-              <em>(only 4 on the Intuos3 4×5&#8243; and 4×6&#8243;)</em>
-            </td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <th scope="row">Scroll Input</th>
-            <td>
-              2 touch strips <br />
-              <em>(only 1 on the Intuos3 4×5&#8243; and 4×6&#8243;)</em>
-            </td>
-            <td>
-              1 Touching Ring <br />
-              <em>(4 different functions can be assigned)</em>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              LED-Display <br />
-              next to each button
-            </th>
-            <td>No</td>
-            <td>
-              Yes <br />
-              <em>(except the Intuos4 Small)</em>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Pressure Levels</th>
-            <td>1024</td>
-            <td>2048</td>
-          </tr>
-          <tr>
-            <th scope="row">Nibs in the shipment</th>
-            <td>
-              standard <em>(plastic)</em>, spring-loaded nib, Felt nib
-            </td>
-            <td>
-              standard <em>(plastic)</em>, spring-loaded nib, Felt nib, <br />
-              nib with rubber top
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Available Pens <br />
-              <em>
-                (all Pens are pressure and tilt sensitive, <br />
-                Intuos3 Pens are not compatible with Intuos4)
-              </em>
-            </th>
-            <td>
-              <a href="http://www.amazon.com/gp/product/B0006698PG?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698PG">
-                Intuos3 Grip Pen
-              </a>
-              <em>(included)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B00083Y87U?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00083Y87U">
-                Intuos3 Classic Pen
-              </a>
-              <em>(slimmer profile)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B0006698PQ?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698PQ">
-                Intuos3 Airbrush
-              </a>
-              <em>(finger wheel)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B0006698T2?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698T2">
-                Intuos3 Inking Pen
-              </a>
-              <em>(can write on paper)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B00083Y86G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00083Y86G">
-                Cintiq Art Pen
-              </a>
-              <em>(rotation sensitiv, can be used with Intuos3)</em>
-            </td>
-            <td>
-              <a href="http://www.amazon.com/gp/product/B0020ZDGBI?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZDGBI">
-                Intuos4 Grip Pen
-              </a>
-              <em>(included)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B0020ZFLWA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZFLWA">
-                Intuos4 Classic Pen
-              </a>
-              <em>(slimmer profile)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B0020ZBBW4?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZBBW4">
-                Intuos4 Airbrush Pen
-              </a>
-              <em>(finger wheel)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B0020ZHOES?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZHOES">
-                Intuos4 Inking Pen
-              </a>
-              <em>(can write on paper)</em>, <br />
-              <a href="http://www.amazon.com/gp/product/B0020ZHOGQ?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZHOGQ">
-                Intuos4 Art Pen
-              </a>
-              <em>(rotation sensitiv)</em>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th scope="row">
+                available sizes <br />
+                <em>(active area)</em>
+              </th>
+              <td>
+                <a href="http://www.amazon.com/gp/product/B0003009BC/essencompucan-20">
+                  4×5&#8243; (A6)
+                </a>
+                ,
+                <a href="http://www.amazon.com/gp/product/B000I62PEU/essencompucan-20">
+                  4×6&#8243; (A6 Wide)
+                </a>
+                , <br />
+                <a href="http://www.amazon.com/gp/product/B00030097G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00030097G">
+                  6×8&#8243; (A5)
+                </a>
+                ,
+                <a href="http://www.amazon.com/gp/product/B000BVB2FK?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000BVB2FK">
+                  6×11&#8243; (A5 Wide)
+                </a>
+                , <br />
+                <a href="http://www.amazon.com/gp/product/B0003009AI?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0003009AI">
+                  9×12&#8243; (A4)
+                </a>
+                ,
+                <a href="http://www.amazon.com/gp/product/B000E6EIJY?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000E6EIJY">
+                  12×12&#8243; (A4 Oversize)
+                </a>
+                , <br />
+                <a href="http://www.amazon.com/gp/product/B000E6IJ6C?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000E6IJ6C">
+                  12×19&#8243; (A3)
+                </a>
+              </td>
+              <td>
+                <a href="http://www.amazon.com/gp/product/B001TUYTZM?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001TUYTZM">
+                  3.9×6.2&#8243; (Small)
+                </a>
+                , <br />
+                <a href="http://www.amazon.com/gp/product/B001TUYTZW?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001TUYTZW">
+                  5.5×8.8&#8243; (Medium)
+                </a>
+                , <br />
+                <a href="http://www.amazon.com/gp/product/B001TUYU06/essencompucan-20">
+                  8×12.8&#8243; (Large)
+                </a>
+                , <br />
+                <a href="http://www.amazon.com/gp/product/B001TUYU0G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001TUYU0G">
+                  12×18.2&#8243; (Extra Large)
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Buttons</th>
+              <td>
+                8 <br />
+                <em>(only 4 on the Intuos3 4×5&#8243; and 4×6&#8243;)</em>
+              </td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th scope="row">Scroll Input</th>
+              <td>
+                2 touch strips <br />
+                <em>(only 1 on the Intuos3 4×5&#8243; and 4×6&#8243;)</em>
+              </td>
+              <td>
+                1 Touching Ring <br />
+                <em>(4 different functions can be assigned)</em>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                LED-Display <br />
+                next to each button
+              </th>
+              <td>No</td>
+              <td>
+                Yes <br />
+                <em>(except the Intuos4 Small)</em>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Pressure Levels</th>
+              <td>1024</td>
+              <td>2048</td>
+            </tr>
+            <tr>
+              <th scope="row">Nibs in the shipment</th>
+              <td>
+                standard <em>(plastic)</em>, spring-loaded nib, Felt nib
+              </td>
+              <td>
+                standard <em>(plastic)</em>, spring-loaded nib, Felt nib, <br />
+                nib with rubber top
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Available Pens <br />
+                <em>
+                  (all Pens are pressure and tilt sensitive, <br />
+                  Intuos3 Pens are not compatible with Intuos4)
+                </em>
+              </th>
+              <td>
+                <a href="http://www.amazon.com/gp/product/B0006698PG?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698PG">
+                  Intuos3 Grip Pen
+                </a>
+                <em>(included)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B00083Y87U?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00083Y87U">
+                  Intuos3 Classic Pen
+                </a>
+                <em>(slimmer profile)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B0006698PQ?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698PQ">
+                  Intuos3 Airbrush
+                </a>
+                <em>(finger wheel)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B0006698T2?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698T2">
+                  Intuos3 Inking Pen
+                </a>
+                <em>(can write on paper)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B00083Y86G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00083Y86G">
+                  Cintiq Art Pen
+                </a>
+                <em>(rotation sensitiv, can be used with Intuos3)</em>
+              </td>
+              <td>
+                <a href="http://www.amazon.com/gp/product/B0020ZDGBI?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZDGBI">
+                  Intuos4 Grip Pen
+                </a>
+                <em>(included)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B0020ZFLWA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZFLWA">
+                  Intuos4 Classic Pen
+                </a>
+                <em>(slimmer profile)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B0020ZBBW4?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZBBW4">
+                  Intuos4 Airbrush Pen
+                </a>
+                <em>(finger wheel)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B0020ZHOES?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZHOES">
+                  Intuos4 Inking Pen
+                </a>
+                <em>(can write on paper)</em>, <br />
+                <a href="http://www.amazon.com/gp/product/B0020ZHOGQ?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0020ZHOGQ">
+                  Intuos4 Art Pen
+                </a>
+                <em>(rotation sensitiv)</em>
+              </td>
+            </tr>
+          </tbody>
         </table>
         <h2>Overview</h2>
         <div className="sixwide">
