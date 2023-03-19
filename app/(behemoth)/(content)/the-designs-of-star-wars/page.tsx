@@ -102,11 +102,11 @@ export default function ApplicationsForDigitalPainting() {
           </p>
           <p>
             To see what happens if you screw up the proportions and how this
-            affects the look of the whole thing just have a look at
+            affects the look of the whole thing just have a look at{' '}
             <a href="http://www.amazon.com/gp/product/B000Z34G34?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000Z34G34">
               this toy AT-AT
-            </a>
-            or
+            </a>{' '}
+            or{' '}
             <a href="http://www.amazon.com/gp/product/B001M08SVA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001M08SVA">
               this one
             </a>
@@ -136,7 +136,7 @@ export default function ApplicationsForDigitalPainting() {
           </p>
           <p>
             How well balanced these proportions are, can be seen if you for
-            example just extend the cockpit a little bit, like on
+            example just extend the cockpit a little bit, like on{' '}
             <a href="http://www.amazon.com/gp/product/B000EMJ9Z6?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000EMJ9Z6">
               this Millenium Falcon toy
             </a>
@@ -374,7 +374,7 @@ export default function ApplicationsForDigitalPainting() {
             is of no significance, like in an ant colony.
           </p>
           <p>
-            There is a great Article on IGN called
+            There is a great Article on IGN called{' '}
             <a href="http://uk.stars.ign.com/articles/845/845012p1.html">
               The Many Looks of the Imperial Stormtrooper
             </a>
@@ -400,7 +400,7 @@ export default function ApplicationsForDigitalPainting() {
           <p>
             This strengths the feeling, that the design of these starfighters
             isn&#8217;t just random. It makes it look like the concept of the
-            TIE has really been developed by some starfighter-designers at
+            TIE has really been developed by some starfighter-designers at{' '}
             <a href="http://starwars.wikia.com/wiki/Sienar_Fleet_Systems">
               Sienar Fleet Systems
             </a>
@@ -687,16 +687,16 @@ export default function ApplicationsForDigitalPainting() {
             />
           </div>
           <p>
-            The weapon on the top is a
-            <a href="http://en.wikipedia.org/wiki/Mauser_C96">Mauser C-96</a>
+            The weapon on the top is a{' '}
+            <a href="http://en.wikipedia.org/wiki/Mauser_C96">Mauser C-96</a>{' '}
             which was manufactured from 1896 to 1936 in Germany and was used
             amongst others by Winston Churchill and the German Army.
           </p>
           <p>
-            The weapon on the bottom is a
+            The weapon on the bottom is a{' '}
             <a href="http://starwars.wikia.com/wiki/DL-44">
               DL-44 heavy blaster pistol
-            </a>
+            </a>{' '}
             which was manufactured in the time of the Galactic Civil War by
             BlasTech Industries and was used by Han Solo.
           </p>
@@ -908,7 +908,7 @@ export default function ApplicationsForDigitalPainting() {
             inspiration and imitation.
           </p>
           <p>
-            There&#8217;s also a great list on Geek in Heels about the
+            There&#8217;s also a great list on Geek in Heels about the{' '}
             <a href="http://www.geekinheels.com/blog/2008/8/6/top-5-star-wars-designs-and-what-inspired-them.html">
               inspirations for the designs of Star Wars
             </a>
@@ -986,7 +986,7 @@ export default function ApplicationsForDigitalPainting() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

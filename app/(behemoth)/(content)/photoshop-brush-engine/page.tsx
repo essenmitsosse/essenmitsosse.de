@@ -163,21 +163,21 @@ export default function ApplicationsForDigitalPainting() {
                 hold your stylus to the graphics tablet. The straighter you hold
                 it, the bigger this value will get. The more you pitch it
                 towards the tablet the smaller it gets. Pen pressure is only
-                supported by the more improved graphics tablet like the
+                supported by the more improved graphics tablet like the{' '}
                 <a href="http://www.amazon.com/gp/product/B00030097G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00030097G">
                   Intuos
-                </a>
-                or
+                </a>{' '}
+                or{' '}
                 <a href="http://www.amazon.com/gp/product/B0011EMTAS?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0011EMTAS">
                   Cintq
-                </a>
+                </a>{' '}
                 Series.
               </p>
             </li>
             <li>
               <p>
                 <strong>Stylus Wheel</strong> resembles a mouse wheel and comes
-                only with the
+                only with the{' '}
                 <a href="http://www.amazon.com/gp/product/B0006698PQ?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006698PQ">
                   Wacom Intuos Airbrush Pen
                 </a>
@@ -489,7 +489,7 @@ export default function ApplicationsForDigitalPainting() {
             <div className="sixwide many">
               <p>
                 Similar effects can be created with the <strong>Hue</strong>,
-                <strong>Saturation</strong> and
+                <strong>Saturation</strong> and{' '}
                 <strong>Brightness Jitters</strong>. These just randomly vary
                 the values, giving you a more diversification in your color.
               </p>
@@ -648,7 +648,7 @@ export default function ApplicationsForDigitalPainting() {
             <div className="sixwide many">
               <p>
                 If you have the problem that your brushe strokes are too angular
-                when you drawn a curve to fast you should activate
+                when you drawn a curve to fast you should activate{' '}
                 <strong>Smoothing</strong>, which will smooth your curves, but
                 also decrease your performance a bit.
               </p>
@@ -689,7 +689,7 @@ export default function ApplicationsForDigitalPainting() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

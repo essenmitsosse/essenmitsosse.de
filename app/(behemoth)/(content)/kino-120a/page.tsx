@@ -46,7 +46,7 @@ export default function Page() {
       <div className="content white">
         <div className="fourwide">
           <div>
-            These poster series was done for our student cinema
+            These poster series was done for our student cinema{' '}
             <a href="http://kino120a.de/">kino.120a</a> at Burg Giebichenstein.
           </div>
           <p>
@@ -276,11 +276,11 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to subscribe to my
+            Don’t forget to subscribe to my{' '}
             <a href="http://feeds.feedburner.com/essenmitsosse" rel="alternate">
               RSS-Feed
-            </a>
-            and follow me on
+            </a>{' '}
+            and follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

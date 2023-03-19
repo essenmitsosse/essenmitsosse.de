@@ -119,17 +119,16 @@ export default function Home() {
               <li>
                 <h3>
                   <a href="wacom-intuos4-review">
-                    <span className="date">2009-08-24</span>
-                    Wacom Intuos4 <em>Review</em>
+                    <span className="date">2009-08-24</span> Wacom Intuos4{' '}
+                    <em>Review</em>
                   </a>
                 </h3>
               </li>
               <li>
                 <h3>
                   <a href="the-designs-of-star-wars">
-                    <span className="date">2008-09-24</span>
-                    The Designs Of Star Wars
-                    <em>10 reasons why they are awesome</em>
+                    <span className="date">2008-09-24</span> The Designs Of Star
+                    Wars <em>10 reasons why they are awesome</em>
                   </a>
                 </h3>
               </li>

@@ -55,10 +55,10 @@ export default function Page() {
         </div>
         <div className="sixwide">
           <p className="firstline">
-            After the great success of my
+            After the great success of my{' '}
             <a href="realistically-painted-bowser">
               Realistically Painted Bowser
-            </a>
+            </a>{' '}
             I decided to do another realistic version of a famous videogame
             character.
           </p>
@@ -96,11 +96,11 @@ export default function Page() {
             Sonic would look like in one of the old games.
           </p>
           <p>
-            Again the whole picture was painted using
+            Again the whole picture was painted using{' '}
             <a href="http://www.amazon.com/gp/product/B000NDIBYG?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000NDIBYG">
               Adobe Photoshop CS3
-            </a>
-            and my
+            </a>{' '}
+            and my{' '}
             <a href="http://www.amazon.com/gp/product/B00030097G?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00030097G">
               Wacom Intuos3 Pen Tablet
             </a>
@@ -141,7 +141,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

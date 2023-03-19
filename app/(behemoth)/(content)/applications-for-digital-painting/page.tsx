@@ -298,9 +298,8 @@ export default function Page() {
           </p>
           <p>
             Up until Version 1.1 openCanvas was <strong>Freeware</strong> and
-            also
-            <strong>included network support</strong> allowing you to paint over
-            the internet with your friends on the same Canvas.
+            also <strong>included network support</strong> allowing you to paint
+            over the internet with your friends on the same Canvas.
           </p>
           <p>Later Versions are only Shareware.</p>
           <ul>
@@ -351,7 +350,7 @@ export default function Page() {
         <h2>ArtRage</h2>
         <div className="sixwide">
           <p>
-            ArtRage is available as well as a
+            ArtRage is available as well as a{' '}
             <strong>free Starter Edition</strong> and as a Full Version with
             more features which must be payed. It&#8217;s also bundled with some
             graphics tablets.
@@ -449,7 +448,7 @@ export default function Page() {
         <h2>Artweaver</h2>
         <div className="sixwide">
           <p>
-            Artweaver can be compared to ArtRage or SketchBook Pro. Like ArtRage
+            Artweaver can be compared to ArtRage or SketchBook Pro. Like ArtRage{' '}
             <strong>it is also for free</strong>.
           </p>
           <ul>
@@ -497,7 +496,7 @@ export default function Page() {
             Painter. In Addition it can be integrated into Photoshop.
           </p>
           <p>
-            The development of Deep Paint has been stopped, but it&#8217;s
+            The development of Deep Paint has been stopped, but it&#8217;s{' '}
             <strong>Freeware</strong>.
           </p>
           <ul>
@@ -536,9 +535,9 @@ export default function Page() {
         <h2>Dogwaffle</h2>
         <div className="sixwide">
           <p>
-            Even if there was no update since 2004 of the
-            <strong>free</strong> Version of this program, this
-            Corel-Painter-Clone still is worth a look.
+            Even if there was no update since 2004 of the <strong>free</strong>{' '}
+            Version of this program, this Corel-Painter-Clone still is worth a
+            look.
           </p>
           <ul>
             <li>
@@ -578,8 +577,7 @@ export default function Page() {
           <p>
             Paint.NET is the powerful cousin of Microsoft Paint. It&#8217;s
             mainly for image editing and not that well suited for digital
-            painting.
-            <strong>But it&#8217;s for free</strong>.
+            painting. <strong>But it&#8217;s for free</strong>.
           </p>
           <ul>
             <li>
@@ -636,7 +634,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

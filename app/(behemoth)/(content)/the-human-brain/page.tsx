@@ -58,8 +58,8 @@ export default function Page() {
         <div className="fourwide">
           <p>
             Animated movie created during an exchange semester at Staffordshire
-            University. The part about how the brain not works is inspired by
-            <em>Der Mensch als Industriepalast</em> by
+            University. The part about how the brain not works is inspired by{' '}
+            <em>Der Mensch als Industriepalast</em> by{' '}
             <a href="http://www.fritz-kahn.com/">Fritz Kahn</a>. Music by
             thefloorisnowlava.
           </p>
@@ -94,7 +94,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

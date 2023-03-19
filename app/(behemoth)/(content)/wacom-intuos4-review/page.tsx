@@ -32,7 +32,7 @@ export default function Page() {
               <a href="the-designs-of-star-wars" rel="prev">
                 <span className="arrow">&#9658;</span>
                 <span className="title">
-                  The Designs Of Star Wars
+                  The Designs Of Star Wars{' '}
                   <em>10 reasons why they are awesome</em>
                 </span>
               </a>
@@ -61,10 +61,10 @@ export default function Page() {
         </div>
         <p>
           Over the last few month I was able to test the new Wacom Intuos4
-          drawing tablet in all details. I used the
+          drawing tablet in all details. I used the{' '}
           <a href="http://www.amazon.com/gp/product/B001TUYU06/essencompucan-20">
             Intuos4 Large
-          </a>
+          </a>{' '}
           mainly for digital painting, but since this task makes use of nearly
           all features of a graphics tablet, I think I can tell pretty good what
           has improved and if it’s worth to buy.
@@ -456,11 +456,11 @@ export default function Page() {
             <li>
               <p>
                 The price is still pretty high, especially compared to cheaper
-                tablets (like the
+                tablets (like the{' '}
                 <a href="http://www.amazon.com/gp/product/B000V9T2JA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000V9T2JA">
                   Wacom Bamboo
-                </a>
-                or competitive products like the
+                </a>{' '}
+                or competitive products like the{' '}
                 <a href="http://www.amazon.com/gp/product/B00007FRZ8?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00007FRZ8">
                   Aiptek tablets
                 </a>
@@ -476,7 +476,7 @@ export default function Page() {
           and the more usable buttons. But it should also be noted that the
           Intuos3 was already a great graphics tablet and it’s still today. So
           it’s up to you to decide if you really need the improvements of the
-          Intuos4 or if the Intuos3 (or maybe even a
+          Intuos4 or if the Intuos3 (or maybe even a{' '}
           <a href="http://www.amazon.com/gp/product/B000V9T2JA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000V9T2JA">
             Bamboo
           </a>
@@ -499,7 +499,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

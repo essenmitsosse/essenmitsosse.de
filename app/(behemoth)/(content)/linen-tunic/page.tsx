@@ -55,10 +55,10 @@ export default function Page() {
         </div>
         <div className="fourwide">
           <p>
-            Done for the
+            Done for the{' '}
             <a href="http://gurneyjourney.blogspot.com/2008/04/art-by-committee-looming-up.html">
               “Art by Committee”
-            </a>
+            </a>{' '}
             at Gourney Journey. The author of this blog, James Gourney posts an
             excerpt snipped from an actual science fiction manuscript and you
             have to illustrate it.
@@ -99,7 +99,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

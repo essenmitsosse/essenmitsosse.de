@@ -54,7 +54,7 @@ export default function Page() {
           />
         </div>
         <div className="fourwide">
-          This one was done for the
+          This one was done for the{' '}
           <a href="http://features.cgsociety.org/challenge/strange_behavior/">
             cg-Challenge “Strange Behaviour”
           </a>
@@ -77,7 +77,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

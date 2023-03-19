@@ -54,9 +54,9 @@ export default function Page() {
         </div>
         <div className="fourwide">
           <p>
-            My new comic project will premiere at the
+            My new comic project will premiere at the{' '}
             <a href="http://www.comic-salon.de/">Comic Salon Erlangen</a>, at
-            the booth of my university
+            the booth of my university{' '}
             <a href="http://www.comic-salon.de/index.asp?FsID=50&amp;PPID=4&amp;EventID=217&amp;spr=1">
               Burg Giebichenstein (JF7)
             </a>
@@ -81,7 +81,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

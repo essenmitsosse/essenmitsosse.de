@@ -96,7 +96,7 @@ export default function Page() {
           </blockquote>
           <p>
             <cite>
-              From
+              From{' '}
               <a
                 href="http://en.wikipedia.org/wiki/Graphics_tablet"
                 onclick="return false;"
@@ -209,7 +209,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

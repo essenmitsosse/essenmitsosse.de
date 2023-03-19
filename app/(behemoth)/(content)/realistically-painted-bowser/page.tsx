@@ -56,11 +56,11 @@ export default function Page() {
         </div>
         <div className="sixwide">
           <p>
-            Some weeks ago Pixeloo did his great untoonings of
+            Some weeks ago Pixeloo did his great untoonings of{' '}
             <a href="http://pixeloo.blogspot.com/2008/03/super-real-mario-world.html">
               Mario
-            </a>
-            and
+            </a>{' '}
+            and{' '}
             <a href="http://pixeloo.blogspot.com/2008/03/homer-simpson-untooned.html">
               Homer
             </a>
@@ -108,7 +108,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

@@ -84,7 +84,7 @@ export default function Page() {
             that important for recognizing a face.
           </p>
           <p>
-            For example look at the great paintings of
+            For example look at the great paintings of{' '}
             <a href="http://sebastian-kruger-news.blogspot.com/">
               Sebastian Krüger
             </a>
@@ -191,8 +191,9 @@ export default function Page() {
           to find lines to describe them 2-dimensional.
         </p>
         <p>
-          But don&#8217;t think 2-dimensional.
+          But don&#8217;t think 2-dimensional.{' '}
           <strong>
+            {' '}
             Try to imagine how the lines are running into the room, try to push
             them into the space.
           </strong>
@@ -260,7 +261,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>
