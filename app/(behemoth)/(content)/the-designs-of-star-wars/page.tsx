@@ -32,7 +32,7 @@ export default function ApplicationsForDigitalPainting() {
               <a href="digital-painters" rel="prev">
                 <span className="arrow">&#9658;</span>
                 <span className="title">
-                  35 Digital Painters <em>you shouldn’t miss</em>
+                  35 Digital Painters <em>you shouldn&rsquo;t miss</em>
                 </span>
               </a>
             </li>
@@ -59,10 +59,11 @@ export default function ApplicationsForDigitalPainting() {
           <p>2008-09-24</p>
         </div>
         <p>
-          Star Wars didn’t just became famous for its story or special-effects.
-          The role of its groundbreaking designs shouldn’t be underestimated.
-          Here are 10 reasons why the concept arts are masterpieces and what
-          they can teach you about good concept-art.
+          Star Wars didn&rsquo;t just became famous for its story or
+          special-effects. The role of its groundbreaking designs
+          shouldn&rsquo;t be underestimated. Here are 10 reasons why the concept
+          arts are masterpieces and what they can teach you about good
+          concept-art.
         </p>
         <h2 id="proportion">
           <em>Reason &#8470;10</em> Proportion
@@ -976,8 +977,8 @@ export default function ApplicationsForDigitalPainting() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -986,7 +987,7 @@ export default function ApplicationsForDigitalPainting() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

@@ -198,7 +198,7 @@ export default function Page() {
           <p>
             <strong>RGB:</strong> If you only work for the web you can choose
             sRGB, but if your work will probably be printed you should go with
-            Adobe RGB, because it’s the bigger{' '}
+            Adobe RGB, because it&rsquo;s the bigger{' '}
             <a href="http://en.wikipedia.org/wiki/Gamut">gamut</a>. Never chose
             your monitor profile (even if many people think, that this is what
             should be chosen). This wouldn&#8217;t make sense, because your
@@ -305,8 +305,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -315,7 +315,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

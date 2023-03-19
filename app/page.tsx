@@ -44,8 +44,8 @@ export default function Home() {
           <div className="wrapper">
             <h1>About</h1>
             <p>
-              My name ist Marcus Blättermann. I’m majoring in Communication
-              Design at{' '}
+              My name ist Marcus Blättermann. I&rsquo;m majoring in
+              Communication Design at{' '}
               <a href="http://burg-halle.de/">
                 Burg Giebichenstein University of Art & Design
               </a>
@@ -136,7 +136,7 @@ export default function Home() {
                 <h3>
                   <a href="digital-painters">
                     <span className="date">2008-05-15</span>
-                    35 Digital Painters <em>you shouldn’t miss</em>
+                    35 Digital Painters <em>you shouldn&rsquo;t miss</em>
                   </a>
                 </h3>
               </li>

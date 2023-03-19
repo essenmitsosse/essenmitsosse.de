@@ -61,8 +61,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

@@ -52,9 +52,9 @@ export default function Page() {
         </div>
         <p>
           After several redesign attempts over the last few years I finally
-          ended up with something I’m happy with. I fought a long time with
-          myself to find something that’s neither boring to look at nor
-          overpowering the content. In the end I came up with a strong color
+          ended up with something I&rsquo;m happy with. I fought a long time
+          with myself to find something that&rsquo;s neither boring to look at
+          nor overpowering the content. In the end I came up with a strong color
           scheme, that catches the attention of the viewer and than steps back
           when the content starts. Also note how the design can adjust to
           different screen sizes, while the content itself has a fixed width.
@@ -70,8 +70,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

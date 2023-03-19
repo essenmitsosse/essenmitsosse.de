@@ -4,7 +4,7 @@ import headerPortrait from '../../../../website/blog/wp-content/uploads/likeness
 export const metadata: Metadata = {
   title: 'How to achieve Likeness In A Portrait ♣ essenmitsosse',
   description:
-    'What is it that let’s a drawing look like the original face? Some thoughts on similarity.',
+    'What is it that let&rsquo;s a drawing look like the original face? Some thoughts on similarity.',
   keywords:
     'Analysis, caricature, drawing, guide, likeness, portrait, Theory, Tutorial',
 }
@@ -251,8 +251,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -261,7 +261,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

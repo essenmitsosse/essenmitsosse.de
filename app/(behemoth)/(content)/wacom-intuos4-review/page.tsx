@@ -67,11 +67,11 @@ export default function Page() {
           </a>{' '}
           mainly for digital painting, but since this task makes use of nearly
           all features of a graphics tablet, I think I can tell pretty good what
-          has improved and if it’s worth to buy.
+          has improved and if it&rsquo;s worth to buy.
         </p>
         <p>
-          If you’re not quite sure if you need a graphics tablet or what it’s
-          good for at all I have written an article about this.
+          If you&rsquo;re not quite sure if you need a graphics tablet or what
+          it&rsquo;s good for at all I have written an article about this.
         </p>
         <p>
           <a href="graphics-tablet">
@@ -91,20 +91,20 @@ export default function Page() {
           />
         </div>
         <p>
-          The changes in the design of the new Intuos4 aren’t just optical. In
-          contrast to its predecessor all buttons are now only on one side. The
-          two touch strips of the Intuos3 has been replaced by one Touching
-          Ring, which can be compared to the click-wheel of the iPod. Every size
-          of the Intuos4 always has eight buttons and the one Touching Ring
-          which can be assigned four different functions.
+          The changes in the design of the new Intuos4 aren&rsquo;t just
+          optical. In contrast to its predecessor all buttons are now only on
+          one side. The two touch strips of the Intuos3 has been replaced by one
+          Touching Ring, which can be compared to the click-wheel of the iPod.
+          Every size of the Intuos4 always has eight buttons and the one
+          Touching Ring which can be assigned four different functions.
         </p>
         <p>
           The advantage of all buttons being on one side is that you neither has
           to use your “pen-hand” to press a button, nor accidently can press a
           button or use a touch strip on the right side. All buttons can be
           pressed with your left hand. But the best feature is, that if you are
-          left-handed, the whole tablet can be turned by 180&deg;, since it’s
-          symmetrical (there are even two USB connections).
+          left-handed, the whole tablet can be turned by 180&deg;, since
+          it&rsquo;s symmetrical (there are even two USB connections).
         </p>
         <p>
           In addition, there are small LED-Displays (on the M, L &#038; XL) next
@@ -123,24 +123,24 @@ export default function Page() {
           />
         </div>
         <p>
-          The Touching Ring is a mixed blessing. On the one hand it’s nice to be
-          able to assign four different functions to it on the other hand you
-          have to switch through these functions by pressing the button in the
-          center of the wheel and this works only in one way. So if you want to
-          switch from function A to B you have to press only one time, but if
+          The Touching Ring is a mixed blessing. On the one hand it&rsquo;s nice
+          to be able to assign four different functions to it on the other hand
+          you have to switch through these functions by pressing the button in
+          the center of the wheel and this works only in one way. So if you want
+          to switch from function A to B you have to press only one time, but if
           you want to get back from B to A you have to press another three
           times, switching through C and D, which can be pretty annoying. Also
-          it’s hard to see which function is currently activated, since it’s
-          only indicated, by a small LED next to the wheel. On the other hand
-          the wheel is much more comfortable if you need to “scroll” a lot and
-          all four functions can be used with one hand.
+          it&rsquo;s hard to see which function is currently activated, since
+          it&rsquo;s only indicated, by a small LED next to the wheel. On the
+          other hand the wheel is much more comfortable if you need to “scroll”
+          a lot and all four functions can be used with one hand.
         </p>
         <h3>Rougher surface</h3>
         <p>
           Some people really wished for this “feature”, since they found the
           smooth surface of the Intuos3 offered not enough control over the pen.
           If you are one of these people you will probably love the new rougher
-          surface. For me it’s more kind of a downside, since I liked the
+          surface. For me it&rsquo;s more kind of a downside, since I liked the
           smoother surface of the Intuos3.
         </p>
         <p>
@@ -172,8 +172,8 @@ export default function Page() {
         <p>
           In addition to the three different pen nibs of the Intuos3 (normal
           plastic, a spring-loaded nib and one that feels like a felt tip),
-          there’s also a new one, which tip seems to be made out of rubber and
-          offers even more friction than the felt nib and feels much more
+          there&rsquo;s also a new one, which tip seems to be made out of rubber
+          and offers even more friction than the felt nib and feels much more
           natural.
         </p>
         <p>
@@ -190,10 +190,10 @@ export default function Page() {
           tablets) and the change is minimal.
         </p>
         <p>
-          There’s also a precision mode, which can be activated over one of the
-          buttons and scales down the area of the screen the tablet is mapped
-          to, giving you an immense (temporarily) increase of accuracy and
-          precision.
+          There&rsquo;s also a precision mode, which can be activated over one
+          of the buttons and scales down the area of the screen the tablet is
+          mapped to, giving you an immense (temporarily) increase of accuracy
+          and precision.
         </p>
         <h3>Radial Menu</h3>
         <div className="alignright">
@@ -209,8 +209,8 @@ export default function Page() {
         <p>
           Another new feature is the Radial Menu, which can be applied to one of
           the buttons. It can give you fast access to a lot of shortcuts and
-          features and by this can improve your workflow. Also it’s customizable
-          for different programms.
+          features and by this can improve your workflow. Also it&rsquo;s
+          customizable for different programms.
         </p>
         <h2>Comparison of Intuos3 &#038; Intuos4</h2>
         <table>
@@ -417,7 +417,8 @@ export default function Page() {
             <li>
               <p>
                 The advantage of all Wacom tablets: No battery in the pen,
-                making them lighter and you don’t have to change the battery.
+                making them lighter and you don&rsquo;t have to change the
+                battery.
               </p>
             </li>
           </ul>
@@ -449,8 +450,8 @@ export default function Page() {
             </li>
             <li>
               <p>
-                Intuos3 Equipment (like the special-pens) isn’t compatible with
-                Intuos4 and has to be bought again.
+                Intuos3 Equipment (like the special-pens) isn&rsquo;t compatible
+                with Intuos4 and has to be bought again.
               </p>
             </li>
             <li>
@@ -474,9 +475,9 @@ export default function Page() {
           The Intuos4 has definitely been improved in many areas and especially
           professional users will enjoy the new features, the greater accuracy
           and the more usable buttons. But it should also be noted that the
-          Intuos3 was already a great graphics tablet and it’s still today. So
-          it’s up to you to decide if you really need the improvements of the
-          Intuos4 or if the Intuos3 (or maybe even a{' '}
+          Intuos3 was already a great graphics tablet and it&rsquo;s still
+          today. So it&rsquo;s up to you to decide if you really need the
+          improvements of the Intuos4 or if the Intuos3 (or maybe even a{' '}
           <a href="http://www.amazon.com/gp/product/B000V9T2JA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B000V9T2JA">
             Bamboo
           </a>
@@ -489,8 +490,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -499,7 +500,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

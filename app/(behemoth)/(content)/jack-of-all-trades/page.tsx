@@ -53,11 +53,11 @@ export default function Page() {
             to see how creativity works, how you can force yourself to get
             things done, how to make decisions, avoid distraction and boost
             concentration. The initial idea was to make a short documentation
-            about what we found out for ourselves. But we decided that we didn’t
-            want to sit there and tell people how we think things work. Instead
-            we decided to share our insights in form of a small parable. No
-            absolute statements. Everybody should decide for themselves, what
-            can be drawn from the film.
+            about what we found out for ourselves. But we decided that we
+            didn&rsquo;t want to sit there and tell people how we think things
+            work. Instead we decided to share our insights in form of a small
+            parable. No absolute statements. Everybody should decide for
+            themselves, what can be drawn from the film.
           </p>
         </div>
         <hr />
@@ -67,8 +67,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

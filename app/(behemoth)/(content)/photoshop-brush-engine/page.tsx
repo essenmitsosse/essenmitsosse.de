@@ -24,7 +24,7 @@ export default function ApplicationsForDigitalPainting() {
               <a href="digital-painters" rel="next">
                 <span className="arrow">&#9668;</span>
                 <span className="title">
-                  35 Digital Painters <em>you shouldn’t miss</em>
+                  35 Digital Painters <em>you shouldn&rsquo;t miss</em>
                 </span>
               </a>
             </li>
@@ -243,9 +243,9 @@ export default function ApplicationsForDigitalPainting() {
             <li>
               <p>
                 <strong>Roundness</strong> compresses the shape of your brush by
-                specifies the ratio between the brush’s short and long axes. If
-                you are using a round brush it gives you an ellipse. For any
-                other brush it just makes it smaller in one axis.
+                specifies the ratio between the brush&rsquo;s short and long
+                axes. If you are using a round brush it gives you an ellipse.
+                For any other brush it just makes it smaller in one axis.
               </p>
             </li>
             <li>
@@ -679,8 +679,8 @@ export default function ApplicationsForDigitalPainting() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign.
           </p>
         </div>
 
@@ -689,7 +689,7 @@ export default function ApplicationsForDigitalPainting() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to follow me on{' '}
+            Don&rsquo;t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="/">Portfolio</a>.
           </p>

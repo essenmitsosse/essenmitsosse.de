@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'kino.120a ♣ essenmitsosse',
   description: 'Poster series for student cinema kino.120a.',
   keywords:
-    'allegro non troppo, berlin calling, cinema, graphic design, i’m not there, marcus blaettermann, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs',
+    'allegro non troppo, berlin calling, cinema, graphic design, i&rsquo;m not there, marcus blaettermann, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs',
 }
 
 export default function Page() {
@@ -85,9 +85,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Bob Dylan"
+              title="I&rsquo;m not there — Bob Dylan"
               src="blog/wp-content/uploads/kino120a/im-not-there-1.png"
-              alt="I’m not there — Bob Dylan —poster"
+              alt="I&rsquo;m not there — Bob Dylan —poster"
               width="300"
               height="300"
             />
@@ -96,9 +96,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there"
+              title="I&rsquo;m not there"
               src="blog/wp-content/uploads/kino120a/im-not-there-2.png"
-              alt="I’m not there - poster"
+              alt="I&rsquo;m not there - poster"
               width="300"
               height="300"
             />
@@ -107,9 +107,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Marcus Carl Franklin"
+              title="I&rsquo;m not there — Marcus Carl Franklin"
               src="blog/wp-content/uploads/kino120a/im-not-there-marcus-carl-franklin.png"
-              alt="I’m not there — Marcus Carl Franklin"
+              alt="I&rsquo;m not there — Marcus Carl Franklin"
               width="300"
               height="300"
             />
@@ -118,9 +118,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Christian Bale"
+              title="I&rsquo;m not there — Christian Bale"
               src="blog/wp-content/uploads/kino120a/im-not-there-christian-bale.png"
-              alt="I’m not there — Christian Bale"
+              alt="I&rsquo;m not there — Christian Bale"
               width="300"
               height="300"
             />
@@ -129,9 +129,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Cate Blanchett"
+              title="I&rsquo;m not there — Cate Blanchett"
               src="blog/wp-content/uploads/kino120a/im-not-there-cate-blanchett.png"
-              alt="I’m not there — Cate Blanchett"
+              alt="I&rsquo;m not there — Cate Blanchett"
               width="300"
               height="300"
             />
@@ -140,9 +140,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there"
+              title="I&rsquo;m not there"
               src="blog/wp-content/uploads/kino120a/im-not-there-3.png"
-              alt="I’m not there"
+              alt="I&rsquo;m not there"
               width="300"
               height="300"
             />
@@ -151,9 +151,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Heath Ledger"
+              title="I&rsquo;m not there — Heath Ledger"
               src="blog/wp-content/uploads/kino120a/im-not-there-heath-ledger.png"
-              alt="I’m not there — Heath Ledger"
+              alt="I&rsquo;m not there — Heath Ledger"
               width="300"
               height="300"
             />
@@ -162,9 +162,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Bin Whishaw"
+              title="I&rsquo;m not there — Bin Whishaw"
               src="blog/wp-content/uploads/kino120a/im-not-there-ben-whishaw.png"
-              alt="I’m not there — Bin Whishaw"
+              alt="I&rsquo;m not there — Bin Whishaw"
               width="300"
               height="300"
             />
@@ -173,9 +173,9 @@ export default function Page() {
         <div className="fourwide">
           <p>
             <img
-              title="I’m not there — Richard Gere"
+              title="I&rsquo;m not there — Richard Gere"
               src="blog/wp-content/uploads/kino120a/im-not-there-richard-gere.png"
-              alt="I’m not there — Richard Gere"
+              alt="I&rsquo;m not there — Richard Gere"
               width="300"
               height="300"
             />
@@ -264,8 +264,8 @@ export default function Page() {
           </h3>
           <p>
             My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign. If you like my work you can
+            I&rsquo;m majoring in communication design and work as a freelancer
+            for illustration, print- & webdesign. If you like my work you can
             <script type="text/javascript">mail2()</script>
             <noscript>hire me. marcus -at- essenmitsosse -dot- de</noscript>.
           </p>
@@ -276,7 +276,7 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to subscribe to my{' '}
+            Don&rsquo;t forget to subscribe to my{' '}
             <a href="http://feeds.feedburner.com/essenmitsosse" rel="alternate">
               RSS-Feed
             </a>{' '}
