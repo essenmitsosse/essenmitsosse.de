@@ -1,6 +1,24 @@
 import { Metadata } from 'next'
 import { Fragment } from 'react'
 
+import previewAkt from '../website/blog/wp-content/uploads/portfoliothumb/akt-preview.jpg'
+import previewAnglerfish from '../website/blog/wp-content/uploads/portfoliothumb/anglerfish-preview.jpg'
+import previewAztheken from '../website/blog/wp-content/uploads/portfoliothumb/aztheken-preview.jpg'
+import previewBlondhead from '../website/blog/wp-content/uploads/portfoliothumb/blondhead-preview.jpg'
+import previewBowser from '../website/blog/wp-content/uploads/portfoliothumb/bowser-preview.jpg'
+import previewGondel from '../website/blog/wp-content/uploads/portfoliothumb/gondel-preview.jpg'
+import previewLinentunic from '../website/blog/wp-content/uploads/portfoliothumb/linentunic-preview.jpg'
+import previewPortrait from '../website/blog/wp-content/uploads/portfoliothumb/portrait-preview.jpg'
+import previewSonic from '../website/blog/wp-content/uploads/portfoliothumb/sonic-preview.jpg'
+import previewSparta from '../website/blog/wp-content/uploads/portfoliothumb/sparta-preview.jpg'
+import previewBloackator from '../website/portfolioupload/blockator/blockator-preview.gif'
+import previewJackofalltrades from '../website/blog/wp-content/uploads/jackofalltrades/jack-of-all-trades.png'
+import previewHumanbrain from '../website/blog/wp-content/uploads/humanbrain/humanbrain.png'
+import previewKino120a from '../website/blog/wp-content/uploads/kino120a/kino120a.png'
+import previewCreaturecombat from '../website/blog/wp-content/uploads/creaturecombat/creaturecombat.png'
+import previewFaust from '../website/blog/wp-content/uploads/faust/faust.png'
+import previewEssenmitsosse from '../website/blog/wp-content/uploads/essenmitsosse/website-preview.png'
+
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
   description: 'The work and thoughts of an illustrator, print- & webdesigner.',
@@ -192,8 +210,7 @@ export default function Home() {
                   <a
                     href="jack-of-all-trades"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/jackofalltrades/jack-of-all-trades.png)',
+                      backgroundImage: `url(${previewJackofalltrades.src}`,
                     }}
                   >
                     <span>Jack of all Trades</span>
@@ -203,8 +220,7 @@ export default function Home() {
                   <a
                     href="the-human-brain"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/humanbrain/humanbrain.png)',
+                      backgroundImage: `url(${previewHumanbrain.src}`,
                     }}
                   >
                     <span>The Human Brain</span>
@@ -214,8 +230,7 @@ export default function Home() {
                   <a
                     href="kino-120a"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/kino120a/kino120a.png)',
+                      backgroundImage: `url(${previewKino120a.src}`,
                     }}
                   >
                     <span>kino.120a</span>
@@ -225,8 +240,7 @@ export default function Home() {
                   <a
                     href="creature-combat"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/creaturecombat/creaturecombat.png)',
+                      backgroundImage: `url(${previewCreaturecombat.src}`,
                     }}
                   >
                     <span>Creature Combat IV</span>
@@ -236,8 +250,7 @@ export default function Home() {
                   <a
                     href="faust"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/faust/faust.png)',
+                      backgroundImage: `url(${previewFaust.src}`,
                     }}
                   >
                     <span>Faust</span>
@@ -247,8 +260,7 @@ export default function Home() {
                   <a
                     href="blockator"
                     style={{
-                      backgroundImage:
-                        'url(portfolioupload/blockator/blockator-preview.gif)',
+                      backgroundImage: `url(${previewBloackator.src})`,
                     }}
                   >
                     <span>Blockator</span>
@@ -258,8 +270,7 @@ export default function Home() {
                   <a
                     href="essenmitsosse-redesign"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/essenmitsosse/website-preview.png)',
+                      backgroundImage: `url(${previewEssenmitsosse.src}`,
                     }}
                   >
                     <span>essenmitsosse Redesign</span>
@@ -269,8 +280,7 @@ export default function Home() {
                   <a
                     href="portrait-class"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/portrait-preview.jpg)',
+                      backgroundImage: `url(${previewPortrait.src})`,
                     }}
                   >
                     <span>Portrait Class</span>
@@ -280,8 +290,7 @@ export default function Home() {
                   <a
                     href="sonic-the-real-hedgehog"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/sonic-preview.jpg)',
+                      backgroundImage: `url(${previewSonic.src})`,
                     }}
                   >
                     <span>Sonic The Real Hedgehog</span>
@@ -291,8 +300,7 @@ export default function Home() {
                   <a
                     href="realistically-painted-bowser"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/bowser-preview.jpg)',
+                      backgroundImage: `url(${previewBowser.src})`,
                     }}
                   >
                     <span>Realistically Painted Bowser</span>
@@ -302,8 +310,7 @@ export default function Home() {
                   <a
                     href="digital-life-drawing"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/akt-preview.jpg)',
+                      backgroundImage: `url(${previewAkt.src})`,
                     }}
                   >
                     <span>Digital Life Drawing</span>
@@ -313,8 +320,7 @@ export default function Home() {
                   <a
                     href="linen-tunic"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/linentunic-preview.jpg)',
+                      backgroundImage: `url(${previewLinentunic.src})`,
                     }}
                   >
                     <span>Linen Tunic</span>
@@ -324,8 +330,7 @@ export default function Home() {
                   <a
                     href="aztecs"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/aztheken-preview.jpg)',
+                      backgroundImage: `url(${previewAztheken.src})`,
                     }}
                   >
                     <span>Aztecs</span>
@@ -335,8 +340,7 @@ export default function Home() {
                   <a
                     href="the-anglerfish"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/anglerfish-preview.jpg)',
+                      backgroundImage: `url(${previewAnglerfish.src})`,
                     }}
                   >
                     <span>The Anglerfish</span>
@@ -346,8 +350,7 @@ export default function Home() {
                   <a
                     href="sparta-fanart"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/sparta-preview.jpg)',
+                      backgroundImage: `url(${previewSparta.src})`,
                     }}
                   >
                     <span>Sparta!</span>
@@ -357,8 +360,7 @@ export default function Home() {
                   <a
                     href="blondheadredhead"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/blondhead-preview.jpg)',
+                      backgroundImage: `url(${previewBlondhead.src})`,
                     }}
                   >
                     <span>Blondehead &#038; Redhead</span>
@@ -368,8 +370,7 @@ export default function Home() {
                   <a
                     href="older-paintings"
                     style={{
-                      backgroundImage:
-                        'url(blog/wp-content/uploads/portfoliothumb/gondel-preview.jpg)',
+                      backgroundImage: `url(${previewGondel.src})`,
                     }}
                   >
                     <span>Older Paintings</span>
