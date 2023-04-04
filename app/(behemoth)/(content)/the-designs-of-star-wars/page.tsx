@@ -26,7 +26,8 @@ import imageShapes from '../../../../website/blog/wp-content/uploads/starwars/sh
 import imageLightsaber from '../../../../website/blog/wp-content/uploads/starwars/lightsaber.png'
 
 export const metadata: Metadata = {
-  title: '♣ essenmitsosse',
+  title:
+    'The Designs Of Star Wars 10 reasons why they are awesome ♣ essenmitsosse',
   description:
     'What is it, that make the concept art of Star Wars so damn good.',
   keywords:
