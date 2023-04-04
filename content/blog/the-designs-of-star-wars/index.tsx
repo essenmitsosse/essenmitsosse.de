@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     'Analysis, collection, concept art, guide, inspiration, list, redesign, Showcase, starwars, Theory',
 }
 
-export default function ApplicationsForDigitalPainting() {
+export default function Page() {
   return (
     <body className="single article">
       <ul id="navigation" className="black">

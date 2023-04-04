@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'adobe, brush, brush engine, graphics tablet, guide, photoshop, Software, stylus',
 }
 
-export default function ApplicationsForDigitalPainting() {
+export default function Page() {
   return (
     <body className="single article">
       <ul id="navigation" className="black">
