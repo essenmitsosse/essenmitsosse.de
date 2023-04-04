@@ -1,16 +1,7 @@
-import { Metadata } from 'next'
 import headerColorManagement from '../../../website/blog/wp-content/uploads/colormanagement/colormanagement-header.png'
 
 import imageSettings from '../../../website/blog/wp-content/uploads/2008/04/settings.jpg'
 import imageSaveforwebsettings from '../../../website/blog/wp-content/uploads/2008/04/saveforwebsettings.jpg'
-
-export const metadata: Metadata = {
-  title: 'How to set up Color Management ♣ essenmitsosse',
-  description:
-    'A tutorial on how to correctly set up color-management. This might also solve the color shift problem when saving for the web in Photoshop.',
-  keywords:
-    'adobe, Adobe RGB, calibration, CMS, color-management, colors, creative suite, display, guide, photoshop, save for web, sRGB',
-}
 
 export default function Page() {
   return (

@@ -1,11 +1,3 @@
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Jack of all Trades ♣ essenmitsosse',
-  description: 'A movie about creativity and getting things done.',
-  keywords: '',
-}
-
 export default function Page() {
   return (
     <body className="single black portfolio">

@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import headerDigitalPainting from '../../../website/blog/wp-content/uploads/digitalpainting/digitalpainting-header.png'
 
 import imagePhotoshop from '../../../website/blog/wp-content/uploads/2008/04/photoshop.jpg'
@@ -12,14 +11,6 @@ import imageArtweaver from '../../../website/blog/wp-content/uploads/2008/04/art
 import imageDeeppaint from '../../../website/blog/wp-content/uploads/2008/04/deeppaint.jpg'
 import imageDogwaffle from '../../../website/blog/wp-content/uploads/2008/04/dogwaffle.jpg'
 import imagePaint from '../../../website/blog/wp-content/uploads/2008/04/paint.jpg'
-
-export const metadata: Metadata = {
-  title: '11 applications for Digital Painting ♣ essenmitsosse',
-  description:
-    'A compilation of software you can use to paint with your computer.',
-  keywords:
-    'adobe, artrage, artweaver, collection, corel, deep paint, digital painting, dogwaffle, free, gimp, graphics editor, guide, list, opencanvas, paint shop pro, paint.net, painter, photoshop, sketchbook pro, Software',
-}
 
 export default function Page() {
   return (

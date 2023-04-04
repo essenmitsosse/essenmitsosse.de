@@ -1,13 +1,4 @@
-import { Metadata } from 'next'
-
 import imageAnglerfish from '../../../website/blog/wp-content/uploads/portfolio/anglerfish.jpg'
-
-export const metadata: Metadata = {
-  title: 'The Anglerfish ♣ essenmitsosse',
-  description: '',
-  keywords:
-    'anglerfish, cg-challenge, contest, digital painting, images, marcus blättermann, painting, photoshop',
-}
 
 export default function Page() {
   return (

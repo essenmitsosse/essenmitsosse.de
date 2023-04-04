@@ -1,12 +1,3 @@
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Creature Combat IV ♣ essenmitsosse',
-  description: 'Animation movie of a battle between a cat and a mouse.',
-  keywords:
-    'animation, cat, drawing, funny, marcus blaettermann, mouse, student, susanne wohlfahrt',
-}
-
 export default function Page() {
   return (
     <body className="single black portfolio">

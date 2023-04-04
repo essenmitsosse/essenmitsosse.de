@@ -1,12 +1,4 @@
-import { Metadata } from 'next'
-
 import redesignWebsite from '../../../website/blog/wp-content/uploads/essenmitsosse/website.png'
-
-export const metadata: Metadata = {
-  title: 'essenmitsosse Redesign ♣ essenmitsosse',
-  description: 'Redesign of the homepage of Marcus Blättermann.',
-  keywords: 'essenmitsosse, marcus blättermann, Webdesign, website',
-}
 
 export default function Page() {
   return (

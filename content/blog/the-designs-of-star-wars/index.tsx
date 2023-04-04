@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import headerVader from '../../../website/blog/wp-content/uploads/starwars/vader-intro.png'
 
 import imageAtat from '../../../website/blog/wp-content/uploads/starwars/atat.jpg'
@@ -24,15 +23,6 @@ import imageMauser from '../../../website/blog/wp-content/uploads/starwars/mause
 import imageVader from '../../../website/blog/wp-content/uploads/starwars/vader.jpg'
 import imageShapes from '../../../website/blog/wp-content/uploads/starwars/shapes.gif'
 import imageLightsaber from '../../../website/blog/wp-content/uploads/starwars/lightsaber.png'
-
-export const metadata: Metadata = {
-  title:
-    'The Designs Of Star Wars 10 reasons why they are awesome ♣ essenmitsosse',
-  description:
-    'What is it, that make the concept art of Star Wars so damn good.',
-  keywords:
-    'Analysis, collection, concept art, guide, inspiration, list, redesign, Showcase, starwars, Theory',
-}
 
 export default function Page() {
   return (

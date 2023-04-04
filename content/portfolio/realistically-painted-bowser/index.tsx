@@ -1,14 +1,4 @@
-import { Metadata } from 'next'
-
 import imageBowser from '../../../website/blog/wp-content/uploads/bowser/bowser.jpg'
-
-export const metadata: Metadata = {
-  title: 'Realistically Painted Bowser ♣ essenmitsosse',
-  description:
-    'How would Bowser from “Super Mario” look like, if he would be a real animal?',
-  keywords:
-    'bowser, brush, coloration, digital painting, fanart, images, marcus blättermann, painting, photoshop, realistic, redesign, untoon',
-}
 
 export default function Page() {
   return (

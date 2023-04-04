@@ -1,12 +1,4 @@
-import { Metadata } from 'next'
 import headerGraphicsTablet from '../../../website/blog/wp-content/uploads/graphicstablet/graphicstablet-header.png'
-
-export const metadata: Metadata = {
-  title: 'An introduction to the Graphics Tablet ♣ essenmitsosse',
-  description:
-    'A small how to for graphics tablet beginners. Why should you use one?',
-  keywords: 'brush, digital painting, graphics tablet, guide, Hardware, stylus',
-}
 
 export default function Page() {
   return (

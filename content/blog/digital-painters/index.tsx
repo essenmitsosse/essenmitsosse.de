@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import headerDigitalPainter from '../../../website/blog/wp-content/uploads/digitalpainters/digitalpainter-header.png'
 
 import previewSonsofthestorm from '../../../website/blog/wp-content/uploads/digitalpainters/sonsofthestorm.jpg'
@@ -36,14 +35,6 @@ import previewSub from '../../../website/blog/wp-content/uploads/digitalpainters
 import previewJustinsweet from '../../../website/blog/wp-content/uploads/digitalpainters/justinsweet.jpg'
 import previewTorstenwolber from '../../../website/blog/wp-content/uploads/digitalpainters/torstenwolber.jpg'
 import previewFengzhu from '../../../website/blog/wp-content/uploads/digitalpainters/fengzhu.jpg'
-
-export const metadata: Metadata = {
-  title: '35 Digital Painters you shouldn&rsquo;t miss ♣ essenmitsosse',
-  description:
-    'A compilation of artists how paint with their computer. From illustrators to concept-artists.',
-  keywords:
-    'artist, collection, community, craig mullins, digital painting, gfxartist, link, list, Portfolio, websites',
-}
 
 export default function Page() {
   return (

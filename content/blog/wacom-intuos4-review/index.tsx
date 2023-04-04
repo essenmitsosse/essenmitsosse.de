@@ -1,18 +1,9 @@
-import { Metadata } from 'next'
 import headerIntuos4 from '../../../website/blog/wp-content/uploads/intuos4/intuos4.png'
 
 import imageMainphoto from '../../../website/blog/wp-content/uploads/intuos4/mainphoto.jpg'
 import imageTouchingring from '../../../website/blog/wp-content/uploads/intuos4/touchingring.jpg'
 import imagePentips from '../../../website/blog/wp-content/uploads/intuos4/pentips.png'
 import imageRadialmenu from '../../../website/blog/wp-content/uploads/intuos4/radialmenu.png'
-
-export const metadata: Metadata = {
-  title: 'Wacom Intuos4 Review ♣ essenmitsosse',
-  description:
-    'An review of the Wacom Intous4 graphics pad with a look at its new functions.',
-  keywords:
-    'brush, digital painting, graphics tablet, Hardware, Review, stylus',
-}
 
 export default function Page() {
   return (

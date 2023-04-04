@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import headerEvolution from '../../../website/article/evolution/evolution.png'
 
 import imageBasic from '../../../website/article/evolution/basic.png'
@@ -9,14 +8,6 @@ import imageEconomics from '../../../website/article/evolution/economics.png'
 import imageConvergence from '../../../website/article/evolution/convergence.png'
 import imageFlexibility from '../../../website/article/evolution/flexibility.png'
 import imagePerfection from '../../../website/article/evolution/perfection.png'
-
-export const metadata: Metadata = {
-  title: 'What designers can learn from Evolution ♣ essenmitsosse',
-  description:
-    'Evolution has more in common with design than one might think. This look at nature will teach you a lot about design.',
-  keywords:
-    'advertising, Analysis, convergence, design, economics, evolution, flexibility, inspiration, quality, Theory, usabily',
-}
 
 export default function Page() {
   return (

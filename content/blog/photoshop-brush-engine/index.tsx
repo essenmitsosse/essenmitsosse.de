@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import headerBrushEngine from '../../../website/blog/wp-content/uploads/photoshop/brushengine-header.png'
 
 import imageBrushbutton from '../../../website/blog/wp-content/uploads/photoshop/brushbutton.png'
@@ -20,14 +19,6 @@ import imageNoise from '../../../website/blog/wp-content/uploads/2008/05/noise.j
 import imageWetedges from '../../../website/blog/wp-content/uploads/2008/05/wetedges.jpg'
 import imageAirbrush from '../../../website/blog/wp-content/uploads/2008/05/airbrush.jpg'
 import imageSmoothing from '../../../website/blog/wp-content/uploads/2008/05/smoothing.jpg'
-
-export const metadata: Metadata = {
-  title: 'An Introduction to the Photoshop Brush Engine ♣ essenmitsosse',
-  description:
-    'An introduction and how-to on the possibilitys photoshop offers you to create custom brushes.',
-  keywords:
-    'adobe, brush, brush engine, graphics tablet, guide, photoshop, Software, stylus',
-}
 
 export default function Page() {
   return (

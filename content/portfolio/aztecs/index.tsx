@@ -1,14 +1,4 @@
-import { Metadata } from 'next'
-
 import imageAztecs from '../../../website/blog/wp-content/uploads/portfolio/aztecs.jpg'
-
-export const metadata: Metadata = {
-  title: 'Aztecs ♣ essenmitsosse',
-  description:
-    'An image showing an Aztec warrior killing a Spanish Conquiztador',
-  keywords:
-    'actecs, digital painting, images, marcus blättermann, painting, photoshop',
-}
 
 export default function Page() {
   return (

@@ -1,13 +1,4 @@
-import { Metadata } from 'next'
-
 import imageBlockator from '../../../website/portfolioupload/blockator/blockator.gif'
-
-export const metadata: Metadata = {
-  title: 'Blockator ♣ essenmitsosse',
-  description:
-    'Blockator is an isometric 3-d Pixelfont, that is generated with Flash.',
-  keywords: 'font, marcus blättermann, pixel, student, Typography',
-}
 
 export default function Page() {
   return (

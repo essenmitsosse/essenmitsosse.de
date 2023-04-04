@@ -1,17 +1,8 @@
-import { Metadata } from 'next'
 import headerPortrait from '../../../website/blog/wp-content/uploads/likeness/portrait-header.png'
 
 import imageWhoisthis from '../../../website/blog/wp-content/uploads/2008/04/whoisthis.jpg'
 import imageWhoisthis2 from '../../../website/blog/wp-content/uploads/2008/04/whoisthis2.jpg'
 import imageWhoisthis3 from '../../../website/blog/wp-content/uploads/2008/04/whoisthis3.jpg'
-
-export const metadata: Metadata = {
-  title: 'How to achieve Likeness In A Portrait ♣ essenmitsosse',
-  description:
-    'What is it that let&rsquo;s a drawing look like the original face? Some thoughts on similarity.',
-  keywords:
-    'Analysis, caricature, drawing, guide, likeness, portrait, Theory, Tutorial',
-}
 
 export default function Page() {
   return (

@@ -1,13 +1,4 @@
-import { Metadata } from 'next'
-
 import imageLinentunic from '../../../website/blog/wp-content/uploads/portfolio/linentunic.jpg'
-
-export const metadata: Metadata = {
-  title: 'Linen Tunic ♣ essenmitsosse',
-  description:
-    'Image of a man in linen tunic with a sword, who is cursed by a wraith in the snow.',
-  keywords: 'digital painting, images, marcus blättermann, painting, photoshop',
-}
 
 export default function Page() {
   return (

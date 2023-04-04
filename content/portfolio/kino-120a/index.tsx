@@ -1,5 +1,3 @@
-import { Metadata } from 'next'
-
 import imageTheDayTheEarthStoodStill from '../../../website/blog/wp-content/uploads/kino120a/the-day-the-earth-stood-still.png'
 import imageAnderwelten from '../../../website/blog/wp-content/uploads/kino120a/anderwelten.png'
 import imageUnderdogs from '../../../website/blog/wp-content/uploads/kino120a/underdogs.png'
@@ -18,13 +16,6 @@ import imageAllegroNonTroppo1 from '../../../website/blog/wp-content/uploads/kin
 import imageAllegroNonTroppo3 from '../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-3.png'
 import imageAllegroNonTroppo2 from '../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-2.png'
 import imageAllegroNonTroppo4 from '../../../website/blog/wp-content/uploads/kino120a/allegro-non-troppo-4.png'
-
-export const metadata: Metadata = {
-  title: 'kino.120a ♣ essenmitsosse',
-  description: 'Poster series for student cinema kino.120a.',
-  keywords:
-    'allegro non troppo, berlin calling, cinema, graphic design, i&rsquo;m not there, marcus blaettermann, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs',
-}
 
 export default function Page() {
   return (

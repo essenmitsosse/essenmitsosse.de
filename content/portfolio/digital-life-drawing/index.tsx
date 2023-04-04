@@ -1,5 +1,3 @@
-import { Metadata } from 'next'
-
 import imageAkt12 from '../../../website/blog/wp-content/uploads/figuredrawing/akt12.jpg'
 import imageAkt10 from '../../../website/blog/wp-content/uploads/figuredrawing/akt10.jpg'
 import imageAkt2 from '../../../website/blog/wp-content/uploads/figuredrawing/akt2.jpg'
@@ -7,14 +5,6 @@ import imageAkt4 from '../../../website/blog/wp-content/uploads/figuredrawing/ak
 import imageAkt11 from '../../../website/blog/wp-content/uploads/figuredrawing/akt11.jpg'
 import imageAkt13 from '../../../website/blog/wp-content/uploads/figuredrawing/akt13.jpg'
 import imageAkt14 from '../../../website/blog/wp-content/uploads/figuredrawing/akt14.jpg'
-
-export const metadata: Metadata = {
-  title: 'Digital Life Drawing ♣ essenmitsosse',
-  description:
-    'I went to a life drawing class, equipped with a graphics tablet and Photoshop.',
-  keywords:
-    'colors, digital painting, drawing, figure drawing, images, life drawing, marcus blättermann, nude, painting, study',
-}
 
 export default function Page() {
   return (

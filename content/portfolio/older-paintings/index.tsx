@@ -1,5 +1,3 @@
-import { Metadata } from 'next'
-
 import imageDragonavenue from '../../../website/blog/wp-content/uploads/portfolio/dragonavenue.jpg'
 import imageSaltlake from '../../../website/blog/wp-content/uploads/portfolio/saltlake.jpg'
 import imageGondel from '../../../website/blog/wp-content/uploads/portfolio/gondel.jpg'
@@ -7,13 +5,6 @@ import imageBaldface from '../../../website/blog/wp-content/uploads/portfolio/ba
 import imageAirface from '../../../website/blog/wp-content/uploads/portfolio/airface.jpg'
 import imageTurtleline from '../../../website/blog/wp-content/uploads/portfolio/turtleline.jpg'
 import imageTurtle from '../../../website/blog/wp-content/uploads/portfolio/turtle.jpg'
-
-export const metadata: Metadata = {
-  title: 'Older Paintings ♣ essenmitsosse',
-  description: 'Some older paintings by Marcus Blättermann.',
-  keywords:
-    'digital painting, Dinosaur, Dragon, Gondola, images, Jungle, marcus blättermann, painting, photoshop, portrait, Turtle',
-}
 
 export default function Page() {
   return (

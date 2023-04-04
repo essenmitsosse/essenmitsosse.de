@@ -1,12 +1,4 @@
-import { Metadata } from 'next'
-
 import coverFaust from '../../../website/blog/wp-content/uploads/faust/cover.png'
-
-export const metadata: Metadata = {
-  title: 'Faust ♣ essenmitsosse',
-  description: 'Announcement for my new comic Faust.',
-  keywords: 'comic, graphic design, marcus blaettermann, student',
-}
 
 export default function Page() {
   return (

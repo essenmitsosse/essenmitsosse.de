@@ -1,13 +1,4 @@
-import { Metadata } from 'next'
-
 import imageSparta from '../../../website/blog/wp-content/uploads/portfolio/sparta.jpg'
-
-export const metadata: Metadata = {
-  title: 'Sparta! ♣ essenmitsosse',
-  description: 'Image of a Spartan who slaughters a Persian warrior.',
-  keywords:
-    'digital painting, fanart, images, marcus blättermann, painting, photoshop, sparta',
-}
 
 export default function Page() {
   return (

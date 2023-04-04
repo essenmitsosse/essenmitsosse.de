@@ -1,14 +1,5 @@
-import { Metadata } from 'next'
-
 import imageSonic from '../../../website/blog/wp-content/uploads/sonic/sonic.jpg'
 import imageSonicpixel from '../../../website/blog/wp-content/uploads/sonic/sonicpixel.png'
-
-export const metadata: Metadata = {
-  title: 'Sonic The Real Hedgehog ♣ essenmitsosse',
-  description: 'How would Sonic look like if he would exist in reality?',
-  keywords:
-    'brush, digital painting, fanart, images, marcus blättermann, painting, photoshop, pixel, realistic, redesign, sonic, untoon',
-}
 
 export default function Page() {
   return (

@@ -1,14 +1,5 @@
-import { Metadata } from 'next'
-
 import imageBlondhead from '../../../website/blog/wp-content/uploads/portfolio/blondhead.jpg'
 import imageRedhead from '../../../website/blog/wp-content/uploads/portfolio/redhead.jpg'
-
-export const metadata: Metadata = {
-  title: 'Blondehead &#038; Redhead ♣ essenmitsosse',
-  description: 'Paintings of a blonde girl and a redhead.',
-  keywords:
-    'digital painting, images, marcus blättermann, painting, photoshop, portrait',
-}
 
 export default function Page() {
   return (

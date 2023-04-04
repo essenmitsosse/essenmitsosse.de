@@ -1,13 +1,3 @@
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'The Human Brain ♣ essenmitsosse',
-  description:
-    'Animated movie giving an idea about how the brain really works.',
-  keywords:
-    '8bit, animation, brain, human, intelligence, marcus blaettermann, neuron, pixel, student',
-}
-
 export default function Page() {
   return (
     <body className="single black portfolio">
