@@ -5,6 +5,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'aztecs',
     Component: dynamic(() => import('./aztecs')),
+    date: '2008-03-30',
     meta: {
       title: 'Aztecs ♣ essenmitsosse',
       description:
@@ -16,6 +17,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'blockator',
     Component: dynamic(() => import('./blockator')),
+    date: '2009-08-18',
     meta: {
       title: 'Blockator ♣ essenmitsosse',
       description:
@@ -26,6 +28,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'blondheadredhead',
     Component: dynamic(() => import('./blondheadredhead')),
+    date: '2008-03-28',
     meta: {
       title: 'Blondehead &#038; Redhead ♣ essenmitsosse',
       description: 'Paintings of a blonde girl and a redhead.',
@@ -36,6 +39,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'creature-combat',
     Component: dynamic(() => import('./creature-combat')),
+    date: '2010-07-06',
     meta: {
       title: 'Creature Combat IV ♣ essenmitsosse',
       description: 'Animation movie of a battle between a cat and a mouse.',
@@ -46,6 +50,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'digital-life-drawing',
     Component: dynamic(() => import('./digital-life-drawing')),
+    date: '2008-04-18',
     meta: {
       title: 'Digital Life Drawing ♣ essenmitsosse',
       description:
@@ -57,6 +62,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'essenmitsosse-redesign',
     Component: dynamic(() => import('./essenmitsosse-redesign')),
+    date: '2009-08-17',
     meta: {
       title: 'essenmitsosse Redesign ♣ essenmitsosse',
       description: 'Redesign of the homepage of Marcus Blättermann.',
@@ -66,6 +72,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'faust',
     Component: dynamic(() => import('./faust')),
+    date: '2010-05-30',
     meta: {
       title: 'Faust ♣ essenmitsosse',
       description: 'Announcement for my new comic Faust.',
@@ -75,6 +82,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'jack-of-all-trades',
     Component: dynamic(() => import('./jack-of-all-trades')),
+    date: '2012-04-17',
     meta: {
       title: 'Jack of all Trades ♣ essenmitsosse',
       description: 'A movie about creativity and getting things done.',
@@ -84,6 +92,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'kino-120a',
     Component: dynamic(() => import('./kino-120a')),
+    date: '2010-07-27',
     meta: {
       title: 'kino.120a ♣ essenmitsosse',
       description: 'Poster series for student cinema kino.120a.',
@@ -94,6 +103,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'linen-tunic',
     Component: dynamic(() => import('./linen-tunic')),
+    date: '2008-03-30',
     meta: {
       title: 'Linen Tunic ♣ essenmitsosse',
       description:
@@ -105,6 +115,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'older-paintings',
     Component: dynamic(() => import('./older-paintings')),
+    date: '2008-03-18',
     meta: {
       title: 'Older Paintings ♣ essenmitsosse',
       description: 'Some older paintings by Marcus Blättermann.',
@@ -115,6 +126,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'portrait-class',
     Component: dynamic(() => import('./portrait-class')),
+    date: '2008-10-02',
     meta: {
       title: 'Portrait Class ♣ essenmitsosse',
       description:
@@ -126,6 +138,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'realistically-painted-bowser',
     Component: dynamic(() => import('./realistically-painted-bowser')),
+    date: '2008-04-27',
     meta: {
       title: 'Realistically Painted Bowser ♣ essenmitsosse',
       description:
@@ -137,6 +150,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'sonic-the-real-hedgehog',
     Component: dynamic(() => import('./sonic-the-real-hedgehog')),
+    date: '2008-05-09',
     meta: {
       title: 'Sonic The Real Hedgehog ♣ essenmitsosse',
       description: 'How would Sonic look like if he would exist in reality?',
@@ -147,6 +161,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'sparta-fanart',
     Component: dynamic(() => import('./sparta-fanart')),
+    date: '2008-03-30',
     meta: {
       title: 'Sparta! ♣ essenmitsosse',
       description: 'Image of a Spartan who slaughters a Persian warrior.',
@@ -157,6 +172,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'the-anglerfish',
     Component: dynamic(() => import('./the-anglerfish')),
+    date: '2008-03-30',
     meta: {
       title: 'The Anglerfish ♣ essenmitsosse',
       description: '',
@@ -167,6 +183,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'the-human-brain',
     Component: dynamic(() => import('./the-human-brain')),
+    date: '2010-12-16',
     meta: {
       title: 'The Human Brain ♣ essenmitsosse',
       description:
