@@ -11,5 +11,6 @@ export type Post = {
    * See: https://nextjs.org/docs/advanced-features/dynamic-import#example
    */
   Component: ComponentType
+  date: `${number}${number}${number}${number}-${number}${number}-${number}${number}`
   meta: Metadata
 }

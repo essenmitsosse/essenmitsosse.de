@@ -5,6 +5,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'applications-for-digital-painting',
     Component: dynamic(() => import('./applications-for-digital-painting')),
+    date: '2008-03-30',
     meta: {
       title: '11 applications for Digital Painting ♣ essenmitsosse',
       description:
@@ -16,6 +17,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'digital-painters',
     Component: dynamic(() => import('./digital-painters')),
+    date: '2008-05-15',
     meta: {
       title: '35 Digital Painters you shouldn&rsquo;t miss ♣ essenmitsosse',
       description:
@@ -27,6 +29,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'graphics-tablet',
     Component: dynamic(() => import('./graphics-tablet')),
+    date: '2008-03-28',
     meta: {
       title: 'An introduction to the Graphics Tablet ♣ essenmitsosse',
       description:
@@ -38,6 +41,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'how-to-set-up-color-management',
     Component: dynamic(() => import('./how-to-set-up-color-management')),
+    date: '2008-04-10',
     meta: {
       title: 'How to set up Color Management ♣ essenmitsosse',
       description:
@@ -49,6 +53,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'likeness-in-portrait',
     Component: dynamic(() => import('./likeness-in-portrait')),
+    date: '2008-04-08',
     meta: {
       title: 'How to achieve Likeness In A Portrait ♣ essenmitsosse',
       description:
@@ -60,6 +65,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'photoshop-brush-engine',
     Component: dynamic(() => import('./photoshop-brush-engine')),
+    date: '2008-05-03',
     meta: {
       title: 'An Introduction to the Photoshop Brush Engine ♣ essenmitsosse',
       description:
@@ -71,6 +77,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'the-designs-of-star-wars',
     Component: dynamic(() => import('./the-designs-of-star-wars')),
+    date: '2008-09-24',
     meta: {
       title:
         'The Designs Of Star Wars 10 reasons why they are awesome ♣ essenmitsosse',
@@ -83,6 +90,7 @@ const listBlog: ReadonlyArray<Post> = [
   {
     slug: 'wacom-intuos4-review',
     Component: dynamic(() => import('./wacom-intuos4-review')),
+    date: '2009-08-24',
     meta: {
       title: 'Wacom Intuos4 Review ♣ essenmitsosse',
       description:
@@ -96,6 +104,7 @@ const listBlog: ReadonlyArray<Post> = [
     Component: dynamic(
       () => import('./what-designers-can-learn-from-evolution')
     ),
+    date: '2009-09-10',
     meta: {
       title: 'What designers can learn from Evolution ♣ essenmitsosse',
       description:
