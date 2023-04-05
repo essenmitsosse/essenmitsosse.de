@@ -1,10 +1,31 @@
 import dynamic from 'next/dynamic'
 import { Post } from '../types'
 
-const listPortfolio: ReadonlyArray<Post> = [
+import previewAkt from '../../website/blog/wp-content/uploads/portfoliothumb/akt-preview.jpg'
+import previewAnglerfish from '../../website/blog/wp-content/uploads/portfoliothumb/anglerfish-preview.jpg'
+import previewAztheken from '../../website/blog/wp-content/uploads/portfoliothumb/aztheken-preview.jpg'
+import previewBlondhead from '../../website/blog/wp-content/uploads/portfoliothumb/blondhead-preview.jpg'
+import previewBowser from '../../website/blog/wp-content/uploads/portfoliothumb/bowser-preview.jpg'
+import previewGondel from '../../website/blog/wp-content/uploads/portfoliothumb/gondel-preview.jpg'
+import previewLinentunic from '../../website/blog/wp-content/uploads/portfoliothumb/linentunic-preview.jpg'
+import previewPortrait from '../../website/blog/wp-content/uploads/portfoliothumb/portrait-preview.jpg'
+import previewSonic from '../../website/blog/wp-content/uploads/portfoliothumb/sonic-preview.jpg'
+import previewSparta from '../../website/blog/wp-content/uploads/portfoliothumb/sparta-preview.jpg'
+import previewBloackator from '../../website/portfolioupload/blockator/blockator-preview.gif'
+import previewJackofalltrades from '../../website/blog/wp-content/uploads/jackofalltrades/jack-of-all-trades.png'
+import previewHumanbrain from '../../website/blog/wp-content/uploads/humanbrain/humanbrain.png'
+import previewKino120a from '../../website/blog/wp-content/uploads/kino120a/kino120a.png'
+import previewCreaturecombat from '../../website/blog/wp-content/uploads/creaturecombat/creaturecombat.png'
+import previewFaust from '../../website/blog/wp-content/uploads/faust/faust.png'
+import previewEssenmitsosse from '../../website/blog/wp-content/uploads/essenmitsosse/website-preview.png'
+
+type PostPortfolio = { preview: any } & Post
+
+const listPortfolio: ReadonlyArray<PostPortfolio> = [
   {
     slug: 'aztecs',
     Component: dynamic(() => import('./aztecs')),
+    preview: previewAztheken,
     date: '2008-03-30',
     meta: {
       title: 'Aztecs ♣ essenmitsosse',
@@ -17,6 +38,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'blockator',
     Component: dynamic(() => import('./blockator')),
+    preview: previewBloackator,
     date: '2009-08-18',
     meta: {
       title: 'Blockator ♣ essenmitsosse',
@@ -28,6 +50,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'blondheadredhead',
     Component: dynamic(() => import('./blondheadredhead')),
+    preview: previewBlondhead,
     date: '2008-03-28',
     meta: {
       title: 'Blondehead &#038; Redhead ♣ essenmitsosse',
@@ -39,6 +62,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'creature-combat',
     Component: dynamic(() => import('./creature-combat')),
+    preview: previewCreaturecombat,
     date: '2010-07-06',
     meta: {
       title: 'Creature Combat IV ♣ essenmitsosse',
@@ -50,6 +74,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'digital-life-drawing',
     Component: dynamic(() => import('./digital-life-drawing')),
+    preview: previewAkt,
     date: '2008-04-18',
     meta: {
       title: 'Digital Life Drawing ♣ essenmitsosse',
@@ -62,6 +87,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'essenmitsosse-redesign',
     Component: dynamic(() => import('./essenmitsosse-redesign')),
+    preview: previewEssenmitsosse,
     date: '2009-08-17',
     meta: {
       title: 'essenmitsosse Redesign ♣ essenmitsosse',
@@ -72,6 +98,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'faust',
     Component: dynamic(() => import('./faust')),
+    preview: previewFaust,
     date: '2010-05-30',
     meta: {
       title: 'Faust ♣ essenmitsosse',
@@ -82,6 +109,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'jack-of-all-trades',
     Component: dynamic(() => import('./jack-of-all-trades')),
+    preview: previewJackofalltrades,
     date: '2012-04-17',
     meta: {
       title: 'Jack of all Trades ♣ essenmitsosse',
@@ -92,6 +120,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'kino-120a',
     Component: dynamic(() => import('./kino-120a')),
+    preview: previewKino120a,
     date: '2010-07-27',
     meta: {
       title: 'kino.120a ♣ essenmitsosse',
@@ -103,6 +132,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'linen-tunic',
     Component: dynamic(() => import('./linen-tunic')),
+    preview: previewLinentunic,
     date: '2008-03-30',
     meta: {
       title: 'Linen Tunic ♣ essenmitsosse',
@@ -115,6 +145,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'older-paintings',
     Component: dynamic(() => import('./older-paintings')),
+    preview: previewGondel,
     date: '2008-03-18',
     meta: {
       title: 'Older Paintings ♣ essenmitsosse',
@@ -126,6 +157,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'portrait-class',
     Component: dynamic(() => import('./portrait-class')),
+    preview: previewPortrait,
     date: '2008-10-02',
     meta: {
       title: 'Portrait Class ♣ essenmitsosse',
@@ -138,6 +170,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'realistically-painted-bowser',
     Component: dynamic(() => import('./realistically-painted-bowser')),
+    preview: previewBowser,
     date: '2008-04-27',
     meta: {
       title: 'Realistically Painted Bowser ♣ essenmitsosse',
@@ -150,6 +183,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'sonic-the-real-hedgehog',
     Component: dynamic(() => import('./sonic-the-real-hedgehog')),
+    preview: previewSonic,
     date: '2008-05-09',
     meta: {
       title: 'Sonic The Real Hedgehog ♣ essenmitsosse',
@@ -161,6 +195,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'sparta-fanart',
     Component: dynamic(() => import('./sparta-fanart')),
+    preview: previewSparta,
     date: '2008-03-30',
     meta: {
       title: 'Sparta! ♣ essenmitsosse',
@@ -172,6 +207,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'the-anglerfish',
     Component: dynamic(() => import('./the-anglerfish')),
+    preview: previewAnglerfish,
     date: '2008-03-30',
     meta: {
       title: 'The Anglerfish ♣ essenmitsosse',
@@ -183,6 +219,7 @@ const listPortfolio: ReadonlyArray<Post> = [
   {
     slug: 'the-human-brain',
     Component: dynamic(() => import('./the-human-brain')),
+    preview: previewHumanbrain,
     date: '2010-12-16',
     meta: {
       title: 'The Human Brain ♣ essenmitsosse',
