@@ -1,8 +1,11 @@
 import dynamic from 'next/dynamic'
 import { Post } from '../types'
 
-const listBlog: ReadonlyArray<Post> = [
+type PostBlog = { htmlTitle: string } & Post
+
+const listBlog: ReadonlyArray<PostBlog> = [
   {
+    htmlTitle: '<em>11 applications for</em> Digital Painting',
     slug: 'applications-for-digital-painting',
     Component: dynamic(() => import('./applications-for-digital-painting')),
     date: '2008-03-30',
@@ -15,6 +18,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: '35 Digital Painters <em>you shouldn&rsquo;t miss</em>',
     slug: 'digital-painters',
     Component: dynamic(() => import('./digital-painters')),
     date: '2008-05-15',
@@ -27,6 +31,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: '<em>An introduction to the </em>Graphics Tablet',
     slug: 'graphics-tablet',
     Component: dynamic(() => import('./graphics-tablet')),
     date: '2008-03-28',
@@ -39,6 +44,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: '<em>How to set up</em> Color Management',
     slug: 'how-to-set-up-color-management',
     Component: dynamic(() => import('./how-to-set-up-color-management')),
     date: '2008-04-10',
@@ -51,6 +57,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: '<em>How to achieve</em> Likeness In A Portrait',
     slug: 'likeness-in-portrait',
     Component: dynamic(() => import('./likeness-in-portrait')),
     date: '2008-04-08',
@@ -63,6 +70,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: '<em>An Introduction to the</em> Photoshop Brush Engine',
     slug: 'photoshop-brush-engine',
     Component: dynamic(() => import('./photoshop-brush-engine')),
     date: '2008-05-03',
@@ -75,6 +83,8 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle:
+      'The Designs Of Star Wars <em>10 reasons why they are awesome</em>',
     slug: 'the-designs-of-star-wars',
     Component: dynamic(() => import('./the-designs-of-star-wars')),
     date: '2008-09-24',
@@ -88,6 +98,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: 'Wacom Intuos4 <em>Review</em>',
     slug: 'wacom-intuos4-review',
     Component: dynamic(() => import('./wacom-intuos4-review')),
     date: '2009-08-24',
@@ -100,6 +111,7 @@ const listBlog: ReadonlyArray<Post> = [
     },
   },
   {
+    htmlTitle: '<em>What designers can learn from</em> Evolution',
     slug: 'what-designers-can-learn-from-evolution',
     Component: dynamic(
       () => import('./what-designers-can-learn-from-evolution')
