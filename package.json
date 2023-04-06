@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier . --write --ignore-path .gitignore"
+    "prettier": "prettier . --write --ignore-path .gitignore",
+    "ts": "tsc"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.32.2",
