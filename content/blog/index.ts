@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import { Post } from '../types'
 
-type PostBlog = { htmlTitle: string } & Post
+export type PostBlog = { htmlTitle: string } & Post
 
 const listBlog: ReadonlyArray<PostBlog> = [
   {

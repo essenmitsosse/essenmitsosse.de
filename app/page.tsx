@@ -1,22 +1,8 @@
 import { Metadata } from 'next'
 
-import previewAkt from '../website/blog/wp-content/uploads/portfoliothumb/akt-preview.jpg'
-import previewAnglerfish from '../website/blog/wp-content/uploads/portfoliothumb/anglerfish-preview.jpg'
-import previewAztheken from '../website/blog/wp-content/uploads/portfoliothumb/aztheken-preview.jpg'
-import previewBlondhead from '../website/blog/wp-content/uploads/portfoliothumb/blondhead-preview.jpg'
-import previewBowser from '../website/blog/wp-content/uploads/portfoliothumb/bowser-preview.jpg'
-import previewGondel from '../website/blog/wp-content/uploads/portfoliothumb/gondel-preview.jpg'
-import previewLinentunic from '../website/blog/wp-content/uploads/portfoliothumb/linentunic-preview.jpg'
-import previewPortrait from '../website/blog/wp-content/uploads/portfoliothumb/portrait-preview.jpg'
-import previewSonic from '../website/blog/wp-content/uploads/portfoliothumb/sonic-preview.jpg'
-import previewSparta from '../website/blog/wp-content/uploads/portfoliothumb/sparta-preview.jpg'
-import previewBloackator from '../website/portfolioupload/blockator/blockator-preview.gif'
-import previewJackofalltrades from '../website/blog/wp-content/uploads/jackofalltrades/jack-of-all-trades.png'
-import previewHumanbrain from '../website/blog/wp-content/uploads/humanbrain/humanbrain.png'
-import previewKino120a from '../website/blog/wp-content/uploads/kino120a/kino120a.png'
-import previewCreaturecombat from '../website/blog/wp-content/uploads/creaturecombat/creaturecombat.png'
-import previewFaust from '../website/blog/wp-content/uploads/faust/faust.png'
-import previewEssenmitsosse from '../website/blog/wp-content/uploads/essenmitsosse/website-preview.png'
+import listBlog from '../content/blog'
+import listPortfolio from '../content/portfolio'
+import { Post } from '@/content/types'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -27,6 +13,9 @@ export const metadata: Metadata = {
   authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
   icons: 'favicon.png',
 }
+
+const sortByDate = (postA: Post, postB: Post) =>
+  postA.date > postB.date ? -1 : 1
 
 export default function Home() {
   return (
@@ -108,78 +97,18 @@ export default function Home() {
           <div className="wrapper color">
             <h1>Articles</h1>
             <ul>
-              <li>
-                <h3>
-                  <a href="what-designers-can-learn-from-evolution">
-                    <span className="date">2009-09-10</span>
-                    <em>What designers can learn from</em> Evolution
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="wacom-intuos4-review">
-                    <span className="date">2009-08-24</span> Wacom Intuos4{' '}
-                    <em>Review</em>
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="the-designs-of-star-wars">
-                    <span className="date">2008-09-24</span> The Designs Of Star
-                    Wars <em>10 reasons why they are awesome</em>
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="digital-painters">
-                    <span className="date">2008-05-15</span>
-                    35 Digital Painters <em>you shouldn&rsquo;t miss</em>
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="photoshop-brush-engine">
-                    <span className="date">2008-05-03</span>
-                    <em>An Introduction to the</em> Photoshop Brush Engine
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="how-to-set-up-color-management">
-                    <span className="date">2008-04-10</span>
-                    <em>How to set up</em> Color Management
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="likeness-in-portrait">
-                    <span className="date">2008-04-08</span>
-                    <em>How to achieve</em> Likeness In A Portrait
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="applications-for-digital-painting">
-                    <span className="date">2008-03-30</span>
-                    <em>11 applications for</em> Digital Painting
-                  </a>
-                </h3>
-              </li>
-              <li>
-                <h3>
-                  <a href="graphics-tablet">
-                    <span className="date">2008-03-28</span>
-                    <em>An introduction to the </em>Graphics Tablet
-                  </a>
-                </h3>
-              </li>
+              {[...listBlog].sort(sortByDate).map((post) => (
+                <li key={post.slug}>
+                  <h3>
+                    <a href={post.slug}>
+                      <span className="date">{post.date}</span>
+                      <span
+                        dangerouslySetInnerHTML={{ __html: post.htmlTitle }}
+                      />
+                    </a>
+                  </h3>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -199,176 +128,18 @@ export default function Home() {
                 </a>
                 .
               </li>
-              <li>
-                <a
-                  href="jack-of-all-trades"
-                  style={{
-                    backgroundImage: `url(${previewJackofalltrades.src}`,
-                  }}
-                >
-                  <span>Jack of all Trades</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="the-human-brain"
-                  style={{
-                    backgroundImage: `url(${previewHumanbrain.src}`,
-                  }}
-                >
-                  <span>The Human Brain</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="kino-120a"
-                  style={{
-                    backgroundImage: `url(${previewKino120a.src}`,
-                  }}
-                >
-                  <span>kino.120a</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="creature-combat"
-                  style={{
-                    backgroundImage: `url(${previewCreaturecombat.src}`,
-                  }}
-                >
-                  <span>Creature Combat IV</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="faust"
-                  style={{
-                    backgroundImage: `url(${previewFaust.src}`,
-                  }}
-                >
-                  <span>Faust</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="blockator"
-                  style={{
-                    backgroundImage: `url(${previewBloackator.src})`,
-                  }}
-                >
-                  <span>Blockator</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="essenmitsosse-redesign"
-                  style={{
-                    backgroundImage: `url(${previewEssenmitsosse.src}`,
-                  }}
-                >
-                  <span>essenmitsosse Redesign</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="portrait-class"
-                  style={{
-                    backgroundImage: `url(${previewPortrait.src})`,
-                  }}
-                >
-                  <span>Portrait Class</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="sonic-the-real-hedgehog"
-                  style={{
-                    backgroundImage: `url(${previewSonic.src})`,
-                  }}
-                >
-                  <span>Sonic The Real Hedgehog</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="realistically-painted-bowser"
-                  style={{
-                    backgroundImage: `url(${previewBowser.src})`,
-                  }}
-                >
-                  <span>Realistically Painted Bowser</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="digital-life-drawing"
-                  style={{
-                    backgroundImage: `url(${previewAkt.src})`,
-                  }}
-                >
-                  <span>Digital Life Drawing</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="linen-tunic"
-                  style={{
-                    backgroundImage: `url(${previewLinentunic.src})`,
-                  }}
-                >
-                  <span>Linen Tunic</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="aztecs"
-                  style={{
-                    backgroundImage: `url(${previewAztheken.src})`,
-                  }}
-                >
-                  <span>Aztecs</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="the-anglerfish"
-                  style={{
-                    backgroundImage: `url(${previewAnglerfish.src})`,
-                  }}
-                >
-                  <span>The Anglerfish</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="sparta-fanart"
-                  style={{
-                    backgroundImage: `url(${previewSparta.src})`,
-                  }}
-                >
-                  <span>Sparta!</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="blondheadredhead"
-                  style={{
-                    backgroundImage: `url(${previewBlondhead.src})`,
-                  }}
-                >
-                  <span>Blondehead &#038; Redhead</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="older-paintings"
-                  style={{
-                    backgroundImage: `url(${previewGondel.src})`,
-                  }}
-                >
-                  <span>Older Paintings</span>
-                </a>
-              </li>
+              {[...listPortfolio].sort(sortByDate).map((post) => (
+                <li key={post.slug}>
+                  <a
+                    href={post.slug}
+                    style={{
+                      backgroundImage: `url(${post.preview.src}`,
+                    }}
+                  >
+                    <span>{post.meta.title}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
