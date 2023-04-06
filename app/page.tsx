@@ -22,22 +22,22 @@
 
 // 	<?php wp_head(); ?>
 // </head>
-<body class="homepage">
-  <ul id="navigation" class="black"></ul>
+<body className="homepage">
+  <ul id="navigation" className="black"></ul>
 
-  <p class="logo">
+  <p className="logo">
     <a
       href="http://essenmitsosse.de/?preview=1&amp;template=essenmitsosse-dreadnought&amp;stylesheet=essenmitsosse-dreadnought"
       title="Homepage"
       id="essenmitsosse"
     >
-      <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+      <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
     </a>
   </p>
 
-  <div class="allwrapper">
-    <div id="introduction" class="homepresentation">
-      <div class="wrapper">
+  <div className="allwrapper">
+    <div id="introduction" className="homepresentation">
+      <div className="wrapper">
         <h1>About</h1>
         <p>
           My name ist Marcus Blättermann. I’m majoring in Communication Design
@@ -92,15 +92,15 @@
       </div>
     </div>
 
-    <div id="articles" class="homepresentation">
-      <div class="wrapper color">
+    <div id="articles" className="homepresentation">
+      <div className="wrapper color">
         <h1>Articles</h1>
         <ul>
           {/* <?php $my_query = new WP_Query('category_name=articles'); while ($my_query->have_posts()) : $my_query->the_post(); ?> */}
           <li>
             <h3>
               <a href="<?php the_permalink() ?>">
-                <span class="date">{/* <?php the_time('Y-m-d') ?> */}</span>
+                <span className="date">{/* <?php the_time('Y-m-d') ?> */}</span>
                 {/* <?php the_title(); ?> */}
               </a>
             </h3>
@@ -110,11 +110,11 @@
       </div>
     </div>
 
-    <div id="portfolio" class="homepresentation black">
-      <div class="wrapper">
+    <div id="portfolio" className="homepresentation black">
+      <div className="wrapper">
         <h1>Portfolio</h1>
         <ul>
-          <li class="commentPortfolio">
+          <li className="commentPortfolio">
             I am sorry that this portfolio is quite out of date. New stuff will
             be coming soon.
           </li>

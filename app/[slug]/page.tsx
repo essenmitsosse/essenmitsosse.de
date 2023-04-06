@@ -38,43 +38,43 @@
 // </head>
 
 // <?php if (in_category('portfolio')) {?>
-<body class="single black portfolio">
+<body className="single black portfolio">
   {/* <?php } else {?> */}
-  {/* <body class="single article"> */}
+  {/* <body className="single article"> */}
   {/* <?php } ?> */}
 
-  <ul id="navigation" class="black">
-    <li class="home">
+  <ul id="navigation" className="black">
+    <li className="home">
       <a href="http://essenmitsosse.de" rel="index">
         Home
       </a>
     </li>
-    <li class="articlenavigation">
+    <li className="articlenavigation">
       <ul>
-        {/* <?php next_post_link('<li class="newer">%link</li>', '<span class="arrow">&#9668;</span> <span class="title">%title</span>', true); ?> */}
+        {/* <?php next_post_link('<li className="newer">%link</li>', '<span className="arrow">&#9668;</span> <span className="title">%title</span>', true); ?> */}
 
-        {/* <?php previous_post_link('<li class="older">%link</li>', '<span class="arrow">&#9658;</span> <span class="title">%title</span>', true); ?> */}
+        {/* <?php previous_post_link('<li className="older">%link</li>', '<span className="arrow">&#9658;</span> <span className="title">%title</span>', true); ?> */}
       </ul>
     </li>
   </ul>
 
   <div
-    class="intro<?php if (in_category('articles')) {?> color<?php } ?>"
+    className="intro<?php if (in_category('articles')) {?> color<?php } ?>"
     style="background-image:url(<?php echo $headerimage[0]; ?>);"
   >
-    <p class="logo">
+    <p className="logo">
       <a href="http://essenmitsosse.de/" id="essenmitsosse">
-        <span class="club">&clubs;</span>essenmitsosse <em>presents</em>
+        <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
       </a>
     </p>
     <h1>{/* <?php the_title(); ?> */}</h1>
   </div>
 
-  <div class="content white">
-    {/* <?php if (in_category('articles')) {?><div class="date"><p><?php the_time('Y-m-d') ?></p></div><?php } ?> */}
+  <div className="content white">
+    {/* <?php if (in_category('articles')) {?><div className="date"><p><?php the_time('Y-m-d') ?></p></div><?php } ?> */}
     {/* <?php the_content(); ?> */}
     <hr />
-    <div class="fourwide">
+    <div className="fourwide">
       <h3>
         <em>A little bit</em> about me
       </h3>
@@ -87,7 +87,7 @@
       </p>
     </div>
 
-    <div class="fourwide">
+    <div className="fourwide">
       <h3>
         <em>What you should </em>do next
       </h3>
@@ -102,7 +102,7 @@
       </p>
     </div>
 
-    <div class="fourwide">
+    <div className="fourwide">
       <h3>
         <em>If you didn&#8217;t like this one</em>You will hate these
       </h3>
