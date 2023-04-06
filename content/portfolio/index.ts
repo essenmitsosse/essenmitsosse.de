@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 import { StaticImageData } from 'next/image'
 import { Post } from '../types'
+import sortByDate from '../sortByDate'
 
 import previewAkt from './digital-life-drawing/preview.jpg'
 import previewAnglerfish from './the-anglerfish/preview.jpg'
@@ -232,4 +233,4 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
   },
 ]
 
-export default listPortfolio
+export default [...listPortfolio].sort(sortByDate)

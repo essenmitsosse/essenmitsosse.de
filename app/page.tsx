@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 
 import listBlog from '../content/blog'
 import listPortfolio from '../content/portfolio'
-import { Post } from '@/content/types'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -13,9 +12,6 @@ export const metadata: Metadata = {
   authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
   icons: 'favicon.png',
 }
-
-const sortByDate = (postA: Post, postB: Post) =>
-  postA.date > postB.date ? -1 : 1
 
 export default function Home() {
   return (
@@ -97,7 +93,7 @@ export default function Home() {
           <div className="wrapper color">
             <h1>Articles</h1>
             <ul>
-              {[...listBlog].sort(sortByDate).map((post) => (
+              {listBlog.map((post) => (
                 <li key={post.slug}>
                   <h3>
                     <a href={post.slug}>
@@ -128,7 +124,7 @@ export default function Home() {
                 </a>
                 .
               </li>
-              {[...listPortfolio].sort(sortByDate).map((post) => (
+              {listPortfolio.map((post) => (
                 <li key={post.slug}>
                   <a
                     href={post.slug}

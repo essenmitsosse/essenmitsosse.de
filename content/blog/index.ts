@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic'
 import { Post } from '../types'
 
+import sortByDate from '../sortByDate'
+
 export type PostBlog = {
   htmlTitle: string
   imageHeader: StaticImageData
@@ -149,4 +151,4 @@ const listBlog: ReadonlyArray<PostBlog> = [
   },
 ]
 
-export default listBlog
+export default [...listBlog].sort(sortByDate)
