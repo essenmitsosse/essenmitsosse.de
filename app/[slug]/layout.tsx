@@ -1,34 +1,14 @@
-import { Metadata } from 'next'
+import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 
-import {
-  getPostAndPrevAndNextViaSlug,
-  getPostViaSlug,
-  listPost,
-} from './getPost'
+import { getPostAndPrevAndNextViaSlug } from './getPost'
 
-export function generateMetadata({
-  params,
-}: {
+export default function Layout(props: {
+  children: ReactNode
   params: { slug: string }
-}): Metadata {
-  const post = getPostViaSlug(params.slug)
-
-  if (!post) {
-    notFound()
-  }
-
-  return post.meta
-}
-
-export async function generateStaticParams() {
-  return listPost.map((post) => ({ slug: post.slug }))
-}
-
-export default async function Page({ params }: { params: { slug: string } }) {
-  const { post, postPrev, postNext, isBlog } = getPostAndPrevAndNextViaSlug(
-    params.slug
-  )
+}) {
+  const { post, postPrev, postNext, isBlog } =
+    getPostAndPrevAndNextViaSlug(props.params.slug)
 
   if (!post) {
     notFound()
@@ -91,7 +71,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <div className="date">
           <p>{post.date}</p>
         </div>
-        {<post.Component />}
+        {props.children}
         <hr />
         <div className="fourwide">
           <h3>
