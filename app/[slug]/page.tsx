@@ -1,13 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
-import listBlog, { PostBlog } from '@/content/blog'
-import listPortfolio, { PostPortfolio } from '@/content/portfolio'
-
-const listPost = [...listBlog, ...listPortfolio]
-
-const getPostViaSlug = (slug: string): PostBlog | PostPortfolio | undefined =>
-  listPost.find((post) => post.slug === slug)
+import { getPostViaSlug, listPost } from './getPost'
 
 export function generateMetadata({
   params,
