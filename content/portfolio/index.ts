@@ -54,7 +54,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewBlondhead,
     date: '2008-03-28',
     meta: {
-      title: 'Blondehead &#038; Redhead',
+      title: 'Blondehead & Redhead',
       description: 'Paintings of a blonde girl and a redhead.',
       keywords:
         'digital painting, images, marcus blättermann, painting, photoshop, portrait',
