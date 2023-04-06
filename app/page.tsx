@@ -53,14 +53,6 @@ export default function Home() {
                   </td>
                 </tr>
                 <tr>
-                  <th>Facebook</th>
-                  <td>
-                    <a href="http://www.facebook.com/essenmitsosse">
-                      /essenmitsosse
-                    </a>
-                  </td>
-                </tr>
-                <tr>
                   <th>Twitter</th>
                   <td>
                     <a href="http://twitter.com/essenmitsosse">
