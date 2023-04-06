@@ -10,7 +10,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./applications-for-digital-painting')),
     date: '2008-03-30',
     meta: {
-      title: '11 applications for Digital Painting ♣ essenmitsosse',
+      title: '11 applications for Digital Painting',
       description:
         'A compilation of software you can use to paint with your computer.',
       keywords:
@@ -23,7 +23,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./digital-painters')),
     date: '2008-05-15',
     meta: {
-      title: '35 Digital Painters you shouldn&rsquo;t miss ♣ essenmitsosse',
+      title: '35 Digital Painters you shouldn&rsquo;t miss',
       description:
         'A compilation of artists how paint with their computer. From illustrators to concept-artists.',
       keywords:
@@ -36,7 +36,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./graphics-tablet')),
     date: '2008-03-28',
     meta: {
-      title: 'An introduction to the Graphics Tablet ♣ essenmitsosse',
+      title: 'An introduction to the Graphics Tablet',
       description:
         'A small how to for graphics tablet beginners. Why should you use one?',
       keywords:
@@ -49,7 +49,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./how-to-set-up-color-management')),
     date: '2008-04-10',
     meta: {
-      title: 'How to set up Color Management ♣ essenmitsosse',
+      title: 'How to set up Color Management',
       description:
         'A tutorial on how to correctly set up color-management. This might also solve the color shift problem when saving for the web in Photoshop.',
       keywords:
@@ -62,7 +62,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./likeness-in-portrait')),
     date: '2008-04-08',
     meta: {
-      title: 'How to achieve Likeness In A Portrait ♣ essenmitsosse',
+      title: 'How to achieve Likeness In A Portrait',
       description:
         'What is it that let&rsquo;s a drawing look like the original face? Some thoughts on similarity.',
       keywords:
@@ -75,7 +75,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./photoshop-brush-engine')),
     date: '2008-05-03',
     meta: {
-      title: 'An Introduction to the Photoshop Brush Engine ♣ essenmitsosse',
+      title: 'An Introduction to the Photoshop Brush Engine',
       description:
         'An introduction and how-to on the possibilitys photoshop offers you to create custom brushes.',
       keywords:
@@ -89,8 +89,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./the-designs-of-star-wars')),
     date: '2008-09-24',
     meta: {
-      title:
-        'The Designs Of Star Wars 10 reasons why they are awesome ♣ essenmitsosse',
+      title: 'The Designs Of Star Wars 10 reasons why they are awesome',
       description:
         'What is it, that make the concept art of Star Wars so damn good.',
       keywords:
@@ -103,7 +102,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(() => import('./wacom-intuos4-review')),
     date: '2009-08-24',
     meta: {
-      title: 'Wacom Intuos4 Review ♣ essenmitsosse',
+      title: 'Wacom Intuos4 Review',
       description:
         'An review of the Wacom Intous4 graphics pad with a look at its new functions.',
       keywords:
@@ -118,7 +117,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     ),
     date: '2009-09-10',
     meta: {
-      title: 'What designers can learn from Evolution ♣ essenmitsosse',
+      title: 'What designers can learn from Evolution',
       description:
         'Evolution has more in common with design than one might think. This look at nature will teach you a lot about design.',
       keywords:
