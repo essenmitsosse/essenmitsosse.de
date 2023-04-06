@@ -34,7 +34,15 @@ export default function Layout(props: {
               <a href={postPrev.slug} rel="prev">
                 <li className="newer">
                   <span className="arrow">&#9668;</span>{' '}
-                  <span className="title">{postPrev.meta.title}</span>
+                  <span
+                    className="title"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        'htmlTitle' in postPrev
+                          ? postPrev.htmlTitle
+                          : postPrev.meta.title,
+                    }}
+                  />
                 </li>
               </a>
             )}
@@ -43,7 +51,15 @@ export default function Layout(props: {
               <a href={postNext.slug} rel="next">
                 <li className="older">
                   <span className="arrow">&#9658;</span>{' '}
-                  <span className="title">{postNext.meta.title}</span>
+                  <span
+                    className="title"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        'htmlTitle' in postNext
+                          ? postNext.htmlTitle
+                          : postNext.meta.title,
+                    }}
+                  />
                 </li>
               </a>
             )}
