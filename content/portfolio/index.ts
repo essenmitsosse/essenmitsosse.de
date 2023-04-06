@@ -20,6 +20,7 @@ import previewKino120a from './kino-120a/preview.png'
 import previewCreaturecombat from './creature-combat/preview.png'
 import previewFaust from './faust/preview.png'
 import previewEssenmitsosse from './essenmitsosse-redesign/preview.png'
+import cleanKeywords from '../cleanKeywords'
 
 export type PostPortfolio = { preview: StaticImageData } & Post
 
@@ -33,8 +34,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Aztecs',
       description:
         'An image showing an Aztec warrior killing a Spanish Conquiztador',
-      keywords:
-        'actecs, digital painting, images, marcus blättermann, painting, photoshop',
+      keywords: cleanKeywords(
+        'actecs, digital painting, images, marcus blättermann, painting, photoshop'
+      ),
     },
   },
   {
@@ -46,7 +48,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Blockator',
       description:
         'Blockator is an isometric 3-d Pixelfont, that is generated with Flash.',
-      keywords: 'font, marcus blättermann, pixel, student, Typography',
+      keywords: cleanKeywords(
+        'font, marcus blättermann, pixel, student, Typography'
+      ),
     },
   },
   {
@@ -57,8 +61,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Blondehead & Redhead',
       description: 'Paintings of a blonde girl and a redhead.',
-      keywords:
-        'digital painting, images, marcus blättermann, painting, photoshop, portrait',
+      keywords: cleanKeywords(
+        'digital painting, images, marcus blättermann, painting, photoshop, portrait'
+      ),
     },
   },
   {
@@ -69,8 +74,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Creature Combat IV',
       description: 'Animation movie of a battle between a cat and a mouse.',
-      keywords:
-        'animation, cat, drawing, funny, marcus blaettermann, mouse, student, susanne wohlfahrt',
+      keywords: cleanKeywords(
+        'animation, cat, drawing, funny, marcus blaettermann, mouse, student, susanne wohlfahrt'
+      ),
     },
   },
   {
@@ -82,8 +88,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Digital Life Drawing',
       description:
         'I went to a life drawing class, equipped with a graphics tablet and Photoshop.',
-      keywords:
-        'colors, digital painting, drawing, figure drawing, images, life drawing, marcus blättermann, nude, painting, study',
+      keywords: cleanKeywords(
+        'colors, digital painting, drawing, figure drawing, images, life drawing, marcus blättermann, nude, painting, study'
+      ),
     },
   },
   {
@@ -94,7 +101,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'essenmitsosse Redesign',
       description: 'Redesign of the homepage of Marcus Blättermann.',
-      keywords: 'essenmitsosse, marcus blättermann, Webdesign, website',
+      keywords: cleanKeywords(
+        'essenmitsosse, marcus blättermann, Webdesign, website'
+      ),
     },
   },
   {
@@ -105,7 +114,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Faust',
       description: 'Announcement for my new comic Faust.',
-      keywords: 'comic, graphic design, marcus blaettermann, student',
+      keywords: cleanKeywords(
+        'comic, graphic design, marcus blaettermann, student'
+      ),
     },
   },
   {
@@ -116,7 +127,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Jack of all Trades',
       description: 'A movie about creativity and getting things done.',
-      keywords: '',
+      keywords: cleanKeywords(''),
     },
   },
   {
@@ -127,8 +138,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'kino.120a',
       description: 'Poster series for student cinema kino.120a.',
-      keywords:
-        'allegro non troppo, berlin calling, cinema, graphic design, i&rsquo;m not there, marcus blaettermann, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs',
+      keywords: cleanKeywords(
+        'allegro non troppo, berlin calling, cinema, graphic design, i&rsquo;m not there, marcus blaettermann, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs'
+      ),
     },
   },
   {
@@ -140,8 +152,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Linen Tunic',
       description:
         'Image of a man in linen tunic with a sword, who is cursed by a wraith in the snow.',
-      keywords:
-        'digital painting, images, marcus blättermann, painting, photoshop',
+      keywords: cleanKeywords(
+        'digital painting, images, marcus blättermann, painting, photoshop'
+      ),
     },
   },
   {
@@ -152,8 +165,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Older Paintings',
       description: 'Some older paintings by Marcus Blättermann.',
-      keywords:
-        'digital painting, Dinosaur, Dragon, Gondola, images, Jungle, marcus blättermann, painting, photoshop, portrait, Turtle',
+      keywords: cleanKeywords(
+        'digital painting, Dinosaur, Dragon, Gondola, images, Jungle, marcus blättermann, painting, photoshop, portrait, Turtle'
+      ),
     },
   },
   {
@@ -165,8 +179,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Portrait Class',
       description:
         'Paintings from a portrait class, made with Photoshop and a graphics tablet.',
-      keywords:
-        'colors, digital painting, images, life drawing, marcus blättermann, painting, portrait, student, study',
+      keywords: cleanKeywords(
+        'colors, digital painting, images, life drawing, marcus blättermann, painting, portrait, student, study'
+      ),
     },
   },
   {
@@ -178,8 +193,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Realistically Painted Bowser',
       description:
         'How would Bowser from “Super Mario” look like, if he would be a real animal?',
-      keywords:
-        'bowser, brush, coloration, digital painting, fanart, images, marcus blättermann, painting, photoshop, realistic, redesign, untoon',
+      keywords: cleanKeywords(
+        'bowser, brush, coloration, digital painting, fanart, images, marcus blättermann, painting, photoshop, realistic, redesign, untoon'
+      ),
     },
   },
   {
@@ -190,8 +206,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Sonic The Real Hedgehog',
       description: 'How would Sonic look like if he would exist in reality?',
-      keywords:
-        'brush, digital painting, fanart, images, marcus blättermann, painting, photoshop, pixel, realistic, redesign, sonic, untoon',
+      keywords: cleanKeywords(
+        'brush, digital painting, fanart, images, marcus blättermann, painting, photoshop, pixel, realistic, redesign, sonic, untoon'
+      ),
     },
   },
   {
@@ -202,8 +219,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Sparta!',
       description: 'Image of a Spartan who slaughters a Persian warrior.',
-      keywords:
-        'digital painting, fanart, images, marcus blättermann, painting, photoshop, sparta',
+      keywords: cleanKeywords(
+        'digital painting, fanart, images, marcus blättermann, painting, photoshop, sparta'
+      ),
     },
   },
   {
@@ -214,8 +232,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'The Anglerfish',
       description: '',
-      keywords:
-        'anglerfish, cg-challenge, contest, digital painting, images, marcus blättermann, painting, photoshop',
+      keywords: cleanKeywords(
+        'anglerfish, cg-challenge, contest, digital painting, images, marcus blättermann, painting, photoshop'
+      ),
     },
   },
   {
@@ -227,8 +246,9 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'The Human Brain',
       description:
         'Animated movie giving an idea about how the brain really works.',
-      keywords:
-        '8bit, animation, brain, human, intelligence, marcus blaettermann, neuron, pixel, student',
+      keywords: cleanKeywords(
+        '8bit, animation, brain, human, intelligence, marcus blaettermann, neuron, pixel, student'
+      ),
     },
   },
 ]

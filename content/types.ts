@@ -12,7 +12,8 @@ export type Post = {
    */
   Component: ComponentType
   date: `${number}${number}${number}${number}-${number}${number}-${number}${number}`
-  meta: Omit<Metadata, 'title'> & {
+  meta: Omit<Metadata, 'title' | 'keywords'> & {
     title: string
+    keywords: ReadonlyArray<string>
   }
 }
