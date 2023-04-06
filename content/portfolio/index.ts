@@ -133,7 +133,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'kino.120a',
       description: 'Poster series for student cinema kino.120a.',
       keywords: cleanKeywords(
-        'allegro non troppo, berlin calling, cinema, graphic design, i&rsquo;m not there, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs'
+        'allegro non troppo, berlin calling, cinema, graphic design, i’m not there, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs'
       ),
     },
   },

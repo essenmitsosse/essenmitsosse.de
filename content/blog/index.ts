@@ -37,13 +37,13 @@ const listBlog: ReadonlyArray<PostBlog> = [
     },
   },
   {
-    htmlTitle: '35 Digital Painters <em>you shouldn&rsquo;t miss</em>',
+    htmlTitle: '35 Digital Painters <em>you shouldn’t miss</em>',
     slug: 'digital-painters',
     Component: dynamic(() => import('./digital-painters')),
     imageHeader: headerDigitalPainter,
     date: '2008-05-15',
     meta: {
-      title: '35 Digital Painters you shouldn&rsquo;t miss',
+      title: '35 Digital Painters you shouldn’t miss',
       description:
         'A compilation of artists how paint with their computer. From illustrators to concept-artists.',
       keywords: cleanKeywords(
