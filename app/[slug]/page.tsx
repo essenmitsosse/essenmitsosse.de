@@ -62,7 +62,7 @@ export default function Page() {
 
       <div
         className="intro<?php if (in_category('articles')) {?> color<?php } ?>"
-        style="background-image:url(<?php echo $headerimage[0]; ?>);"
+        style={{ backgroundImage: "url(<?php echo $headerimage[0]; ?>)" }}
       >
         <p className="logo">
           <a href="http://essenmitsosse.de/" id="essenmitsosse">
