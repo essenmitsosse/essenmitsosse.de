@@ -1,18 +1,20 @@
 import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 
-import { getPostAndPrevAndNextViaSlug } from './getPost'
+import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
 
 export default function Layout(props: {
   children: ReactNode
   params: { slug: string }
 }) {
-  const { post, postPrev, postNext, isBlog } =
+  const { post, listPost, postPrev, postNext, isBlog } =
     getPostAndPrevAndNextViaSlug(props.params.slug)
 
   if (!post) {
     notFound()
   }
+
+  const listPostRelated = getListRelatedPosts(post, listPost)
 
   return (
     <body
@@ -99,11 +101,20 @@ export default function Layout(props: {
           </p>
         </div>
 
-        <div className="fourwide">
-          <h3>
-            <em>If you didn&#8217;t like this one</em>You will hate these
-          </h3>
-        </div>
+        {listPostRelated.length > 0 && (
+          <div className="fourwide">
+            <h3>
+              <em>If you didn&#8217;t like this one</em>You will hate these
+            </h3>
+            <ul>
+              {listPostRelated.map((postRelated) => (
+                <li key={`${postRelated.slug}-related`}>
+                  <a href={postRelated.slug}>{postRelated.meta.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </body>
   )
