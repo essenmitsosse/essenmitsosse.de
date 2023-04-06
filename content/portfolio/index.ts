@@ -20,7 +20,7 @@ import previewCreaturecombat from './creature-combat/preview.png'
 import previewFaust from './faust/preview.png'
 import previewEssenmitsosse from './essenmitsosse-redesign/preview.png'
 
-type PostPortfolio = { preview: StaticImageData } & Post
+export type PostPortfolio = { preview: StaticImageData } & Post
 
 const listPortfolio: ReadonlyArray<PostPortfolio> = [
   {

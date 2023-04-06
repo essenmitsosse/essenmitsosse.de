@@ -1,17 +1,60 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
-import listBlog from '@/content/blog'
-import listPortfolio from '@/content/portfolio'
+import listBlog, { PostBlog } from '@/content/blog'
+import listPortfolio, { PostPortfolio } from '@/content/portfolio'
 
 const listPost = [...listBlog, ...listPortfolio]
+
+const getPostViaSlug = (slug: string): PostBlog | PostPortfolio | undefined =>
+  listPost.find((post) => post.slug === slug)
+
+const getPostAndPrevAndNext = <T extends PostBlog | PostPortfolio>(
+  listPost: ReadonlyArray<T>,
+  index: number
+): {
+  post?: T
+  postPrev?: T
+  postNext?: T
+} => {
+  return index === -1
+    ? {}
+    : {
+        post: listPost[index],
+        postPrev: index > 0 ? listPost[index - 1] : undefined,
+        postNext: index < listPost.length ? listPost[index + 1] : undefined,
+      }
+}
+
+const getPostAndPrevAndNextViaSlug = (
+  slug: string
+):
+  | { post?: PostBlog; postPrev?: PostBlog; postNext?: PostBlog; isBlog: true }
+  | {
+      post?: PostPortfolio
+      postPrev?: PostPortfolio
+      postNext?: PostPortfolio
+      isBlog: false
+    } => {
+  const indexBlog = listBlog.findIndex((post) => post.slug === slug)
+
+  return indexBlog !== -1
+    ? { ...getPostAndPrevAndNext(listBlog, indexBlog), isBlog: true }
+    : {
+        ...getPostAndPrevAndNext(
+          listPortfolio,
+          listPortfolio.findIndex((post) => post.slug === slug)
+        ),
+        isBlog: false,
+      }
+}
 
 export function generateMetadata({
   params,
 }: {
   params: { slug: string }
 }): Metadata {
-  const post = listPost.find((post) => post.slug === params.slug)
+  const post = getPostViaSlug(params.slug)
 
   if (!post) {
     notFound()
@@ -25,15 +68,13 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const index = listPost.findIndex((post) => post.slug === params.slug)
+  const { post, postPrev, postNext, isBlog } = getPostAndPrevAndNextViaSlug(
+    params.slug
+  )
 
-  if (index === -1) {
+  if (!post) {
     notFound()
   }
-
-  const post = listPost[index]
-  const postPrev = index > 0 ? listPost[index - 1] : undefined
-  const postNext = index < listPost.length ? listPost[index + 1] : undefined
 
   return (
     <body
@@ -71,10 +112,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </ul>
 
       <div
-        className={`intro ${'htmlTitle' in post ? 'color' : undefined}`}
+        className={`intro ${isBlog ? 'color' : undefined}`}
         style={{
-          backgroundImage:
-            'imageHeader' in post ? `url(${post.imageHeader.src})` : undefined,
+          backgroundImage: isBlog ? `url(${post.imageHeader.src})` : undefined,
         }}
       >
         <p className="logo">
@@ -82,7 +122,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
-        {'htmlTitle' in post ? (
+        {isBlog ? (
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
         ) : (
           <h1>{post.meta.title}</h1>
