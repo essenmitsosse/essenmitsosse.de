@@ -1,13 +1,28 @@
 import dynamic from 'next/dynamic'
 import { Post } from '../types'
 
-export type PostBlog = { htmlTitle: string } & Post
+export type PostBlog = {
+  htmlTitle: string
+  imageHeader: StaticImageData
+} & Post
+
+import headerDigitalPainting from '../../website/blog/wp-content/uploads/digitalpainting/digitalpainting-header.png'
+import headerDigitalPainter from '../../website/blog/wp-content/uploads/digitalpainters/digitalpainter-header.png'
+import headerGraphicsTablet from '../../website/blog/wp-content/uploads/graphicstablet/graphicstablet-header.png'
+import headerColorManagement from '../../website/blog/wp-content/uploads/colormanagement/colormanagement-header.png'
+import headerPortrait from '../../website/blog/wp-content/uploads/likeness/portrait-header.png'
+import headerBrushEngine from '../../website/blog/wp-content/uploads/photoshop/brushengine-header.png'
+import headerVader from '../../website/blog/wp-content/uploads/starwars/vader-intro.png'
+import headerIntuos4 from '../../website/blog/wp-content/uploads/intuos4/intuos4.png'
+import headerEvolution from '../../website/article/evolution/evolution.png'
+import { StaticImageData } from 'next/image'
 
 const listBlog: ReadonlyArray<PostBlog> = [
   {
     htmlTitle: '<em>11 applications for</em> Digital Painting',
     slug: 'applications-for-digital-painting',
     Component: dynamic(() => import('./applications-for-digital-painting')),
+    imageHeader: headerDigitalPainting,
     date: '2008-03-30',
     meta: {
       title: '11 applications for Digital Painting',
@@ -21,6 +36,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: '35 Digital Painters <em>you shouldn&rsquo;t miss</em>',
     slug: 'digital-painters',
     Component: dynamic(() => import('./digital-painters')),
+    imageHeader: headerDigitalPainter,
     date: '2008-05-15',
     meta: {
       title: '35 Digital Painters you shouldn&rsquo;t miss',
@@ -34,6 +50,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: '<em>An introduction to the </em>Graphics Tablet',
     slug: 'graphics-tablet',
     Component: dynamic(() => import('./graphics-tablet')),
+    imageHeader: headerGraphicsTablet,
     date: '2008-03-28',
     meta: {
       title: 'An introduction to the Graphics Tablet',
@@ -47,6 +64,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: '<em>How to set up</em> Color Management',
     slug: 'how-to-set-up-color-management',
     Component: dynamic(() => import('./how-to-set-up-color-management')),
+    imageHeader: headerColorManagement,
     date: '2008-04-10',
     meta: {
       title: 'How to set up Color Management',
@@ -60,6 +78,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: '<em>How to achieve</em> Likeness In A Portrait',
     slug: 'likeness-in-portrait',
     Component: dynamic(() => import('./likeness-in-portrait')),
+    imageHeader: headerPortrait,
     date: '2008-04-08',
     meta: {
       title: 'How to achieve Likeness In A Portrait',
@@ -73,6 +92,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: '<em>An Introduction to the</em> Photoshop Brush Engine',
     slug: 'photoshop-brush-engine',
     Component: dynamic(() => import('./photoshop-brush-engine')),
+    imageHeader: headerBrushEngine,
     date: '2008-05-03',
     meta: {
       title: 'An Introduction to the Photoshop Brush Engine',
@@ -87,6 +107,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       'The Designs Of Star Wars <em>10 reasons why they are awesome</em>',
     slug: 'the-designs-of-star-wars',
     Component: dynamic(() => import('./the-designs-of-star-wars')),
+    imageHeader: headerVader,
     date: '2008-09-24',
     meta: {
       title: 'The Designs Of Star Wars 10 reasons why they are awesome',
@@ -100,6 +121,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: 'Wacom Intuos4 <em>Review</em>',
     slug: 'wacom-intuos4-review',
     Component: dynamic(() => import('./wacom-intuos4-review')),
+    imageHeader: headerIntuos4,
     date: '2009-08-24',
     meta: {
       title: 'Wacom Intuos4 Review',
@@ -115,6 +137,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     Component: dynamic(
       () => import('./what-designers-can-learn-from-evolution')
     ),
+    imageHeader: headerEvolution,
     date: '2009-09-10',
     meta: {
       title: 'What designers can learn from Evolution',
