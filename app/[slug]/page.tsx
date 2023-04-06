@@ -1,80 +1,99 @@
-// <?php while (have_posts()) : the_post();
+import { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 
-// $the_tags ='';
+import listBlog from '@/content/blog'
+import listPortfolio from '@/content/portfolio'
 
-// if (get_the_tags()) {
-// 	foreach(get_the_tags() as $tag) {
-// 		$the_tags = $the_tags.$tag->name.', ';
-// 	}
-// }
+const listPost = [...listBlog, ...listPortfolio]
 
-// $headerimage = get_post_custom_values("headerimage");
-// $description = get_post_custom_values("description");
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}): Metadata {
+  const post = listPost.find((post) => post.slug === params.slug)
 
-// ?>
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-// 	<link rel="stylesheet" href="http://essenmitsosse.de/blog/wp-content/themes/essenmitsosse-behemoth/style.css" type="text/css" media="screen" />
-// 	<link rel="alternate" type="application/rss+xml" title="essenmitsosse RSS-Feed" href="http://feeds.feedburner.com/essenmitsosse" />
-// 	<link rel="pingback" href="http://essenmitsosse.de/blog/xmlrpc.php" />
-// 	<link rel="shortcut icon" type="image/png" href="http://essenmitsosse.de/favicon.png" />
-// 	<link rel="icon" type="image/png" href="http://essenmitsosse.de/favicon.png" />
-// 	<link rel="index" title="essenmitsosse" href="http://essenmitsosse.de" />
+  if (!post) {
+    notFound()
+  }
 
-// 	<title><?php wp_title(''); ?> &clubs; essenmitsosse </title>
+  return post.meta
+}
 
-// 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-// 	<meta name="robots" content="index, follow" />
-// 	<meta name="description" content="<?php echo $description[0]; ?>"/>
-// 	<meta name="keywords" content="<?php echo substr_replace($the_tags ,"",-2); ?>">
-// 	<meta name="date" content="<?php the_time('Y-m-d') ?>">
-// 	<meta name="author" content="Marcus Bl&auml;ttermann">
-// 	<meta name="designer" content="Marcus Bl&auml;ttermann">
+export async function generateStaticParams() {
+  return listPost.map((post) => ({ slug: post.slug }))
+}
 
-// 	<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-7448093-1"); pageTracker._trackPageview(); } catch(err) {}function mail(){var name = "marcus";var domain = "essenmitsosse.de";document.write('<a href=\"mailto:' + name + '@' + domain + '\">' + name + '@' + domain + '</a>');} function mail2(){	var name = "marcus";var domain = "essenmitsosse.de";document.write('<a class="important" href=\"mailto:' + name + '@' + domain + '\">hire me</a>');}</script>
+export default async function Page({ params }: { params: { slug: string } }) {
+  const index = listPost.findIndex((post) => post.slug === params.slug)
 
-// 	<?php wp_head(); ?>
-// </head>
+  if (index === -1) {
+    notFound()
+  }
 
-// <?php if (in_category('portfolio')) {?>
-export default function Page() {
+  const post = listPost[index]
+  const postPrev = index > 0 ? listPost[index - 1] : undefined
+  const postNext = index < listPost.length ? listPost[index + 1] : undefined
+
   return (
-    <body className="single black portfolio">
-      {/* <?php } else {?> */}
-      {/* <body className="single article"> */}
-      {/* <?php } ?> */}
-
+    <body
+      className={`single ${
+        'htmlTitle' in post ? 'article' : 'black portfolio'
+      }`}
+    >
       <ul id="navigation" className="black">
         <li className="home">
-          <a href="http://essenmitsosse.de" rel="index">
+          <a href="/" rel="index">
             Home
           </a>
         </li>
         <li className="articlenavigation">
           <ul>
-            {/* <?php next_post_link('<li className="newer">%link</li>', '<span className="arrow">&#9668;</span> <span className="title">%title</span>', true); ?> */}
+            {postPrev && (
+              <a href={postPrev.slug} rel="prev">
+                <li className="newer">
+                  <span className="arrow">&#9668;</span>{' '}
+                  <span className="title">{postPrev.meta.title}</span>
+                </li>
+              </a>
+            )}
 
-            {/* <?php previous_post_link('<li className="older">%link</li>', '<span className="arrow">&#9658;</span> <span className="title">%title</span>', true); ?> */}
+            {postNext && (
+              <a href={postNext.slug} rel="next">
+                <li className="older">
+                  <span className="arrow">&#9658;</span>{' '}
+                  <span className="title">{postNext.meta.title}</span>
+                </li>
+              </a>
+            )}
           </ul>
         </li>
       </ul>
 
       <div
-        className="intro<?php if (in_category('articles')) {?> color<?php } ?>"
-        style={{ backgroundImage: "url(<?php echo $headerimage[0]; ?>)" }}
+        className={`intro ${'htmlTitle' in post ? 'color' : undefined}`}
+        style={{
+          backgroundImage:
+            'imageHeader' in post ? `url(${post.imageHeader.src})` : undefined,
+        }}
       >
         <p className="logo">
-          <a href="http://essenmitsosse.de/" id="essenmitsosse">
+          <a href="/" id="essenmitsosse">
             <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
           </a>
         </p>
-        <h1>{/* <?php the_title(); ?> */}</h1>
+        {'htmlTitle' in post ? (
+          <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
+        ) : (
+          <h1>{post.meta.title}</h1>
+        )}
       </div>
 
       <div className="content white">
-        {/* <?php if (in_category('articles')) {?><div className="date"><p><?php the_time('Y-m-d') ?></p></div><?php } ?> */}
-        {/* <?php the_content(); ?> */}
+        <div className="date">
+          <p>{post.date}</p>
+        </div>
+        {<post.Component />}
         <hr />
         <div className="fourwide">
           <h3>
@@ -83,7 +102,7 @@ export default function Page() {
           <p>
             My name ist Marcus Blättermann. <br />
             I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign. If you like my work you can{" "}
+            illustration, print- & webdesign. If you like my work you can{' '}
             <script type="text/javascript">mail2();</script>
             <noscript>hire me. marcus -at- essenmitsosse -dot- de</noscript>.
           </p>
@@ -94,11 +113,11 @@ export default function Page() {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to subscribe to my{" "}
+            Don’t forget to subscribe to my{' '}
             <a href="http://feeds.feedburner.com/essenmitsosse" rel="alternate">
               RSS-Feed
-            </a>{" "}
-            and follow me on{" "}
+            </a>{' '}
+            and follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="http://essenmitsosse.de">Portfolio</a>.
           </p>
@@ -108,14 +127,8 @@ export default function Page() {
           <h3>
             <em>If you didn&#8217;t like this one</em>You will hate these
           </h3>
-          {/* <?php st_related_posts();?> */}
         </div>
       </div>
-      {/* <?php comments_template(); ?> */}
-
-      {/* <?php wp_footer(); ?> */}
     </body>
-  );
-  // </html>
-  // <?php endwhile ?>
+  )
 }
