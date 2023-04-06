@@ -1,38 +1,29 @@
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-// 	<link rel="stylesheet" href="http://essenmitsosse.de/blog/wp-content/themes/essenmitsosse-behemoth/style.css" type="text/css" media="screen" />
-// 	<link rel="alternate" type="application/rss+xml" title="essenmitsosse RSS-Feed" href="http://feeds.feedburner.com/essenmitsosse" />
-// 	<link rel="pingback" href="http://essenmitsosse.de/blog/xmlrpc.php" />
-// 	<link rel="shortcut icon" type="image/png" href="http://essenmitsosse.de/favicon.png" />
-// 	<link rel="icon" type="image/png" href="http://essenmitsosse.de/favicon.png" />
-// 	<link rel="index" title="essenmitsosse" href="http://essenmitsosse.de" />
+import { Metadata } from 'next'
 
-// 	<title>&clubs; essenmitsosse</title>
+import listBlog from '../content/blog'
+import listPortfolio from '../content/portfolio'
+import { Post } from '@/content/types'
 
-// 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-// 	<meta name="robots" content="index, follow" />
-// 	<meta name="description" content="The work and thoughts of an illustrator, print- & webdesigner."/>
-// 	<meta name="keywords" content="freelancer, illustrator, designer, design, layout, typography, wacom, photoshop">
-// 	<meta name="date" content="<?php the_time('Y-m-d') ?>">
-// 	<meta name="author" content="Marcus Bl&auml;ttermann">
-// 	<meta name="designer" content="Marcus Bl&auml;ttermann">
+export const metadata: Metadata = {
+  title: '♣ essenmitsosse',
+  description: 'The work and thoughts of an illustrator, print- & webdesigner.',
+  publisher: 'index, follow',
+  keywords:
+    'freelancer, illustrator, designer, design, layout, typography, wacom, photoshop',
+  authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
+  icons: 'favicon.png',
+}
 
-// 	<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-7448093-1"); pageTracker._trackPageview(); } catch(err) {}function mail(){var name = "marcus";var domain = "essenmitsosse.de";document.write('<a href=\"mailto:' + name + '@' + domain + '\">' + name + '@' + domain + '</a>');} function mail2(){	var name = "marcus";var domain = "essenmitsosse.de";document.write('<a class="important" href=\"mailto:' + name + '@' + domain + '\">hire me</a>');}</script>
+const sortByDate = (postA: Post, postB: Post) =>
+  postA.date > postB.date ? -1 : 1
 
-// 	<?php wp_head(); ?>
-// </head>
 export default function Home() {
   return (
     <body className="homepage">
       <ul id="navigation" className="black"></ul>
 
       <p className="logo">
-        <a
-          href="http://essenmitsosse.de/?preview=1&amp;template=essenmitsosse-dreadnought&amp;stylesheet=essenmitsosse-dreadnought"
-          title="Homepage"
-          id="essenmitsosse"
-        >
+        <a href="/" title="Homepage" id="essenmitsosse">
           <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
         </a>
       </p>
@@ -42,58 +33,62 @@ export default function Home() {
           <div className="wrapper">
             <h1>About</h1>
             <p>
-              My name ist Marcus Blättermann. I’m majoring in Communication
-              Design at{" "}
-              <a href="http://burg-halle.de">
+              My name ist Marcus Blättermann. I&rsquo;m majoring in
+              Communication Design at{' '}
+              <a href="http://burg-halle.de/">
                 Burg Giebichenstein University of Art & Design
               </a>
-              . I work as a freelancer for illustration, print- & webdesign. If
-              you like my work you can{" "}
-              <script type="text/javascript">mail2();</script>
-              <noscript>hire me</noscript>.
+              . I work as a freelancer for illustration, print- & webdesign.
             </p>
             <p>
-              You should get my{" "}
-              <a href="http://feeds.feedburner.com/essenmitsosse">RSS-Feed</a>{" "}
-              and follow me on{" "}
+              You should follow me on{' '}
               <a href="http://twitter.com/essenmitsosse">Twitter</a>.
             </p>
 
             <h1>Contact</h1>
             <table>
-              <tr>
-                <th>Mail</th>
-                <td>
-                  <script type="text/javascript">mail();</script>
-                  <noscript>marcus -at- essenmitsosse -dot- de</noscript>
-                </td>
-              </tr>
-              <tr>
-                <th>Twitter</th>
-                <td>
-                  <a href="http://twitter.com/essenmitsosse">@essenmitsosse</a>
-                </td>
-              </tr>
-              <tr>
-                <th>ICQ</th>
-                <td>
-                  <a href="http://people.icq.com/people/about_me.php?uin=147783039">
-                    147783039
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <th>Skype</th>
-                <td>essenmitsosse</td>
-              </tr>
-              <tr>
-                <th>Facebook</th>
-                <td>
-                  <a href="http://www.facebook.com/essenmitsosse">
-                    /essenmitsosse
-                  </a>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Mail</th>
+                  <td>
+                    <a href="mailto:marcus@essenmitsosse.de">
+                      marcus@essenmitsosse.de
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Facebook</th>
+                  <td>
+                    <a href="http://www.facebook.com/essenmitsosse">
+                      /essenmitsosse
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Twitter</th>
+                  <td>
+                    <a href="http://twitter.com/essenmitsosse">
+                      @essenmitsosse
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Youtube</th>
+                  <td>
+                    <a href="https://www.youtube.com/user/essenmitsosse">
+                      /user/essenmitsosse
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Instagram</th>
+                  <td>
+                    <a href="http://instagram.com/essenmitsosse">
+                      @essenmitsosse
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -102,18 +97,18 @@ export default function Home() {
           <div className="wrapper color">
             <h1>Articles</h1>
             <ul>
-              {/* <?php $my_query = new WP_Query('category_name=articles'); while ($my_query->have_posts()) : $my_query->the_post(); ?> */}
-              <li>
-                <h3>
-                  <a href="<?php the_permalink() ?>">
-                    <span className="date">
-                      {/* <?php the_time('Y-m-d') ?> */}
-                    </span>
-                    {/* <?php the_title(); ?> */}
-                  </a>
-                </h3>
-              </li>
-              {/* <?php endwhile; ?> */}
+              {[...listBlog].sort(sortByDate).map((post) => (
+                <li key={post.slug}>
+                  <h3>
+                    <a href={post.slug}>
+                      <span className="date">{post.date}</span>
+                      <span
+                        dangerouslySetInnerHTML={{ __html: post.htmlTitle }}
+                      />
+                    </a>
+                  </h3>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -124,25 +119,31 @@ export default function Home() {
             <ul>
               <li className="commentPortfolio">
                 I am sorry that this portfolio is quite out of date. New stuff
-                will be coming soon.
-              </li>
-              {/* <?php $my_query = new WP_Query('category_name=portfolio'); while ($my_query->have_posts()) : $my_query->the_post(); $preview = get_post_custom_values("preview"); ?> */}
-              <li>
+                will be coming soon. For now you can find my portfolio on{' '}
                 <a
-                  href="<?php the_permalink() ?>"
-                  style="background-image:url(<?php echo $preview[0]; ?>);"
+                  href="https://www.behance.net/essenmitsosse"
+                  style={{ display: 'inline', borderBottom: 'none' }}
                 >
-                  <span>{/* <?php the_title(); ?> */}</span>
+                  Behance
                 </a>
+                .
               </li>
-              {/* <?php endwhile; ?> */}
+              {[...listPortfolio].sort(sortByDate).map((post) => (
+                <li key={post.slug}>
+                  <a
+                    href={post.slug}
+                    style={{
+                      backgroundImage: `url(${post.preview.src}`,
+                    }}
+                  >
+                    <span>{post.meta.title}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-
-      {/* <?php wp_footer(); ?> */}
     </body>
-  );
-  // </html>
+  )
 }
