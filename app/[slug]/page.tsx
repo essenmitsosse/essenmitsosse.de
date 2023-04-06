@@ -38,80 +38,84 @@
 // </head>
 
 // <?php if (in_category('portfolio')) {?>
-<body className="single black portfolio">
-  {/* <?php } else {?> */}
-  {/* <body className="single article"> */}
-  {/* <?php } ?> */}
+export default function Page() {
+  return (
+    <body className="single black portfolio">
+      {/* <?php } else {?> */}
+      {/* <body className="single article"> */}
+      {/* <?php } ?> */}
 
-  <ul id="navigation" className="black">
-    <li className="home">
-      <a href="http://essenmitsosse.de" rel="index">
-        Home
-      </a>
-    </li>
-    <li className="articlenavigation">
-      <ul>
-        {/* <?php next_post_link('<li className="newer">%link</li>', '<span className="arrow">&#9668;</span> <span className="title">%title</span>', true); ?> */}
+      <ul id="navigation" className="black">
+        <li className="home">
+          <a href="http://essenmitsosse.de" rel="index">
+            Home
+          </a>
+        </li>
+        <li className="articlenavigation">
+          <ul>
+            {/* <?php next_post_link('<li className="newer">%link</li>', '<span className="arrow">&#9668;</span> <span className="title">%title</span>', true); ?> */}
 
-        {/* <?php previous_post_link('<li className="older">%link</li>', '<span className="arrow">&#9658;</span> <span className="title">%title</span>', true); ?> */}
+            {/* <?php previous_post_link('<li className="older">%link</li>', '<span className="arrow">&#9658;</span> <span className="title">%title</span>', true); ?> */}
+          </ul>
+        </li>
       </ul>
-    </li>
-  </ul>
 
-  <div
-    className="intro<?php if (in_category('articles')) {?> color<?php } ?>"
-    style="background-image:url(<?php echo $headerimage[0]; ?>);"
-  >
-    <p className="logo">
-      <a href="http://essenmitsosse.de/" id="essenmitsosse">
-        <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
-      </a>
-    </p>
-    <h1>{/* <?php the_title(); ?> */}</h1>
-  </div>
+      <div
+        className="intro<?php if (in_category('articles')) {?> color<?php } ?>"
+        style="background-image:url(<?php echo $headerimage[0]; ?>);"
+      >
+        <p className="logo">
+          <a href="http://essenmitsosse.de/" id="essenmitsosse">
+            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
+          </a>
+        </p>
+        <h1>{/* <?php the_title(); ?> */}</h1>
+      </div>
 
-  <div className="content white">
-    {/* <?php if (in_category('articles')) {?><div className="date"><p><?php the_time('Y-m-d') ?></p></div><?php } ?> */}
-    {/* <?php the_content(); ?> */}
-    <hr />
-    <div className="fourwide">
-      <h3>
-        <em>A little bit</em> about me
-      </h3>
-      <p>
-        My name ist Marcus Blättermann. <br />
-        I’m majoring in communication design and work as a freelancer for
-        illustration, print- & webdesign. If you like my work you can{" "}
-        <script type="text/javascript">mail2();</script>
-        <noscript>hire me. marcus -at- essenmitsosse -dot- de</noscript>.
-      </p>
-    </div>
+      <div className="content white">
+        {/* <?php if (in_category('articles')) {?><div className="date"><p><?php the_time('Y-m-d') ?></p></div><?php } ?> */}
+        {/* <?php the_content(); ?> */}
+        <hr />
+        <div className="fourwide">
+          <h3>
+            <em>A little bit</em> about me
+          </h3>
+          <p>
+            My name ist Marcus Blättermann. <br />
+            I’m majoring in communication design and work as a freelancer for
+            illustration, print- & webdesign. If you like my work you can{" "}
+            <script type="text/javascript">mail2();</script>
+            <noscript>hire me. marcus -at- essenmitsosse -dot- de</noscript>.
+          </p>
+        </div>
 
-    <div className="fourwide">
-      <h3>
-        <em>What you should </em>do next
-      </h3>
-      <p>
-        Don’t forget to subscribe to my{" "}
-        <a href="http://feeds.feedburner.com/essenmitsosse" rel="alternate">
-          RSS-Feed
-        </a>{" "}
-        and follow me on <a href="http://twitter.com/essenmitsosse">Twitter</a>.
-        You should also check out my{" "}
-        <a href="http://essenmitsosse.de">Portfolio</a>.
-      </p>
-    </div>
+        <div className="fourwide">
+          <h3>
+            <em>What you should </em>do next
+          </h3>
+          <p>
+            Don’t forget to subscribe to my{" "}
+            <a href="http://feeds.feedburner.com/essenmitsosse" rel="alternate">
+              RSS-Feed
+            </a>{" "}
+            and follow me on{" "}
+            <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
+            also check out my <a href="http://essenmitsosse.de">Portfolio</a>.
+          </p>
+        </div>
 
-    <div className="fourwide">
-      <h3>
-        <em>If you didn&#8217;t like this one</em>You will hate these
-      </h3>
-      {/* <?php st_related_posts();?> */}
-    </div>
-  </div>
-  {/* <?php comments_template(); ?> */}
+        <div className="fourwide">
+          <h3>
+            <em>If you didn&#8217;t like this one</em>You will hate these
+          </h3>
+          {/* <?php st_related_posts();?> */}
+        </div>
+      </div>
+      {/* <?php comments_template(); ?> */}
 
-  {/* <?php wp_footer(); ?> */}
-</body>;
-// </html>
-// <?php endwhile ?>
+      {/* <?php wp_footer(); ?> */}
+    </body>
+  );
+  // </html>
+  // <?php endwhile ?>
+}
