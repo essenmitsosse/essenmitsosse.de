@@ -12,5 +12,7 @@ export type Post = {
    */
   Component: ComponentType
   date: `${number}${number}${number}${number}-${number}${number}-${number}${number}`
-  meta: Metadata
+  meta: Omit<Metadata, 'title'> & {
+    title: string
+  }
 }
