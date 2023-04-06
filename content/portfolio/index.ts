@@ -29,7 +29,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewAztheken,
     date: '2008-03-30',
     meta: {
-      title: 'Aztecs ♣ essenmitsosse',
+      title: 'Aztecs',
       description:
         'An image showing an Aztec warrior killing a Spanish Conquiztador',
       keywords:
@@ -42,7 +42,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewBloackator,
     date: '2009-08-18',
     meta: {
-      title: 'Blockator ♣ essenmitsosse',
+      title: 'Blockator',
       description:
         'Blockator is an isometric 3-d Pixelfont, that is generated with Flash.',
       keywords: 'font, marcus blättermann, pixel, student, Typography',
@@ -54,7 +54,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewBlondhead,
     date: '2008-03-28',
     meta: {
-      title: 'Blondehead &#038; Redhead ♣ essenmitsosse',
+      title: 'Blondehead &#038; Redhead',
       description: 'Paintings of a blonde girl and a redhead.',
       keywords:
         'digital painting, images, marcus blättermann, painting, photoshop, portrait',
@@ -66,7 +66,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewCreaturecombat,
     date: '2010-07-06',
     meta: {
-      title: 'Creature Combat IV ♣ essenmitsosse',
+      title: 'Creature Combat IV',
       description: 'Animation movie of a battle between a cat and a mouse.',
       keywords:
         'animation, cat, drawing, funny, marcus blaettermann, mouse, student, susanne wohlfahrt',
@@ -78,7 +78,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewAkt,
     date: '2008-04-18',
     meta: {
-      title: 'Digital Life Drawing ♣ essenmitsosse',
+      title: 'Digital Life Drawing',
       description:
         'I went to a life drawing class, equipped with a graphics tablet and Photoshop.',
       keywords:
@@ -91,7 +91,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewEssenmitsosse,
     date: '2009-08-17',
     meta: {
-      title: 'essenmitsosse Redesign ♣ essenmitsosse',
+      title: 'essenmitsosse Redesign',
       description: 'Redesign of the homepage of Marcus Blättermann.',
       keywords: 'essenmitsosse, marcus blättermann, Webdesign, website',
     },
@@ -102,7 +102,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewFaust,
     date: '2010-05-30',
     meta: {
-      title: 'Faust ♣ essenmitsosse',
+      title: 'Faust',
       description: 'Announcement for my new comic Faust.',
       keywords: 'comic, graphic design, marcus blaettermann, student',
     },
@@ -113,7 +113,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewJackofalltrades,
     date: '2012-04-17',
     meta: {
-      title: 'Jack of all Trades ♣ essenmitsosse',
+      title: 'Jack of all Trades',
       description: 'A movie about creativity and getting things done.',
       keywords: '',
     },
@@ -124,7 +124,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewKino120a,
     date: '2010-07-27',
     meta: {
-      title: 'kino.120a ♣ essenmitsosse',
+      title: 'kino.120a',
       description: 'Poster series for student cinema kino.120a.',
       keywords:
         'allegro non troppo, berlin calling, cinema, graphic design, i&rsquo;m not there, marcus blaettermann, metropolis, poster, student, Test, the day the earth stood still, Typography, underdogs',
@@ -136,7 +136,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewLinentunic,
     date: '2008-03-30',
     meta: {
-      title: 'Linen Tunic ♣ essenmitsosse',
+      title: 'Linen Tunic',
       description:
         'Image of a man in linen tunic with a sword, who is cursed by a wraith in the snow.',
       keywords:
@@ -149,7 +149,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewGondel,
     date: '2008-03-18',
     meta: {
-      title: 'Older Paintings ♣ essenmitsosse',
+      title: 'Older Paintings',
       description: 'Some older paintings by Marcus Blättermann.',
       keywords:
         'digital painting, Dinosaur, Dragon, Gondola, images, Jungle, marcus blättermann, painting, photoshop, portrait, Turtle',
@@ -161,7 +161,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewPortrait,
     date: '2008-10-02',
     meta: {
-      title: 'Portrait Class ♣ essenmitsosse',
+      title: 'Portrait Class',
       description:
         'Paintings from a portrait class, made with Photoshop and a graphics tablet.',
       keywords:
@@ -174,7 +174,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewBowser,
     date: '2008-04-27',
     meta: {
-      title: 'Realistically Painted Bowser ♣ essenmitsosse',
+      title: 'Realistically Painted Bowser',
       description:
         'How would Bowser from “Super Mario” look like, if he would be a real animal?',
       keywords:
@@ -187,7 +187,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewSonic,
     date: '2008-05-09',
     meta: {
-      title: 'Sonic The Real Hedgehog ♣ essenmitsosse',
+      title: 'Sonic The Real Hedgehog',
       description: 'How would Sonic look like if he would exist in reality?',
       keywords:
         'brush, digital painting, fanart, images, marcus blättermann, painting, photoshop, pixel, realistic, redesign, sonic, untoon',
@@ -199,7 +199,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewSparta,
     date: '2008-03-30',
     meta: {
-      title: 'Sparta! ♣ essenmitsosse',
+      title: 'Sparta!',
       description: 'Image of a Spartan who slaughters a Persian warrior.',
       keywords:
         'digital painting, fanart, images, marcus blättermann, painting, photoshop, sparta',
@@ -211,7 +211,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewAnglerfish,
     date: '2008-03-30',
     meta: {
-      title: 'The Anglerfish ♣ essenmitsosse',
+      title: 'The Anglerfish',
       description: '',
       keywords:
         'anglerfish, cg-challenge, contest, digital painting, images, marcus blättermann, painting, photoshop',
@@ -223,7 +223,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     preview: previewHumanbrain,
     date: '2010-12-16',
     meta: {
-      title: 'The Human Brain ♣ essenmitsosse',
+      title: 'The Human Brain',
       description:
         'Animated movie giving an idea about how the brain really works.',
       keywords:
