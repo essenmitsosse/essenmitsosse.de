@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import { StaticImageData } from 'next/image'
 import { Post } from '../types'
 
 import previewAkt from '../../website/blog/wp-content/uploads/portfoliothumb/akt-preview.jpg'
@@ -19,7 +20,7 @@ import previewCreaturecombat from '../../website/blog/wp-content/uploads/creatur
 import previewFaust from '../../website/blog/wp-content/uploads/faust/faust.png'
 import previewEssenmitsosse from '../../website/blog/wp-content/uploads/essenmitsosse/website-preview.png'
 
-type PostPortfolio = { preview: any } & Post
+type PostPortfolio = { preview: StaticImageData } & Post
 
 const listPortfolio: ReadonlyArray<PostPortfolio> = [
   {
