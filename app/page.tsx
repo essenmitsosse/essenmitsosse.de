@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import listBlog from './[slug]/content/blog'
 import listPortfolio from './[slug]/content/portfolio'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -119,13 +120,15 @@ export default function Home() {
               </li>
               {listPortfolio.map((post) => (
                 <li key={post.slug}>
-                  <Link
-                    href={post.slug}
-                    style={{
-                      backgroundImage: `url(${post.preview.src}`,
-                    }}
-                  >
+                  <Link href={post.slug}>
                     <span>{post.meta.title}</span>
+                    <div className="image-wrapper">
+                      <Image
+                        src={post.preview.src}
+                        alt={post.meta.title}
+                        fill
+                      />
+                    </div>
                   </Link>
                 </li>
               ))}

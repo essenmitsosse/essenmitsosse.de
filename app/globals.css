@@ -617,13 +617,21 @@ div#portfolio ul {
 
 div#portfolio a {
   display: block;
-  height: 150px;
-  padding-top: 0px;
   border: none;
   border-bottom: 20px solid #333;
-  padding-bottom: 1.1em;
   background-position: center 1.1em;
   background-repeat: no-repeat;
+}
+
+div#portfolio .image-wrapper {
+  position: relative;
+  height: 150px;
+}
+
+div#portfolio .image-wrapper img {
+  object-fit: cover;
+  display: block;
+  margin: 0;
 }
 
 div#portfolio a span {
