@@ -108,11 +108,7 @@ export default function Layout(props: {
             <em>What you should </em>do next
           </h3>
           <p>
-            Don’t forget to subscribe to my{' '}
-            <a href="http://feeds.feedburner.com/essenmitsosse" rel="alternate">
-              RSS-Feed
-            </a>{' '}
-            and follow me on{' '}
+            Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
             also check out my <a href="http://essenmitsosse.de">Portfolio</a>.
           </p>
