@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import listBlog from '../content/blog'
-import listPortfolio from '../content/portfolio'
+import listBlog from './[slug]/content/blog'
+import listPortfolio from './[slug]/content/portfolio'
 import Link from 'next/link'
 
 export const metadata: Metadata = {

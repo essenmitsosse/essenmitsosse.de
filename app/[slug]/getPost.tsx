@@ -1,5 +1,5 @@
-import listBlog, { PostBlog } from '@/content/blog'
-import listPortfolio, { PostPortfolio } from '@/content/portfolio'
+import listBlog, { PostBlog } from './content/blog'
+import listPortfolio, { PostPortfolio } from './content/portfolio'
 
 export const listPost = [...listBlog, ...listPortfolio]
 
