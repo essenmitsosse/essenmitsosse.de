@@ -1,5 +1,3 @@
-import headerGraphicsTablet from '../../../website/blog/wp-content/uploads/graphicstablet/graphicstablet-header.png'
-
 export default function Page() {
   return (
     <>

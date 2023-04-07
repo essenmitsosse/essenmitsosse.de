@@ -1,5 +1,3 @@
-import headerPortrait from '../../../website/blog/wp-content/uploads/likeness/portrait-header.png'
-
 import imageWhoisthis from '../../../website/blog/wp-content/uploads/2008/04/whoisthis.jpg'
 import imageWhoisthis2 from '../../../website/blog/wp-content/uploads/2008/04/whoisthis2.jpg'
 import imageWhoisthis3 from '../../../website/blog/wp-content/uploads/2008/04/whoisthis3.jpg'

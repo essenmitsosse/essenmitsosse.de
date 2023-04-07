@@ -1,5 +1,3 @@
-import headerEvolution from '../../../website/article/evolution/evolution.png'
-
 import imageBasic from '../../../website/article/evolution/basic.png'
 import imageQuality from '../../../website/article/evolution/quality.png'
 import imageDisadvantage from '../../../website/article/evolution/disadvantage.png'

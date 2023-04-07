@@ -1,5 +1,3 @@
-import headerDigitalPainting from '../../../website/blog/wp-content/uploads/digitalpainting/digitalpainting-header.png'
-
 import imagePhotoshop from '../../../website/blog/wp-content/uploads/2008/04/photoshop.jpg'
 import imagePaintshoppro from '../../../website/blog/wp-content/uploads/2008/04/paintshoppro.jpg'
 import imagePainter from '../../../website/blog/wp-content/uploads/2008/04/painter.jpg'

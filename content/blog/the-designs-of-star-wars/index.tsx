@@ -1,5 +1,3 @@
-import headerVader from '../../../website/blog/wp-content/uploads/starwars/vader-intro.png'
-
 import imageAtat from '../../../website/blog/wp-content/uploads/starwars/atat.jpg'
 import imageMilleniumfalcon from '../../../website/blog/wp-content/uploads/starwars/milleniumfalcon.jpg'
 import imageSandcrawler from '../../../website/blog/wp-content/uploads/starwars/sandcrawler.jpg'

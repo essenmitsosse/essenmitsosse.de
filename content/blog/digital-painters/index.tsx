@@ -1,5 +1,3 @@
-import headerDigitalPainter from '../../../website/blog/wp-content/uploads/digitalpainters/digitalpainter-header.png'
-
 import previewSonsofthestorm from '../../../website/blog/wp-content/uploads/digitalpainters/sonsofthestorm.jpg'
 import previewSparth from '../../../website/blog/wp-content/uploads/digitalpainters/sparth.jpg'
 import previewJasonchan from '../../../website/blog/wp-content/uploads/digitalpainters/jasonchan.jpg'

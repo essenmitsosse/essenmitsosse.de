@@ -1,5 +1,3 @@
-import headerColorManagement from '../../../website/blog/wp-content/uploads/colormanagement/colormanagement-header.png'
-
 import imageSettings from '../../../website/blog/wp-content/uploads/2008/04/settings.jpg'
 import imageSaveforwebsettings from '../../../website/blog/wp-content/uploads/2008/04/saveforwebsettings.jpg'
 

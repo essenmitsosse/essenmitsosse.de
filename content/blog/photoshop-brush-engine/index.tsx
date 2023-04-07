@@ -1,5 +1,3 @@
-import headerBrushEngine from '../../../website/blog/wp-content/uploads/photoshop/brushengine-header.png'
-
 import imageBrushbutton from '../../../website/blog/wp-content/uploads/photoshop/brushbutton.png'
 import imageJitter from '../../../website/blog/wp-content/uploads/photoshop/jitter.png'
 import imageBrushTipShape from '../../../website/blog/wp-content/uploads/2008/05/brush-tip-shape.gif'
