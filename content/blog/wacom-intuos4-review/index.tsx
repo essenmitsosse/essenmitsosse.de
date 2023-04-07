@@ -1,5 +1,6 @@
 import headerIntuos4 from '../../../website/blog/wp-content/uploads/intuos4/intuos4.png'
 
+import Link from 'next/link'
 import imageMainphoto from '../../../website/blog/wp-content/uploads/intuos4/mainphoto.jpg'
 import imageTouchingring from '../../../website/blog/wp-content/uploads/intuos4/touchingring.jpg'
 import imagePentips from '../../../website/blog/wp-content/uploads/intuos4/pentips.png'
@@ -23,9 +24,9 @@ export default function Page() {
         it&rsquo;s good for at all I have written an article about this.
       </p>
       <p>
-        <a href="graphics-tablet">
+        <Link href="graphics-tablet">
           Read: “An Introduction To The Graphics Tablet”
-        </a>
+        </Link>
       </p>
       <h2>Improvements</h2>
       <hr />

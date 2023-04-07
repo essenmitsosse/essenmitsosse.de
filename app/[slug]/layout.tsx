@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
+import Link from 'next/link'
 
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
 
@@ -24,14 +25,14 @@ export default function Layout(props: {
     >
       <ul id="navigation" className="black">
         <li className="home">
-          <a href="/" rel="index">
+          <Link href="/" rel="index">
             Home
-          </a>
+          </Link>
         </li>
         <li className="articlenavigation">
           <ul>
             {postPrev && (
-              <a href={postPrev.slug} rel="prev">
+              <Link href={postPrev.slug} rel="prev">
                 <li className="newer">
                   <span className="arrow">&#9668;</span>{' '}
                   <span
@@ -44,11 +45,11 @@ export default function Layout(props: {
                     }}
                   />
                 </li>
-              </a>
+              </Link>
             )}
 
             {postNext && (
-              <a href={postNext.slug} rel="next">
+              <Link href={postNext.slug} rel="next">
                 <li className="older">
                   <span className="arrow">&#9658;</span>{' '}
                   <span
@@ -61,7 +62,7 @@ export default function Layout(props: {
                     }}
                   />
                 </li>
-              </a>
+              </Link>
             )}
           </ul>
         </li>
@@ -74,9 +75,9 @@ export default function Layout(props: {
         }}
       >
         <p className="logo">
-          <a href="/" id="essenmitsosse">
+          <Link href="/" id="essenmitsosse">
             <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
-          </a>
+          </Link>
         </p>
         {isBlog ? (
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
@@ -125,7 +126,7 @@ export default function Layout(props: {
             <ul>
               {listPostRelated.map((postRelated) => (
                 <li key={`${postRelated.slug}-related`}>
-                  <a href={postRelated.slug}>{postRelated.meta.title}</a>
+                  <Link href={postRelated.slug}>{postRelated.meta.title}</Link>
                 </li>
               ))}
             </ul>

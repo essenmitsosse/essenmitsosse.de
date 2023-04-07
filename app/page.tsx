@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 
 import listBlog from '../content/blog'
 import listPortfolio from '../content/portfolio'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -19,9 +20,9 @@ export default function Home() {
       <ul id="navigation" className="black"></ul>
 
       <p className="logo">
-        <a href="/" title="Homepage" id="essenmitsosse">
+        <Link href="/" title="Homepage" id="essenmitsosse">
           <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
-        </a>
+        </Link>
       </p>
 
       <div className="allwrapper">
@@ -31,14 +32,14 @@ export default function Home() {
             <p>
               My name ist Marcus Blättermann. I&rsquo;m majoring in
               Communication Design at{' '}
-              <a href="http://burg-halle.de/">
+              <Link href="http://burg-halle.de/">
                 Burg Giebichenstein University of Art & Design
-              </a>
+              </Link>
               . I work as a freelancer for illustration, print- & webdesign.
             </p>
             <p>
               You should follow me on{' '}
-              <a href="http://twitter.com/essenmitsosse">Twitter</a>.
+              <Link href="http://twitter.com/essenmitsosse">Twitter</Link>.
             </p>
 
             <h1>Contact</h1>
@@ -88,12 +89,12 @@ export default function Home() {
               {listBlog.map((post) => (
                 <li key={post.slug}>
                   <h3>
-                    <a href={post.slug}>
+                    <Link href={post.slug}>
                       <span className="date">{post.date}</span>
                       <span
                         dangerouslySetInnerHTML={{ __html: post.htmlTitle }}
                       />
-                    </a>
+                    </Link>
                   </h3>
                 </li>
               ))}
@@ -118,14 +119,14 @@ export default function Home() {
               </li>
               {listPortfolio.map((post) => (
                 <li key={post.slug}>
-                  <a
+                  <Link
                     href={post.slug}
                     style={{
                       backgroundImage: `url(${post.preview.src}`,
                     }}
                   >
                     <span>{post.meta.title}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
