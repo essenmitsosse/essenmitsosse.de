@@ -35,5 +35,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/essenmitsosse/essenmitsosse.de.git"
+  },
+  "devDependencies": {
+    "sass": "^1.61.0"
   }
 }
