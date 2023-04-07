@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imageTheDayTheEarthStoodStill from '../../../../../website/blog/wp-content/uploads/kino120a/the-day-the-earth-stood-still.png'
 import imageAnderwelten from '../../../../../website/blog/wp-content/uploads/kino120a/anderwelten.png'
 import imageUnderdogs from '../../../../../website/blog/wp-content/uploads/kino120a/underdogs.png'
@@ -26,198 +28,234 @@ export default function Page() {
           <a href="http://kino120a.de/">kino.120a</a> at Burg Giebichenstein.
         </div>
         <p>
-          <img
+          <Image
             title="The day the earth stood still"
-            src={imageTheDayTheEarthStoodStill.src}
+            src={imageTheDayTheEarthStoodStill}
             alt="The day the earth stood still poster"
             width="300"
             height="424"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="Anderwelten — semester program"
-            src={imageAnderwelten.src}
+            src={imageAnderwelten}
             alt="Anderwelten poster"
             width="300"
             height="900"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="Underdogs — semester program"
-            src={imageUnderdogs.src}
+            src={imageUnderdogs}
             alt="Underdogs poster"
             width="300"
             height="900"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <hr />
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Bob Dylan"
-            src={imageImNotThere1.src}
+            src={imageImNotThere1}
             alt="I&rsquo;m not there — Bob Dylan —poster"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there"
-            src={imageImNotThere2.src}
+            src={imageImNotThere2}
             alt="I&rsquo;m not there - poster"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Marcus Carl Franklin"
-            src={imageImNotThereMarcusCarlFranklin.src}
+            src={imageImNotThereMarcusCarlFranklin}
             alt="I&rsquo;m not there — Marcus Carl Franklin"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Christian Bale"
-            src={imageImNotThereChristianBale.src}
+            src={imageImNotThereChristianBale}
             alt="I&rsquo;m not there — Christian Bale"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Cate Blanchett"
-            src={imageImNotThereCateBlanchett.src}
+            src={imageImNotThereCateBlanchett}
             alt="I&rsquo;m not there — Cate Blanchett"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there"
-            src={imageImNotThere3.src}
+            src={imageImNotThere3}
             alt="I&rsquo;m not there"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Heath Ledger"
-            src={imageImNotThereHeathLedger.src}
+            src={imageImNotThereHeathLedger}
             alt="I&rsquo;m not there — Heath Ledger"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Bin Whishaw"
-            src={imageImNotThereBenWhishaw.src}
+            src={imageImNotThereBenWhishaw}
             alt="I&rsquo;m not there — Bin Whishaw"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="I&rsquo;m not there — Richard Gere"
-            src={imageImNotThereRichardGere.src}
+            src={imageImNotThereRichardGere}
             alt="I&rsquo;m not there — Richard Gere"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fullwidth">
         <p>
-          <img
+          <Image
             title="Berlin Calling"
-            src={imageBerlincalling.src}
+            src={imageBerlincalling}
             alt="Berlin Calling poster"
             width="940"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="Metropolis"
-            src={imageMetropolis.src}
+            src={imageMetropolis}
             alt="Metropolis poster"
             width="300"
             height="1200"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="Allegro non Troppo"
-            src={imageAllegroNonTroppo1.src}
+            src={imageAllegroNonTroppo1}
             alt="Allegro non Troppo poster"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
         <hr />
         <p>
-          <img
+          <Image
             title="Allegro non Troppo"
-            src={imageAllegroNonTroppo3.src}
+            src={imageAllegroNonTroppo3}
             alt="Allegro non Troppo poster"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
       <div className="fourwide">
         <p>
-          <img
+          <Image
             title="Allegro non Troppo"
-            src={imageAllegroNonTroppo2.src}
+            src={imageAllegroNonTroppo2}
             alt="Allegro non Troppo poster"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
         <hr />
         <p>
-          <img
+          <Image
             title="Allegro non Troppo"
-            src={imageAllegroNonTroppo4.src}
+            src={imageAllegroNonTroppo4}
             alt="Allegro non Troppo poster"
             width="300"
             height="300"
+            placeholder="blur"
+            quality={100}
           />
         </p>
       </div>
