@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import previewSonsofthestorm from './sonsofthestorm.jpg'
 import previewSparth from './sparth.jpg'
 import previewJasonchan from './jasonchan.jpg'
@@ -47,11 +49,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.sonsofthestorm.com/">
-            <img
-              src={previewSonsofthestorm.src}
+            <Image
+              src={previewSonsofthestorm}
               title="sonsofthestorm"
               width="300"
               height="250"
+              alt="Sons of the Storm"
+              placeholder="blur"
             />
             Sons of the Storm
           </a>
@@ -64,11 +68,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.sparth.com/">
-            <img
-              src={previewSparth.src}
+            <Image
+              src={previewSparth}
               title="sparth"
               width="300"
               height="250"
+              alt="Nicolas “Sparth” Bou"
+              placeholder="blur"
             />
             Nicolas “Sparth” Bouvier
           </a>
@@ -78,11 +84,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.jasonchanart.com/">
-            <img
-              src={previewJasonchan.src}
+            <Image
+              src={previewJasonchan}
               title="jasonchan"
               width="300"
               height="250"
+              alt="Jason Chan"
+              placeholder="blur"
             />
             Jason Chan
           </a>
@@ -93,11 +101,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.supalette.com/">
-            <img
-              src={previewXiaoyechen.src}
+            <Image
+              src={previewXiaoyechen}
               title="xiaoyechen"
               width="300"
               height="250"
+              alt="Xiaoye Chen"
+              placeholder="blur"
             />
             Xiaoye Chen
           </a>
@@ -107,11 +117,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.nivbed.com/">
-            <img
-              src={previewNivbed.src}
+            <Image
+              src={previewNivbed}
               title="nivbed"
               width="300"
               height="250"
+              alt="Justin “Nivbed” Cher"
+              placeholder="blur"
             />
             Justin “Nivbed” Cherry
           </a>
@@ -121,11 +133,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.ryanchurch.com/">
-            <img
-              src={previewRyanchurch.src}
+            <Image
+              src={previewRyanchurch}
               title="ryanchurch"
               width="300"
               height="250"
+              alt="Ryan Church"
+              placeholder="blur"
             />
             Ryan Church
           </a>
@@ -139,11 +153,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://sixmorevodka.blogspot.com/">
-            <img
-              src={previewMarkodjurdjevic.src}
+            <Image
+              src={previewMarkodjurdjevic}
               title="markodjurdjevic"
               width="300"
               height="250"
+              alt="Marko Djurdjevic"
+              placeholder="blur"
             />
             Marko Djurdjevic
           </a>
@@ -153,11 +169,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.barontieri.com/">
-            <img
-              src={previewBarontieri.src}
+            <Image
+              src={previewBarontieri}
               title="barontieri"
               width="300"
               height="250"
+              alt="Thierry “BARoNTiERi” Doi"
+              placeholder="blur"
             />
             Thierry “BARoNTiERi” Doizon
           </a>
@@ -170,11 +188,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.draude.com/">
-            <img
-              src={previewAlexanderdraude.src}
+            <Image
+              src={previewAlexanderdraude}
               title="alexanderdraude"
               width="300"
               height="250"
+              alt="Alexander Draude"
+              placeholder="blur"
             />
             Alexander Draude
           </a>
@@ -185,11 +205,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.dusso.com/">
-            <img
-              src={previewDusso.src}
+            <Image
+              src={previewDusso}
               title="dusso"
               width="300"
               height="250"
+              alt="Yanick “Dusso” Duss"
+              placeholder="blur"
             />
             Yanick “Dusso” Dusseault
           </a>
@@ -199,11 +221,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.dominiceise.de/">
-            <img
-              src={previewDominiceise.src}
+            <Image
+              src={previewDominiceise}
               title="dominiceise"
               width="300"
               height="250"
+              alt="Dominic Eise"
+              placeholder="blur"
             />
             Dominic Eise
           </a>
@@ -213,11 +237,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.jonfoster.com/">
-            <img
-              src={previewJonfoster.src}
+            <Image
+              src={previewJonfoster}
               title="jonfoster"
               width="300"
               height="250"
+              alt="Jon Foster"
+              placeholder="blur"
             />
             Jon Foster
           </a>
@@ -228,7 +254,14 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.hpx1.com/">
-            <img src={previewHpx1.src} title="hpx1" width="300" height="250" />
+            <Image
+              src={previewHpx1}
+              title="hpx1"
+              width="300"
+              height="250"
+              alt="Philippe “HPX-1” G"
+              placeholder="blur"
+            />
             Philippe “HPX-1” Guyenne
           </a>
         </p>
@@ -237,11 +270,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.ghull.com/news/news_main.php">
-            <img
-              src={previewGeorgehull.src}
+            <Image
+              src={previewGeorgehull}
               title="georgehull"
               width="300"
               height="250"
+              alt="George Hull"
+              placeholder="blur"
             />
             George Hull
           </a>
@@ -254,11 +289,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.iamfrancis.com/">
-            <img
-              src={previewFrancishsu.src}
+            <Image
+              src={previewFrancishsu}
               title="francishsu"
               width="300"
               height="250"
+              alt="Francis Hsu"
+              placeholder="blur"
             />
             Francis Hsu
           </a>
@@ -271,11 +308,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.itchstudios.com/psg/">
-            <img
-              src={previewPrometheus.src}
+            <Image
+              src={previewPrometheus}
               title="prometheus"
               width="300"
               height="250"
+              alt="Niklas “Prometheus” Jans"
+              placeholder="blur"
             />
             Niklas “Prometheus” Jansson
           </a>
@@ -288,11 +327,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.androidjones.com/">
-            <img
-              src={previewAndroid.src}
+            <Image
+              src={previewAndroid}
               title="android"
               width="300"
               height="250"
+              alt="Andrew “Android” Jone"
+              placeholder="blur"
             />
             Andrew “Android” Jones
           </a>
@@ -302,11 +343,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://artpad.org/">
-            <img
-              src={previewArtpad.src}
+            <Image
+              src={previewArtpad}
               title="artpad"
               width="300"
               height="250"
+              alt="Jaime “Artpad” Jones"
+              placeholder="blur"
             />
             Jaime “Artpad” Jones
           </a>
@@ -317,11 +360,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.ikplay.com/">
-            <img
-              src={previewIankim.src}
+            <Image
+              src={previewIankim}
               title="iankim"
               width="300"
               height="250"
+              alt="Ian Kam"
+              placeholder="blur"
             />
             Ian Kam
           </a>
@@ -331,11 +376,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.nic-klein.com/">
-            <img
-              src={previewNickklein.src}
+            <Image
+              src={previewNickklein}
               title="nickklein"
               width="300"
               height="250"
+              alt="Nic Klein"
+              placeholder="blur"
             />
             Nic Klein
           </a>
@@ -345,11 +392,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.vancekovacs.com/">
-            <img
-              src={previewVancekovacs.src}
+            <Image
+              src={previewVancekovacs}
               title="vancekovacs"
               width="300"
               height="250"
+              alt="Vance Kovacs"
+              placeholder="blur"
             />
             Vance Kovacs
           </a>
@@ -360,7 +409,14 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.vyle-art.com/">
-            <img src={previewVyle.src} title="vyle" width="300" height="250" />
+            <Image
+              src={previewVyle}
+              title="vyle"
+              width="300"
+              height="250"
+              alt="David “Vyle” Levy"
+              placeholder="blur"
+            />
             David “Vyle” Levy
           </a>
         </p>
@@ -369,11 +425,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.digitaldecoy.de/">
-            <img
-              src={previewDanielieske.src}
+            <Image
+              src={previewDanielieske}
               title="danielieske"
               width="300"
               height="250"
+              alt="Daniel “digitaldecoy” Lie"
+              placeholder="blur"
             />
             Daniel “digitaldecoy” Lieske
           </a>
@@ -383,11 +441,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.mercilessdesign.com/">
-            <img
-              src={previewMercilessdesign.src}
+            <Image
+              src={previewMercilessdesign}
               title="mercilessdesign"
               width="300"
               height="250"
+              alt="Izzy “Cannibal Candy” Medrano"
+              placeholder="blur"
             />
             Izzy “Cannibal Candy” Medrano
           </a>
@@ -398,11 +458,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.goodbrush.com/">
-            <img
-              src={previewCraigmullins.src}
+            <Image
+              src={previewCraigmullins}
               title="craigmullins"
               width="300"
               height="250"
+              alt="Craig “Goodbrush” Mullins"
+              placeholder="blur"
             />
             Craig “Goodbrush” Mullins
           </a>
@@ -415,7 +477,14 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.anry.ru/">
-            <img src={previewAnry.src} title="anry" width="300" height="250" />
+            <Image
+              src={previewAnry}
+              title="anry"
+              width="300"
+              height="250"
+              alt="Anry Nemo"
+              placeholder="blur"
+            />
             Anry Nemo
           </a>
         </p>
@@ -424,11 +493,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.drawthrough.com/">
-            <img
-              src={previewScottrobertson.src}
+            <Image
+              src={previewScottrobertson}
               title="scottrobertson"
               width="300"
               height="250"
+              alt="Scott Robertson"
+              placeholder="blur"
             />
             Scott Robertson
           </a>
@@ -439,11 +510,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.dandossantos.com/home.html">
-            <img
-              src={previewDandossantos.src}
+            <Image
+              src={previewDandossantos}
               title="dandossantos"
               width="300"
               height="250"
+              alt="Dan Dos Santos"
+              placeholder="blur"
             />
             Dan Dos Santos
           </a>
@@ -456,7 +529,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.mattiassnygg.com/">
-            <img src={previewMon.src} title="mon" width="300" height="250" />
+            <Image
+              src={previewMon}
+              title="mon"
+              width="300"
+              height="250"
+              alt="Mattias “mon” Snygg"
+            />
             Mattias “mon” Snygg
           </a>
         </p>
@@ -465,11 +544,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.androidblues.com/">
-            <img
-              src={previewStevenstahlberg.src}
+            <Image
+              src={previewStevenstahlberg}
               title="stevenstahlberg"
               width="300"
               height="250"
+              alt="Steven Stahlberg"
+              placeholder="blur"
             />
             Steven Stahlberg
           </a>
@@ -483,11 +564,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.aaronstgoddard.com/">
-            <img
-              src={previewAronstgoddard.src}
+            <Image
+              src={previewAronstgoddard}
               title="aronstgoddard"
               width="300"
               height="250"
+              alt="Aaron St. Goddard"
+              placeholder="blur"
             />
             Aaron St. Goddard
           </a>
@@ -497,7 +580,14 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.redbeardead.com/">
-            <img src={previewSub.src} title="sub" width="300" height="250" />
+            <Image
+              src={previewSub}
+              title="sub"
+              width="300"
+              height="250"
+              alt="Alex “Redbeardead” Stodolnik"
+              placeholder="blur"
+            />
             Alex “Redbeardead” Stodolnik
           </a>
         </p>
@@ -506,11 +596,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.justinsweet.com/">
-            <img
-              src={previewJustinsweet.src}
+            <Image
+              src={previewJustinsweet}
               title="justinsweet"
               width="300"
               height="250"
+              alt="Justin Sweet"
+              placeholder="blur"
             />
             Justin Sweet
           </a>
@@ -521,11 +613,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.torstenwolber.de/">
-            <img
-              src={previewTorstenwolber.src}
+            <Image
+              src={previewTorstenwolber}
               title="torstenwolber"
               width="300"
               height="250"
+              alt="Torsten Wolber"
+              placeholder="blur"
             />
             Torsten Wolber
           </a>
@@ -538,11 +632,13 @@ export default function Page() {
       <div className="fourwide many">
         <p>
           <a href="http://www.fengzhudesign.com/">
-            <img
-              src={previewFengzhu.src}
+            <Image
+              src={previewFengzhu}
               title="fengzhu"
               width="300"
               height="250"
+              alt="Feng Zhu"
+              placeholder="blur"
             />
             Feng Zhu
           </a>

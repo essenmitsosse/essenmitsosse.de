@@ -17,6 +17,7 @@ import imageNoise from './noise.jpg'
 import imageWetedges from './wetedges.jpg'
 import imageAirbrush from './airbrush.jpg'
 import imageSmoothing from './smoothing.jpg'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -46,12 +47,13 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide many center">
-        <img
-          src={imageBrushbutton.src}
+        <Image
+          src={imageBrushbutton}
           alt=""
           title="How to open the brushes palette"
           width="300"
           height="179"
+          placeholder="blur"
         />
       </div>
       <h2>How The Brush Settings Work</h2>
@@ -160,12 +162,13 @@ export default function Page() {
         </ul>
       </div>
       <div className="sixwide many center">
-        <img
-          src={imageJitter.src}
+        <Image
+          src={imageJitter}
           alt=""
           title="Jitter"
           width="300"
           height="112"
+          placeholder="blur"
         />
       </div>
       <h2>Brush Presets</h2>
@@ -234,12 +237,13 @@ export default function Page() {
         </ul>
       </div>
       <div className="sixwide many center">
-        <img
-          src={imageBrushTipShape.src}
+        <Image
+          src={imageBrushTipShape}
           alt=""
           title="Brush Tip Shape"
           width="350"
           height="405"
+          placeholder="blur"
           className="alignnone size-full wp-image-104"
         />
       </div>
@@ -255,12 +259,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many">
-            <img
-              src={imageSize.src}
+            <Image
+              src={imageSize}
               alt=""
               title="size"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -273,12 +278,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageAngle.src}
+            <Image
+              src={imageAngle}
               alt=""
               title="angle"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-105"
             />
           </div>
@@ -292,12 +298,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageRoundness.src}
+            <Image
+              src={imageRoundness}
               alt=""
               title="roundness"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-109"
             />
           </div>
@@ -324,12 +331,13 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide many center">
-        <img
-          src={imageScattering.src}
+        <Image
+          src={imageScattering}
           alt=""
           title="scattering"
           width="450"
           height="80"
+          placeholder="blur"
           className="alignnone size-full wp-image-107"
         />
       </div>
@@ -371,12 +379,13 @@ export default function Page() {
         </ul>
       </div>
       <div className="sixwide many center">
-        <img
-          src={imageTexture.src}
+        <Image
+          src={imageTexture}
           alt=""
           title="texture"
           width="450"
           height="80"
+          placeholder="blur"
           className="alignnone size-full wp-image-107"
         />
       </div>
@@ -404,12 +413,13 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide many center">
-        <img
-          src={imageDualBrush.src}
+        <Image
+          src={imageDualBrush}
           alt=""
           title="dualbrush"
           width="450"
           height="80"
+          placeholder="blur"
           className="alignnone size-full wp-image-107"
         />
       </div>
@@ -428,12 +438,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageForegroundBackgroundjitter.src}
+            <Image
+              src={imageForegroundBackgroundjitter}
               alt=""
               title="foreground-backgroundjitter"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -448,30 +459,33 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageHuejitter.src}
+            <Image
+              src={imageHuejitter}
               alt=""
               title="huejitter"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
             <br />
-            <img
-              src={imageSaturationjitter.src}
+            <Image
+              src={imageSaturationjitter}
               alt=""
               title="saturationjitter"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
             <br />
-            <img
-              src={imageBrightnessjitter.src}
+            <Image
+              src={imageBrightnessjitter}
               alt=""
               title="rightnessjitter"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -501,12 +515,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageOpacity.src}
+            <Image
+              src={imageOpacity}
               alt=""
               title="opacity"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -524,12 +539,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageFlow.src}
+            <Image
+              src={imageFlow}
               alt=""
               title="flow"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -546,12 +562,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageNoise.src}
+            <Image
+              src={imageNoise}
               alt=""
               title="noise"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -566,12 +583,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageWetedges.src}
+            <Image
+              src={imageWetedges}
               alt=""
               title="wet edges"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -586,12 +604,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageAirbrush.src}
+            <Image
+              src={imageAirbrush}
               alt=""
               title="airbrush"
               width="450"
               height="80"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>
@@ -606,12 +625,13 @@ export default function Page() {
             </p>
           </div>
           <div className="sixwide many center">
-            <img
-              src={imageSmoothing.src}
+            <Image
+              src={imageSmoothing}
               alt=""
               title="smoothing"
               width="450"
               height="117"
+              placeholder="blur"
               className="alignnone size-full wp-image-107"
             />
           </div>

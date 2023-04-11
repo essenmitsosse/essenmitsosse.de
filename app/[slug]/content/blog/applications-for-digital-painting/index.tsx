@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imagePhotoshop from './photoshop.jpg'
 import imagePaintshoppro from './paintshoppro.jpg'
 import imagePainter from './painter.jpg'
@@ -59,13 +61,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.adobe.com/products/photoshop/">
-            <img
-              src={imagePhotoshop.src}
+            <Image
+              src={imagePhotoshop}
               alt="Adobe Photoshop"
               title="Adobe Photoshop"
               width="350"
               height="211"
               className="alignnone size-full wp-image-41"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -106,13 +109,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.corel.com/servlet/Satellite/us/en/Product/1184951547051">
-            <img
-              src={imagePaintshoppro.src}
+            <Image
+              src={imagePaintshoppro}
               alt="Corel Paint Shop Pro"
               title="Corel Paint Shop Pro"
               width="350"
               height="169"
               className="alignnone size-full wp-image-40"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -160,13 +164,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.corel.com/servlet/Satellite/de/de/Product/1166553885783">
-            <img
-              src={imagePainter.src}
+            <Image
+              src={imagePainter}
               alt="Corel Painter"
               title="Corel Painter"
               width="350"
               height="220"
               className="alignnone size-full wp-image-39"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -202,13 +207,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://usa.autodesk.com/adsk/servlet/index?id=6848332&amp;siteID=123112">
-            <img
-              src={imageSketchbookpro.src}
+            <Image
+              src={imageSketchbookpro}
               alt="Alias SketchBook Pro"
               title="Alias SketchBook Pro"
               width="350"
               height="144"
               className="alignnone size-full wp-image-42"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -255,13 +261,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.portalgraphics.net/en/">
-            <img
-              src={imageOpencanvas.src}
+            <Image
+              src={imageOpencanvas}
               alt="OpenCanvas"
               title="OpenCanvas"
               width="350"
               height="195"
               className="alignnone size-full wp-image-37"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -299,13 +306,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.ambientdesign.com/artrage.html">
-            <img
-              src={imageArtrage.src}
+            <Image
+              src={imageArtrage}
               alt="Artrage"
               title="Artrage"
               width="350"
               height="215"
               className="alignnone size-full wp-image-32"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -341,13 +349,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="hhttp://www.gimp.org/">
-            <img
-              src={imageGimp.src}
+            <Image
+              src={imageGimp}
               alt="GIMP"
               title="GIMP"
               width="350"
               height="175"
               className="alignnone size-full wp-image-36"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -379,13 +388,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.artweaver.de/">
-            <img
-              src={imageArtweaver.src}
+            <Image
+              src={imageArtweaver}
               alt="Artweaver"
               title="Artweaver"
               width="350"
               height="151"
               className="alignnone size-full wp-image-33"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -416,13 +426,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://download.chip.eu/en/Deep-Paint-2.0_132831.html">
-            <img
-              src={imageDeeppaint.src}
+            <Image
+              src={imageDeeppaint}
               alt="Deeppaint"
               title="Deeppaint"
               width="350"
               height="202"
               className="alignnone size-full wp-image-34"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -450,13 +461,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="http://www.thebest3d.com/dogwaffle/free">
-            <img
-              src={imageDogwaffle.src}
+            <Image
+              src={imageDogwaffle}
               alt="Dogwaffle"
               title="Dogwaffle"
               width="350"
               height="211"
               className="alignnone size-full wp-image-35"
+              placeholder="blur"
             />
           </a>
         </div>
@@ -489,13 +501,14 @@ export default function Page() {
       <div className="sixwide center">
         <div>
           <a href="ttp://www.getpaint.net/">
-            <img
-              src={imagePaint.src}
+            <Image
+              src={imagePaint}
               alt=""
               title="Paint.NET"
               width="350"
               height="211"
               className="alignnone size-full wp-image-38"
+              placeholder="blur"
             />
           </a>
         </div>

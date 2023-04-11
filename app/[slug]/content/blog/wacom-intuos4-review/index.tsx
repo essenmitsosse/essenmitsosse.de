@@ -3,6 +3,7 @@ import imageMainphoto from './mainphoto.jpg'
 import imageTouchingring from './touchingring.jpg'
 import imagePentips from './pentips.png'
 import imageRadialmenu from './radialmenu.png'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -30,12 +31,14 @@ export default function Page() {
       <hr />
       <h3>New Design</h3>
       <div className="alignright">
-        <img
-          src={imageMainphoto.src}
+        <Image
+          src={imageMainphoto}
           title="Wacom Intuos4 L"
           alt="Wacom Intuos4 L"
           width="460"
           height="242"
+          placeholder="blur"
+          priority
         />
       </div>
       <p>
@@ -62,12 +65,13 @@ export default function Page() {
       </p>
       <h3>Touching Ring</h3>
       <div className="alignright">
-        <img
-          src={imageTouchingring.src}
+        <Image
+          src={imageTouchingring}
           title="Wacom Intuos4 Touching Ring"
           alt="Wacom Intuos4 Touching Ring"
           width="460"
           height="242"
+          placeholder="blur"
         />
       </div>
       <p>
@@ -108,12 +112,13 @@ export default function Page() {
         &#038; improved pen nib holder
       </h3>
       <div className="alignright">
-        <img
-          src={imagePentips.src}
+        <Image
+          src={imagePentips}
           title="Wacom Intuos4 Pen Holder"
           alt="Wacom Intuos4 Pen Holder"
           width="460"
           height="255"
+          placeholder="blur"
           style={{ marginTop: '-100px' }}
         />
       </div>
@@ -145,12 +150,13 @@ export default function Page() {
       </p>
       <h3>Radial Menu</h3>
       <div className="alignright">
-        <img
-          src={imageRadialmenu.src}
+        <Image
+          src={imageRadialmenu}
           title="Wacom Intuos4 Radial Menu"
           alt="Wacom Intuos4 Radial Menu"
           width="460"
           height="300"
+          placeholder="blur"
           style={{ marginTop: '-100px', marginBottom: '-80px' }}
         />
       </div>

@@ -1,5 +1,6 @@
 import imageSettings from './settings.jpg'
 import imageSaveforwebsettings from './saveforwebsettings.jpg'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -178,11 +179,13 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide center">
-        <img
-          src={imageSettings.src}
+        <Image
+          src={imageSettings}
           alt="CS Settings"
           title="CS Settings"
-          width="300"
+          width="350"
+          height="286"
+          placeholder="blur"
         />
       </div>
       <h2>
@@ -229,11 +232,13 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide center">
-        <img
-          src={imageSaveforwebsettings.src}
+        <Image
+          src={imageSaveforwebsettings}
           alt="Save for Web Settings"
           title="Save for Web Settings"
-          width="300"
+          width="350"
+          height="404"
+          placeholder="blur"
         />
       </div>
     </>

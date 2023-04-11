@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imageWhoisthis from './whoisthis.jpg'
 import imageWhoisthis2 from './whoisthis2.jpg'
 import imageWhoisthis3 from './whoisthis3.jpg'
@@ -45,11 +47,14 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide center">
-        <img
-          src={imageWhoisthis.src}
+        <Image
+          src={imageWhoisthis}
           alt="Who is this?"
           title="Who is this?"
           width="300"
+          height="476"
+          placeholder="blur"
+          priority
         />
       </div>
       <h2>
@@ -109,18 +114,22 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide center">
-        <img
-          src={imageWhoisthis2.src}
+        <Image
+          src={imageWhoisthis2}
           alt="Who is this?"
           title="Who is this?"
           width="300"
+          height="476"
+          placeholder="blur"
         />
         <br />
-        <img
-          src={imageWhoisthis3.src}
+        <Image
+          src={imageWhoisthis3}
           alt="Who is this?"
           title="Who is this?"
           width="300"
+          height="476"
+          placeholder="blur"
         />
       </div>
       <h2>
