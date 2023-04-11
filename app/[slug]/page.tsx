@@ -1,13 +1,13 @@
-import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { getPostViaSlug, listPost } from './getPost'
+import { MetaPost } from './content/types'
 
 export function generateMetadata({
   params,
 }: {
   params: { slug: string }
-}): Metadata {
+}): MetaPost {
   const post = getPostViaSlug(params.slug)
 
   if (!post) {

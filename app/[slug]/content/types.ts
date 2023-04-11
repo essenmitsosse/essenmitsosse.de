@@ -1,6 +1,11 @@
 import { Metadata } from 'next'
 import { ComponentType } from 'react'
 
+export type MetaPost = Omit<Metadata, 'title' | 'keywords'> & {
+  title: string
+  keywords: ReadonlyArray<string>
+}
+
 export type Post = {
   slug: string
 
@@ -12,8 +17,5 @@ export type Post = {
    */
   Component: ComponentType
   date: `${number}${number}${number}${number}-${number}${number}-${number}${number}`
-  meta: Omit<Metadata, 'title' | 'keywords'> & {
-    title: string
-    keywords: ReadonlyArray<string>
-  }
+  meta: MetaPost
 }
