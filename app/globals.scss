@@ -10,6 +10,7 @@ Author URI: http://essenmitsosse.de
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -554,7 +555,7 @@ div#articles .date {
 div.content {
   body.article & {
     float: right;
-    width: 980px;
+    width: 980px + 260px;
     padding-left: 260px;
     padding-bottom: 50px;
   }
@@ -764,7 +765,7 @@ ul#navigation {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-  height: 1.25em;
+  height: calc(1.25em + 10px);
   z-index: 10;
 
   em {
