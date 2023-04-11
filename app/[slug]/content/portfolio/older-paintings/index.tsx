@@ -1,10 +1,10 @@
-import imageDragonavenue from '../../../../../website/blog/wp-content/uploads/portfolio/dragonavenue.jpg'
-import imageSaltlake from '../../../../../website/blog/wp-content/uploads/portfolio/saltlake.jpg'
-import imageGondel from '../../../../../website/blog/wp-content/uploads/portfolio/gondel.jpg'
-import imageBaldface from '../../../../../website/blog/wp-content/uploads/portfolio/baldface.jpg'
-import imageAirface from '../../../../../website/blog/wp-content/uploads/portfolio/airface.jpg'
-import imageTurtleline from '../../../../../website/blog/wp-content/uploads/portfolio/turtleline.jpg'
-import imageTurtle from '../../../../../website/blog/wp-content/uploads/portfolio/turtle.jpg'
+import imageDragonavenue from './dragonavenue.jpg'
+import imageSaltlake from './saltlake.jpg'
+import imageGondel from './gondel.jpg'
+import imageBaldface from './baldface.jpg'
+import imageAirface from './airface.jpg'
+import imageTurtleline from './turtleline.jpg'
+import imageTurtle from './turtle.jpg'
 
 export default function Page() {
   return (

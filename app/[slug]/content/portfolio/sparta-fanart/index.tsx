@@ -1,4 +1,4 @@
-import imageSparta from '../../../../../website/blog/wp-content/uploads/portfolio/sparta.jpg'
+import imageSparta from './sparta.jpg'
 
 export default function Page() {
   return (

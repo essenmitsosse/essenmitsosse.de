@@ -1,10 +1,10 @@
-import imageAkt12 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt12.jpg'
-import imageAkt10 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt10.jpg'
-import imageAkt2 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt2.jpg'
-import imageAkt4 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt4.jpg'
-import imageAkt11 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt11.jpg'
-import imageAkt13 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt13.jpg'
-import imageAkt14 from '../../../../../website/blog/wp-content/uploads/figuredrawing/akt14.jpg'
+import imageAkt12 from './akt12.jpg'
+import imageAkt10 from './akt10.jpg'
+import imageAkt2 from './akt2.jpg'
+import imageAkt4 from './akt4.jpg'
+import imageAkt11 from './akt11.jpg'
+import imageAkt13 from './akt13.jpg'
+import imageAkt14 from './akt14.jpg'
 
 export default function Page() {
   return (

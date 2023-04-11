@@ -1,5 +1,5 @@
-import imageBlondhead from '../../../../../website/blog/wp-content/uploads/portfolio/blondhead.jpg'
-import imageRedhead from '../../../../../website/blog/wp-content/uploads/portfolio/redhead.jpg'
+import imageBlondhead from './blondhead.jpg'
+import imageRedhead from './redhead.jpg'
 
 export default function Page() {
   return (

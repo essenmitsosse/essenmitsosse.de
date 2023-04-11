@@ -1,4 +1,4 @@
-import imageAnglerfish from '../../../../../website/blog/wp-content/uploads/portfolio/anglerfish.jpg'
+import imageAnglerfish from './anglerfish.jpg'
 
 export default function Page() {
   return (

@@ -1,4 +1,4 @@
-import imageBowser from '../../../../../website/blog/wp-content/uploads/bowser/bowser.jpg'
+import imageBowser from './bowser.jpg'
 
 export default function Page() {
   return (

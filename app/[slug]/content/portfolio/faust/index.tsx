@@ -1,4 +1,4 @@
-import coverFaust from '../../../../../website/blog/wp-content/uploads/faust/cover.png'
+import coverFaust from './cover.png'
 
 export default function Page() {
   return (

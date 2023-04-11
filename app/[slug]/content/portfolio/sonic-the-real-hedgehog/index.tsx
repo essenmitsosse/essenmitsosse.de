@@ -1,5 +1,5 @@
-import imageSonic from '../../../../../website/blog/wp-content/uploads/sonic/sonic.jpg'
-import imageSonicpixel from '../../../../../website/blog/wp-content/uploads/sonic/sonicpixel.png'
+import imageSonic from './sonic.jpg'
+import imageSonicpixel from './sonicpixel.png'
 
 export default function Page() {
   return (

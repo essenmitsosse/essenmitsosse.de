@@ -1,4 +1,4 @@
-import imageAztecs from '../../../../../website/blog/wp-content/uploads/portfolio/aztecs.jpg'
+import imageAztecs from './aztecs.jpg'
 
 export default function Page() {
   return (

@@ -1,9 +1,9 @@
-import imagePortrait12 from '../../../../../website/blog/wp-content/uploads/portraitclass/portrait12.jpg'
-import imagePortrait8 from '../../../../../website/blog/wp-content/uploads/portraitclass/portrait8.jpg'
-import imagePortrait9 from '../../../../../website/blog/wp-content/uploads/portraitclass/portrait9.jpg'
-import imagePortrait11 from '../../../../../website/blog/wp-content/uploads/portraitclass/portrait11.jpg'
-import imagePortrait3 from '../../../../../website/blog/wp-content/uploads/portraitclass/portrait3.jpg'
-import imagePortrait13 from '../../../../../website/blog/wp-content/uploads/portraitclass/portrait13.jpg'
+import imagePortrait12 from './portrait12.jpg'
+import imagePortrait8 from './portrait8.jpg'
+import imagePortrait9 from './portrait9.jpg'
+import imagePortrait11 from './portrait11.jpg'
+import imagePortrait3 from './portrait3.jpg'
+import imagePortrait13 from './portrait13.jpg'
 
 export default function Page() {
   return (

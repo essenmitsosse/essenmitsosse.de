@@ -1,4 +1,4 @@
-import redesignWebsite from '../../../../../website/blog/wp-content/uploads/essenmitsosse/website.png'
+import redesignWebsite from './website.png'
 
 export default function Page() {
   return (

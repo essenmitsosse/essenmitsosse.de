@@ -1,4 +1,4 @@
-import imageLinentunic from '../../../../../website/blog/wp-content/uploads/portfolio/linentunic.jpg'
+import imageLinentunic from './linentunic.jpg'
 
 export default function Page() {
   return (
