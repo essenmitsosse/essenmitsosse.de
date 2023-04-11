@@ -4,6 +4,7 @@ import listBlog from './[slug]/content/blog'
 import listPortfolio from './[slug]/content/portfolio'
 import Link from 'next/link'
 import Image from 'next/image'
+import Logo from '@/components/logo'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -20,11 +21,7 @@ export default function Home() {
     <body className="homepage">
       <ul id="navigation" className="black"></ul>
 
-      <p className="logo">
-        <Link href="/" title="Homepage" id="essenmitsosse">
-          <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
-        </Link>
-      </p>
+      <Logo />
 
       <div className="allwrapper">
         <div id="introduction" className="homepresentation">

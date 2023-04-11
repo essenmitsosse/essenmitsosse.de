@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
+import Logo from '@/components/logo'
 
 export default function Layout(props: {
   children: ReactNode
@@ -70,11 +71,8 @@ export default function Layout(props: {
       </ul>
 
       <div className={`intro ${isBlog ? 'color' : undefined}`}>
-        <p className="logo">
-          <Link href="/" id="essenmitsosse">
-            <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
-          </Link>
-        </p>
+        <Logo />
+
         {isBlog ? (
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
         ) : (
