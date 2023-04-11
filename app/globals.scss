@@ -700,59 +700,6 @@ div#portfolio {
   }
 }
 
-div#meta {
-  width: 980px;
-  float: right;
-  padding-left: 260px;
-  padding-bottom: 60px;
-
-  body.portfolio & {
-    width: 940px;
-    margin-right: 40px;
-  }
-
-  p {
-    clear: none;
-  }
-
-  h2 {
-    padding-left: 240px;
-    margin-top: 0;
-    width: auto;
-    float: none;
-  }
-
-  form {
-    float: left;
-    margin-top: 10px;
-
-    p {
-      clear: both;
-      float: left;
-      padding-top: 10px;
-      width: auto;
-    }
-  }
-
-  label {
-    float: left;
-    clear: both;
-    width: 220px;
-    margin-right: 20px;
-  }
-
-  input,
-  textarea {
-    width: 440px;
-    float: left;
-  }
-
-  input.submit {
-    margin-left: 240px;
-    width: 450px;
-  }
-}
-
 ol#comments li {
   list-style-type: none;
   clear: both;
