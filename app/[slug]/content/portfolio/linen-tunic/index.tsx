@@ -1,15 +1,19 @@
+import Image from 'next/image'
+
 import imageLinentunic from './linentunic.jpg'
 
 export default function Page() {
   return (
     <>
       <div className="eightwide">
-        <img
-          src={imageLinentunic.src}
+        <Image
+          src={imageLinentunic}
           alt="Man in linen tunic with a sword is cursed by a wraith in the snow"
           title="Linen Tunic"
           width="620"
           height="957"
+          placeholder="blur"
+          priority
         />
       </div>
       <div className="fourwide">

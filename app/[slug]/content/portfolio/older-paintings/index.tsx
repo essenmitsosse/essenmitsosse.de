@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imageDragonavenue from './dragonavenue.jpg'
 import imageSaltlake from './saltlake.jpg'
 import imageGondel from './gondel.jpg'
@@ -12,34 +14,38 @@ export default function Page() {
       <div className="eightwide">
         <h3>Dragon Avenue</h3>
         <p>
-          <img
-            src={imageDragonavenue.src}
+          <Image
+            src={imageDragonavenue}
             alt="Tiger-Dragon wrecking havoc in the streets because somebody has stolen his egg"
             title="Dragon Avenue"
             width="620"
             height="463"
+            placeholder="blur"
             className="marginbottom"
+            priority
           />
         </p>
         <h3>Salt Lake</h3>
         <p>
-          <img
-            src={imageSaltlake.src}
+          <Image
+            src={imageSaltlake}
             alt="Tyrannosaurus hunts his prey on a salt lake"
             title="Salt Lake"
             width="620"
             height="429"
+            placeholder="blur"
             className="marginbottom"
           />
         </p>
         <h3>Gondola</h3>
         <p>
-          <img
-            src={imageGondel.src}
+          <Image
+            src={imageGondel}
             alt="sceleton in a gondola floating through colorful clouds"
             title="Gondola"
             width="620"
             height="351"
+            placeholder="blur"
             className="marginbottom"
           />
         </p>
@@ -47,42 +53,47 @@ export default function Page() {
       <div className="fourwide">
         <h3>Baldface</h3>
         <p>
-          <img
-            src={imageBaldface.src}
+          <Image
+            src={imageBaldface}
             alt="A bald strange looking man"
             title="Baldface"
             width="300"
             height="300"
+            placeholder="blur"
             className="marginbottom"
+            priority
           />
         </p>
         <h3>Airface</h3>
         <p>
-          <img
-            src={imageAirface.src}
+          <Image
+            src={imageAirface}
             alt="A guy with a red nose floating through the air"
             title="Airface"
             width="300"
             height="300"
+            placeholder="blur"
             className="marginbottom"
           />
         </p>
         <h3>Turtle</h3>
         <div>
-          <img
-            src={imageTurtleline.src}
+          <Image
+            src={imageTurtleline}
             alt="A linedrawing of a turtle"
             title="Turtle"
             width="300"
             height="196"
+            placeholder="blur"
             className="marginbottom"
           />
-          <img
-            src={imageTurtle.src}
+          <Image
+            src={imageTurtle}
             alt="Colored version of the turtle"
             title="Turtle"
             width="300"
             height="196"
+            placeholder="blur"
             className="marginbottom"
           />
         </div>

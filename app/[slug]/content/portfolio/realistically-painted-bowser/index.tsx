@@ -1,15 +1,19 @@
+import Image from 'next/image'
+
 import imageBowser from './bowser.jpg'
 
 export default function Page() {
   return (
     <>
       <div>
-        <img
-          src={imageBowser.src}
+        <Image
+          src={imageBowser}
           alt="Realistically Painted Bowser"
           title="Realistically Painted Bowser"
           width="940"
           height="627"
+          placeholder="blur"
+          priority
         />
       </div>
       <div className="sixwide">

@@ -1,10 +1,18 @@
+import Image from 'next/image'
 import redesignWebsite from './website.png'
 
 export default function Page() {
   return (
     <>
       <div>
-        <img src={redesignWebsite.src} width="940" height="391" />
+        <Image
+          src={redesignWebsite}
+          width="940"
+          height="391"
+          priority
+          alt="Preview of the 2008 redesign of essenmitsosse on an iMac"
+          quality={100}
+        />
       </div>
       <p>
         After several redesign attempts over the last few years I finally ended

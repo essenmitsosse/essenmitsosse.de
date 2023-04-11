@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imagePortrait12 from './portrait12.jpg'
 import imagePortrait8 from './portrait8.jpg'
 import imagePortrait9 from './portrait9.jpg'
@@ -9,29 +11,33 @@ export default function Page() {
   return (
     <>
       <div className="sixwide">
-        <img
-          src={imagePortrait12.src}
+        <Image
+          src={imagePortrait12}
           alt="Caricature of a guy in a chair"
           title="Photoshop painting from portrait class – male caricature"
           width="460"
           height="575"
           className="marginbottom"
+          placeholder="blur"
+          priority
         />
-        <img
-          src={imagePortrait8.src}
+        <Image
+          src={imagePortrait8}
           alt="sausage-like girl with a crown caricature"
           title="Photoshop painting from portrait class – female caricature"
           width="460"
           height="588"
           className="marginbottom"
+          placeholder="blur"
         />
-        <img
-          src={imagePortrait9.src}
+        <Image
+          src={imagePortrait9}
           alt="square girl caricature"
           title="Photoshop painting from portrait class – female caricature"
           width="460"
           height="460"
           className="marginbottom"
+          placeholder="blur"
         />
       </div>
       <div className="sixwide">
@@ -43,29 +49,33 @@ export default function Page() {
           simple geometrical shapes which creates the look of a caricature.
         </p>
         <div>
-          <img
-            src={imagePortrait11.src}
+          <Image
+            src={imagePortrait11}
             alt="caricature of a fat man reading a book"
             title="Photoshop painting from portrait class – male caricature"
             width="460"
             height="575"
             className="marginbottom"
+            placeholder="blur"
+            priority
           />
-          <img
-            src={imagePortrait3.src}
+          <Image
+            src={imagePortrait3}
             alt="painting of a girl"
             title="Photoshop painting from portrait class – female"
             width="460"
             height="497"
             className="marginbottom"
+            placeholder="blur"
           />
-          <img
-            src={imagePortrait13.src}
+          <Image
+            src={imagePortrait13}
             alt="two abstract cartoon square girls"
             title="Photoshop painting from portrait class – female caricature"
             width="460"
             height="271"
             className="marginbottom"
+            placeholder="blur"
           />
         </div>
       </div>

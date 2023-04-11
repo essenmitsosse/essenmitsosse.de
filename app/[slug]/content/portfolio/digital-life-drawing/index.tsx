@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imageAkt12 from './akt12.jpg'
 import imageAkt10 from './akt10.jpg'
 import imageAkt2 from './akt2.jpg'
@@ -49,34 +51,39 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide">
-        <img
-          src={imageAkt12.src}
+        <Image
+          src={imageAkt12}
+          placeholder="blur"
           alt="nude guy from the back"
           title="digital nude male figure drawing"
           width="460"
           height="395"
+          priority
         />
       </div>
       <hr />
       <div className="sixwide many">
-        <img
-          src={imageAkt10.src}
+        <Image
+          src={imageAkt10}
+          placeholder="blur"
           alt="nacked boy squat"
           title="nude boy figure drawing sitting"
           width="460"
           height="576"
           className="marginbottom"
         />
-        <img
-          src={imageAkt2.src}
+        <Image
+          src={imageAkt2}
+          placeholder="blur"
           alt="nude girl standing with crossed arms"
           title="nude female figure drawing standing"
           width="460"
           height="552"
           className="marginbottom"
         />
-        <img
-          src={imageAkt4.src}
+        <Image
+          src={imageAkt4}
+          placeholder="blur"
           alt="black&#038;white head of a nude girl"
           title="nude girl figure drawing head black&#038;white"
           width="460"
@@ -85,24 +92,27 @@ export default function Page() {
         />
       </div>
       <div className="sixwide many">
-        <img
-          src={imageAkt11.src}
+        <Image
+          src={imageAkt11}
+          placeholder="blur"
           alt="nude boy sitting"
           title="nude boy figure drawing sitting"
           width="460"
           height="576"
           className="marginbottom"
         />
-        <img
-          src={imageAkt13.src}
+        <Image
+          src={imageAkt13}
+          placeholder="blur"
           alt="nude old woman holding a ball"
           title="old nude woman figure drawing torso"
           width="460"
           height="460"
           className="marginbottom"
         />
-        <img
-          src={imageAkt14.src}
+        <Image
+          src={imageAkt14}
+          placeholder="blur"
           alt="detail of arm of nude old woman"
           title="old nude woman figure drawing closeup"
           width="460"

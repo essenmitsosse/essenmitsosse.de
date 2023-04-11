@@ -1,15 +1,19 @@
+import Image from 'next/image'
+
 import coverFaust from './cover.png'
 
 export default function Page() {
   return (
     <>
       <div className="eightwide">
-        <img
-          src={coverFaust.src}
+        <Image
+          src={coverFaust}
           alt="cover of my comic Faust"
           title="Faust"
           width="620"
           height="919"
+          placeholder="blur"
+          priority
         />
       </div>
       <div className="fourwide">

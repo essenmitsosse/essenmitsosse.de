@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import imageSonic from './sonic.jpg'
 import imageSonicpixel from './sonicpixel.png'
 
@@ -5,12 +7,14 @@ export default function Page() {
   return (
     <>
       <div>
-        <img
-          src={imageSonic.src}
+        <Image
+          src={imageSonic}
           alt="Sonic the real Hedgehog with massive thighs"
           title="Sonic The Real Hedgehog"
           width="940"
           height="570"
+          placeholder="blur"
+          priority
         />
       </div>
       <div className="sixwide">
@@ -76,12 +80,13 @@ export default function Page() {
         </p>
       </div>
       <div className="sixwide center">
-        <img
-          src={imageSonicpixel.src}
+        <Image
+          src={imageSonicpixel}
           alt="How a realistically sonic would look like in pixel"
           title="Sonic The Real Hedgehog Pixel"
           width="460"
           height="460"
+          placeholder="blur"
         />
       </div>
     </>
