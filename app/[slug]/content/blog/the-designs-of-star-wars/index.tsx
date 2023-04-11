@@ -19,7 +19,7 @@ import imageNebulon from './nebulon.jpg'
 import imageChewie from './chewie.jpg'
 import imageMauser from './mauser.jpg'
 import imageVader from './vader.jpg'
-import imageShapes from './shapes.gif'
+import imageShapes from './shapes.png'
 import imageLightsaber from './lightsaber.png'
 import Image from 'next/image'
 
