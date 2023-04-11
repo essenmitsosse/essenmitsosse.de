@@ -8,15 +8,15 @@ export type PostBlog = {
   imageHeader: StaticImageData
 } & Post
 
-import headerDigitalPainting from '../../../../website/blog/wp-content/uploads/digitalpainting/digitalpainting-header.png'
-import headerDigitalPainter from '../../../../website/blog/wp-content/uploads/digitalpainters/digitalpainter-header.png'
-import headerGraphicsTablet from '../../../../website/blog/wp-content/uploads/graphicstablet/graphicstablet-header.png'
-import headerColorManagement from '../../../../website/blog/wp-content/uploads/colormanagement/colormanagement-header.png'
-import headerPortrait from '../../../../website/blog/wp-content/uploads/likeness/portrait-header.png'
-import headerBrushEngine from '../../../../website/blog/wp-content/uploads/photoshop/brushengine-header.png'
-import headerVader from '../../../../website/blog/wp-content/uploads/starwars/vader-intro.png'
-import headerIntuos4 from '../../../../website/blog/wp-content/uploads/intuos4/intuos4.png'
-import headerEvolution from '../../../../website/article/evolution/evolution.png'
+import headerDigitalPainting from './applications-for-digital-painting/header.png'
+import headerDigitalPainter from './digital-painters/header.png'
+import headerGraphicsTablet from './graphics-tablet/header.png'
+import headerColorManagement from './how-to-set-up-color-management/header.png'
+import headerPortrait from './likeness-in-portrait/header.png'
+import headerBrushEngine from './photoshop-brush-engine/header.png'
+import headerVader from './the-designs-of-star-wars/header.png'
+import headerIntuos4 from './wacom-intuos4-review/header.png'
+import headerEvolution from './what-designers-can-learn-from-evolution/header.png'
 import { StaticImageData } from 'next/image'
 import cleanKeywords from '../cleanKeywords'
 
