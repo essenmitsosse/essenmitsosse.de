@@ -48,7 +48,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
       title: 'Blockator',
       description:
         'Blockator is an isometric 3-d Pixelfont, that is generated with Flash.',
-      keywords: cleanKeywords('font, pixel, student, Typography'),
+      keywords: cleanKeywords('font, 8bit, pixel, student, Typography'),
     },
   },
   {
@@ -121,7 +121,7 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
     meta: {
       title: 'Jack of all Trades',
       description: 'A movie about creativity and getting things done.',
-      keywords: cleanKeywords(''),
+      keywords: cleanKeywords('animation, 8bit, pixel animation, student'),
     },
   },
   {
