@@ -125,7 +125,7 @@ export default function Home() {
                     <div className="image-wrapper">
                       <Image
                         src={post.preview}
-                        alt={post.meta.title}
+                        alt=""
                         fill
                         placeholder="blur"
                       />
