@@ -32,8 +32,8 @@ export default function Layout(props: {
         <li className="articlenavigation">
           <ul>
             {postPrev && (
-              <Link href={postPrev.slug} rel="prev">
-                <li className="newer">
+              <li className="newer">
+                <Link href={postPrev.slug} rel="prev">
                   <span className="arrow">&#9668;</span>{' '}
                   <span
                     className="title"
@@ -44,13 +44,13 @@ export default function Layout(props: {
                           : postPrev.meta.title,
                     }}
                   />
-                </li>
-              </Link>
+                </Link>
+              </li>
             )}
 
             {postNext && (
-              <Link href={postNext.slug} rel="next">
-                <li className="older">
+              <li className="older">
+                <Link href={postNext.slug} rel="next">
                   <span className="arrow">&#9658;</span>{' '}
                   <span
                     className="title"
@@ -61,8 +61,8 @@ export default function Layout(props: {
                           : postNext.meta.title,
                     }}
                   />
-                </li>
-              </Link>
+                </Link>
+              </li>
             )}
           </ul>
         </li>
