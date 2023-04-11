@@ -573,10 +573,18 @@ div.intro {
   float: left;
   width: 100%;
   padding-top: 40px;
+  position: relative;
+  overflow: hidden;
 
   body.portfolio & {
     float: none;
   }
+}
+
+.header-image {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 div.allwrapper {

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
 
@@ -68,12 +69,7 @@ export default function Layout(props: {
         </li>
       </ul>
 
-      <div
-        className={`intro ${isBlog ? 'color' : undefined}`}
-        style={{
-          backgroundImage: isBlog ? `url(${post.imageHeader.src})` : undefined,
-        }}
-      >
+      <div className={`intro ${isBlog ? 'color' : undefined}`}>
         <p className="logo">
           <Link href="/" id="essenmitsosse">
             <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
@@ -83,6 +79,14 @@ export default function Layout(props: {
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
         ) : (
           <h1>{post.meta.title}</h1>
+        )}
+        {isBlog && (
+          <Image
+            src={post.imageHeader}
+            alt=""
+            className="header-image"
+            unoptimized
+          />
         )}
       </div>
 
