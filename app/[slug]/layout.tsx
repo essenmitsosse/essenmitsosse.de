@@ -38,7 +38,6 @@ export default function Layout(props: {
                 <Link href={postPrev.slug} rel="prev">
                   <span className="arrow">&#9668;</span>{' '}
                   <span
-                    className="title"
                     dangerouslySetInnerHTML={{
                       __html:
                         'htmlTitle' in postPrev
@@ -55,7 +54,6 @@ export default function Layout(props: {
                 <Link href={postNext.slug} rel="next">
                   <span className="arrow">&#9658;</span>{' '}
                   <span
-                    className="title"
                     dangerouslySetInnerHTML={{
                       __html:
                         'htmlTitle' in postNext
