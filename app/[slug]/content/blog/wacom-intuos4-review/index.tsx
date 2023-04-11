@@ -1,10 +1,8 @@
-import headerIntuos4 from '../../../../../website/blog/wp-content/uploads/intuos4/intuos4.png'
-
 import Link from 'next/link'
-import imageMainphoto from '../../../../../website/blog/wp-content/uploads/intuos4/mainphoto.jpg'
-import imageTouchingring from '../../../../../website/blog/wp-content/uploads/intuos4/touchingring.jpg'
-import imagePentips from '../../../../../website/blog/wp-content/uploads/intuos4/pentips.png'
-import imageRadialmenu from '../../../../../website/blog/wp-content/uploads/intuos4/radialmenu.png'
+import imageMainphoto from './mainphoto.jpg'
+import imageTouchingring from './touchingring.jpg'
+import imagePentips from './pentips.png'
+import imageRadialmenu from './radialmenu.png'
 
 export default function Page() {
   return (

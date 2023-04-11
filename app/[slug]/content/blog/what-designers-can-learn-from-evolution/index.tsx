@@ -1,11 +1,11 @@
-import imageBasic from '../../../../../website/article/evolution/basic.png'
-import imageQuality from '../../../../../website/article/evolution/quality.png'
-import imageDisadvantage from '../../../../../website/article/evolution/disadvantage.png'
-import imageUsability from '../../../../../website/article/evolution/usability.png'
-import imageEconomics from '../../../../../website/article/evolution/economics.png'
-import imageConvergence from '../../../../../website/article/evolution/convergence.png'
-import imageFlexibility from '../../../../../website/article/evolution/flexibility.png'
-import imagePerfection from '../../../../../website/article/evolution/perfection.png'
+import imageBasic from './basic.png'
+import imageQuality from './quality.png'
+import imageDisadvantage from './disadvantage.png'
+import imageUsability from './usability.png'
+import imageEconomics from './economics.png'
+import imageConvergence from './convergence.png'
+import imageFlexibility from './flexibility.png'
+import imagePerfection from './perfection.png'
 
 export default function Page() {
   return (

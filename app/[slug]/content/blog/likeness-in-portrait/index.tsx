@@ -1,6 +1,6 @@
-import imageWhoisthis from '../../../../../website/blog/wp-content/uploads/2008/04/whoisthis.jpg'
-import imageWhoisthis2 from '../../../../../website/blog/wp-content/uploads/2008/04/whoisthis2.jpg'
-import imageWhoisthis3 from '../../../../../website/blog/wp-content/uploads/2008/04/whoisthis3.jpg'
+import imageWhoisthis from './whoisthis.jpg'
+import imageWhoisthis2 from './whoisthis2.jpg'
+import imageWhoisthis3 from './whoisthis3.jpg'
 
 export default function Page() {
   return (
