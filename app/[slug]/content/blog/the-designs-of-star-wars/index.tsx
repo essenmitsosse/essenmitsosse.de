@@ -80,11 +80,6 @@ export default function Page() {
           <a href="http://www.amazon.com/gp/product/B001M08SVA?ie=UTF8&amp;tag=essencompucan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B001M08SVA">
             this one
           </a>
-          <img
-            src="http://www.assoc-amazon.com/e/ir?t=essencompucan-20&amp;l=as2&amp;o=1&amp;a=B000CSPXEI"
-            width="1"
-            height="1"
-          />
           .
         </p>
       </div>
