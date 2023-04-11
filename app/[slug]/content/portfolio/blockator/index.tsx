@@ -1,4 +1,4 @@
-import imageBlockator from './blockator.gif'
+import imageBlockator from './blockator.png'
 
 export default function Page() {
   return (
