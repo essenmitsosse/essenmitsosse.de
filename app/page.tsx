@@ -124,9 +124,10 @@ export default function Home() {
                     <span>{post.meta.title}</span>
                     <div className="image-wrapper">
                       <Image
-                        src={post.preview.src}
+                        src={post.preview}
                         alt={post.meta.title}
                         fill
+                        placeholder="blur"
                       />
                     </div>
                   </Link>
