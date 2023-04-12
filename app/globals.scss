@@ -444,14 +444,9 @@ ul {
 
 table {
   border-spacing: 0px;
-  margin-bottom: 50px;
   clear: both;
   width: 100%;
   clear: both;
-
-  & + h2 {
-    margin-top: 0;
-  }
 }
 
 thead {
