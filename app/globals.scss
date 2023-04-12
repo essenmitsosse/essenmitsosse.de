@@ -7,12 +7,19 @@ Author: Marcus Bl&auml;ttermann
 Author URI: http://essenmitsosse.de
 */
 
+$yellow: #f3af29;
+
 @mixin highlight-font {
   letter-spacing: 0.06em;
   word-spacing: 0.09em;
   text-transform: uppercase;
   font: normal normal 1em 'Gill Sans', Tahoma, 'Helvetica Neue', Helvetica,
     Arial, sans-serif;
+  color: #000;
+
+  .black & {
+    color: #ccc;
+  }
 }
 
 @mixin default-font {
@@ -59,7 +66,13 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+th,
+strong,
+.date,
+.portfolioLink,
+ul#navigation {
   @include highlight-font();
 }
 
@@ -80,39 +93,22 @@ blockquote {
   @include large-italic-font();
 }
 
-strong {
-  @include highlight-font();
-}
-
-.date {
-  @include highlight-font();
-}
-
-.portfolioLink {
-  @include highlight-font();
-}
-
 ul#navigation {
-  @include highlight-font();
   @include black-background();
 }
 
 .black {
   background-color: #333;
-}
-
-.black,
-.black h1,
-.black h2,
-.black h3,
-div#portfolio a span {
   color: #ccc;
 }
 
-.color,
+.color {
+  background-color: $yellow;
+}
+
 a span.arrow {
-  background-color: #f3af29;
-  color: #614e11;
+  background-color: $yellow;
+  color: #000;
 }
 
 body.article div.content,
@@ -121,29 +117,7 @@ a:hover span.arrow {
   background-color: #fff;
 }
 
-strong,
-th,
-h1,
-h2,
-h3,
-h4,
-a span.arrow {
-  color: #000;
-}
-
 .black {
-  strong,
-  th,
-  h1,
-  h2,
-  h3 {
-    color: inherit;
-  }
-
-  em {
-    color: inherit;
-  }
-
   ul,
   li,
   td,
@@ -246,8 +220,8 @@ em,
 .black a,
 input.submit,
 a#essenmitsosse:hover {
-  color: #f3af29;
-  border-color: #f3af29;
+  color: $yellow;
+  border-color: $yellow;
 }
 
 .black a:hover,
