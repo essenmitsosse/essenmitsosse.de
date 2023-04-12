@@ -15,10 +15,9 @@ Author URI: http://essenmitsosse.de
 
 body {
   color: #555;
-  font: 100%/1.25em Cambria, Georgia, serif;
-}
+  font-size: 100%;
+  line-height: 1.25;
 
-body {
   &.article,
   &.portfolio {
     min-width: 1000px;
@@ -26,10 +25,36 @@ body {
   }
 }
 
-body,
-em,
-blockquote {
+body {
   font-family: Cambria, Georgia, serif;
+}
+
+h1 em,
+h2 em,
+blockquote {
+  font-family: Baskerville, Palatino, 'palatino linotype', Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+ul#navigation a,
+.date,
+p.author,
+p.author a,
+strong,
+form label,
+input.submit,
+div#portfolio a span {
+  letter-spacing: 0.06em;
+  word-spacing: 0.09em;
+  text-transform: uppercase;
+  font: normal normal 1em 'Gill Sans', Tahoma, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+
+  em {
+    font-family: Cambria, Georgia, serif;
+  }
 }
 
 body.homepage,
@@ -247,12 +272,6 @@ h3 em {
   margin-bottom: 0.1em;
 }
 
-h1 em,
-h2 em,
-blockquote {
-  font-family: Baskerville, Palatino, 'palatino linotype', Georgia, serif;
-}
-
 blockquote {
   line-height: 1.25em;
   font-size: 1.5em;
@@ -263,24 +282,6 @@ cite {
   font-style: normal;
   text-align: right;
   display: block;
-}
-
-h1,
-h2,
-h3,
-ul#navigation a,
-.date,
-p.author,
-p.author a,
-strong,
-form label,
-input.submit,
-div#portfolio a span {
-  letter-spacing: 0.06em;
-  word-spacing: 0.09em;
-  text-transform: uppercase;
-  font: normal normal 1em 'Gill Sans', Tahoma, 'Helvetica Neue', Helvetica,
-    Arial, sans-serif;
 }
 
 h1 {
