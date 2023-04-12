@@ -453,8 +453,6 @@ thead {
   th,
   td {
     vertical-align: bottom;
-    text-align: left;
-    padding: 10px 10px 10px 0;
     border-bottom-style: solid;
     border-bottom-width: 2px;
   }
@@ -462,7 +460,7 @@ thead {
 
 td,
 th {
-  padding: 10px 10px 19px 0;
+  padding: 10px 10px 10px 0;
   vertical-align: top;
   text-align: left;
   border-bottom-style: dashed;
