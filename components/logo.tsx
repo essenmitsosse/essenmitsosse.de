@@ -1,9 +1,12 @@
 import Link from 'next/link'
 
+import styles from './logo.module.scss'
+
 const Logo = () => (
-  <p className="logo">
-    <Link href="/" title="Homepage" id="essenmitsosse">
-      <span className="club">&clubs;</span>essenmitsosse <em>presents</em>
+  <p className={styles.logo}>
+    <Link href="/" title="Homepage" className={styles.link}>
+      <span className={styles.club}>&clubs;</span>essenmitsosse{' '}
+      <em className={styles.presents}>presents</em>
     </Link>
   </p>
 )

@@ -68,9 +68,9 @@ export default function Layout(props: {
         </li>
       </ul>
 
-      <div className={`intro ${isBlog ? 'color' : undefined}`}>
-        <Logo />
+      <Logo />
 
+      <div className={`intro ${isBlog ? 'color' : undefined}`}>
         {isBlog ? (
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
         ) : (
