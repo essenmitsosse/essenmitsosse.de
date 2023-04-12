@@ -41,7 +41,7 @@ h3,
 ul#navigation,
 .date,
 strong,
-div#portfolio a span {
+.portfolioLink {
   letter-spacing: 0.06em;
   word-spacing: 0.09em;
   text-transform: uppercase;
@@ -60,8 +60,7 @@ input.submit {
   background-color: #000;
 }
 
-.black,
-div#portfolio a span {
+.black {
   background-color: #333;
 }
 

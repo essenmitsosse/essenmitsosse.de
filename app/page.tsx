@@ -118,7 +118,7 @@ export default function Home() {
               {listPortfolio.map((post) => (
                 <li key={post.slug}>
                   <Link href={post.slug}>
-                    <span>{post.meta.title}</span>
+                    <span className="portfolioLink">{post.meta.title}</span>
                     <div className="image-wrapper">
                       <Image
                         src={post.preview}
