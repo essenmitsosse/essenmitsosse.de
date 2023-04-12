@@ -105,7 +105,6 @@ ul#navigation {
 .black h1,
 .black h2,
 .black h3,
-.black p.author,
 div#portfolio a span {
   color: #ccc;
 }
@@ -128,8 +127,6 @@ h1,
 h2,
 h3,
 h4,
-p.author,
-label,
 a span.arrow {
   color: #000;
 }
@@ -139,9 +136,7 @@ a span.arrow {
   th,
   h1,
   h2,
-  h3,
-  p.author,
-  label {
+  h3 {
     color: inherit;
   }
 
