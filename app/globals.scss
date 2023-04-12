@@ -136,8 +136,7 @@ em,
   }
 }
 
-.black a,
-input.submit {
+.black a {
   color: $yellow;
   border-color: $yellow;
 }
@@ -145,8 +144,7 @@ input.submit {
 .black a:hover,
 .color a:hover,
 .black a:hover em,
-.color a:hover em,
-input.submit:hover {
+.color a:hover em {
   color: #fff;
 }
 
