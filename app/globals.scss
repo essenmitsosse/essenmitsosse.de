@@ -13,9 +13,7 @@ Author URI: http://essenmitsosse.de
   box-sizing: border-box;
 }
 
-body,
-input,
-textarea {
+body {
   color: #555;
   font: 100%/1.25em Cambria, Georgia, serif;
 }
@@ -267,10 +265,6 @@ cite {
   display: block;
 }
 
-acronym {
-  border: none;
-}
-
 h1,
 h2,
 h3,
@@ -353,10 +347,6 @@ div.content h3 + ul {
   border: none;
 }
 
-h2 + h3 {
-  margin-top: 10px;
-}
-
 h4 {
   font-weight: bold;
   font-size: 1em;
@@ -427,20 +417,9 @@ div.content {
       margin-bottom: 20px;
     }
 
-    &.allportfolio {
-      width: 960px;
-    }
-
-    &.st-related-posts li,
-    &.allportfolio li {
+    &.st-related-posts li {
       border: none;
       padding: 0;
-    }
-
-    &.allportfolio li {
-      float: left;
-      clear: none;
-      width: 320px;
     }
   }
 }
@@ -506,33 +485,10 @@ th {
   border-bottom-width: 1px;
 }
 
-input,
-textarea {
-  border: none;
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 1.4em;
-}
-
-input.submit {
-  display: block;
-  border: none;
-  clear: both;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-weight: normal;
-}
-
 hr {
   clear: both;
   border: none;
   width: 100%;
-}
-
-object {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .date {
@@ -694,54 +650,7 @@ div#portfolio {
       display: block;
       margin: 0;
     }
-
-    a span {
-      display: block;
-    }
   }
-}
-
-ol#comments li {
-  list-style-type: none;
-  clear: both;
-  padding-bottom: 20px;
-  min-height: 150px;
-  padding-top: 10px;
-  border-bottom-style: dashed;
-  border-bottom-width: 1px;
-}
-
-img.avatar {
-  float: right;
-  width: 140px;
-  height: 140px;
-  margin: 0 40px 0 20px;
-}
-
-body.portfolio img.avatar {
-  margin-right: 0;
-}
-
-form label,
-p.author {
-  font-size: 1.25em;
-  line-height: 1em;
-  margin-bottom: 10px;
-}
-
-form label em {
-  font-size: 16px;
-}
-
-ol#comments div.commentinfo {
-  float: left;
-  width: 220px;
-  margin-right: 20px;
-}
-
-div.commentcontent {
-  margin-left: 240px;
-  width: 460px;
 }
 
 p.logo {
@@ -826,21 +735,8 @@ ul#navigation {
 }
 
 /* @group order */
-
-.twowide {
-  width: 140px;
-}
-
-.threewide {
-  width: 220px;
-}
-
 .fourwide {
   width: 300px;
-}
-
-.fivewide {
-  width: 360px;
 }
 
 .sixwide {
@@ -849,10 +745,6 @@ ul#navigation {
 
 .eightwide {
   width: 620px;
-}
-
-.ninewide {
-  width: 700px;
 }
 
 div.content .fullwidth {
@@ -865,31 +757,17 @@ div.content .fullwidth li {
   width: 100%;
 }
 
-.twowide,
-.threewide,
 .fourwide,
-.fivewide,
 .sixwide,
 .eightwide,
 .ninewide,
-div.content .twowide,
-div.content .threewide,
 div.content .fourwide,
-div.content .fivewide,
 div.content .sixwide,
 div.content .eightwide,
 div.content .ninewide {
   margin-right: 20px;
   float: left;
   clear: none;
-}
-
-.twowide h2,
-.fourwide h2,
-.sixwide h2,
-.eightwide h2 {
-  width: auto;
-  float: none;
 }
 
 .alignright,
@@ -900,10 +778,6 @@ div.content .alignright {
 
 .center {
   text-align: center;
-}
-
-.noclear {
-  clear: none;
 }
 
 .commentPortfolio {
