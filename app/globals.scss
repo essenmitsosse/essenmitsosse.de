@@ -36,6 +36,15 @@ body {
   }
 }
 
+.black {
+  background-color: #333;
+  color: #ccc;
+}
+
+.color {
+  background-color: $yellow;
+}
+
 h1,
 h2,
 h3,
@@ -61,15 +70,6 @@ em {
 
 blockquote {
   @include large-italic-font();
-}
-
-.black {
-  background-color: #333;
-  color: #ccc;
-}
-
-.color {
-  background-color: $yellow;
 }
 
 div.content {
