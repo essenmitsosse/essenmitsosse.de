@@ -13,69 +13,59 @@ export default function Page() {
     <>
       <div className="eightwide">
         <h3>Dragon Avenue</h3>
-        <p>
-          <Image
-            src={imageDragonavenue}
-            alt="Tiger-Dragon wrecking havoc in the streets because somebody has stolen his egg"
-            title="Dragon Avenue"
-            width="620"
-            height="463"
-            placeholder="blur"
-            className="marginbottom"
-            priority
-          />
-        </p>
+        <Image
+          src={imageDragonavenue}
+          alt="Tiger-Dragon wrecking havoc in the streets because somebody has stolen his egg"
+          title="Dragon Avenue"
+          width="620"
+          height="463"
+          placeholder="blur"
+          className="marginbottom"
+          priority
+        />
         <h3>Salt Lake</h3>
-        <p>
-          <Image
-            src={imageSaltlake}
-            alt="Tyrannosaurus hunts his prey on a salt lake"
-            title="Salt Lake"
-            width="620"
-            height="429"
-            placeholder="blur"
-            className="marginbottom"
-          />
-        </p>
+        <Image
+          src={imageSaltlake}
+          alt="Tyrannosaurus hunts his prey on a salt lake"
+          title="Salt Lake"
+          width="620"
+          height="429"
+          placeholder="blur"
+          className="marginbottom"
+        />
         <h3>Gondola</h3>
-        <p>
-          <Image
-            src={imageGondel}
-            alt="sceleton in a gondola floating through colorful clouds"
-            title="Gondola"
-            width="620"
-            height="351"
-            placeholder="blur"
-            className="marginbottom"
-          />
-        </p>
+        <Image
+          src={imageGondel}
+          alt="sceleton in a gondola floating through colorful clouds"
+          title="Gondola"
+          width="620"
+          height="351"
+          placeholder="blur"
+          className="marginbottom"
+        />
       </div>
       <div className="fourwide">
         <h3>Baldface</h3>
-        <p>
-          <Image
-            src={imageBaldface}
-            alt="A bald strange looking man"
-            title="Baldface"
-            width="300"
-            height="300"
-            placeholder="blur"
-            className="marginbottom"
-            priority
-          />
-        </p>
+        <Image
+          src={imageBaldface}
+          alt="A bald strange looking man"
+          title="Baldface"
+          width="300"
+          height="300"
+          placeholder="blur"
+          className="marginbottom"
+          priority
+        />
         <h3>Airface</h3>
-        <p>
-          <Image
-            src={imageAirface}
-            alt="A guy with a red nose floating through the air"
-            title="Airface"
-            width="300"
-            height="300"
-            placeholder="blur"
-            className="marginbottom"
-          />
-        </p>
+        <Image
+          src={imageAirface}
+          alt="A guy with a red nose floating through the air"
+          title="Airface"
+          width="300"
+          height="300"
+          placeholder="blur"
+          className="marginbottom"
+        />
         <h3>Turtle</h3>
         <div>
           <Image
