@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/components/logo'
 
+import styles from './frontpage.module.scss'
+
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
   description: 'The work and thoughts of an illustrator, print- & webdesigner.',
@@ -23,9 +25,9 @@ export default function Home() {
 
       <Logo />
 
-      <div className="allwrapper">
-        <div id="introduction" className="homepresentation">
-          <div className="wrapper">
+      <div className={styles.allWrapper}>
+        <div className={styles.introduction}>
+          <div className={styles.wrapper}>
             <h1>About</h1>
             <p>
               My name ist Marcus Blättermann. I&rsquo;m majoring in
@@ -80,15 +82,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="articles" className="homepresentation color">
-          <div className="wrapper">
+        <div className={`${styles.blog} ${styles.color} color`}>
+          <div className={styles.wrapper}>
             <h1>Articles</h1>
-            <ul className="list-blog">
+            <ul className={styles.listBlog}>
               {listBlog.map((post) => (
                 <li key={post.slug}>
                   <h3>
                     <Link href={post.slug}>
-                      <span className="date">{post.date}</span>
+                      <span className={`${styles.date} date`}>{post.date}</span>
                       <span
                         dangerouslySetInnerHTML={{ __html: post.htmlTitle }}
                       />
@@ -100,11 +102,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="portfolio" className="homepresentation black">
-          <div className="wrapper">
+        <div className={`${styles.portfolio} ${styles.black} black`}>
+          <div className={styles.wrapper}>
             <h1>Portfolio</h1>
-            <ul className="list-portfolio">
-              <li className="commentPortfolio">
+            <ul className={styles.listPortfolio}>
+              <li className={styles.commentPortfolio}>
                 I am sorry that this portfolio is quite out of date. New stuff
                 will be coming soon. For now you can find my portfolio on{' '}
                 <a
@@ -118,8 +120,10 @@ export default function Home() {
               {listPortfolio.map((post) => (
                 <li key={post.slug}>
                   <Link href={post.slug}>
-                    <span className="portfolioLink">{post.meta.title}</span>
-                    <div className="image-wrapper">
+                    <span className={styles.portfolioLinkText}>
+                      {post.meta.title}
+                    </span>
+                    <div className={styles.imageWrapper}>
                       <Image
                         src={post.preview}
                         alt=""

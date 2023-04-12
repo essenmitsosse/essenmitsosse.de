@@ -46,7 +46,6 @@ h4,
 th,
 strong,
 .date,
-.portfolioLink,
 ul#navigation {
   @include highlight-font();
 }
@@ -87,7 +86,6 @@ a span.arrow {
 }
 
 body.article div.content,
-div#introduction,
 a:hover span.arrow {
   background-color: #fff;
 }
@@ -139,8 +137,7 @@ em,
 }
 
 .black a,
-input.submit,
-a#essenmitsosse:hover {
+input.submit {
   color: $yellow;
   border-color: $yellow;
 }
@@ -149,8 +146,7 @@ a#essenmitsosse:hover {
 .color a:hover,
 .black a:hover em,
 .color a:hover em,
-input.submit:hover,
-div#portfolio a:hover span {
+input.submit:hover {
   color: #fff;
 }
 
@@ -422,116 +418,6 @@ div.intro {
   top: 0;
 }
 
-div.allwrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-div.homepresentation {
-  float: left;
-  width: 33.333%;
-
-  h1 {
-    font-size: 3em;
-    padding: 0 5% 10px;
-    @include border-strong();
-    line-height: 1em;
-    margin-top: 50px;
-  }
-
-  div.wrapper {
-    border-left: 0.6em solid #000;
-    border-right: 0.6em solid #000;
-    padding-top: 10em;
-    margin-bottom: -10000px;
-    padding-bottom: 10000px;
-  }
-}
-
-div#portfolio div.wrapper {
-  border-right-width: 1.25em;
-}
-
-div#introduction {
-  div.wrapper {
-    border-left-width: 0;
-    background-color: #fff;
-  }
-
-  p,
-  h1,
-  h2,
-  h3 {
-    padding-right: 5%;
-    margin-left: 12%;
-    padding-left: 5px;
-    display: block;
-    width: auto;
-    float: none;
-  }
-
-  table {
-    margin-left: 12%;
-    width: 88%;
-    margin-bottom: 0;
-  }
-}
-
-.list-blog {
-  li {
-    float: none;
-    width: 100%;
-    @include border-light();
-
-    h3 {
-      border: none;
-      font-size: 1em;
-      margin: 0 auto;
-      float: none;
-      padding-right: 5%;
-      padding-left: 5%;
-      width: auto;
-
-      a {
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 28px;
-        border: none;
-      }
-    }
-  }
-
-  .date {
-    float: right;
-  }
-}
-
-.list-portfolio {
-  margin-top: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-bottom: 20px;
-
-  a {
-    display: block;
-    border: none;
-    border-bottom: 20px solid #333;
-    background-position: center 1.1em;
-    background-repeat: no-repeat;
-  }
-
-  .image-wrapper {
-    position: relative;
-    height: 150px;
-
-    img {
-      object-fit: cover;
-      display: block;
-      margin: 0;
-    }
-  }
-}
-
 ul#navigation {
   position: fixed;
   width: 100%;
@@ -636,18 +522,6 @@ div.content .fullwidth li {
 
 .center {
   text-align: center;
-}
-
-.commentPortfolio {
-  text-align: center;
-  padding: 10px 10px 30px 10px;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #000;
-  font-style: italic;
-
-  .black & {
-    border-color: #000;
-  }
 }
 
 /* @end */
