@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { PostSome } from '@/app/[slug]/content/types'
 import Logo from './logo'
+import styles from './navigation.module.scss'
 
 const Navigation = (props: {
   isHome?: boolean
@@ -9,21 +10,21 @@ const Navigation = (props: {
   postNext?: PostSome
 }) => (
   <>
-    <ul id="navigation" className="black">
+    <ul className={styles.navigation}>
       {!props.isHome && (
-        <li className="home">
+        <li className={styles.home}>
           <Link href="/" rel="index">
             Home
           </Link>
         </li>
       )}
       {(props.postPrev || props.postNext) && (
-        <li className="articlenavigation">
+        <li className={styles.articleNavigation}>
           <ul>
             {props.postPrev && (
-              <li className="newer">
+              <li className={styles.prev}>
                 <Link href={props.postPrev.slug} rel="prev">
-                  <span className="arrow">&#9668;</span>{' '}
+                  <span className={styles.arrow}>&#9668;</span>{' '}
                   <span
                     dangerouslySetInnerHTML={{
                       __html:
@@ -36,9 +37,9 @@ const Navigation = (props: {
               </li>
             )}
             {props.postNext && (
-              <li className="older">
+              <li className={styles.next}>
                 <Link href={props.postNext.slug} rel="next">
-                  <span className="arrow">&#9658;</span>{' '}
+                  <span className={styles.arrow}>&#9658;</span>{' '}
                   <span
                     dangerouslySetInnerHTML={{
                       __html:
