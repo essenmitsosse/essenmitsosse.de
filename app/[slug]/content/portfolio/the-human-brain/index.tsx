@@ -5,7 +5,7 @@ export default function Page() {
         <iframe
           width="940"
           height="635"
-          src="https://www.youtube.com/embed/ozOJeg8TXWI"
+          src="https://www.youtube-nocookie.com/embed/ozOJeg8TXWI"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

@@ -62,7 +62,7 @@ export default function Home() {
                 <tr>
                   <th>Youtube</th>
                   <td>
-                    <a href="https://www.youtube.com/user/essenmitsosse">
+                    <a href="https://www.youtube-nocookie.com/user/essenmitsosse">
                       /user/essenmitsosse
                     </a>
                   </td>
