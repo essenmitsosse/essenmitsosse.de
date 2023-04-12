@@ -40,6 +40,30 @@ Author URI: http://essenmitsosse.de
   background-color: #000;
 }
 
+@mixin border-strong {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: #000;
+
+  .black & {
+    border-color: #666;
+  }
+}
+
+@mixin border-light {
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-color: #999;
+
+  .black & {
+    border-color: #777;
+  }
+
+  .color & {
+    border-color: #aa7a1d;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -123,16 +147,6 @@ a:hover span.arrow {
   background-color: #fff;
 }
 
-.black {
-  ul,
-  li,
-  td,
-  th,
-  h3 {
-    border-color: #777;
-  }
-}
-
 a {
   text-decoration: none;
   font-weight: normal;
@@ -177,14 +191,6 @@ em,
     color: #000;
     border-color: #000;
   }
-
-  ul,
-  li,
-  td,
-  th,
-  h3 {
-    border-color: #aa7a1d;
-  }
 }
 
 .black a,
@@ -201,29 +207,6 @@ a#essenmitsosse:hover {
 input.submit:hover,
 div#portfolio a:hover span {
   color: #fff;
-}
-
-h1,
-h2,
-div,
-thead td,
-thead th,
-div#portfolio h1 {
-  border-color: #000;
-}
-
-.black h1,
-.black h2,
-.black div {
-  border-color: #666;
-}
-
-ul,
-li,
-td,
-th,
-h3 {
-  border-color: #999;
 }
 
 em,
@@ -281,8 +264,7 @@ h2 {
   padding: 10px 0;
   margin-top: 50px;
   font-size: 2.5em;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+  @include border-strong();
 }
 
 h3 {
@@ -294,8 +276,7 @@ h3 {
   float: left;
   width: 100%;
   font-size: 1.25em;
-  border-bottom-style: dashed;
-  border-bottom-width: 1px;
+  @include border-light();
 }
 
 body.portfolio {
@@ -380,8 +361,7 @@ div.content {
     clear: both;
     float: left;
     width: 100%;
-    border-bottom-style: dashed;
-    border-bottom-width: 1px;
+    @include border-light();
   }
 
   ul {
@@ -431,8 +411,7 @@ thead {
   th,
   td {
     vertical-align: bottom;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+    @include border-strong();
   }
 }
 
@@ -441,8 +420,7 @@ th {
   padding: 10px 10px 10px 0;
   vertical-align: top;
   text-align: left;
-  border-bottom-style: dashed;
-  border-bottom-width: 1px;
+  @include border-light();
 }
 
 hr {
@@ -513,8 +491,7 @@ div.homepresentation {
   h1 {
     font-size: 3em;
     padding: 0 5% 10px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+    @include border-strong();
     line-height: 1em;
     margin-top: 50px;
   }
@@ -561,8 +538,7 @@ div#introduction {
   li {
     float: none;
     width: 100%;
-    border-bottom-style: dashed;
-    border-bottom-width: 1px;
+    @include border-light();
 
     h3 {
       border: none;

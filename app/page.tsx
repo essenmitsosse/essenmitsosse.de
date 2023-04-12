@@ -80,8 +80,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="articles" className="homepresentation">
-          <div className="wrapper color">
+        <div id="articles" className="homepresentation color">
+          <div className="wrapper">
             <h1>Articles</h1>
             <ul className="list-blog">
               {listBlog.map((post) => (
