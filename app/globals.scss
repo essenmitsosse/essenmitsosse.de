@@ -7,6 +7,26 @@ Author: Marcus Bl&auml;ttermann
 Author URI: http://essenmitsosse.de
 */
 
+@mixin highlight-font {
+  letter-spacing: 0.06em;
+  word-spacing: 0.09em;
+  text-transform: uppercase;
+  font: normal normal 1em 'Gill Sans', Tahoma, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+}
+
+@mixin default-font {
+  font-family: Cambria, Georgia, serif;
+}
+
+@mixin large-italic-font {
+  font-family: Baskerville, Palatino, 'palatino linotype', Georgia, serif;
+}
+
+@mixin black-background {
+  background-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,41 +43,58 @@ body {
     min-width: 1000px;
     max-width: 1240px;
   }
+
+  &.homepage {
+    @include black-background();
+  }
+
+  &.article {
+    @include black-background();
+  }
 }
 
 body {
-  font-family: Cambria, Georgia, serif;
-}
-
-h1 em,
-h2 em,
-blockquote {
-  font-family: Baskerville, Palatino, 'palatino linotype', Georgia, serif;
+  @include default-font();
 }
 
 h1,
 h2,
-h3,
-ul#navigation,
-.date,
-strong,
-.portfolioLink {
-  letter-spacing: 0.06em;
-  word-spacing: 0.09em;
-  text-transform: uppercase;
-  font: normal normal 1em 'Gill Sans', Tahoma, 'Helvetica Neue', Helvetica,
-    Arial, sans-serif;
+h3 {
+  @include highlight-font();
+}
 
+h1,
+h2 {
   em {
-    font-family: Cambria, Georgia, serif;
+    @include large-italic-font();
   }
 }
 
-body.homepage,
-body.article,
-ul#navigation,
-input.submit {
-  background-color: #000;
+h3 {
+  em {
+    @include default-font();
+  }
+}
+
+blockquote {
+  @include large-italic-font();
+}
+
+strong {
+  @include highlight-font();
+}
+
+.date {
+  @include highlight-font();
+}
+
+.portfolioLink {
+  @include highlight-font();
+}
+
+ul#navigation {
+  @include highlight-font();
+  @include black-background();
 }
 
 .black {
