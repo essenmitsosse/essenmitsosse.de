@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+import classnames from 'classnames'
 
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
 import Navigation from '@/components/navigation'
@@ -21,13 +22,11 @@ export default function Layout(props: {
 
   return (
     <body
-      className={`single ${
-        'htmlTitle' in post ? 'article' : 'black portfolio'
-      }`}
+      className={classnames('single', isBlog ? 'article' : 'black portfolio')}
     >
       <Navigation postPrev={postPrev} postNext={postNext} />
 
-      <div className={`intro ${isBlog ? 'color' : undefined}`}>
+      <div className={classnames('intro', { color: isBlog })}>
         {isBlog ? (
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
         ) : (

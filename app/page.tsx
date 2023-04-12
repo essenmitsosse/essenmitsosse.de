@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import classnames from 'classnames'
 
 import listBlog from './[slug]/content/blog'
 import listPortfolio from './[slug]/content/portfolio'
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`${styles.blog} ${styles.color} color`}>
+        <div className={classnames(styles.blog, styles.color, 'color')}>
           <div className={styles.wrapper}>
             <h1>Articles</h1>
             <ul className={styles.listBlog}>
@@ -88,7 +89,9 @@ export default function Home() {
                 <li key={post.slug}>
                   <h3>
                     <Link href={post.slug}>
-                      <span className={`${styles.date} date`}>{post.date}</span>
+                      <span className={classnames(styles.date, 'date')}>
+                        {post.date}
+                      </span>
                       <span
                         dangerouslySetInnerHTML={{ __html: post.htmlTitle }}
                       />
@@ -100,7 +103,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`${styles.portfolio} ${styles.black} black`}>
+        <div className={classnames(styles.portfolio, styles.black, 'black')}>
           <div className={styles.wrapper}>
             <h1>Portfolio</h1>
             <ul className={styles.listPortfolio}>
