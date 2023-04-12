@@ -464,10 +464,6 @@ body.article .date {
   width: 460px;
 }
 
-div#articles .date {
-  float: right;
-}
-
 div.content {
   body.article & {
     float: right;
@@ -567,23 +563,27 @@ div#articles {
     width: 100%;
     border-bottom-style: dashed;
     border-bottom-width: 1px;
+
+    h3 {
+      border: none;
+      font-size: 1em;
+      margin: 0 auto;
+      float: none;
+      padding-right: 5%;
+      padding-left: 5%;
+      width: auto;
+
+      a {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 28px;
+        border: none;
+      }
+    }
   }
 
-  ul li h3 {
-    border: none;
-    font-size: 1em;
-    margin: 0 auto;
-    float: none;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: auto;
-  }
-
-  ul li h3 a {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 28px;
-    border: none;
+  .date {
+    float: right;
   }
 }
 
