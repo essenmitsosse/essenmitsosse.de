@@ -19,6 +19,7 @@ body {
   color: #555;
   font-size: 100%;
   line-height: 1.25;
+  @include default-font();
 
   &.article,
   &.portfolio {
@@ -33,10 +34,6 @@ body {
   &.article {
     @include black-background();
   }
-}
-
-body {
-  @include default-font();
 }
 
 h1,
