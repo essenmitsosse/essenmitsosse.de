@@ -363,10 +363,10 @@ hr {
   font-size: 12px;
   text-shadow: none;
   line-height: 1.8em;
-}
 
-body.article .date {
-  width: 460px;
+  body.article & {
+    width: 460px;
+  }
 }
 
 div.content {
