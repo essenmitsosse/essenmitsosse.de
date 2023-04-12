@@ -26,8 +26,14 @@ $yellow: #f3af29;
   font-family: Cambria, Georgia, serif;
 }
 
+@mixin small-italic-font {
+  @include default-font();
+  font-style: italic;
+}
+
 @mixin large-italic-font {
   font-family: Baskerville, Palatino, 'palatino linotype', Georgia, serif;
+  font-style: italic;
 }
 
 @mixin black-background {
@@ -76,16 +82,12 @@ ul#navigation {
   @include highlight-font();
 }
 
-h1,
-h2 {
-  em {
-    @include large-italic-font();
-  }
-}
+em {
+  @include small-italic-font();
 
-h3 {
-  em {
-    @include default-font();
+  h1 &,
+  h2 & {
+    @include large-italic-font();
   }
 }
 
