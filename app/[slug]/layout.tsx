@@ -21,9 +21,7 @@ export default function Layout(props: {
   const listPostRelated = getListRelatedPosts(post, listPost)
 
   return (
-    <body
-      className={classnames('single', isBlog ? 'article' : 'black portfolio')}
-    >
+    <body className={classnames(isBlog ? 'article' : 'black portfolio')}>
       <Navigation postPrev={postPrev} postNext={postNext} />
 
       <div className={classnames('intro', { color: isBlog })}>
