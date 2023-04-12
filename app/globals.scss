@@ -89,6 +89,10 @@ em {
   h2 & {
     @include large-italic-font();
   }
+
+  .black & {
+    color: inherit;
+  }
 }
 
 blockquote {
