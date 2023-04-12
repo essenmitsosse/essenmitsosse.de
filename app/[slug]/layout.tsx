@@ -110,7 +110,7 @@ export default function Layout(props: {
           <p>
             Don’t forget to follow me on{' '}
             <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
-            also check out my <a href="http://essenmitsosse.de">Portfolio</a>.
+            also check out my <Link href="/">Portfolio</Link>.
           </p>
         </div>
 
