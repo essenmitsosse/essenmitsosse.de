@@ -75,8 +75,20 @@ blockquote {
   background-color: $yellow;
 }
 
-body.article div.content {
-  background-color: #fff;
+div.content {
+  body.article & {
+    float: right;
+    width: 980px + 260px;
+    padding-left: 260px;
+    padding-bottom: 50px;
+    background-color: #fff;
+  }
+
+  body.portfolio & {
+    width: 980px;
+    padding-bottom: 50px;
+    float: right;
+  }
 }
 
 a {
@@ -205,22 +217,6 @@ h3 {
   width: 100%;
   font-size: 1.25em;
   @include border-light();
-}
-
-body.portfolio {
-  div.content {
-    h3,
-    h2 {
-      width: 940px;
-    }
-
-    div {
-      h3,
-      h2 {
-        width: 100%;
-      }
-    }
-  }
 }
 
 h3 + ul,
@@ -366,21 +362,6 @@ hr {
 
   body.article & {
     width: 460px;
-  }
-}
-
-div.content {
-  body.article & {
-    float: right;
-    width: 980px + 260px;
-    padding-left: 260px;
-    padding-bottom: 50px;
-  }
-
-  body.portfolio & {
-    width: 980px;
-    padding-bottom: 50px;
-    float: right;
   }
 }
 
