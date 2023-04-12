@@ -83,7 +83,7 @@ export default function Home() {
         <div id="articles" className="homepresentation">
           <div className="wrapper color">
             <h1>Articles</h1>
-            <ul>
+            <ul className="list-blog">
               {listBlog.map((post) => (
                 <li key={post.slug}>
                   <h3>
@@ -103,7 +103,7 @@ export default function Home() {
         <div id="portfolio" className="homepresentation black">
           <div className="wrapper">
             <h1>Portfolio</h1>
-            <ul>
+            <ul className="list-portfolio">
               <li className="commentPortfolio">
                 I am sorry that this portfolio is quite out of date. New stuff
                 will be coming soon. For now you can find my portfolio on{' '}

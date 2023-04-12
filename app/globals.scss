@@ -557,8 +557,8 @@ div#introduction {
   }
 }
 
-div#articles {
-  ul li {
+.list-blog {
+  li {
     float: none;
     width: 100%;
     border-bottom-style: dashed;
@@ -587,13 +587,11 @@ div#articles {
   }
 }
 
-div#portfolio {
-  ul {
-    margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 20px;
-  }
+.list-portfolio {
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 20px;
 
   a {
     display: block;
