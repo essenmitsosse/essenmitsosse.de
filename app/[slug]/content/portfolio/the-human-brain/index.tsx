@@ -6,9 +6,9 @@ export default function Page() {
           width="940"
           height="635"
           src="https://www.youtube-nocookie.com/embed/ozOJeg8TXWI"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </p>
       <div className="fourwide">
