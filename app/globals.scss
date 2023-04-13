@@ -137,6 +137,14 @@ em {
   .color & {
     color: rgba(0, 0, 0, 0.5);
   }
+
+  h1 &,
+  h2 &,
+  h3 & {
+    display: block;
+    line-height: 1em;
+    margin-bottom: 0.1em;
+  }
 }
 
 blockquote {
@@ -144,14 +152,6 @@ blockquote {
   @extend .italic;
   line-height: 1.25em;
   font-size: 1.5em;
-}
-
-h1 em,
-h2 em,
-h3 em {
-  display: block;
-  line-height: 1em;
-  margin-bottom: 0.1em;
 }
 
 cite {
