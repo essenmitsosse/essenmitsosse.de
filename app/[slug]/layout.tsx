@@ -7,6 +7,7 @@ import classnames from 'classnames'
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
 import Navigation from '@/components/navigation'
 import Date from '@/components/date'
+import styles from './layout.module.scss'
 
 export default function Layout(props: {
   children: ReactNode
@@ -72,7 +73,7 @@ export default function Layout(props: {
             <h3>
               <em>If you didn&#8217;t like this one</em>You will hate these
             </h3>
-            <ul className="st-related-posts">
+            <ul className={styles.relatedPosts}>
               {listPostRelated.map((postRelated) => (
                 <li key={`${postRelated.slug}-related`}>
                   <Link href={postRelated.slug}>{postRelated.meta.title}</Link>
