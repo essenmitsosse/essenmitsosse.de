@@ -12,7 +12,7 @@ import {
 } from './getPost'
 import Navigation from '@/components/navigation'
 import Date from '@/components/date'
-import styles from './layout.module.scss'
+import styles from './page.module.scss'
 import { MetaPost } from './content/types'
 
 export function generateMetadata({
