@@ -14,6 +14,7 @@ import Navigation from '@/components/navigation'
 import Date from '@/components/date'
 import styles from './page.module.scss'
 import { MetaPost } from './content/types'
+import HeaderBlog from './headerBlog'
 
 export function generateMetadata({
   params,
@@ -57,23 +58,10 @@ export default function Layout(props: {
           [styles.portfolio]: !isBlog,
         })}
       >
-        <div className={classnames(styles.intro, { color: isBlog })}>
-          {isBlog ? (
-            <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
-          ) : (
-            <h1>{post.meta.title}</h1>
-          )}
-          {isBlog && (
-            <Image
-              src={post.imageHeader}
-              alt=""
-              className={styles.headerImage}
-              unoptimized
-            />
-          )}
-        </div>
+        {isBlog && <HeaderBlog post={post} />}
 
         <div className={styles.content}>
+          {!isBlog && <h1 className={styles.titleIntro}>{post.meta.title}</h1>}
           <Date date={post.date} />
           <post.Component />
           <hr />

@@ -1,0 +1,20 @@
+.intro {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  float: left;
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+  overflow: hidden;
+
+  min-width: 1000px;
+  max-width: 1240px;
+}
+
+.headerImage {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
