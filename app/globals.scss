@@ -78,6 +78,7 @@ a {
     color: inherit;
     font-weight: normal;
     font-style: normal;
+    display: block;
   }
 
   &:hover {
@@ -208,16 +209,6 @@ h4 {
   line-height: 1.25em;
   margin-top: 20px;
   clear: both;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  a {
-    font-style: inherit;
-    display: block;
-  }
 }
 
 p {
