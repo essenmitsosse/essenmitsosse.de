@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
-import Logo from '@/components/logo'
+import Navigation from '@/components/navigation'
 
 export default function Layout(props: {
   children: ReactNode
@@ -25,50 +25,7 @@ export default function Layout(props: {
         'htmlTitle' in post ? 'article' : 'black portfolio'
       }`}
     >
-      <ul id="navigation" className="black">
-        <li className="home">
-          <Link href="/" rel="index">
-            Home
-          </Link>
-        </li>
-        <li className="articlenavigation">
-          <ul>
-            {postPrev && (
-              <li className="newer">
-                <Link href={postPrev.slug} rel="prev">
-                  <span className="arrow">&#9668;</span>{' '}
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        'htmlTitle' in postPrev
-                          ? postPrev.htmlTitle
-                          : postPrev.meta.title,
-                    }}
-                  />
-                </Link>
-              </li>
-            )}
-
-            {postNext && (
-              <li className="older">
-                <Link href={postNext.slug} rel="next">
-                  <span className="arrow">&#9658;</span>{' '}
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        'htmlTitle' in postNext
-                          ? postNext.htmlTitle
-                          : postNext.meta.title,
-                    }}
-                  />
-                </Link>
-              </li>
-            )}
-          </ul>
-        </li>
-      </ul>
-
-      <Logo />
+      <Navigation postPrev={postPrev} postNext={postNext} />
 
       <div className={`intro ${isBlog ? 'color' : undefined}`}>
         {isBlog ? (

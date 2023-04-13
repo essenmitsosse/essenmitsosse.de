@@ -4,9 +4,9 @@ import listBlog from './[slug]/content/blog'
 import listPortfolio from './[slug]/content/portfolio'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '@/components/logo'
 
 import styles from './frontpage.module.scss'
+import Navigation from '@/components/navigation'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -21,9 +21,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <body className="homepage">
-      <ul id="navigation" className="black"></ul>
-
-      <Logo />
+      <Navigation isHome />
 
       <div className={styles.allWrapper}>
         <div className={styles.introduction}>
