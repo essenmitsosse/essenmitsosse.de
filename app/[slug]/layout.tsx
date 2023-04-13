@@ -4,10 +4,34 @@ import Link from 'next/link'
 import Image from 'next/image'
 import classnames from 'classnames'
 
-import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
+import {
+  getListRelatedPosts,
+  getPostAndPrevAndNextViaSlug,
+  getPostViaSlug,
+  listPost,
+} from './getPost'
 import Navigation from '@/components/navigation'
 import Date from '@/components/date'
 import styles from './layout.module.scss'
+import { MetaPost } from './content/types'
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}): MetaPost {
+  const post = getPostViaSlug(params.slug)
+
+  if (!post) {
+    notFound()
+  }
+
+  return post.meta
+}
+
+export async function generateStaticParams() {
+  return listPost.map((post) => ({ slug: post.slug }))
+}
 
 export default function Layout(props: {
   children: ReactNode
@@ -51,7 +75,7 @@ export default function Layout(props: {
 
         <div className={styles.content}>
           <Date date={post.date} />
-          {props.children}
+          <post.Component />
           <hr />
           <div className="fourwide">
             <h3>
