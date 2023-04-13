@@ -1,0 +1,16 @@
+@import '../app/variables';
+
+.date {
+  @include highlight-font();
+  display: block;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  text-shadow: none;
+  line-height: 1.8em;
+  color: #999;
+
+  :global(.color) & {
+    color: #aa7a1d;
+  }
+}

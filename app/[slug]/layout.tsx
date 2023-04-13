@@ -6,6 +6,7 @@ import classnames from 'classnames'
 
 import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
 import Navigation from '@/components/navigation'
+import Date from '@/components/date'
 
 export default function Layout(props: {
   children: ReactNode
@@ -41,9 +42,7 @@ export default function Layout(props: {
       </div>
 
       <div className="content white">
-        <div className="date">
-          <p>{post.date}</p>
-        </div>
+        <Date date={post.date} />
         {props.children}
         <hr />
         <div className="fourwide">

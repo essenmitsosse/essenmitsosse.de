@@ -50,8 +50,7 @@ h2,
 h3,
 h4,
 th,
-strong,
-.date {
+strong {
   @include highlight-font();
 }
 
@@ -76,6 +75,7 @@ blockquote {
   .article & {
     float: right;
     width: 980px + 260px;
+    padding-top: 1em;
     padding-left: 260px;
     padding-bottom: 50px;
     background-color: #fff;
@@ -114,18 +114,13 @@ a {
   }
 }
 
-em,
-.date {
+em {
   color: #999;
 }
 
 .color {
   em {
     color: rgba(0, 0, 0, 0.5);
-  }
-
-  .date {
-    color: #aa7a1d;
   }
 
   a {
@@ -347,15 +342,6 @@ hr {
   clear: both;
   border: none;
   width: 100%;
-}
-
-.date {
-  display: block;
-  font-weight: normal;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  text-shadow: none;
-  line-height: 1.8em;
 }
 
 .intro {

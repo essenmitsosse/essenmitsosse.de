@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { ComponentType } from 'react'
+import { Date } from '@/components/date'
 import { PostPortfolio } from './portfolio'
 import { PostBlog } from './blog'
 
@@ -18,7 +19,7 @@ export type Post = {
    * See: https://nextjs.org/docs/advanced-features/dynamic-import#example
    */
   Component: ComponentType
-  date: `${number}${number}${number}${number}-${number}${number}-${number}${number}`
+  date: Date
   meta: MetaPost
 }
 

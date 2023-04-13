@@ -8,6 +8,7 @@ import Image from 'next/image'
 
 import styles from './frontpage.module.scss'
 import Navigation from '@/components/navigation'
+import Date from '@/components/date'
 
 export const metadata: Metadata = {
   title: '♣ essenmitsosse',
@@ -89,9 +90,10 @@ export default function Home() {
                 <li key={post.slug}>
                   <h3>
                     <Link href={post.slug}>
-                      <span className={classnames(styles.date, 'date')}>
-                        {post.date}
-                      </span>
+                      <Date
+                        className={classnames(styles.dateBlog)}
+                        date={post.date}
+                      />
                       <span
                         dangerouslySetInnerHTML={{ __html: post.htmlTitle }}
                       />
