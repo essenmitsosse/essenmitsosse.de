@@ -23,71 +23,75 @@ export default function Layout(props: {
   const listPostRelated = getListRelatedPosts(post, listPost)
 
   return (
-    <body
-      className={classnames({
-        article: isBlog,
-        black: !isBlog,
-        portfolio: !isBlog,
-      })}
-    >
+    <body>
       <Navigation postPrev={postPrev} postNext={postNext} />
 
-      <div className={classnames(styles.intro, { color: isBlog })}>
-        {isBlog ? (
-          <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
-        ) : (
-          <h1>{post.meta.title}</h1>
-        )}
-        {isBlog && (
-          <Image
-            src={post.imageHeader}
-            alt=""
-            className={styles.headerImage}
-            unoptimized
-          />
-        )}
-      </div>
-
-      <div className={styles.content}>
-        <Date date={post.date} />
-        {props.children}
-        <hr />
-        <div className="fourwide">
-          <h3>
-            <em>A little bit</em> about me
-          </h3>
-          <p>
-            My name ist Marcus Blättermann. <br />
-            I’m majoring in communication design and work as a freelancer for
-            illustration, print- & webdesign.
-          </p>
+      <div
+        className={classnames({
+          [styles.article]: isBlog,
+          black: !isBlog,
+          [styles.portfolio]: !isBlog,
+        })}
+      >
+        <div className={classnames(styles.intro, { color: isBlog })}>
+          {isBlog ? (
+            <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
+          ) : (
+            <h1>{post.meta.title}</h1>
+          )}
+          {isBlog && (
+            <Image
+              src={post.imageHeader}
+              alt=""
+              className={styles.headerImage}
+              unoptimized
+            />
+          )}
         </div>
 
-        <div className="fourwide">
-          <h3>
-            <em>What you should </em>do next
-          </h3>
-          <p>
-            Don’t forget to follow me on{' '}
-            <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
-            also check out my <Link href="/">Portfolio</Link>.
-          </p>
-        </div>
-
-        {listPostRelated.length > 0 && (
+        <div className={styles.content}>
+          <Date date={post.date} />
+          {props.children}
+          <hr />
           <div className="fourwide">
             <h3>
-              <em>If you didn&#8217;t like this one</em>You will hate these
+              <em>A little bit</em> about me
             </h3>
-            <ul className={styles.relatedPosts}>
-              {listPostRelated.map((postRelated) => (
-                <li key={`${postRelated.slug}-related`}>
-                  <Link href={postRelated.slug}>{postRelated.meta.title}</Link>
-                </li>
-              ))}
-            </ul>
+            <p>
+              My name ist Marcus Blättermann. <br />
+              I’m majoring in communication design and work as a freelancer for
+              illustration, print- & webdesign.
+            </p>
           </div>
-        )}
+
+          <div className="fourwide">
+            <h3>
+              <em>What you should </em>do next
+            </h3>
+            <p>
+              Don’t forget to follow me on{' '}
+              <a href="http://twitter.com/essenmitsosse">Twitter</a>. You should
+              also check out my <Link href="/">Portfolio</Link>.
+            </p>
+          </div>
+
+          {listPostRelated.length > 0 && (
+            <div className="fourwide">
+              <h3>
+                <em>If you didn&#8217;t like this one</em>You will hate these
+              </h3>
+              <ul className={styles.relatedPosts}>
+                {listPostRelated.map((postRelated) => (
+                  <li key={`${postRelated.slug}-related`}>
+                    <Link href={postRelated.slug}>
+                      {postRelated.meta.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </body>
   )

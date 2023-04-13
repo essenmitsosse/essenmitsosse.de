@@ -27,20 +27,43 @@
   pointer-events: none;
 }
 
-.content {
-  :global(.article) & {
+.article {
+  @include black-background();
+}
+
+.article,
+.portfolio {
+  .content,
+  .intro {
+    min-width: 1000px;
+    max-width: 1240px;
+  }
+}
+
+h1 {
+  .article & {
     float: right;
-    width: 980px + 260px;
-    padding-top: 1em;
-    padding-left: 260px;
-    padding-bottom: 50px;
-    background-color: #fff;
+    width: 480px;
+    margin: 10px 500px 70px 0;
   }
 
-  :global(.portfolio) & {
-    width: 980px;
-    padding-bottom: 50px;
+  .portfolio & {
+    font-size: 2.5em;
     float: right;
+    width: 940px;
+    margin: 10px 40px 20px 0;
+  }
+}
+
+.content {
+  width: 980px + 260px;
+  padding-top: 1em;
+  padding-left: 260px;
+  padding-bottom: 50px;
+  overflow: hidden;
+
+  .article & {
+    background-color: #fff;
   }
 
   p {
