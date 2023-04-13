@@ -82,31 +82,22 @@ a {
   }
 
   &:hover {
+    .color & {
+      color: #000;
+      border-color: #000;
+    }
+
+    .black & {
+      color: $yellow;
+      border-color: $yellow;
+    }
+
     &,
     em {
       color: #000;
-    }
-  }
 
-  .color & {
-    color: #000;
-    border-color: #000;
-
-    &:hover {
-      &,
-      em {
-        color: #fff;
-      }
-    }
-  }
-
-  .black & {
-    color: $yellow;
-    border-color: $yellow;
-
-    &:hover {
-      &,
-      em {
+      .color &,
+      .black & {
         color: #fff;
       }
     }
