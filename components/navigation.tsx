@@ -3,7 +3,10 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { getListRelatedPosts, getPostAndPrevAndNextViaSlug } from './getPost'
+import {
+  getListRelatedPosts,
+  getPostAndPrevAndNextViaSlug,
+} from '../app/[slug]/getPost'
 import Logo from '@/components/logo'
 
 export default function Layout(props: {
