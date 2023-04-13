@@ -99,33 +99,38 @@ a {
       color: #000;
     }
   }
+
+  .color & {
+    color: #000;
+    border-color: #000;
+
+    &:hover {
+      &,
+      em {
+        color: #fff;
+      }
+    }
+  }
+
+  .black & {
+    color: $yellow;
+    border-color: $yellow;
+
+    &:hover {
+      &,
+      em {
+        color: #fff;
+      }
+    }
+  }
 }
 
 em {
   color: #999;
-}
 
-.color {
-  em {
+  .color & {
     color: rgba(0, 0, 0, 0.5);
   }
-
-  a {
-    color: #000;
-    border-color: #000;
-  }
-}
-
-.black a {
-  color: $yellow;
-  border-color: $yellow;
-}
-
-.black a:hover,
-.color a:hover,
-.black a:hover em,
-.color a:hover em {
-  color: #fff;
 }
 
 em,
