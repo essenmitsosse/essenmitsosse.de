@@ -26,7 +26,7 @@ export default function Layout(props: {
     <body className={classnames(isBlog ? 'article' : 'black portfolio')}>
       <Navigation postPrev={postPrev} postNext={postNext} />
 
-      <div className={classnames('intro', { color: isBlog })}>
+      <div className={classnames(styles.intro, { color: isBlog })}>
         {isBlog ? (
           <h1 dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
         ) : (
@@ -36,7 +36,7 @@ export default function Layout(props: {
           <Image
             src={post.imageHeader}
             alt=""
-            className="header-image"
+            className={styles.headerImage}
             unoptimized
           />
         )}
