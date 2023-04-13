@@ -31,14 +31,14 @@ export const getPostAndPrevAndNextViaSlug = (
       post?: PostBlog
       postPrev?: PostBlog
       postNext?: PostBlog
-      listPost: ReadonlyArray<PostBlog>
+      listPostCategory: ReadonlyArray<PostBlog>
       isBlog: true
     }
   | {
       post?: PostPortfolio
       postPrev?: PostPortfolio
       postNext?: PostPortfolio
-      listPost: ReadonlyArray<PostPortfolio>
+      listPostCategory: ReadonlyArray<PostPortfolio>
       isBlog: false
     } => {
   const indexBlog = listBlog.findIndex((post) => post.slug === slug)
@@ -46,7 +46,7 @@ export const getPostAndPrevAndNextViaSlug = (
   return indexBlog !== -1
     ? {
         ...getPostAndPrevAndNext(listBlog, indexBlog),
-        listPost: listBlog,
+        listPostCategory: listBlog,
         isBlog: true,
       }
     : {
@@ -54,7 +54,7 @@ export const getPostAndPrevAndNextViaSlug = (
           listPortfolio,
           listPortfolio.findIndex((post) => post.slug === slug)
         ),
-        listPost: listPortfolio,
+        listPostCategory: listPortfolio,
         isBlog: false,
       }
 }

@@ -13,14 +13,14 @@ export default function Layout(props: {
   children: ReactNode
   params: { slug: string }
 }) {
-  const { post, listPost, postPrev, postNext, isBlog } =
+  const { post, listPostCategory, postPrev, postNext, isBlog } =
     getPostAndPrevAndNextViaSlug(props.params.slug)
 
   if (!post) {
     notFound()
   }
 
-  const listPostRelated = getListRelatedPosts(post, listPost)
+  const listPostRelated = getListRelatedPosts(post, listPostCategory)
 
   return (
     <body>
