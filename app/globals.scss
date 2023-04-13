@@ -58,10 +58,6 @@ em {
   }
 }
 
-blockquote {
-  @include large-italic-font();
-}
-
 .content {
   .article & {
     float: right;
@@ -150,6 +146,7 @@ h3 em {
 }
 
 blockquote {
+  @include large-italic-font();
   line-height: 1.25em;
   font-size: 1.5em;
 }
