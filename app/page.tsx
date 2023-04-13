@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <body className="homepage">
+    <body>
       <Navigation isHome />
 
       <div className={styles.allWrapper}>

@@ -18,10 +18,6 @@ body {
     max-width: 1240px;
   }
 
-  &.homepage {
-    @include black-background();
-  }
-
   &.article {
     @include black-background();
   }
