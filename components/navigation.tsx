@@ -24,7 +24,7 @@ const Navigation = (props: {
             {props.postPrev && (
               <li className={styles.prev}>
                 <Link href={props.postPrev.slug} rel="prev">
-                  <span className={styles.arrow}>&#9668;</span>{' '}
+                  <span className={styles.arrow}>&#9658;</span>{' '}
                   <span
                     dangerouslySetInnerHTML={{
                       __html:
@@ -39,7 +39,7 @@ const Navigation = (props: {
             {props.postNext && (
               <li className={styles.next}>
                 <Link href={props.postNext.slug} rel="next">
-                  <span className={styles.arrow}>&#9658;</span>{' '}
+                  <span className={styles.arrow}>&#9668;</span>{' '}
                   <span
                     dangerouslySetInnerHTML={{
                       __html:
