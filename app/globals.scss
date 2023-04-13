@@ -45,19 +45,6 @@ strong {
   @include highlight-font();
 }
 
-em {
-  @include small-italic-font();
-
-  h1 &,
-  h2 & {
-    @include large-italic-font();
-  }
-
-  .black & {
-    color: inherit;
-  }
-}
-
 .content {
   .article & {
     float: right;
@@ -127,6 +114,16 @@ a {
 
 em {
   color: #999;
+  @include small-italic-font();
+
+  h1 &,
+  h2 & {
+    @include large-italic-font();
+  }
+
+  .black & {
+    color: inherit;
+  }
 
   .color & {
     color: rgba(0, 0, 0, 0.5);
