@@ -3,11 +3,14 @@
 .allWrapper {
   overflow: hidden;
   position: relative;
+  display: flex;
+  gap: 1.2em;
+  border-right: 1.2em solid #000;
 }
 
 .homepresentation {
-  float: left;
-  width: 33.333%;
+  flex: 1 1 0;
+  padding-top: 10em;
 
   h1 {
     font-size: 3em;
@@ -18,21 +21,9 @@
   }
 }
 
-.wrapper {
-  border-left: 0.6em solid #000;
-  border-right: 0.6em solid #000;
-  padding-top: 10em;
-  margin-bottom: -10000px;
-  padding-bottom: 10000px;
-}
-
 .introduction {
   @extend .homepresentation;
-
-  .wrapper {
-    border-left-width: 0;
-    background-color: #fff;
-  }
+  background-color: #fff;
 
   p,
   h1,
