@@ -42,7 +42,7 @@ export default function Layout(props: {
         )}
       </div>
 
-      <div className="content">
+      <div className={styles.content}>
         <Date date={post.date} />
         {props.children}
         <hr />

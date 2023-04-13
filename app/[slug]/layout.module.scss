@@ -1,3 +1,5 @@
+@import '../variables';
+
 .relatedPosts {
   margin-bottom: 20px;
 
@@ -23,4 +25,99 @@
   right: 0;
   top: 0;
   pointer-events: none;
+}
+
+.content {
+  :global(.article) & {
+    float: right;
+    width: 980px + 260px;
+    padding-top: 1em;
+    padding-left: 260px;
+    padding-bottom: 50px;
+    background-color: #fff;
+  }
+
+  :global(.portfolio) & {
+    width: 980px;
+    padding-bottom: 50px;
+    float: right;
+  }
+
+  p {
+    width: 460px;
+  }
+
+  p + p {
+    text-indent: 20px;
+  }
+
+  div p,
+  li p {
+    width: auto;
+  }
+
+  ul,
+  ol {
+    width: 460px;
+    margin-top: 20px;
+    clear: both;
+    float: left;
+    border-top-width: 1px;
+    border-top-style: dashed;
+  }
+
+  h2,
+  h3 {
+    & + ul {
+      border-top: none;
+      margin-top: 0;
+    }
+  }
+
+  div ul,
+  div ol {
+    width: 100%;
+  }
+
+  li {
+    padding: 0 0 19px;
+    clear: both;
+    float: left;
+    width: 100%;
+    @include border-light();
+  }
+
+  :global(.fourwide) {
+    width: 300px;
+  }
+
+  :global(.sixwide) {
+    width: 460px;
+  }
+
+  :global(.eightwide) {
+    width: 620px;
+  }
+
+  :global(.fullwidth) {
+    width: 980px;
+    float: left;
+  }
+
+  :global(.fourwide),
+  :global(.sixwide),
+  :global(.eightwide) {
+    margin-right: 20px;
+    float: left;
+    clear: none;
+  }
+
+  :global(.alignright) {
+    float: right;
+    margin-right: 40px;
+  }
+
+  :global(.center) {
+    text-align: center;
+  }
 }
