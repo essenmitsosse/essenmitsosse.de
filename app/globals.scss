@@ -231,6 +231,14 @@ p {
     border-top-style: dashed;
   }
 
+  h2,
+  h3 {
+    & + ul {
+      border-top: none;
+      margin-top: 0;
+    }
+  }
+
   div ul,
   div ol {
     width: 100%;
@@ -255,16 +263,6 @@ img {
 
   a & {
     border: none;
-  }
-}
-
-ul {
-  h2 + &,
-  .content h2 + &,
-  h3 + &,
-  .content h3 + & {
-    border-top: none;
-    margin-top: 0;
   }
 }
 
