@@ -1,29 +1,53 @@
 @import '../app/variables';
 
+$tableWidth: 1100px;
+$mobileWidth: 700px;
+
 .allWrapper {
   overflow: hidden;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.2em;
   padding-right: 1.2em;
+
+  @media screen and (max-width: $mobileWidth) {
+    display: block;
+  }
 }
 
 .homepresentation {
   flex: 1 1 0;
+  width: 0;
   padding-top: 10em;
+  padding-bottom: 5em;
+  margin-bottom: 1.2em;
+
+  @media screen and (max-width: $tableWidth) {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    width: 100%;
+  }
 
   h1 {
     font-size: 3em;
     padding: 0 5% 10px;
     @include border-strong();
     line-height: 1em;
-    margin-top: 50px;
+    padding-top: 50px;
   }
 }
 
 .introduction {
   @extend .homepresentation;
   background-color: #fff;
+
+  @media screen and (max-width: $tableWidth) {
+    padding-top: 10em;
+    flex-basis: 100%;
+  }
 
   p,
   h1,
@@ -44,15 +68,14 @@
   }
 }
 
-.blog {
+.blog,
+.portfolio {
   @extend .homepresentation;
 }
 
-.portfolio {
-  @extend .homepresentation;
-
-  .wrapper {
-    border-right-width: 1.25em;
+.blog {
+  @media screen and (max-width: $mobileWidth) {
+    order: 3;
   }
 }
 
