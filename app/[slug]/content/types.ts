@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import { ComponentType } from 'react'
+import { PostPortfolio } from './portfolio'
+import { PostBlog } from './blog'
 
 export type MetaPost = Omit<Metadata, 'title' | 'keywords'> & {
   title: string
@@ -19,3 +21,5 @@ export type Post = {
   date: `${number}${number}${number}${number}-${number}${number}-${number}${number}`
   meta: MetaPost
 }
+
+export type PostSome = PostPortfolio | PostBlog
