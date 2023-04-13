@@ -20,7 +20,7 @@ export default function Page() {
         doesn&rsquo;t, in the end they are both the reason for the solution of a
         problem, thus they achieve the same thing. Therefore a closer look at
         evolution can teach you a lot about what design is, how it works, what
-        it can achieve and what not..
+        it can achieve and what not.
       </p>
       <h2>Basic principle</h2>
       <p>
