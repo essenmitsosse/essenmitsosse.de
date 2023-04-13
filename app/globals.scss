@@ -36,15 +36,6 @@ body {
   background-color: $yellow;
 }
 
-h1,
-h2,
-h3,
-h4,
-th,
-strong {
-  @include highlight-font();
-}
-
 .content {
   .article & {
     float: right;
@@ -60,6 +51,15 @@ strong {
     padding-bottom: 50px;
     float: right;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+th,
+strong {
+  @include highlight-font();
 }
 
 a {
