@@ -20,8 +20,8 @@ const getPostAndPrevAndNext = <T extends PostBlog | PostPortfolio>(
     ? {}
     : {
         post: listPost[index],
-        postPrev: index > 0 ? listPost[index - 1] : undefined,
-        postNext: index < listPost.length ? listPost[index + 1] : undefined,
+        postPrev: index < listPost.length ? listPost[index + 1] : undefined,
+        postNext: index > 0 ? listPost[index - 1] : undefined,
       }
 }
 export const getPostAndPrevAndNextViaSlug = (
