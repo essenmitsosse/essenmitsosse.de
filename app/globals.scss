@@ -112,9 +112,18 @@ a {
   }
 }
 
+.italic {
+  font-style: italic;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-weight: normal;
+  text-transform: none;
+}
+
 em {
   color: #999;
   @include small-italic-font();
+  @extend .italic;
 
   h1 &,
   h2 & {
@@ -130,13 +139,11 @@ em {
   }
 }
 
-em,
 blockquote {
-  font-style: italic;
-  letter-spacing: 0;
-  word-spacing: 0;
-  font-weight: normal;
-  text-transform: none;
+  @include large-italic-font();
+  @extend .italic;
+  line-height: 1.25em;
+  font-size: 1.5em;
 }
 
 h1 em,
@@ -145,12 +152,6 @@ h3 em {
   display: block;
   line-height: 1em;
   margin-bottom: 0.1em;
-}
-
-blockquote {
-  @include large-italic-font();
-  line-height: 1.25em;
-  font-size: 1.5em;
 }
 
 cite {
