@@ -13,14 +13,6 @@
   @include black-background();
 }
 
-.article,
-.portfolio {
-  .content {
-    min-width: 1000px;
-    max-width: 1240px;
-  }
-}
-
 h1 {
   .article & {
     float: right;
