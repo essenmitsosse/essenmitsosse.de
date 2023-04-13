@@ -243,16 +243,16 @@ p {
     width: 100%;
     @include border-light();
   }
+}
 
-  ul {
-    &.st-related-posts {
-      margin-bottom: 20px;
-    }
+ul {
+  &.st-related-posts {
+    margin-bottom: 20px;
+  }
 
-    &.st-related-posts li {
-      border: none;
-      padding: 0;
-    }
+  &.st-related-posts li {
+    border: none;
+    padding: 0;
   }
 }
 
