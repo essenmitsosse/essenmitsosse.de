@@ -1,0 +1,207 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.25;
+  @include default-font();
+  @include black-background();
+}
+
+.black {
+  background-color: #333;
+  color: #ccc;
+}
+
+.color {
+  background-color: $yellow;
+}
+
+h1,
+h2,
+h3,
+h4,
+th,
+strong {
+  @include highlight-font();
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-style: normal;
+
+  color: #d19423;
+  border-color: #d19423;
+
+  h1 &,
+  h2 &,
+  h3 & {
+    color: inherit;
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+  }
+
+  &:hover {
+    .color & {
+      color: #000;
+      border-color: #000;
+    }
+
+    .black & {
+      color: $yellow;
+      border-color: $yellow;
+    }
+
+    &,
+    em {
+      color: #000;
+
+      .color &,
+      .black & {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.italic {
+  font-style: italic;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-weight: normal;
+  text-transform: none;
+}
+
+em {
+  color: #999;
+  @include small-italic-font();
+  @extend .italic;
+
+  h1 &,
+  h2 & {
+    @include large-italic-font();
+  }
+
+  .black & {
+    color: inherit;
+  }
+
+  .color & {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  h1 &,
+  h2 &,
+  h3 & {
+    display: block;
+    line-height: 1em;
+    margin-bottom: 0.1em;
+  }
+}
+
+blockquote {
+  @include large-italic-font();
+  @extend .italic;
+  line-height: 1.25em;
+  font-size: 1.5em;
+}
+
+cite {
+  font-weight: normal;
+  font-style: normal;
+  text-align: right;
+  display: block;
+}
+
+h1 {
+  line-height: 1em;
+  font-size: 3.75em;
+}
+
+h2 {
+  clear: both;
+  line-height: 1em;
+  width: 100%;
+  float: left;
+  padding: 10px 0;
+  margin-top: 50px;
+  font-size: 2.5em;
+  @include border-strong();
+}
+
+h3 {
+  letter-spacing: 0.07em;
+  word-spacing: 0.09em;
+  clear: both;
+  line-height: 1.25em;
+  margin-top: 40px;
+  float: left;
+  width: 100%;
+  font-size: 1.25em;
+  @include border-light();
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.25em;
+  margin-top: 20px;
+  clear: both;
+}
+
+p {
+  padding-top: 10px;
+  clear: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: text-top;
+
+  a & {
+    border: none;
+  }
+}
+
+table {
+  border-spacing: 0px;
+  clear: both;
+  width: 100%;
+  clear: both;
+}
+
+thead {
+  th,
+  td {
+    vertical-align: bottom;
+    @include border-strong();
+  }
+}
+
+td,
+th {
+  padding: 10px 10px 10px 0;
+  vertical-align: top;
+  text-align: left;
+  @include border-light();
+}
+
+hr {
+  clear: both;
+  border: none;
+  width: 100%;
+}

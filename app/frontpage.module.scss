@@ -1,0 +1,151 @@
+@import '../app/variables';
+
+$tableWidth: 1100px;
+$mobileWidth: 700px;
+
+.allWrapper {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  padding-right: 1.2em;
+
+  @media screen and (max-width: $mobileWidth) {
+    display: block;
+  }
+}
+
+.homepresentation {
+  flex: 1 1 0;
+  width: 0;
+  padding-top: 10em;
+  padding-bottom: 5em;
+  margin-bottom: 1.2em;
+
+  @media screen and (max-width: $tableWidth) {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3em;
+    padding: 0 5% 10px;
+    @include border-strong();
+    line-height: 1em;
+    padding-top: 50px;
+  }
+}
+
+.introduction {
+  @extend .homepresentation;
+  background-color: #fff;
+
+  @media screen and (max-width: $tableWidth) {
+    padding-top: 10em;
+    flex-basis: 100%;
+  }
+
+  p,
+  h1,
+  h2,
+  h3 {
+    padding-right: 5%;
+    margin-left: 12%;
+    padding-left: 5px;
+    display: block;
+    width: auto;
+    float: none;
+  }
+
+  table {
+    margin-left: 12%;
+    width: 88%;
+    margin-bottom: 0;
+  }
+}
+
+.blog,
+.portfolio {
+  @extend .homepresentation;
+}
+
+.blog {
+  @media screen and (max-width: $mobileWidth) {
+    order: 3;
+  }
+}
+
+.listBlog {
+  li {
+    float: none;
+    width: 100%;
+    @include border-light();
+
+    h3 {
+      border: none;
+      font-size: 1em;
+      margin: 0 auto;
+      float: none;
+      padding-right: 5%;
+      padding-left: 5%;
+      width: auto;
+
+      a {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 28px;
+        border: none;
+      }
+    }
+  }
+
+  .dateBlog {
+    float: right;
+  }
+}
+
+.listPortfolio {
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 20px;
+
+  a {
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    background-position: center 1.1em;
+    background-repeat: no-repeat;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  height: 150px;
+
+  img {
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
+}
+
+.portfolioLinkText {
+  @include highlight-font();
+
+  a:hover & {
+    color: #fff;
+  }
+}
+
+.commentPortfolio {
+  text-align: center;
+  padding: 10px 10px 30px 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #000;
+  font-style: italic;
+}

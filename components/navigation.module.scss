@@ -1,0 +1,77 @@
+@import '../app/variables.scss';
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: calc(1.25em + 10px);
+  z-index: 10;
+  @include highlight-font();
+  @include black-background();
+
+  em {
+    display: none;
+  }
+
+  a {
+    border: none;
+    color: $yellow;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.home {
+  float: left;
+  width: 136px;
+  margin-left: 20px;
+  margin-right: 104px;
+  text-align: center;
+}
+
+.articleNavigation {
+  min-width: 1000px;
+  max-width: 1200px;
+  margin-right: 40px;
+
+  li {
+    width: 370px;
+
+    &.next {
+      float: left;
+
+      .arrow {
+        float: left;
+      }
+    }
+
+    &.prev {
+      float: right;
+      text-align: right;
+
+      .arrow {
+        float: right;
+      }
+    }
+  }
+}
+
+.arrow {
+  border-radius: 1em;
+  font-size: 0.5em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: $yellow;
+  color: #000;
+
+  a:hover & {
+    background-color: #fff;
+  }
+}

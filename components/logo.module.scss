@@ -1,0 +1,39 @@
+@import '../app/variables';
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  z-index: 1;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  background-color: #000;
+  border: none;
+  border-radius: 4.25em;
+  width: 8.5em;
+  height: 8.5em;
+  color: #fff !important;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: none;
+
+  &:hover {
+    color: $yellow !important;
+  }
+}
+
+.presents {
+  color: inherit;
+  font-size: 0.8em;
+  text-shadow: none;
+  background: none;
+  color: inherit !important;
+}
+
+.club {
+  display: block;
+  font: 5em/0.85em 'Times New Roman', Arial;
+}

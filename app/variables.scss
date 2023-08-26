@@ -1,0 +1,56 @@
+$yellow: #f3af29;
+
+@mixin highlight-font {
+  letter-spacing: 0.06em;
+  word-spacing: 0.09em;
+  text-transform: uppercase;
+  font: normal normal 1em 'Gill Sans', Tahoma, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  color: #000;
+
+  .black & {
+    color: #ccc;
+  }
+}
+
+@mixin default-font {
+  font-family: Cambria, Georgia, serif;
+}
+
+@mixin small-italic-font {
+  @include default-font();
+  font-style: italic;
+}
+
+@mixin large-italic-font {
+  font-family: Baskerville, Palatino, 'palatino linotype', Georgia, serif;
+  font-style: italic;
+}
+
+@mixin black-background {
+  background-color: #000;
+}
+
+@mixin border-strong {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: #000;
+
+  .black & {
+    border-color: #666;
+  }
+}
+
+@mixin border-light {
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-color: #999;
+
+  .black & {
+    border-color: #777;
+  }
+
+  .color & {
+    border-color: #aa7a1d;
+  }
+}

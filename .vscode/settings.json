@@ -3,5 +3,8 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.rulers": [80],
-  "editor.minimap.maxColumn": 80
+  "editor.minimap.maxColumn": 80,
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  }
 }
