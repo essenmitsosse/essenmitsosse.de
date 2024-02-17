@@ -2,8 +2,8 @@ import classnames from 'classnames'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
-import Date from '@/components/date'
-import Navigation from '@/components/navigation'
+import Date from '@/components/Date'
+import Navigation from '@/components/Navigation'
 
 import {
   getListRelatedPosts,
@@ -11,7 +11,7 @@ import {
   getPostViaSlug,
   listPost,
 } from './getPost'
-import HeaderBlog from './headerBlog'
+import HeaderBlog from './HeaderBlog'
 import styles from './page.module.scss'
 
 import type { MetaPost } from './content/types'

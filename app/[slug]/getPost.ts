@@ -1,8 +1,8 @@
-import listBlog from './content/blog'
-import listPortfolio from './content/portfolio'
+import listBlog from './content/listBlog'
+import listPortfolio from './content/listPortfolio'
 
-import type { PostBlog } from './content/blog'
-import type { PostPortfolio } from './content/portfolio'
+import type { PostBlog } from './content/listBlog'
+import type { PostPortfolio } from './content/listPortfolio'
 
 export const listPost = [...listBlog, ...listPortfolio]
 

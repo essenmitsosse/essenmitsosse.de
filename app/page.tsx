@@ -2,11 +2,11 @@ import { default as classNames, default as classnames } from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Date from '@/components/date'
-import Navigation from '@/components/navigation'
+import Date from '@/components/Date'
+import Navigation from '@/components/Navigation'
 
-import listBlog from './[slug]/content/blog'
-import listPortfolio from './[slug]/content/portfolio'
+import listBlog from './[slug]/content/listBlog'
+import listPortfolio from './[slug]/content/listPortfolio'
 import styles from './frontpage.module.scss'
 
 import type { Metadata } from 'next'

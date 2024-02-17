@@ -1,6 +1,6 @@
-import type { PostBlog } from './blog'
-import type { PostPortfolio } from './portfolio'
-import type { Date } from '@/components/date'
+import type { PostBlog } from './listBlog'
+import type { PostPortfolio } from './listPortfolio'
+import type { Date } from '@/components/Date'
 import type { Metadata } from 'next'
 import type { ComponentType } from 'react'
 
