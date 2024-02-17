@@ -1,5 +1,4 @@
 import classnames from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -36,10 +35,10 @@ export async function generateStaticParams() {
   return listPost.map((post) => ({ slug: post.slug }))
 }
 
-export default function Layout(props: {
+const Layout = (props: {
   readonly children: ReactNode
   readonly params: { readonly slug: string }
-}) {
+}): ReactNode => {
   const { post, listPostCategory, postPrev, postNext, isBlog } =
     getPostAndPrevAndNextViaSlug(props.params.slug)
 
@@ -110,3 +109,5 @@ export default function Layout(props: {
     </body>
   )
 }
+
+export default Layout

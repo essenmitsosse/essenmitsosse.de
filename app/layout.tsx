@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+
 import './globals.scss'
 
 export const metadata = {
@@ -5,10 +7,8 @@ export const metadata = {
   title: 'Create Next App',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  readonly children: React.ReactNode
-}) {
-  return <html lang="en">{children}</html>
-}
+const Layout = ({ children }: { readonly children: ReactNode }): ReactNode => (
+  <html lang="en">{children}</html>
+)
+
+export default Layout

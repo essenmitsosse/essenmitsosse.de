@@ -8,25 +8,25 @@ import previewBloackator from './blockator/preview.png'
 import previewBlondhead from './blondheadredhead/preview.jpg'
 import previewCreaturecombat from './creature-combat/preview.png'
 import previewAkt from './digital-life-drawing/preview.jpg'
-import previewGondel from './older-paintings/preview.jpg'
-import previewBowser from './realistically-painted-bowser/preview.jpg'
-import previewAnglerfish from './the-anglerfish/preview.jpg'
+import previewEssenmitsosse from './essenmitsosse-redesign/preview.png'
+import previewFaust from './faust/preview.png'
+import previewJackofalltrades from './jack-of-all-trades/preview.png'
+import previewKino120a from './kino-120a/preview.png'
 import previewLinentunic from './linen-tunic/preview.jpg'
+import previewGondel from './older-paintings/preview.jpg'
 import previewPortrait from './portrait-class/preview.jpg'
+import previewBowser from './realistically-painted-bowser/preview.jpg'
 import previewSonic from './sonic-the-real-hedgehog/preview.jpg'
 import previewSparta from './sparta-fanart/preview.jpg'
-import previewJackofalltrades from './jack-of-all-trades/preview.png'
+import previewAnglerfish from './the-anglerfish/preview.jpg'
 import previewHumanbrain from './the-human-brain/preview.png'
-import previewKino120a from './kino-120a/preview.png'
-import previewFaust from './faust/preview.png'
-import previewEssenmitsosse from './essenmitsosse-redesign/preview.png'
 
 import type { Post } from '../types'
 import type { StaticImageData } from 'next/image'
 
 export type PostPortfolio = Post & { readonly preview: StaticImageData }
 
-const listPortfolio: ReadonlyArray<PostPortfolio> = [
+const listPortfolioUnsorted: ReadonlyArray<PostPortfolio> = [
   {
     Component: dynamic(() => import('./aztecs')),
     date: '2008-03-30',
@@ -247,4 +247,6 @@ const listPortfolio: ReadonlyArray<PostPortfolio> = [
   },
 ]
 
-export default [...listPortfolio].sort(sortByDate)
+const listPortfolio = [...listPortfolioUnsorted].sort(sortByDate)
+
+export default listPortfolio

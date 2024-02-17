@@ -21,7 +21,7 @@ export type PostBlog = Post & {
   readonly imageHeader: StaticImageData
 }
 
-const listBlog: ReadonlyArray<PostBlog> = [
+const listBlogUnsorted: ReadonlyArray<PostBlog> = [
   {
     Component: dynamic(() => import('./applications-for-digital-painting')),
     date: '2008-03-30',
@@ -162,4 +162,6 @@ const listBlog: ReadonlyArray<PostBlog> = [
   },
 ]
 
-export default [...listBlog].sort(sortByDate)
+const listBlog = listBlogUnsorted.sort(sortByDate)
+
+export default listBlog
