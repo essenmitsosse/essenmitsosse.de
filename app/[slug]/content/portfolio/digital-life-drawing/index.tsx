@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-import imageAkt12 from './akt12.jpg'
 import imageAkt10 from './akt10.jpg'
-import imageAkt2 from './akt2.jpg'
-import imageAkt4 from './akt4.jpg'
 import imageAkt11 from './akt11.jpg'
+import imageAkt12 from './akt12.jpg'
 import imageAkt13 from './akt13.jpg'
 import imageAkt14 from './akt14.jpg'
+import imageAkt2 from './akt2.jpg'
+import imageAkt4 from './akt4.jpg'
 
 export default function Page() {
   return (
@@ -52,72 +52,72 @@ export default function Page() {
       </div>
       <div className="sixwide">
         <Image
-          src={imageAkt12}
-          placeholder="blur"
           alt="nude guy from the back"
+          height="395"
+          placeholder="blur"
+          priority
+          src={imageAkt12}
           title="digital nude male figure drawing"
           width="460"
-          height="395"
-          priority
         />
       </div>
       <hr />
       <div className="sixwide many">
         <Image
-          src={imageAkt10}
-          placeholder="blur"
           alt="nacked boy squat"
+          className="marginbottom"
+          height="576"
+          placeholder="blur"
+          src={imageAkt10}
           title="nude boy figure drawing sitting"
           width="460"
-          height="576"
-          className="marginbottom"
         />
         <Image
-          src={imageAkt2}
-          placeholder="blur"
           alt="nude girl standing with crossed arms"
+          className="marginbottom"
+          height="552"
+          placeholder="blur"
+          src={imageAkt2}
           title="nude female figure drawing standing"
           width="460"
-          height="552"
-          className="marginbottom"
         />
         <Image
-          src={imageAkt4}
-          placeholder="blur"
           alt="black&#038;white head of a nude girl"
+          className="marginbottom"
+          height="357"
+          placeholder="blur"
+          src={imageAkt4}
           title="nude girl figure drawing head black&#038;white"
           width="460"
-          height="357"
-          className="marginbottom"
         />
       </div>
       <div className="sixwide many">
         <Image
-          src={imageAkt11}
-          placeholder="blur"
           alt="nude boy sitting"
+          className="marginbottom"
+          height="576"
+          placeholder="blur"
+          src={imageAkt11}
           title="nude boy figure drawing sitting"
           width="460"
-          height="576"
-          className="marginbottom"
         />
         <Image
-          src={imageAkt13}
-          placeholder="blur"
           alt="nude old woman holding a ball"
+          className="marginbottom"
+          height="460"
+          placeholder="blur"
+          src={imageAkt13}
           title="old nude woman figure drawing torso"
           width="460"
-          height="460"
-          className="marginbottom"
         />
         <Image
-          src={imageAkt14}
-          placeholder="blur"
           alt="detail of arm of nude old woman"
+          className="marginbottom"
+          height="460"
+          placeholder="blur"
+          src={imageAkt14}
           title="old nude woman figure drawing closeup"
           width="460"
-          height="460"
-          className="marginbottom"
         />
       </div>
     </>

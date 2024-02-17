@@ -3,13 +3,13 @@ export default function Page() {
     <>
       <p>
         <iframe
-          width="940"
-          height="635"
-          src="https://www.youtube-nocookie.com/embed/ozOJeg8TXWI"
-          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+          frameBorder="0"
+          height="635"
+          src="https://www.youtube-nocookie.com/embed/ozOJeg8TXWI"
+          width="940"
+        />
       </p>
       <div className="fourwide">
         <p>

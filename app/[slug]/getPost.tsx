@@ -1,5 +1,8 @@
-import listBlog, { PostBlog } from './content/blog'
-import listPortfolio, { PostPortfolio } from './content/portfolio'
+import listBlog from './content/blog'
+import listPortfolio from './content/portfolio'
+
+import type { PostBlog } from './content/blog'
+import type { PostPortfolio } from './content/portfolio'
 
 export const listPost = [...listBlog, ...listPortfolio]
 
@@ -12,50 +15,50 @@ const getPostAndPrevAndNext = <T extends PostBlog | PostPortfolio>(
   listPost: ReadonlyArray<T>,
   index: number,
 ): {
-  post?: T
-  postPrev?: T
-  postNext?: T
-} => {
-  return index === -1
+  readonly post?: T
+  readonly postPrev?: T
+  readonly postNext?: T
+} =>
+  index === -1
     ? {}
     : {
         post: listPost[index],
-        postPrev: index < listPost.length ? listPost[index + 1] : undefined,
         postNext: index > 0 ? listPost[index - 1] : undefined,
+        postPrev: index < listPost.length ? listPost[index + 1] : undefined,
       }
-}
+
 export const getPostAndPrevAndNextViaSlug = (
   slug: string,
 ):
   | {
-      post?: PostBlog
-      postPrev?: PostBlog
-      postNext?: PostBlog
-      listPostCategory: ReadonlyArray<PostBlog>
-      isBlog: true
+      readonly post?: PostBlog
+      readonly postPrev?: PostBlog
+      readonly postNext?: PostBlog
+      readonly listPostCategory: ReadonlyArray<PostBlog>
+      readonly isBlog: true
     }
   | {
-      post?: PostPortfolio
-      postPrev?: PostPortfolio
-      postNext?: PostPortfolio
-      listPostCategory: ReadonlyArray<PostPortfolio>
-      isBlog: false
+      readonly post?: PostPortfolio
+      readonly postPrev?: PostPortfolio
+      readonly postNext?: PostPortfolio
+      readonly listPostCategory: ReadonlyArray<PostPortfolio>
+      readonly isBlog: false
     } => {
   const indexBlog = listBlog.findIndex((post) => post.slug === slug)
 
   return indexBlog !== -1
     ? {
         ...getPostAndPrevAndNext(listBlog, indexBlog),
-        listPostCategory: listBlog,
         isBlog: true,
+        listPostCategory: listBlog,
       }
     : {
         ...getPostAndPrevAndNext(
           listPortfolio,
           listPortfolio.findIndex((post) => post.slug === slug),
         ),
-        listPostCategory: listPortfolio,
         isBlog: false,
+        listPostCategory: listPortfolio,
       }
 }
 
@@ -64,8 +67,8 @@ const getGetPostWithScore =
   (
     postCurrent: T,
   ): {
-    post: T
-    score: number
+    readonly post: T
+    readonly score: number
   } => ({
     post: postCurrent,
     score: postCurrent.meta.keywords.filter((keyword) =>

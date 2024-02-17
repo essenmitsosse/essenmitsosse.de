@@ -1,8 +1,8 @@
 /** @type {import('prettier').Config} */
 const configPrettier = {
+  proseWrap: 'always',
   semi: false,
   singleQuote: true,
-  proseWrap: 'always',
 }
 
 export default configPrettier

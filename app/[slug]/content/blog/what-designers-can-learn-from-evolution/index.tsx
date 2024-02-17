@@ -1,13 +1,13 @@
 import Image from 'next/image'
 
 import imageBasic from './basic.png'
-import imageQuality from './quality.png'
-import imageDisadvantage from './disadvantage.png'
-import imageUsability from './usability.png'
-import imageEconomics from './economics.png'
 import imageConvergence from './convergence.png'
+import imageDisadvantage from './disadvantage.png'
+import imageEconomics from './economics.png'
 import imageFlexibility from './flexibility.png'
 import imagePerfection from './perfection.png'
+import imageQuality from './quality.png'
+import imageUsability from './usability.png'
 
 export default function Page() {
   return (
@@ -25,12 +25,12 @@ export default function Page() {
       <h2>Basic principle</h2>
       <p>
         <Image
-          width="940"
-          height="170"
-          src={imageBasic}
           alt="A diagram showing a basic principle of evolution"
-          unoptimized
+          height="170"
           priority
+          src={imageBasic}
+          unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -61,11 +61,11 @@ export default function Page() {
       <h2>Quality control</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imageQuality}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -112,11 +112,11 @@ export default function Page() {
       <h2>Benefit of disadvantages</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imageDisadvantage}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -150,11 +150,11 @@ export default function Page() {
       <h2>Usability</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imageUsability}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -188,11 +188,11 @@ export default function Page() {
       <h2>Economics</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imageEconomics}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -224,11 +224,11 @@ export default function Page() {
       <h2>Convergence</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imageConvergence}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -266,11 +266,11 @@ export default function Page() {
       <h2>Flexibility</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imageFlexibility}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">
@@ -301,11 +301,11 @@ export default function Page() {
       <h2>Perfection</h2>
       <p>
         <Image
-          width="940"
+          alt="A diagram showing a basic principle of evolution"
           height="170"
           src={imagePerfection}
-          alt="A diagram showing a basic principle of evolution"
           unoptimized
+          width="940"
         />
       </p>
       <div className="sixwide">

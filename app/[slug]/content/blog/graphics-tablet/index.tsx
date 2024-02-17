@@ -51,7 +51,7 @@ export default function Page() {
             From{' '}
             <a
               href="http://en.wikipedia.org/wiki/Graphics_tablet"
-              onclick="return false;"
+              onClick="return false;"
             >
               Wikipedia
             </a>

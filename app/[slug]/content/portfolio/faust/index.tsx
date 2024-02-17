@@ -7,13 +7,13 @@ export default function Page() {
     <>
       <div className="eightwide">
         <Image
-          src={coverFaust}
           alt="cover of my comic Faust"
-          title="Faust"
-          width="620"
           height="919"
           placeholder="blur"
           priority
+          src={coverFaust}
+          title="Faust"
+          width="620"
         />
       </div>
       <div className="fourwide">

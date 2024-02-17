@@ -7,13 +7,13 @@ export default function Page() {
     <>
       <div>
         <Image
-          src={imageBowser}
           alt="Realistically Painted Bowser"
-          title="Realistically Painted Bowser"
-          width="940"
           height="627"
           placeholder="blur"
           priority
+          src={imageBowser}
+          title="Realistically Painted Bowser"
+          width="940"
         />
       </div>
       <div className="sixwide">

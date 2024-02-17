@@ -1,8 +1,10 @@
-import { ReactNode } from 'react'
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import Image from 'next/image'
 import classnames from 'classnames'
+import Image from 'next/image'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+
+import Date from '@/components/date'
+import Navigation from '@/components/navigation'
 
 import {
   getListRelatedPosts,
@@ -10,16 +12,16 @@ import {
   getPostViaSlug,
   listPost,
 } from './getPost'
-import Navigation from '@/components/navigation'
-import Date from '@/components/date'
-import styles from './page.module.scss'
-import { MetaPost } from './content/types'
 import HeaderBlog from './headerBlog'
+import styles from './page.module.scss'
+
+import type { MetaPost } from './content/types'
+import type { ReactNode } from 'react'
 
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string }
+  readonly params: { readonly slug: string }
 }): MetaPost {
   const post = getPostViaSlug(params.slug)
 
@@ -35,8 +37,8 @@ export async function generateStaticParams() {
 }
 
 export default function Layout(props: {
-  children: ReactNode
-  params: { slug: string }
+  readonly children: ReactNode
+  readonly params: { readonly slug: string }
 }) {
   const { post, listPostCategory, postPrev, postNext, isBlog } =
     getPostAndPrevAndNextViaSlug(props.params.slug)
@@ -49,7 +51,7 @@ export default function Layout(props: {
 
   return (
     <body>
-      <Navigation postPrev={postPrev} postNext={postNext} />
+      <Navigation postNext={postNext} postPrev={postPrev} />
 
       <div
         className={classnames({
@@ -58,7 +60,7 @@ export default function Layout(props: {
           [styles.portfolio]: !isBlog,
         })}
       >
-        {isBlog && <HeaderBlog post={post} />}
+        {isBlog ? <HeaderBlog post={post} /> : null}
 
         <div className={styles.content}>
           {!isBlog && <h1 className={styles.titleIntro}>{post.meta.title}</h1>}

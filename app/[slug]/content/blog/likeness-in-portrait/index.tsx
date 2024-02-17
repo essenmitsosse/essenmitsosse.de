@@ -48,13 +48,13 @@ export default function Page() {
       </div>
       <div className="sixwide center">
         <Image
-          src={imageWhoisthis}
           alt="Who is this?"
-          title="Who is this?"
-          width="300"
           height="476"
           placeholder="blur"
           priority
+          src={imageWhoisthis}
+          title="Who is this?"
+          width="300"
         />
       </div>
       <h2>
@@ -115,21 +115,21 @@ export default function Page() {
       </div>
       <div className="sixwide center">
         <Image
-          src={imageWhoisthis2}
           alt="Who is this?"
-          title="Who is this?"
-          width="300"
           height="476"
           placeholder="blur"
+          src={imageWhoisthis2}
+          title="Who is this?"
+          width="300"
         />
         <br />
         <Image
-          src={imageWhoisthis3}
           alt="Who is this?"
-          title="Who is this?"
-          width="300"
           height="476"
           placeholder="blur"
+          src={imageWhoisthis3}
+          title="Who is this?"
+          width="300"
         />
       </div>
       <h2>

@@ -1,13 +1,14 @@
 import Link from 'next/link'
 
-import { PostSome } from '@/app/[slug]/content/types'
 import Logo from './logo'
 import styles from './navigation.module.scss'
 
+import type { PostSome } from '@/app/[slug]/content/types'
+
 const Navigation = (props: {
-  isHome?: boolean
-  postPrev?: PostSome
-  postNext?: PostSome
+  readonly isHome?: boolean
+  readonly postPrev?: PostSome
+  readonly postNext?: PostSome
 }) => (
   <>
     <ul className={styles.navigation}>
@@ -18,10 +19,10 @@ const Navigation = (props: {
           </Link>
         </li>
       )}
-      {(props.postPrev || props.postNext) && (
+      {props.postPrev || props.postNext ? (
         <li className={styles.articleNavigation}>
           <ul>
-            {props.postPrev && (
+            {props.postPrev ? (
               <li className={styles.prev}>
                 <Link href={props.postPrev.slug} rel="prev">
                   <span className={styles.arrow}>&#9658;</span>{' '}
@@ -35,8 +36,8 @@ const Navigation = (props: {
                   />
                 </Link>
               </li>
-            )}
-            {props.postNext && (
+            ) : null}
+            {props.postNext ? (
               <li className={styles.next}>
                 <Link href={props.postNext.slug} rel="next">
                   <span className={styles.arrow}>&#9668;</span>{' '}
@@ -50,10 +51,10 @@ const Navigation = (props: {
                   />
                 </Link>
               </li>
-            )}
+            ) : null}
           </ul>
         </li>
-      )}
+      ) : null}
     </ul>
 
     <Logo />

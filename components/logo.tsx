@@ -4,7 +4,7 @@ import styles from './logo.module.scss'
 
 const Logo = () => (
   <p className={styles.logo}>
-    <Link href="/" title="Homepage" className={styles.link}>
+    <Link className={styles.link} href="/" title="Homepage">
       <span className={styles.club}>&clubs;</span>essenmitsosse{' '}
       <em className={styles.presents}>presents</em>
     </Link>

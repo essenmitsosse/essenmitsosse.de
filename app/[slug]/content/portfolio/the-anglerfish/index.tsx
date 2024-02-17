@@ -7,13 +7,13 @@ export default function Page() {
     <>
       <div className="eightwide">
         <Image
-          src={imageAnglerfish}
           alt="old man in boat trys to safe a drowning person which turns out to be an anglerfish"
-          title="The Anglerfish"
-          width="620"
           height="1640"
           placeholder="blur"
           priority
+          src={imageAnglerfish}
+          title="The Anglerfish"
+          width="620"
         />
       </div>
       <div className="fourwide">

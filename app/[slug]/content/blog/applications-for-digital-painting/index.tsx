@@ -1,16 +1,16 @@
 import Image from 'next/image'
 
-import imagePhotoshop from './photoshop.jpg'
-import imagePaintshoppro from './paintshoppro.jpg'
-import imagePainter from './painter.jpg'
-import imageSketchbookpro from './sketchbookpro.jpg'
-import imageOpencanvas from './opencanvas.jpg'
 import imageArtrage from './artrage.jpg'
-import imageGimp from './gimp.jpg'
 import imageArtweaver from './artweaver.jpg'
 import imageDeeppaint from './deeppaint.jpg'
 import imageDogwaffle from './dogwaffle.jpg'
+import imageGimp from './gimp.jpg'
+import imageOpencanvas from './opencanvas.jpg'
 import imagePaint from './paint.jpg'
+import imagePainter from './painter.jpg'
+import imagePaintshoppro from './paintshoppro.jpg'
+import imagePhotoshop from './photoshop.jpg'
+import imageSketchbookpro from './sketchbookpro.jpg'
 
 export default function Page() {
   return (
@@ -62,13 +62,13 @@ export default function Page() {
         <div>
           <a href="http://www.adobe.com/products/photoshop/">
             <Image
-              src={imagePhotoshop}
               alt="Adobe Photoshop"
+              className="alignnone size-full wp-image-41"
+              height="211"
+              placeholder="blur"
+              src={imagePhotoshop}
               title="Adobe Photoshop"
               width="350"
-              height="211"
-              className="alignnone size-full wp-image-41"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -110,13 +110,13 @@ export default function Page() {
         <div>
           <a href="http://www.corel.com/servlet/Satellite/us/en/Product/1184951547051">
             <Image
-              src={imagePaintshoppro}
               alt="Corel Paint Shop Pro"
+              className="alignnone size-full wp-image-40"
+              height="169"
+              placeholder="blur"
+              src={imagePaintshoppro}
               title="Corel Paint Shop Pro"
               width="350"
-              height="169"
-              className="alignnone size-full wp-image-40"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -165,13 +165,13 @@ export default function Page() {
         <div>
           <a href="http://www.corel.com/servlet/Satellite/de/de/Product/1166553885783">
             <Image
-              src={imagePainter}
               alt="Corel Painter"
+              className="alignnone size-full wp-image-39"
+              height="220"
+              placeholder="blur"
+              src={imagePainter}
               title="Corel Painter"
               width="350"
-              height="220"
-              className="alignnone size-full wp-image-39"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -208,13 +208,13 @@ export default function Page() {
         <div>
           <a href="http://usa.autodesk.com/adsk/servlet/index?id=6848332&amp;siteID=123112">
             <Image
-              src={imageSketchbookpro}
               alt="Alias SketchBook Pro"
+              className="alignnone size-full wp-image-42"
+              height="144"
+              placeholder="blur"
+              src={imageSketchbookpro}
               title="Alias SketchBook Pro"
               width="350"
-              height="144"
-              className="alignnone size-full wp-image-42"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -262,13 +262,13 @@ export default function Page() {
         <div>
           <a href="http://www.portalgraphics.net/en/">
             <Image
-              src={imageOpencanvas}
               alt="OpenCanvas"
+              className="alignnone size-full wp-image-37"
+              height="195"
+              placeholder="blur"
+              src={imageOpencanvas}
               title="OpenCanvas"
               width="350"
-              height="195"
-              className="alignnone size-full wp-image-37"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -307,13 +307,13 @@ export default function Page() {
         <div>
           <a href="http://www.ambientdesign.com/artrage.html">
             <Image
-              src={imageArtrage}
               alt="Artrage"
+              className="alignnone size-full wp-image-32"
+              height="215"
+              placeholder="blur"
+              src={imageArtrage}
               title="Artrage"
               width="350"
-              height="215"
-              className="alignnone size-full wp-image-32"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -350,13 +350,13 @@ export default function Page() {
         <div>
           <a href="hhttp://www.gimp.org/">
             <Image
-              src={imageGimp}
               alt="GIMP"
+              className="alignnone size-full wp-image-36"
+              height="175"
+              placeholder="blur"
+              src={imageGimp}
               title="GIMP"
               width="350"
-              height="175"
-              className="alignnone size-full wp-image-36"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -389,13 +389,13 @@ export default function Page() {
         <div>
           <a href="http://www.artweaver.de/">
             <Image
-              src={imageArtweaver}
               alt="Artweaver"
+              className="alignnone size-full wp-image-33"
+              height="151"
+              placeholder="blur"
+              src={imageArtweaver}
               title="Artweaver"
               width="350"
-              height="151"
-              className="alignnone size-full wp-image-33"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -427,13 +427,13 @@ export default function Page() {
         <div>
           <a href="http://download.chip.eu/en/Deep-Paint-2.0_132831.html">
             <Image
-              src={imageDeeppaint}
               alt="Deeppaint"
+              className="alignnone size-full wp-image-34"
+              height="202"
+              placeholder="blur"
+              src={imageDeeppaint}
               title="Deeppaint"
               width="350"
-              height="202"
-              className="alignnone size-full wp-image-34"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -462,13 +462,13 @@ export default function Page() {
         <div>
           <a href="http://www.thebest3d.com/dogwaffle/free">
             <Image
-              src={imageDogwaffle}
               alt="Dogwaffle"
+              className="alignnone size-full wp-image-35"
+              height="211"
+              placeholder="blur"
+              src={imageDogwaffle}
               title="Dogwaffle"
               width="350"
-              height="211"
-              className="alignnone size-full wp-image-35"
-              placeholder="blur"
             />
           </a>
         </div>
@@ -502,13 +502,13 @@ export default function Page() {
         <div>
           <a href="ttp://www.getpaint.net/">
             <Image
-              src={imagePaint}
               alt=""
+              className="alignnone size-full wp-image-38"
+              height="211"
+              placeholder="blur"
+              src={imagePaint}
               title="Paint.NET"
               width="350"
-              height="211"
-              className="alignnone size-full wp-image-38"
-              placeholder="blur"
             />
           </a>
         </div>

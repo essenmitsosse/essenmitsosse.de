@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import Link from 'next/link'
+
 import imageMainphoto from './mainphoto.jpg'
-import imageTouchingring from './touchingring.jpg'
 import imagePentips from './pentips.png'
 import imageRadialmenu from './radialmenu.png'
-import Image from 'next/image'
+import imageTouchingring from './touchingring.jpg'
 
 export default function Page() {
   return (
@@ -32,13 +33,13 @@ export default function Page() {
       <h3>New Design</h3>
       <div className="alignright">
         <Image
-          src={imageMainphoto}
-          title="Wacom Intuos4 L"
           alt="Wacom Intuos4 L"
-          width="460"
           height="242"
           placeholder="blur"
           priority
+          src={imageMainphoto}
+          title="Wacom Intuos4 L"
+          width="460"
         />
       </div>
       <p>
@@ -66,12 +67,12 @@ export default function Page() {
       <h3>Touching Ring</h3>
       <div className="alignright">
         <Image
-          src={imageTouchingring}
-          title="Wacom Intuos4 Touching Ring"
           alt="Wacom Intuos4 Touching Ring"
-          width="460"
           height="242"
           placeholder="blur"
+          src={imageTouchingring}
+          title="Wacom Intuos4 Touching Ring"
+          width="460"
         />
       </div>
       <p>
@@ -113,13 +114,13 @@ export default function Page() {
       </h3>
       <div className="alignright">
         <Image
-          src={imagePentips}
-          title="Wacom Intuos4 Pen Holder"
           alt="Wacom Intuos4 Pen Holder"
-          width="460"
           height="255"
           placeholder="blur"
+          src={imagePentips}
           style={{ marginTop: '-100px' }}
+          title="Wacom Intuos4 Pen Holder"
+          width="460"
         />
       </div>
       <p>
@@ -151,13 +152,13 @@ export default function Page() {
       <h3>Radial Menu</h3>
       <div className="alignright">
         <Image
-          src={imageRadialmenu}
-          title="Wacom Intuos4 Radial Menu"
           alt="Wacom Intuos4 Radial Menu"
-          width="460"
           height="300"
           placeholder="blur"
-          style={{ marginTop: '-100px', marginBottom: '-80px' }}
+          src={imageRadialmenu}
+          style={{ marginBottom: '-80px', marginTop: '-100px' }}
+          title="Wacom Intuos4 Radial Menu"
+          width="460"
         />
       </div>
       <p>
@@ -175,7 +176,7 @@ export default function Page() {
         </colgroup>
         <thead>
           <tr>
-            <th scope="row"></th>
+            <th scope="row" />
             <th scope="col">Intuos3</th>
             <th scope="col">Intuos4</th>
           </tr>

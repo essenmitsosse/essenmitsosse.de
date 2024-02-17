@@ -7,13 +7,13 @@ export default function Page() {
     <>
       <div className="eightwide">
         <Image
-          src={imageLinentunic}
           alt="Man in linen tunic with a sword is cursed by a wraith in the snow"
-          title="Linen Tunic"
-          width="620"
           height="957"
           placeholder="blur"
           priority
+          src={imageLinentunic}
+          title="Linen Tunic"
+          width="620"
         />
       </div>
       <div className="fourwide">

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import redesignWebsite from './website.png'
 
 export default function Page() {
@@ -6,12 +7,12 @@ export default function Page() {
     <>
       <div>
         <Image
-          src={redesignWebsite}
-          width="940"
+          alt="Preview of the 2008 redesign of essenmitsosse on an iMac"
           height="391"
           priority
-          alt="Preview of the 2008 redesign of essenmitsosse on an iMac"
           quality={100}
+          src={redesignWebsite}
+          width="940"
         />
       </div>
       <p>

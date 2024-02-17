@@ -1,27 +1,28 @@
+import Image from 'next/image'
+
 import imageAtat from './atat.jpg'
+import imageBlockaderunner from './blockaderunner.jpg'
+import imageBobafett from './bobafett.jpg'
+import imageChewie from './chewie.jpg'
+import imageCloudcity from './cloudcity.jpg'
+import imageDeathstar from './deathstar.jpg'
+import imageImperialforces from './imperialforces.jpg'
+import imageJabbathehut from './jabbathehut.jpg'
+import imageLightsaber from './lightsaber.png'
+import imageMauser from './mauser.jpg'
 import imageMilleniumfalcon from './milleniumfalcon.jpg'
 import imageSandcrawler from './sandcrawler.jpg'
 import imageStardestroyer from './stardestroyer.jpg'
-import imageDeathstar from './deathstar.jpg'
 import imageTiefighter from './tiefighter.jpg'
-import imageBobafett from './bobafett.jpg'
 import imageMoncalamari from './moncalamari.jpg'
-import imageCloudcity from './cloudcity.jpg'
-import imageImperialforces from './imperialforces.jpg'
 import imageTies from './ties.jpg'
-import imageBlockaderunner from './blockaderunner.jpg'
 import imageR2d2 from './r2d2.jpg'
-import imageJabbathehut from './jabbathehut.jpg'
 import imageSlave1 from './slave1.jpg'
 import imageSssbridge from './sssbridge.jpg'
 import imageTuskenraider from './tuskenraider.jpg'
 import imageNebulon from './nebulon.jpg'
-import imageChewie from './chewie.jpg'
-import imageMauser from './mauser.jpg'
 import imageVader from './vader.jpg'
 import imageShapes from './shapes.png'
-import imageLightsaber from './lightsaber.png'
-import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -55,12 +56,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageAtat}
-            title="AT-AT"
             alt="AT-AT"
-            width="300"
             height="261"
             placeholder="blur"
+            src={imageAtat}
+            title="AT-AT"
+            width="300"
           />
         </div>
         <h3>AT-AT</h3>
@@ -86,12 +87,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageMilleniumfalcon}
-            title="Millenium Falcon"
             alt="Millenium Falcon"
-            width="300"
             height="261"
             placeholder="blur"
+            src={imageMilleniumfalcon}
+            title="Millenium Falcon"
+            width="300"
           />
         </div>
         <h3>Millenium Falcon</h3>
@@ -114,12 +115,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageSandcrawler}
-            title="Sandcrawler"
             alt="Sandcrawler"
-            width="300"
             height="261"
             placeholder="blur"
+            src={imageSandcrawler}
+            title="Sandcrawler"
+            width="300"
           />
         </div>
         <h3>Sandcrawler</h3>
@@ -153,12 +154,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageStardestroyer}
-            title="Imperial Star Destroyer"
             alt="Imperial Star Destroyer"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageStardestroyer}
+            title="Imperial Star Destroyer"
+            width="300"
           />
         </div>
         <h3>Star Destroyer</h3>
@@ -178,12 +179,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageDeathstar}
-            title="Death Star"
             alt="Death Star"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageDeathstar}
+            title="Death Star"
+            width="300"
           />
         </div>
         <h3>Death Star</h3>
@@ -203,12 +204,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageTiefighter}
-            title="TIE-Fighter"
             alt="TIE-Fighter"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageTiefighter}
+            title="TIE-Fighter"
+            width="300"
           />
         </div>
         <h3>TIE-Fighter</h3>
@@ -241,12 +242,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageBobafett}
-            title="Boba Fett"
             alt="Boba Fett"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageBobafett}
+            title="Boba Fett"
+            width="300"
           />
         </div>
         <h3>Boba Fett</h3>
@@ -265,12 +266,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageMoncalamari}
-            title="Mon Calamari Space Cruiser – Home 1"
             alt="Mon Calamari Space Cruiser – Home 1"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageMoncalamari}
+            title="Mon Calamari Space Cruiser – Home 1"
+            width="300"
           />
         </div>
         <h3>Mon Calamari Star Cruiser</h3>
@@ -289,12 +290,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageCloudcity}
-            title="Cloud City"
             alt="Cloud City"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageCloudcity}
+            title="Cloud City"
+            width="300"
           />
         </div>
         <h3>Cloud City</h3>
@@ -329,12 +330,12 @@ export default function Page() {
       <div className="sixwide">
         <div>
           <Image
-            src={imageImperialforces}
-            title="Stromtrooper, Scout Trooper, AT-AT Pilot, TIE-Pilot"
             alt="Stromtrooper, Scout Trooper, AT-AT Pilot, TIE-Pilot"
-            width="460"
             height="136"
             placeholder="blur"
+            src={imageImperialforces}
+            title="Stromtrooper, Scout Trooper, AT-AT Pilot, TIE-Pilot"
+            width="460"
           />
         </div>
         <h3>Stormtroopers &#038; Imperial Pilots</h3>
@@ -364,12 +365,12 @@ export default function Page() {
       <div className="sixwide">
         <div>
           <Image
-            src={imageTies}
-            title="TIE-Bomber, Vader's TIE-Advanced x1, TIE-Interceptor, TIE-Fighter"
             alt="TIE-Bomber, Vader's TIE-Advanced x1, TIE-Interceptor, TIE-Fighter"
-            width="460"
             height="136"
             placeholder="blur"
+            src={imageTies}
+            title="TIE-Bomber, Vader's TIE-Advanced x1, TIE-Interceptor, TIE-Fighter"
+            width="460"
           />
         </div>
         <h3>TIE-Series</h3>
@@ -417,12 +418,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageBlockaderunner}
-            title="Rebell Blockade Runner"
             alt="Rebell Blockade Runner"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageBlockaderunner}
+            title="Rebell Blockade Runner"
+            width="300"
           />
         </div>
         <h3>Rebell Blockade Runner</h3>
@@ -443,12 +444,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageR2d2}
-            title="R2-D2"
             alt="R2-D2"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageR2d2}
+            title="R2-D2"
+            width="300"
           />
         </div>
         <h3>R2-D2</h3>
@@ -470,12 +471,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageJabbathehut}
-            title="Jabba The Hutt"
             alt="Jabba The Hutt"
-            width="300"
             height="300"
             placeholder="blur"
+            src={imageJabbathehut}
+            title="Jabba The Hutt"
+            width="300"
           />
         </div>
         <h3>Jabba The Hutt</h3>
@@ -511,12 +512,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageSlave1}
-            title="Slave 1"
             alt="Slave 1"
-            width="300"
             height="190"
             placeholder="blur"
+            src={imageSlave1}
+            title="Slave 1"
+            width="300"
           />
         </div>
         <h3>Slave 1</h3>
@@ -540,12 +541,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageSssbridge}
-            title="Bridge of a Super Star Destroyer"
             alt="Bridge of a Super Star Destroyer"
-            width="300"
             height="190"
             placeholder="blur"
+            src={imageSssbridge}
+            title="Bridge of a Super Star Destroyer"
+            width="300"
           />
         </div>
         <h3>Imperial Interior</h3>
@@ -566,12 +567,12 @@ export default function Page() {
       <div className="fourwide">
         <div>
           <Image
-            src={imageTuskenraider}
-            title="Tusken Raider"
             alt="Tusken Raider"
-            width="300"
             height="190"
             placeholder="blur"
+            src={imageTuskenraider}
+            title="Tusken Raider"
+            width="300"
           />
         </div>
         <h3>Tusken Raiders</h3>
@@ -615,13 +616,13 @@ export default function Page() {
       <div className="sixwide">
         <div>
           <Image
+            alt="Nebulon B Frigate"
+            className="alignnone size-full wp-image-503"
+            height="300"
+            placeholder="blur"
             src={imageNebulon}
             title="Nebulon B Frigate"
-            alt="Nebulon B Frigate"
             width="460"
-            height="300"
-            className="alignnone size-full wp-image-503"
-            placeholder="blur"
           />
         </div>
         <h3>Nebulon-B escort frigate</h3>
@@ -638,12 +639,12 @@ export default function Page() {
       <div className="sixwide">
         <div>
           <Image
-            src={imageChewie}
-            title="Chewbacca"
             alt="Chewbacca"
-            width="460"
             height="300"
             placeholder="blur"
+            src={imageChewie}
+            title="Chewbacca"
+            width="460"
           />
         </div>
         <h3>Chewbacca</h3>
@@ -675,12 +676,12 @@ export default function Page() {
         </p>
         <div className="center">
           <Image
-            src={imageMauser}
-            title="Mauser C-96 and Han Solo&#039;s DL-44 Heavy Blaster"
             alt="Mauser C-96 and Han Solo&#039;s DL-44 Heavy Blaster"
-            width="300"
             height="357"
             placeholder="blur"
+            src={imageMauser}
+            title="Mauser C-96 and Han Solo&#039;s DL-44 Heavy Blaster"
+            width="300"
           />
         </div>
         <p>
@@ -862,12 +863,12 @@ export default function Page() {
       <h3>Darth Vader</h3>
       <div className="sixwide">
         <Image
-          src={imageVader}
-          title="Darth Vader"
           alt="Darth Vader"
-          width="460"
           height="354"
           placeholder="blur"
+          src={imageVader}
+          title="Darth Vader"
+          width="460"
         />
       </div>
       <div className="sixwide">
@@ -944,12 +945,12 @@ export default function Page() {
       </p>
       <div className="fullwidth">
         <Image
+          alt="Boba Fett, Chewbacca, Darth Vader, C3-P0, Jabba the Hut, Yoda, R2-D2, TIE-Fighter, TIE-Interceptor, AT-AT, AT-ST, A-Wing, X-Wing, TIE-Bomber, Speederbike, B-Wing, Y-Wing, Millenium Falcon, Landspeeder, Lambda Shuttle, Slave 1, Star Destroyer, Blockade Runner, Nebulon B Frigate"
+          placeholder="blur"
           src={imageShapes}
           title="Boba Fett, Chewbacca, Darth Vader, C3-P0, Jabba the Hut, Yoda, R2-D2, TIE-Fighter, TIE-Interceptor, AT-AT, AT-ST, A-Wing, X-Wing, TIE-Bomber, Speederbike, B-Wing, Y-Wing, Millenium Falcon, Landspeeder, Lambda Shuttle, Slave 1, Star Destroyer, Blockade Runner, Nebulon B Frigate"
-          alt="Boba Fett, Chewbacca, Darth Vader, C3-P0, Jabba the Hut, Yoda, R2-D2, TIE-Fighter, TIE-Interceptor, AT-AT, AT-ST, A-Wing, X-Wing, TIE-Bomber, Speederbike, B-Wing, Y-Wing, Millenium Falcon, Landspeeder, Lambda Shuttle, Slave 1, Star Destroyer, Blockade Runner, Nebulon B Frigate"
-          width="940"
-          placeholder="blur"
           unoptimized
+          width="940"
         />
       </div>
       <h2>
@@ -957,13 +958,13 @@ export default function Page() {
       </h2>
       <div className="center sixwide">
         <Image
-          src={imageLightsaber}
-          title="Luke&#039;s Lightsaber"
           alt="Luke&#039;s Lightsaber"
-          width="300"
           height="370"
-          style={{ marginTop: '-140px' }}
           placeholder="blur"
+          src={imageLightsaber}
+          style={{ marginTop: '-140px' }}
+          title="Luke&#039;s Lightsaber"
+          width="300"
         />
       </div>
       <p>

@@ -1,6 +1,7 @@
-import imageSettings from './settings.jpg'
-import imageSaveforwebsettings from './saveforwebsettings.jpg'
 import Image from 'next/image'
+
+import imageSaveforwebsettings from './saveforwebsettings.jpg'
+import imageSettings from './settings.jpg'
 
 export default function Page() {
   return (
@@ -180,12 +181,12 @@ export default function Page() {
       </div>
       <div className="sixwide center">
         <Image
-          src={imageSettings}
           alt="CS Settings"
-          title="CS Settings"
-          width="350"
           height="286"
           placeholder="blur"
+          src={imageSettings}
+          title="CS Settings"
+          width="350"
         />
       </div>
       <h2>
@@ -233,12 +234,12 @@ export default function Page() {
       </div>
       <div className="sixwide center">
         <Image
-          src={imageSaveforwebsettings}
           alt="Save for Web Settings"
-          title="Save for Web Settings"
-          width="350"
           height="404"
           placeholder="blur"
+          src={imageSaveforwebsettings}
+          title="Save for Web Settings"
+          width="350"
         />
       </div>
     </>

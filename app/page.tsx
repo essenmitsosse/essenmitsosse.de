@@ -1,24 +1,25 @@
-import { Metadata } from 'next'
 import classnames from 'classnames'
+import classNames from 'classnames'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import Date from '@/components/date'
+import Navigation from '@/components/navigation'
 
 import listBlog from './[slug]/content/blog'
 import listPortfolio from './[slug]/content/portfolio'
-import Link from 'next/link'
-import Image from 'next/image'
-
 import styles from './frontpage.module.scss'
-import Navigation from '@/components/navigation'
-import Date from '@/components/date'
-import classNames from 'classnames'
+
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '♣ essenmitsosse',
+  authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
   description: 'The work and thoughts of an illustrator, print- & webdesigner.',
-  publisher: 'index, follow',
+  icons: 'favicon.png',
   keywords:
     'freelancer, illustrator, designer, design, layout, typography, wacom, photoshop',
-  authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
-  icons: 'favicon.png',
+  publisher: 'index, follow',
+  title: '♣ essenmitsosse',
 }
 
 export default function Home() {
@@ -108,7 +109,7 @@ export default function Home() {
               will be coming soon. For now you can find my portfolio on{' '}
               <a
                 href="https://www.behance.net/essenmitsosse"
-                style={{ display: 'inline', borderBottom: 'none' }}
+                style={{ borderBottom: 'none', display: 'inline' }}
               >
                 Behance
               </a>
@@ -121,7 +122,7 @@ export default function Home() {
                     {post.meta.title}
                   </span>
                   <div className={styles.imageWrapper}>
-                    <Image src={post.preview} alt="" fill placeholder="blur" />
+                    <Image alt="" fill placeholder="blur" src={post.preview} />
                   </div>
                 </Link>
               </li>

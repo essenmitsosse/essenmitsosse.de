@@ -8,13 +8,13 @@ export default function Page() {
     <>
       <div>
         <Image
-          src={imageSonic}
           alt="Sonic the real Hedgehog with massive thighs"
-          title="Sonic The Real Hedgehog"
-          width="940"
           height="570"
           placeholder="blur"
           priority
+          src={imageSonic}
+          title="Sonic The Real Hedgehog"
+          width="940"
         />
       </div>
       <div className="sixwide">
@@ -81,12 +81,12 @@ export default function Page() {
       </div>
       <div className="sixwide center">
         <Image
-          src={imageSonicpixel}
           alt="How a realistically sonic would look like in pixel"
-          title="Sonic The Real Hedgehog Pixel"
-          width="460"
           height="460"
           placeholder="blur"
+          src={imageSonicpixel}
+          title="Sonic The Real Hedgehog Pixel"
+          width="460"
         />
       </div>
     </>

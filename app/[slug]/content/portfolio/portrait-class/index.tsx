@@ -1,43 +1,43 @@
 import Image from 'next/image'
 
+import imagePortrait11 from './portrait11.jpg'
 import imagePortrait12 from './portrait12.jpg'
+import imagePortrait13 from './portrait13.jpg'
+import imagePortrait3 from './portrait3.jpg'
 import imagePortrait8 from './portrait8.jpg'
 import imagePortrait9 from './portrait9.jpg'
-import imagePortrait11 from './portrait11.jpg'
-import imagePortrait3 from './portrait3.jpg'
-import imagePortrait13 from './portrait13.jpg'
 
 export default function Page() {
   return (
     <>
       <div className="sixwide">
         <Image
-          src={imagePortrait12}
           alt="Caricature of a guy in a chair"
-          title="Photoshop painting from portrait class – male caricature"
-          width="460"
-          height="575"
           className="marginbottom"
+          height="575"
           placeholder="blur"
           priority
+          src={imagePortrait12}
+          title="Photoshop painting from portrait class – male caricature"
+          width="460"
         />
         <Image
-          src={imagePortrait8}
           alt="sausage-like girl with a crown caricature"
+          className="marginbottom"
+          height="588"
+          placeholder="blur"
+          src={imagePortrait8}
           title="Photoshop painting from portrait class – female caricature"
           width="460"
-          height="588"
-          className="marginbottom"
-          placeholder="blur"
         />
         <Image
-          src={imagePortrait9}
           alt="square girl caricature"
+          className="marginbottom"
+          height="460"
+          placeholder="blur"
+          src={imagePortrait9}
           title="Photoshop painting from portrait class – female caricature"
           width="460"
-          height="460"
-          className="marginbottom"
-          placeholder="blur"
         />
       </div>
       <div className="sixwide">
@@ -50,32 +50,32 @@ export default function Page() {
         </p>
         <div>
           <Image
-            src={imagePortrait11}
             alt="caricature of a fat man reading a book"
-            title="Photoshop painting from portrait class – male caricature"
-            width="460"
-            height="575"
             className="marginbottom"
+            height="575"
             placeholder="blur"
             priority
+            src={imagePortrait11}
+            title="Photoshop painting from portrait class – male caricature"
+            width="460"
           />
           <Image
-            src={imagePortrait3}
             alt="painting of a girl"
+            className="marginbottom"
+            height="497"
+            placeholder="blur"
+            src={imagePortrait3}
             title="Photoshop painting from portrait class – female"
             width="460"
-            height="497"
-            className="marginbottom"
-            placeholder="blur"
           />
           <Image
-            src={imagePortrait13}
             alt="two abstract cartoon square girls"
+            className="marginbottom"
+            height="271"
+            placeholder="blur"
+            src={imagePortrait13}
             title="Photoshop painting from portrait class – female caricature"
             width="460"
-            height="271"
-            className="marginbottom"
-            placeholder="blur"
           />
         </div>
       </div>
