@@ -31,7 +31,9 @@ export function generateMetadata({
   return post.meta
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<
+  ReadonlyArray<{ readonly slug: string }>
+> {
   return listPost.map((post) => ({ slug: post.slug }))
 }
 

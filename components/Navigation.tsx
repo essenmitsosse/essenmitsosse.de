@@ -4,12 +4,13 @@ import Logo from './Logo'
 import styles from './navigation.module.scss'
 
 import type { PostSome } from '@/app/[slug]/content/types'
+import type { ReactNode } from 'react'
 
 const Navigation = (props: {
   readonly isHome?: boolean
   readonly postPrev?: PostSome
   readonly postNext?: PostSome
-}) => (
+}): ReactNode => (
   <>
     <ul className={styles.navigation}>
       {!props.isHome && (
