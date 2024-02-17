@@ -3,9 +3,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with
 
 ## Before you start
 
-Before you clone this repo, make sure to install [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage).
+Before you clone this repo, make sure to install
+[Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage).
 
-It is also recommended to install [NVM](https://github.com/nvm-sh/nvm) (for example via `brew install nvm`). Now you can use `nvm use` when inside the repo to switch to the correct Node version.
+It is also recommended to install [NVM](https://github.com/nvm-sh/nvm) (for
+example via `brew install nvm`). Now you can use `nvm use` when inside the repo
+to switch to the correct Node version.
 
 ## Getting Started
 

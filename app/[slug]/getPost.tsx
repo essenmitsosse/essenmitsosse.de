@@ -4,13 +4,13 @@ import listPortfolio, { PostPortfolio } from './content/portfolio'
 export const listPost = [...listBlog, ...listPortfolio]
 
 export const getPostViaSlug = (
-  slug: string
+  slug: string,
 ): PostBlog | PostPortfolio | undefined =>
   listPost.find((post) => post.slug === slug)
 
 const getPostAndPrevAndNext = <T extends PostBlog | PostPortfolio>(
   listPost: ReadonlyArray<T>,
-  index: number
+  index: number,
 ): {
   post?: T
   postPrev?: T
@@ -25,7 +25,7 @@ const getPostAndPrevAndNext = <T extends PostBlog | PostPortfolio>(
       }
 }
 export const getPostAndPrevAndNextViaSlug = (
-  slug: string
+  slug: string,
 ):
   | {
       post?: PostBlog
@@ -52,7 +52,7 @@ export const getPostAndPrevAndNextViaSlug = (
     : {
         ...getPostAndPrevAndNext(
           listPortfolio,
-          listPortfolio.findIndex((post) => post.slug === slug)
+          listPortfolio.findIndex((post) => post.slug === slug),
         ),
         listPostCategory: listPortfolio,
         isBlog: false,
@@ -62,20 +62,20 @@ export const getPostAndPrevAndNextViaSlug = (
 const getGetPostWithScore =
   <T extends PostBlog | PostPortfolio>(post: T) =>
   (
-    postCurrent: T
+    postCurrent: T,
   ): {
     post: T
     score: number
   } => ({
     post: postCurrent,
     score: postCurrent.meta.keywords.filter((keyword) =>
-      post.meta.keywords.includes(keyword)
+      post.meta.keywords.includes(keyword),
     ).length,
   })
 
 export const getListRelatedPosts = <T extends PostBlog | PostPortfolio>(
   post: T,
-  list: ReadonlyArray<T>
+  list: ReadonlyArray<T>,
 ): ReadonlyArray<T> =>
   list
     .filter((postCurrent) => postCurrent.slug !== post.slug)

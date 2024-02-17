@@ -32,7 +32,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'A compilation of software you can use to paint with your computer.',
       keywords: cleanKeywords(
-        'adobe, artrage, artweaver, collection, corel, deep paint, digital painting, dogwaffle, free, gimp, graphics editor, guide, list, opencanvas, paint shop pro, paint.net, painter, photoshop, sketchbook pro, Software'
+        'adobe, artrage, artweaver, collection, corel, deep paint, digital painting, dogwaffle, free, gimp, graphics editor, guide, list, opencanvas, paint shop pro, paint.net, painter, photoshop, sketchbook pro, Software',
       ),
     },
   },
@@ -47,7 +47,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'A compilation of artists how paint with their computer. From illustrators to concept-artists.',
       keywords: cleanKeywords(
-        'artist, collection, community, craig mullins, digital painting, gfxartist, link, list, Portfolio, websites'
+        'artist, collection, community, craig mullins, digital painting, gfxartist, link, list, Portfolio, websites',
       ),
     },
   },
@@ -62,7 +62,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'A small how to for graphics tablet beginners. Why should you use one?',
       keywords: cleanKeywords(
-        'brush, digital painting, graphics tablet, guide, Hardware, stylus'
+        'brush, digital painting, graphics tablet, guide, Hardware, stylus',
       ),
     },
   },
@@ -77,7 +77,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'A tutorial on how to correctly set up color-management. This might also solve the color shift problem when saving for the web in Photoshop.',
       keywords: cleanKeywords(
-        'adobe, Adobe RGB, calibration, CMS, color-management, colors, creative suite, display, guide, photoshop, save for web, sRGB'
+        'adobe, Adobe RGB, calibration, CMS, color-management, colors, creative suite, display, guide, photoshop, save for web, sRGB',
       ),
     },
   },
@@ -92,7 +92,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'What is it that let&rsquo;s a drawing look like the original face? Some thoughts on similarity.',
       keywords: cleanKeywords(
-        'Analysis, caricature, drawing, guide, likeness, portrait, Theory, Tutorial'
+        'Analysis, caricature, drawing, guide, likeness, portrait, Theory, Tutorial',
       ),
     },
   },
@@ -107,7 +107,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'An introduction and how-to on the possibilitys photoshop offers you to create custom brushes.',
       keywords: cleanKeywords(
-        'adobe, brush, brush engine, graphics tablet, guide, photoshop, Software, stylus'
+        'adobe, brush, brush engine, graphics tablet, guide, photoshop, Software, stylus',
       ),
     },
   },
@@ -123,7 +123,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'What is it, that make the concept art of Star Wars so damn good.',
       keywords: cleanKeywords(
-        'Analysis, collection, concept art, guide, inspiration, list, redesign, Showcase, starwars, Theory'
+        'Analysis, collection, concept art, guide, inspiration, list, redesign, Showcase, starwars, Theory',
       ),
     },
   },
@@ -138,7 +138,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'An review of the Wacom Intous4 graphics pad with a look at its new functions.',
       keywords: cleanKeywords(
-        'brush, digital painting, graphics tablet, Hardware, Review, stylus'
+        'brush, digital painting, graphics tablet, Hardware, Review, stylus',
       ),
     },
   },
@@ -146,7 +146,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
     htmlTitle: '<em>What designers can learn from</em> Evolution',
     slug: 'what-designers-can-learn-from-evolution',
     Component: dynamic(
-      () => import('./what-designers-can-learn-from-evolution')
+      () => import('./what-designers-can-learn-from-evolution'),
     ),
     imageHeader: headerEvolution,
     date: '2009-09-10',
@@ -155,7 +155,7 @@ const listBlog: ReadonlyArray<PostBlog> = [
       description:
         'Evolution has more in common with design than one might think. This look at nature will teach you a lot about design.',
       keywords: cleanKeywords(
-        'advertising, Analysis, convergence, design, economics, evolution, flexibility, inspiration, quality, Theory, usabily'
+        'advertising, Analysis, convergence, design, economics, evolution, flexibility, inspiration, quality, Theory, usabily',
       ),
     },
   },
