@@ -1,6 +1,6 @@
 import type { PostBlog } from './listBlog'
 import type { PostPortfolio } from './listPortfolio'
-import type { Date } from '@/components/Date'
+import type { FormatDate } from '@/components/Date'
 import type { Metadata } from 'next'
 import type { ComponentType } from 'react'
 
@@ -19,7 +19,7 @@ export type Post = {
    * See: https://nextjs.org/docs/advanced-features/dynamic-import#example
    */
   readonly Component: ComponentType
-  readonly date: Date
+  readonly date: FormatDate
   readonly meta: MetaPost
 }
 
