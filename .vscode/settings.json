@@ -4,6 +4,14 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.rulers": [80],
   "editor.minimap.maxColumn": 80,
+
+  // Make sure the ESLint Plugin works with flat config
+  "eslint.experimental.useFlatConfig": true,
+
+  // This ensures all ESLint errors are displayed as warnings to make them
+  // easier to separate from TypeScript errors
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+
   "[sass]": {
     "editor.defaultFormatter": "syler.sass-indented"
   }
