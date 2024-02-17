@@ -5,7 +5,7 @@ import configConfigs from './eslint/configConfigs.js'
 import configImportStyle from './eslint/configImportStyle.js'
 import configKopra from './eslint/configKopra.js'
 import configReactHooks from './eslint/configReactHooks.js'
-import configReactRefresh from './eslint/configReactRefresh.js'
+import listConfigReactRefresh from './eslint/listConfigReactRefresh.js'
 import configSetupTypescript from './eslint/configSetupTypescript.js'
 import configSortKeys from './eslint/configSortKeys.js'
 import configTests from './eslint/configTests.js'
@@ -44,7 +44,7 @@ const listConfigEslint = [
   configImportStyle,
   ...listConfigReactBase,
   configReactHooks,
-  configReactRefresh,
+  ...listConfigReactRefresh,
   configSortKeys,
   ...listConfigTypeScript,
 
