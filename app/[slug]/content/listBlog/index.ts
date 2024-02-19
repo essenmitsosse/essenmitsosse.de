@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
-import cleanKeywords from '../cleanKeywords'
-import sortByDate from '../sortByDate'
+import cleanKeywords from '@/app/[slug]/content/cleanKeywords'
+import sortByDate from '@/app/[slug]/content/sortByDate'
 
 import headerDigitalPainting from './ApplicationsForDigitalPainting/header.png'
 import headerDigitalPainter from './DigitalPainters/header.png'
@@ -13,7 +13,7 @@ import headerVader from './TheDesignsOfStarWars/header.png'
 import headerIntuos4 from './WacomIntuos4Review/header.png'
 import headerEvolution from './WhatDesignersCanLearnFromEvolution/header.png'
 
-import type { Post } from '../types'
+import type { Post } from '@/app/[slug]/content/types'
 import type { StaticImageData } from 'next/image'
 
 export type PostBlog = Post & {

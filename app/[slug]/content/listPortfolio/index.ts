@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
-import cleanKeywords from '../cleanKeywords'
-import sortByDate from '../sortByDate'
+import cleanKeywords from '@/app/[slug]/content/cleanKeywords'
+import sortByDate from '@/app/[slug]/content/sortByDate'
 
 import previewAztheken from './Aztecs/preview.jpg'
 import previewBloackator from './Blockator/preview.png'
@@ -21,7 +21,7 @@ import previewSparta from './SpartaFanart/preview.jpg'
 import previewAnglerfish from './TheAnglerfish/preview.jpg'
 import previewHumanbrain from './TheHumanBrain/preview.png'
 
-import type { Post } from '../types'
+import type { Post } from '@/app/[slug]/content/types'
 import type { StaticImageData } from 'next/image'
 
 export type PostPortfolio = Post & { readonly preview: StaticImageData }
