@@ -8,8 +8,8 @@ import type { ReactNode } from 'react'
 
 const Navigation = (props: {
   readonly isHome?: boolean
-  readonly postPrev?: PostSome
   readonly postNext?: PostSome
+  readonly postPrev?: PostSome
 }): ReactNode => (
   <>
     <ul className={styles.navigation}>

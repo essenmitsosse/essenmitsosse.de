@@ -16,8 +16,8 @@ const getPostAndPrevAndNext = <T extends PostBlog | PostPortfolio>(
   index: number,
 ): {
   readonly post?: T
-  readonly postPrev?: T
   readonly postNext?: T
+  readonly postPrev?: T
 } =>
   index === -1
     ? {}
@@ -31,18 +31,18 @@ export const getPostAndPrevAndNextViaSlug = (
   slug: string,
 ):
   | {
-      readonly post?: PostBlog
-      readonly postPrev?: PostBlog
-      readonly postNext?: PostBlog
-      readonly listPostCategory: ReadonlyArray<PostBlog>
-      readonly isBlog: true
+      readonly isBlog: false
+      readonly listPostCategory: ReadonlyArray<PostPortfolio>
+      readonly post?: PostPortfolio
+      readonly postNext?: PostPortfolio
+      readonly postPrev?: PostPortfolio
     }
   | {
-      readonly post?: PostPortfolio
-      readonly postPrev?: PostPortfolio
-      readonly postNext?: PostPortfolio
-      readonly listPostCategory: ReadonlyArray<PostPortfolio>
-      readonly isBlog: false
+      readonly isBlog: true
+      readonly listPostCategory: ReadonlyArray<PostBlog>
+      readonly post?: PostBlog
+      readonly postNext?: PostBlog
+      readonly postPrev?: PostBlog
     } => {
   const indexBlog = listBlog.findIndex((post) => post.slug === slug)
 
