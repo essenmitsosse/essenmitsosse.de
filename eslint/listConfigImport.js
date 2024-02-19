@@ -13,7 +13,20 @@ const listConfigImport = [
        * Ensure consistent use of file extension within the import path
        * {@link https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/extensions.md}
        */
-      'import/extensions': ['error', { ts: 'never', tsx: 'never' }],
+      'import/extensions': [
+        'error',
+        {
+          css: 'always',
+          gif: 'always',
+          jpg: 'always',
+          js: 'never',
+          png: 'always',
+          sass: 'always',
+          scss: 'always',
+          ts: 'never',
+          tsx: 'never',
+        },
+      ],
 
       /**
        * Disallow non-import statements appearing before import statements
@@ -165,7 +178,7 @@ const listConfigImport = [
        * Extensions are required for config files, because they don't go through
        * vite
        */
-      'import/extensions': 'off',
+      'import/extensions': ['error', 'always'],
     },
   },
 ]
