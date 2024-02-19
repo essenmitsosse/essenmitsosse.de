@@ -1,4 +1,4 @@
-import { default as classNames, default as classnames } from 'classnames'
+import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -77,7 +77,7 @@ const Page = (): ReactNode => (
         </table>
       </div>
 
-      <div className={classnames(styles.blog, styles.color, 'color')}>
+      <div className={classNames(styles.blog, styles.color, 'color')}>
         <h1>Articles</h1>
         <ul className={styles.listBlog}>
           {listBlog.map((post) => (
@@ -85,7 +85,7 @@ const Page = (): ReactNode => (
               <h3>
                 <Link href={post.slug}>
                   <Date
-                    className={classnames(styles.dateBlog)}
+                    className={classNames(styles.dateBlog)}
                     date={post.date}
                   />
                   <span dangerouslySetInnerHTML={{ __html: post.htmlTitle }} />
@@ -96,7 +96,7 @@ const Page = (): ReactNode => (
         </ul>
       </div>
 
-      <div className={classnames(styles.portfolio, styles.black, 'black')}>
+      <div className={classNames(styles.portfolio, styles.black, 'black')}>
         <h1>Portfolio</h1>
         <ul className={styles.listPortfolio}>
           <li className={styles.commentPortfolio}>
