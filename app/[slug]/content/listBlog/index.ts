@@ -160,6 +160,6 @@ const listBlogUnsorted: ReadonlyArray<PostBlog> = [
   },
 ]
 
-const listBlog = listBlogUnsorted.sort(sortByDate)
+const listBlog = listBlogUnsorted.toSorted(sortByDate)
 
 export default listBlog

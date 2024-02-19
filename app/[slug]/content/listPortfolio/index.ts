@@ -247,6 +247,6 @@ const listPortfolioUnsorted: ReadonlyArray<PostPortfolio> = [
   },
 ]
 
-const listPortfolio = [...listPortfolioUnsorted].sort(sortByDate)
+const listPortfolio = [...listPortfolioUnsorted].toSorted(sortByDate)
 
 export default listPortfolio
