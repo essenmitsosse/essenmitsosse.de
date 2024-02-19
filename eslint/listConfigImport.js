@@ -97,7 +97,10 @@ const listConfigImport = [
        * Prevent unassigned imports to avoid unintended side-effect
        * {@link https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md}
        */
-      'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }],
+      'import/no-unassigned-import': [
+        'error',
+        { allow: ['**/*.css', '**/*.scss', '**/*.sass'] },
+      ],
 
       /**
        * Ensures that there are no useless path segments
