@@ -1,7 +1,5 @@
 import type { ReactNode } from 'react'
 
-
-
 const GraphicsTablet = (): ReactNode => (
   <>
     <p>
@@ -50,12 +48,7 @@ const GraphicsTablet = (): ReactNode => (
       <p>
         <cite>
           From{' '}
-          <a
-            href="http://en.wikipedia.org/wiki/Graphics_tablet"
-            onClick="return false;"
-          >
-            Wikipedia
-          </a>
+          <a href="http://en.wikipedia.org/wiki/Graphics_tablet">Wikipedia</a>
         </cite>
       </p>
     </div>
