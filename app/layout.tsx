@@ -1,3 +1,6 @@
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 import './globals.scss'
 
 import type { ReactNode } from 'react'
@@ -8,7 +11,11 @@ export const metadata = {
 }
 
 const Layout = ({ children }: { readonly children: ReactNode }): ReactNode => (
-  <html lang="en">{children}</html>
+  <html lang="en">
+    <Analytics />
+    <SpeedInsights />
+    {children}
+  </html>
 )
 
 export default Layout
