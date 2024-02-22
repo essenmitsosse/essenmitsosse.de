@@ -117,7 +117,13 @@ const Page = (): ReactNode => (
                   {post.meta.title}
                 </span>
                 <div className={styles.imageWrapper}>
-                  <Image alt="" fill placeholder="blur" src={post.preview} />
+                  <Image
+                    alt=""
+                    fill
+                    placeholder="blur"
+                    sizes="(max-width: 700px) 90vw, (max-width: 1100px) 25vw, 33vw"
+                    src={post.preview}
+                  />
                 </div>
               </Link>
             </li>
