@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "tsbuild",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false, // Checked by ESLint
+    "noUnusedParameters": false, // Checked by ESLint
+    "noFallthroughCasesInSwitch": false, // Checked by ESLint
+    "noUncheckedIndexedAccess": true
+  },
+  "include": ["*.config.*", "eslint"]
+}

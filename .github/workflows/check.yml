@@ -1,0 +1,35 @@
+name: Checks
+
+on:
+  push:
+
+jobs:
+  prettier:
+    name: 💅 Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - name: Install NPM dependencies
+        run: npm ci --prefer-offline --ignore-scripts
+      - name: Run Prettier
+        run: npm run prettierCheck
+
+  eslint:
+    name: 👔 ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - name: Install NPM dependencies
+        run: npm ci --prefer-offline --no-audit --ignore-scripts
+      - name: Run ESLint
+        run: npm run lint -- --no-fix

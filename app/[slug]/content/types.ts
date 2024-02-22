@@ -1,26 +1,26 @@
-import { Metadata } from 'next'
-import { ComponentType } from 'react'
-import { Date } from '@/components/date'
-import { PostPortfolio } from './portfolio'
-import { PostBlog } from './blog'
+import type { PostBlog } from './listBlog'
+import type { PostPortfolio } from './listPortfolio'
+import type { FormatDate } from '@/components/Date'
+import type { Metadata } from 'next'
+import type { ComponentType } from 'react'
 
-export type MetaPost = Omit<Metadata, 'title' | 'keywords'> & {
-  title: string
-  keywords: ReadonlyArray<string>
+export type MetaPost = Omit<Metadata, 'keywords' | 'title'> & {
+  readonly keywords: ReadonlyArray<string>
+  readonly title: string
 }
 
 export type Post = {
-  slug: string
-
   /**
    * The component must be dynamically imported with an explicit path. This
    * can't be generated dynamically from {@link Post.slug}
    *
    * See: https://nextjs.org/docs/advanced-features/dynamic-import#example
    */
-  Component: ComponentType
-  date: Date
-  meta: MetaPost
+  readonly Component: ComponentType
+
+  readonly date: FormatDate
+  readonly meta: MetaPost
+  readonly slug: string
 }
 
-export type PostSome = PostPortfolio | PostBlog
+export type PostSome = PostBlog | PostPortfolio

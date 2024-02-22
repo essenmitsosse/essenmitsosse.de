@@ -1,16 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: { formats: ['image/webp'] },
+  productionBrowserSourceMaps: true,
+  reactStrictMode: true,
+  redirects: async () => [
+    {
+      destination: 'https://pixel.essenmitsosse.de',
+      permanent: true,
+      source: '/pixel',
+    },
+  ],
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: { formats: ['image/webp'] },
 }
 
-module.exports = nextConfig
+export default nextConfig

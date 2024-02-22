@@ -3,7 +3,7 @@
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "bungcip.better-toml",
+    "tamasfe.even-better-toml",
     "sibiraj-s.vscode-scss-formatter"
   ]
 }

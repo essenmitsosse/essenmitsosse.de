@@ -1,8 +1,9 @@
-import { ReactNode } from 'react'
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import Image from 'next/image'
 import classnames from 'classnames'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+
+import Date from '@/components/Date'
+import Navigation from '@/components/Navigation'
 
 import {
   getListRelatedPosts,
@@ -10,16 +11,16 @@ import {
   getPostViaSlug,
   listPost,
 } from './getPost'
-import Navigation from '@/components/navigation'
-import Date from '@/components/date'
+import HeaderBlog from './HeaderBlog'
 import styles from './page.module.scss'
-import { MetaPost } from './content/types'
-import HeaderBlog from './headerBlog'
+
+import type { MetaPost } from './content/types'
+import type { ReactNode } from 'react'
 
 export function generateMetadata({
   params,
 }: {
-  params: { slug: string }
+  readonly params: { readonly slug: string }
 }): MetaPost {
   const post = getPostViaSlug(params.slug)
 
@@ -30,14 +31,16 @@ export function generateMetadata({
   return post.meta
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<
+  ReadonlyArray<{ readonly slug: string }>
+> {
   return listPost.map((post) => ({ slug: post.slug }))
 }
 
-export default function Layout(props: {
-  children: ReactNode
-  params: { slug: string }
-}) {
+const Layout = (props: {
+  readonly children: ReactNode
+  readonly params: { readonly slug: string }
+}): ReactNode => {
   const { post, listPostCategory, postPrev, postNext, isBlog } =
     getPostAndPrevAndNextViaSlug(props.params.slug)
 
@@ -48,8 +51,8 @@ export default function Layout(props: {
   const listPostRelated = getListRelatedPosts(post, listPostCategory)
 
   return (
-    <body>
-      <Navigation postPrev={postPrev} postNext={postNext} />
+    <>
+      <Navigation postNext={postNext} postPrev={postPrev} />
 
       <div
         className={classnames({
@@ -58,7 +61,7 @@ export default function Layout(props: {
           [styles.portfolio]: !isBlog,
         })}
       >
-        {isBlog && <HeaderBlog post={post} />}
+        {isBlog ? <HeaderBlog post={post} /> : null}
 
         <div className={styles.content}>
           {!isBlog && <h1 className={styles.titleIntro}>{post.meta.title}</h1>}
@@ -105,6 +108,8 @@ export default function Layout(props: {
           )}
         </div>
       </div>
-    </body>
+    </>
   )
 }
+
+export default Layout
