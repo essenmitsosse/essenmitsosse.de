@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 }
 
 const Page = (): ReactNode => (
-  <body>
+  <>
     <Navigation isHome />
 
     <div className={styles.allWrapper}>
@@ -130,7 +130,7 @@ const Page = (): ReactNode => (
         </ul>
       </div>
     </div>
-  </body>
+  </>
 )
 
 export default Page

@@ -51,7 +51,7 @@ const Layout = (props: {
   const listPostRelated = getListRelatedPosts(post, listPostCategory)
 
   return (
-    <body>
+    <>
       <Navigation postNext={postNext} postPrev={postPrev} />
 
       <div
@@ -108,7 +108,7 @@ const Layout = (props: {
           )}
         </div>
       </div>
-    </body>
+    </>
   )
 }
 

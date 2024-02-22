@@ -4,6 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { formats: ['image/webp'] },
+  productionBrowserSourceMaps: true,
   reactStrictMode: true,
   redirects: async () => [
     {

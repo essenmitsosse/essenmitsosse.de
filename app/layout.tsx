@@ -12,9 +12,11 @@ export const metadata = {
 
 const Layout = ({ children }: { readonly children: ReactNode }): ReactNode => (
   <html lang="en">
-    <Analytics />
-    <SpeedInsights />
-    {children}
+    <body>
+      {children}
+      <Analytics />
+      <SpeedInsights />
+    </body>
   </html>
 )
 
