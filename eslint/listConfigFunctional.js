@@ -43,11 +43,15 @@ const listConfigFunctional = [
   {
     files: ['*.config.ts', '*.config.js', 'postcss.config.cjs', 'eslint/**/*'],
     rules: {
+      /** Sometimes all you need is a callback ... */
+      'functional/functional-parameters': 'off',
+
       /**
        * Disabled immutable-data for config files, since there is no other way,
        * then to assign the export to `module.exports`
        */
       'functional/immutable-data': 'off',
+
       /**
        * Disabled immutable-data for config files, since there is no other way,
        * then to assign the export to `module.exports` (which is considered an
