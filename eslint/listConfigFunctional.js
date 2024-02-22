@@ -41,14 +41,7 @@ const listConfigFunctional = [
 
   /** Disable some unfeasable rules for config files */
   {
-    files: [
-      '*.config.ts',
-      'eslint.config.js',
-      'prettier.config.cjs',
-      'postcss.config.cjs',
-      'tailwind.config.cjs',
-      'eslint/**/*',
-    ],
+    files: ['*.config.ts', '*.config.js', 'postcss.config.cjs', 'eslint/**/*'],
     rules: {
       /**
        * Disabled immutable-data for config files, since there is no other way,

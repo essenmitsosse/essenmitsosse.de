@@ -164,14 +164,7 @@ const listConfigImport = [
   },
 
   {
-    files: [
-      '*.config.ts',
-      'eslint.config.js',
-      'prettier.config.cjs',
-      'postcss.config.cjs',
-      'tailwind.config.cjs',
-      'eslint/**/*',
-    ],
+    files: ['*.config.ts', '*.config.js', 'postcss.config.cjs', 'eslint/**/*'],
     plugins: { import: importPlugin },
     rules: {
       /**
