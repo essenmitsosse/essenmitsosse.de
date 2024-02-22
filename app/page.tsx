@@ -15,11 +15,10 @@ import type { ReactNode } from 'react'
 export const metadata: Metadata = {
   authors: { name: 'Marcus Blättermann', url: 'https://essenmitsosse.de' },
   description: 'The work and thoughts of an illustrator, print- & webdesigner.',
-  icons: 'favicon.png',
   keywords:
     'freelancer, illustrator, designer, design, layout, typography, wacom, photoshop',
   publisher: 'index, follow',
-  title: '♣ essenmitsosse',
+  title: 'essenmitsosse',
 }
 
 const Page = (): ReactNode => (
