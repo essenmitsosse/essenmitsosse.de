@@ -45,7 +45,7 @@
     "typescript": "^5.0.3"
   },
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "author": "Marcus Blättermann <marcus@essenmitsosse.de>",
   "bugs": {
